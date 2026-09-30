@@ -1,0 +1,584 @@
+# ============ PLEIADES & HYADES ============
+@region olympus
+@type nymph
+@src Apollodorus, Bibliotheca 3.10.1
+@grp pleiades
+pleiades | Pleiades | Vergiliae | atlas+pleione | Seven daughters of Atlas, chased by Orion and set among the stars.
+  s: Apollodorus, Bibliotheca 3.10.1; Hesiod, Works and Days 383–387; Hyginus, De Astronomica 2.21
+  t: zeus | turned into doves and then stars to escape Orion
+  r: Seven sisters chased by a hunter, we became doves and then a cluster of stars; one of us hides her face for marrying a mortal. ;; Pleiades
+maia | Maia | Maia | = | Eldest Pleiad, who bore Hermes in a cave on Mount Cyllene.
+  T: deity
+  s: Hesiod, Theogony 938–939; Homeric Hymn to Hermes 1–19
+electra_p | Electra | | = | Pleiad; mother of Dardanus and Iasion by Zeus.
+  w: Electra (Pleiad)
+taygete | Taygete | | = | Pleiad; mother of Lacedaemon by Zeus.
+  t: artemis | turned into a doe to escape Zeus (Pindar, Olympian 3 scholia)
+alcyone_p | Alcyone | | = | Pleiad; mother of Hyrieus by Poseidon.
+  w: Alcyone (Pleiad)
+celaeno | Celaeno | | = | Pleiad; mother of Lycus by Poseidon.
+  w: Celaeno
+sterope | Sterope | | = | Pleiad; mother of Oenomaus by Ares.
+  w: Sterope (Pleiad)
+@grp -
+@grp hyades
+hyades | Hyades | Suculae | atlas+aethra_o | Rain-bringing nymphs who wept themselves to death for their brother Hyas and became stars.
+  s: Ovid, Fasti 5.163–182; Hyginus, Fabulae 192
+  t: zeus | set among the stars in the head of Taurus
+hyas | Hyas | | = | Brother of the Hyades, killed by a lion (or boar).
+  T: mortal
+  R: earth
+@grp -
+
+# ============ ORION & TITYOS ============
+@region earth
+@type giant
+@src Apollodorus, Bibliotheca 1.4.1–5
+hyrieus | Hyrieus | | poseidon+alcyone_p | King of Hyria in Boeotia; in Ovid, father of Orion.
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.10.1; Ovid, Fasti 5.493–544
+euryale_m | Euryale | | minos | Daughter of Minos; mother of Orion by Poseidon.
+  T: mortal
+  s: Apollodorus, Bibliotheca 1.4.3 (citing Pherecydes)
+  w: Orion (mythology)
+orion | Orion | Orion | poseidon+euryale_m | Giant hunter who could walk on the sea; killed by Artemis or her scorpion and set among the stars.
+  a: hyrieus | Ovid, Fasti 5.493–544 (born from a bull's hide the gods had urinated on)
+  a: gaia | Apollodorus, Bibliotheca 1.4.3 (earth-born, per Hesiod)
+  s: Apollodorus, Bibliotheca 1.4.3–5; Homer, Odyssey 5.121–124, 11.572–575
+  t: zeus | placed among the stars with the Scorpion rising as he sets
+  m: Oenopion blinded Orion for assaulting his daughter Merope. Orion walked east with Cedalion on his shoulders to find the sunrise and was healed by Helios. He was killed either by Artemis's arrows or by a giant scorpion sent by Gaia.
+  r: The rising sun cured my blindness; a scorpion ended my hunting, and we still chase each other around the sky. ;; Orion
+scorpion | Scorpion | Scorpius | gaia | Giant scorpion sent by Gaia (or Artemis) to kill Orion; the constellation Scorpius.
+  T: monster
+  s: Ovid, Fasti 5.537–544; Hyginus, De Astronomica 2.26
+  a: artemis | Hyginus, De Astronomica 2.26 (some say)
+elara | Elara | | orchomenus | Mother of Tityos; Zeus hid her under the earth from Hera.
+  T: mortal
+  s: Apollodorus, Bibliotheca 1.4.1
+orchomenus | Orchomenus | | minyas | Eponym of Orchomenus in Boeotia.
+  T: mortal
+  s: Pausanias 9.36.6
+  a: zeus+isione | scholiast on Apollonius Rhodius 1.230
+tityos | Tityos | Tityus | zeus+elara | Giant who tried to rape Leto; vultures eat his liver in Tartarus.
+  o: Gaia carried him to term after Zeus hid Elara under the earth
+  a: gaia | Homer, Odyssey 7.324; 11.576
+  s: Homer, Odyssey 11.576–581; Apollodorus, Bibliotheca 1.4.1
+  R: under
+
+# ============ ARCADIA ============
+@region earth
+@type mortal
+@house Arcadia
+@src Apollodorus, Bibliotheca 3.8–3.9; Pausanias 8
+lycaon | Lycaon | Lycaon | pelasgus+meliboea | King of Arcadia who served Zeus human flesh and was turned into a wolf.
+  s: Apollodorus, Bibliotheca 3.8.1–2; Ovid, Metamorphoses 1.163–243
+  a: pelasgus+cyllene | Apollodorus, Bibliotheca 3.8.1
+  t: zeus | turned into a wolf; his sons were struck by lightning
+  m: To test whether Zeus was really a god, Lycaon served him a meal of human flesh. Zeus overturned the table, turned Lycaon into a wolf and blasted his sons, and the crime helped prompt the Flood.
+  r: I served the king of the gods human flesh to test him; I left the table howling on four legs. ;; Lycaon
+meliboea | Meliboea | | oceanus+tethys | Oceanid; wife of Pelasgus.
+  T: nymph
+  R: sea
+  s: Apollodorus, Bibliotheca 3.8.1
+  w: Meliboea
+cyllene | Cyllene | | - | Naiad of the Arcadian mountain; alternative wife of Pelasgus.
+  T: nymph
+  x: pelasgus | wife of Pelasgus in some accounts
+  s: Apollodorus, Bibliotheca 3.8.1
+  w: Cyllene (nymph)
+lycaonids | Sons of Lycaon | | lycaon | Fifty impious sons of Lycaon, blasted by Zeus's lightning; many were founders of Arcadian towns.
+  s: Apollodorus, Bibliotheca 3.8.1; Pausanias 8.3.1–5
+nyctimus | Nyctimus | | lycaon | Youngest son of Lycaon, served to Zeus; Gaia saved him and he became king.
+  s: Apollodorus, Bibliotheca 3.8.1–2
+callisto | Callisto | Callisto | lycaon | Huntress of Artemis's band, seduced by Zeus and turned into a bear; the Great Bear.
+  a: nycteus | Asius, cited by Apollodorus 3.8.2
+  a: ceteus | Pherecydes, cited by Apollodorus 3.8.2
+  s: Apollodorus, Bibliotheca 3.8.2; Ovid, Metamorphoses 2.401–530; Hesiod fr. 163
+  t: hera | turned into a bear (Ovid); in other versions Zeus or Artemis did it
+  t: zeus | set among the stars as the Great Bear
+  m: Zeus approached Callisto disguised as Artemis. When her pregnancy was found out she was turned into a bear. Years later her son Arcas nearly shot her while hunting, and Zeus set them both in the sky as the Great and Little Bear.
+  r: I hunted with the virgin goddess until I became a bear; my son almost shot me, and now we circle the pole together. ;; Callisto
+ceteus | Ceteus | | lycaon | Son of Lycaon; father of Callisto in Pherecydes.
+  s: Apollodorus, Bibliotheca 3.8.2
+arcas | Arcas | Arcas | zeus+callisto | King of Arcadia, eponym of the Arcadians; the Little Bear (or Boötes).
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.8.2, 3.9.1; Pausanias 8.4.1–2
+  t: zeus | set among the stars
+erato_d | Erato | | - | Dryad; wife of Arcas.
+  T: nymph
+  x: arcas | wife of Arcas
+  s: Pausanias 8.4.2
+  w: Erato (dryad)
+elatus | Elatus | | arcas+erato_d | King of Arcadia; father of Stymphalus and Aepytus.
+  s: Pausanias 8.4.2–3
+  w: Elatus
+aphidas | Aphidas | | arcas+erato_d | King of Tegea.
+  s: Apollodorus, Bibliotheca 3.9.1; Pausanias 8.4.2–3
+azan | Azan | | arcas+erato_d | Son of Arcas; the first funeral games were held for him.
+  s: Pausanias 8.4.2–3
+stymphalus | Stymphalus | | elatus | Founder of Stymphalus, killed by Pelops.
+  s: Pausanias 8.4.8; Apollodorus, Bibliotheca 3.9.1
+ischys | Ischys | | elatus | Lover of Coronis, killed by Apollo (or Artemis).
+  s: Pindar, Pythian 3.31–36; Apollodorus, Bibliotheca 3.10.3
+aleus | Aleus | | aphidas | King of Tegea; founder of the temple of Athena Alea.
+  s: Apollodorus, Bibliotheca 3.9.1; Pausanias 8.4.8
+neaera_a | Neaera | | pereus | Wife of Aleus.
+  s: Apollodorus, Bibliotheca 3.9.1
+  w: Neaera
+pereus | Pereus | | elatus | Son of Elatus.
+  s: Apollodorus, Bibliotheca 3.9.1
+auge | Auge | Auge | aleus+neaera_a | Priestess of Athena; mother of Telephus by Heracles.
+  s: Apollodorus, Bibliotheca 2.7.4, 3.9.1; Euripides, Auge (fragments)
+cepheus_t | Cepheus | | aleus+neaera_a | King of Tegea and Argonaut; Heracles gave his daughter a lock of Medusa's hair to protect the city.
+  s: Apollodorus, Bibliotheca 2.7.3, 3.9.1
+  w: Cepheus (king of Tegea)
+lycurgus_ar | Lycurgus | | aleus+neaera_a | King of Arcadia; grandfather of Atalanta.
+  s: Apollodorus, Bibliotheca 3.9.1–2
+  w: Lycurgus of Arcadia
+cleophyle | Cleophyle | | - | Wife of Lycurgus of Arcadia.
+  x: lycurgus_ar | wife of Lycurgus
+  s: Apollodorus, Bibliotheca 3.9.2
+ancaeus | Ancaeus | | lycurgus_ar+cleophyle | Argonaut killed by the Calydonian Boar.
+  s: Apollodorus, Bibliotheca 1.8.2, 3.9.2; Apollonius Rhodius 1.163–171
+  w: Ancaeus (son of Lycurgus)
+iasus_ar | Iasus | | lycurgus_ar+cleophyle | Father of Atalanta in Apollodorus.
+  s: Apollodorus, Bibliotheca 3.9.2
+  w: Iasus
+amphidamas | Amphidamas | | lycurgus_ar+cleophyle | Argonaut; father of Melanion.
+  s: Apollodorus, Bibliotheca 3.9.2
+clymene_m | Clymene | | minyas | Wife of Iasus; mother of Atalanta.
+  s: Apollodorus, Bibliotheca 3.9.2
+  w: Clymene (daughter of Minyas)
+atalanta | Atalanta | Atalanta | iasus_ar+clymene_m | Huntress raised by a she-bear; she drew first blood on the Calydonian Boar and raced her suitors.
+  a: schoeneus | Hesiodic Catalogue fr. 72–76; Ovid, Metamorphoses 10.560–707
+  s: Apollodorus, Bibliotheca 3.9.2; Ovid, Metamorphoses 10.560–707
+  t: cybele | turned into a lion with her husband for making love in a sacred place (Ovid)
+  m: Atalanta would marry only a man who could outrun her, and killed those who lost. Melanion (or Hippomenes) dropped three golden apples from Aphrodite, and she stopped to pick them up.
+  r: I outran every suitor and speared the losers, until three golden apples slowed me down. ;; Atalanta
+schoeneus | Schoeneus | | athamas+themisto_h | King of Boeotian Onchestus; Atalanta's father in the Boeotian version.
+  s: Apollodorus, Bibliotheca 1.9.2
+themisto_h | Themisto | | hypseus | Third wife of Athamas.
+  s: Apollodorus, Bibliotheca 1.9.2
+  w: Themisto
+melanion | Melanion | | amphidamas | Suitor who beat Atalanta with Aphrodite's golden apples (Hippomenes in Ovid).
+  s: Apollodorus, Bibliotheca 3.9.2
+hippomenes | Hippomenes | Hippomenes | megareus | Suitor who won Atalanta in Ovid's version; they were turned into lions.
+  s: Ovid, Metamorphoses 10.560–707
+  t: cybele | turned into a lion to pull her chariot
+megareus | Megareus | | onchestus | King of Onchestus; father of Hippomenes.
+  s: Ovid, Metamorphoses 10.605–606
+onchestus | Onchestus | | poseidon | Founder of Onchestus in Boeotia.
+  T: demigod
+  s: Pausanias 9.26.5; Ovid, Metamorphoses 10.605–607
+cybele | Cybele | Magna Mater | - | Phrygian Mother of the Gods, identified with Rhea; she rides in a chariot pulled by lions.
+  T: deity
+  R: earth
+  x: rhea | identified with Rhea by the Greeks
+  s: Ovid, Fasti 4.179–372; Catullus 63; Pausanias 7.17.9–12
+attis | Attis | Attis | nana | Phrygian consort of Cybele who castrated himself in frenzy and became a pine tree.
+  s: Pausanias 7.17.10–12; Ovid, Fasti 4.221–246
+  o: conceived when Nana took an almond (or pomegranate) into her lap
+  t: cybele | turned into a pine tree
+nana | Nana | | sangarius | Daughter of the river Sangarius who conceived Attis from an almond.
+  T: nymph
+  s: Pausanias 7.17.11; Arnobius, Adversus Nationes 5.6
+
+# ============ AETOLIA & CALYDON ============
+@house Aetolia
+@src Apollodorus, Bibliotheca 1.7.5–1.8.6
+endymion | Endymion | Endymion | aethlius+calyce | Handsome shepherd-king loved by Selene, granted eternal sleep.
+  a: zeus+calyce | Apollodorus, Bibliotheca 1.7.5 (some say)
+  s: Apollodorus, Bibliotheca 1.7.5–6; Pausanias 5.1.3–5
+  t: zeus | given eternal, ageless sleep
+  r: I sleep forever without aging on Mount Latmus, and the Moon visits me every night. ;; Endymion
+menai | Menai | | selene+endymion | The fifty daughters of Selene and Endymion, one for each lunar month of the Olympiad.
+  T: nymph
+  R: olympus
+  s: Pausanias 5.1.4
+pandia | Pandia | | zeus+selene | Goddess of the full moon's brightness.
+  T: deity
+  R: olympus
+  s: Homeric Hymn 32.14–16
+ersa | Ersa | | zeus+selene | Goddess of dew.
+  T: deity
+  R: olympus
+  s: Alcman fr. 57
+  w: Ersa
+aetolus | Aetolus | | endymion | Won the kingdom of Elis in a footrace, then fled to Aetolia and named it.
+  s: Apollodorus, Bibliotheca 1.7.6; Pausanias 5.1.4–8
+epeius_e | Epeius | | endymion | King of Elis; the Epeians were named after him.
+  s: Pausanias 5.1.4
+  w: Epeius (king of Elis)
+pronoe_a | Pronoe | | phorbas | Wife of Aetolus.
+  s: Apollodorus, Bibliotheca 1.7.7
+phorbas | Phorbas | | lapithes | Lapith hero; father of Augeas in some accounts.
+  s: Diodorus Siculus 4.69.2
+  w: Phorbas
+hyrmine | Hyrmine | | epeius_e | Mother of Augeas in some accounts.
+  s: Pausanias 5.1.11
+pleuron | Pleuron | | aetolus+pronoe_a | Founder of Pleuron.
+  s: Apollodorus, Bibliotheca 1.7.7
+calydon | Calydon | | aetolus+pronoe_a | Founder of Calydon.
+  s: Apollodorus, Bibliotheca 1.7.7
+xanthippe | Xanthippe | | dorus | Wife of Pleuron.
+  s: Apollodorus, Bibliotheca 1.7.7
+agenor_ae | Agenor | | pleuron+xanthippe | King of Pleuron.
+  s: Apollodorus, Bibliotheca 1.7.7
+  w: Agenor
+epicaste_ae | Epicaste | | calydon | Wife of Agenor of Pleuron.
+  s: Apollodorus, Bibliotheca 1.7.7
+portheus | Portheus | | agenor_ae+epicaste_ae | King of Calydon; grandfather of Tydeus and Meleager.
+  s: Apollodorus, Bibliotheca 1.7.7; Homer, Iliad 14.115–118
+demonice | Demonice | | agenor_ae+epicaste_ae | Mother of Thestius and Evenus by Ares.
+  s: Apollodorus, Bibliotheca 1.7.7
+euryte | Euryte | | hippodamas | Wife of Portheus.
+  s: Apollodorus, Bibliotheca 1.7.10
+hippodamas | Hippodamas | | achelous+perimede | Son of the river Achelous.
+  T: demigod
+  s: Apollodorus, Bibliotheca 1.7.3, 1.7.10
+thestius | Thestius | Thestius | ares+demonice | King of Pleuron; father of Leda, Althaea and Hypermnestra.
+  T: demigod
+  s: Apollodorus, Bibliotheca 1.7.7, 1.7.10
+eurythemis | Eurythemis | | cleoboea | Wife of Thestius.
+  s: Apollodorus, Bibliotheca 1.7.10
+cleoboea | Cleoboea | | - | Mother of Eurythemis.
+  x: eurythemis | named as her mother
+  s: Apollodorus, Bibliotheca 1.7.10
+althaea | Althaea | Althaea | thestius+eurythemis | Queen of Calydon who burned the log that held her son Meleager's life.
+  s: Apollodorus, Bibliotheca 1.8.1–3; Ovid, Metamorphoses 8.445–525
+  r: The Fates said my son would live until a log burned away; I kept it safe for years, then threw it on the fire. ;; Althaea
+plexippus | Plexippus | | thestius+eurythemis | Brother of Althaea killed by Meleager over the boar's hide.
+  s: Apollodorus, Bibliotheca 1.7.10, 1.8.2
+  w: Plexippus
+toxeus | Toxeus | | thestius+eurythemis | Brother of Althaea killed by Meleager.
+  s: Apollodorus, Bibliotheca 1.7.10, 1.8.2
+oeneus | Oeneus | Oeneus | portheus+euryte | King of Calydon who forgot Artemis in his sacrifices, bringing the Calydonian Boar.
+  s: Apollodorus, Bibliotheca 1.8.1–6; Homer, Iliad 9.529–599
+agrius_c | Agrius | | portheus+euryte | Brother of Oeneus whose sons deposed him.
+  s: Apollodorus, Bibliotheca 1.7.10, 1.8.6
+  w: Agrius
+meleager | Meleager | Meleager | oeneus+althaea | Hero of the Calydonian Boar hunt, who gave the hide to Atalanta and died when his mother burned the fatal log.
+  a: ares+althaea | Apollodorus, Bibliotheca 1.8.2 (some say)
+  s: Apollodorus, Bibliotheca 1.8.2–3; Homer, Iliad 9.529–599; Ovid, Metamorphoses 8.260–546; Bacchylides 5
+  m: Meleager gathered the heroes of Greece to hunt the Calydonian Boar. He killed it and gave the hide to Atalanta, and when his uncles took it from her he killed them. His mother then burned the log the Fates had tied to his life.
+  r: My life was tied to a log on the hearth; I gave the boar's hide to a huntress and my mother burned it. ;; Meleager
+deianira | Deianira | Deianira | oeneus+althaea | Wife of Heracles who killed him unknowingly with the robe soaked in Nessus's blood.
+  a: dionysus+althaea | Apollodorus, Bibliotheca 1.8.1; Hyginus, Fabulae 129
+  s: Sophocles, Trachiniae; Apollodorus, Bibliotheca 1.8.1, 2.7.5–7
+  r: A dying centaur told me his blood was a love charm; I soaked my husband's robe in it and it burned him alive. ;; Deianira
+gorge | Gorge | | oeneus+althaea | Daughter of Oeneus; one of two sisters not turned into birds.
+  s: Apollodorus, Bibliotheca 1.8.1; Antoninus Liberalis 2
+meleagrides | Meleagrides | | oeneus+althaea | Sisters of Meleager who mourned him so bitterly that Artemis turned them into guinea fowl.
+  s: Antoninus Liberalis 2; Ovid, Metamorphoses 8.533–546
+  t: artemis | turned into guinea fowl
+periboea_h | Periboea | | hipponous_o | Second wife of Oeneus; mother of Tydeus.
+  s: Apollodorus, Bibliotheca 1.8.4
+  w: Periboea
+hipponous_o | Hipponous | | - | King of Olenus; father of Periboea.
+  x: periboea_h | named as her father
+  s: Apollodorus, Bibliotheca 1.8.4
+tydeus | Tydeus | Tydeus | oeneus+periboea_h | One of the Seven; he ate the brains of his killer and lost the immortality Athena was bringing him.
+  a: oeneus+gorge | Apollodorus, Bibliotheca 1.8.5 (some say, by his daughter)
+  s: Apollodorus, Bibliotheca 1.8.5, 3.6.8; Homer, Iliad 4.370–400
+  m: Wounded before Thebes, Tydeus was given the head of his killer Melanippus by Amphiaraus, who hated him, and gnawed its brains. Athena, arriving with a potion of immortality, turned away in disgust.
+  r: A goddess brought me immortality, but turned back when she saw me eating my enemy's brains. ;; Tydeus
+calydonian_boar | Calydonian Boar | Aper Calydonius | artemis | Giant boar Artemis sent to ravage Calydon after Oeneus forgot her in his offerings.
+  T: creature
+  o: sent by Artemis
+  a: crommyonian_sow | Strabo, Geography 8.6.22 (as the Sow's offspring)
+  s: Homer, Iliad 9.529–549; Apollodorus, Bibliotheca 1.8.2; Ovid, Metamorphoses 8.270–424
+
+# ============ LAPITHS & PHLEGYANS ============
+@house Thessaly
+@src Diodorus Siculus 4.69–70; Apollodorus, Bibliotheca 3.10.3
+hypseus | Hypseus | | peneus+creusa_n | King of the Lapiths; father of Cyrene.
+  T: demigod
+  s: Pindar, Pythian 9.13–17
+stilbe | Stilbe | | peneus+creusa_n | Mother of Lapithes and Centaurus by Apollo.
+  T: nymph
+  s: Diodorus Siculus 4.69.1
+cyrene | Cyrene | Cyrene | hypseus | Huntress who wrestled a lion; Apollo carried her to Libya, where the city Cyrene bears her name.
+  s: Pindar, Pythian 9.5–70; Callimachus, Hymn 2.90–92
+  w: Cyrene (mythology)
+lapithes | Lapithes | | apollo+stilbe | Eponymous ancestor of the Lapiths.
+  T: demigod
+  s: Diodorus Siculus 4.69.1–2
+@grp lapiths
+lapiths | Lapiths | Lapithae | lapithes | Thessalian people who fought the Centaurs at the wedding of Pirithous.
+  s: Homer, Iliad 1.262–268; Ovid, Metamorphoses 12.210–535
+caeneus | Caeneus | Caeneus | elatus_l+hippea | Born the girl Caenis; Poseidon made her an invulnerable man, and the Centaurs buried him under trees.
+  s: Ovid, Metamorphoses 12.169–209, 12.459–535; Apollodorus, Epitome 1.22
+  t: poseidon | changed from a woman into an invulnerable man
+  r: I asked the sea god never to be wronged again and became a man no weapon could pierce; the centaurs buried me under pine trees. ;; Caeneus
+elatus_l | Elatus | | = | Lapith; father of Caeneus.
+  w: Elatus
+hippea | Hippea | | - | Mother of Caeneus.
+  x: elatus_l | wife of Elatus
+  s: Hyginus, Fabulae 14
+polyphemus_a | Polyphemus | | elatus_l+hippea | Lapith Argonaut, left behind in Mysia while searching for Hylas.
+  s: Apollonius Rhodius, Argonautica 1.40–44, 1.1240–1357
+  w: Polyphemus (Argonaut)
+coronus | Coronus | | caeneus | Lapith king and Argonaut.
+  s: Apollonius Rhodius, Argonautica 1.57–64
+mopsus_l | Mopsus | | ampycus+chloris_l | Lapith seer of the Argonauts, killed by a snake in Libya.
+  s: Apollonius Rhodius, Argonautica 1.65–66, 4.1502–1536
+  w: Mopsus (Argonaut)
+ampycus | Ampycus | | = | Lapith; father of the seer Mopsus.
+chloris_l | Chloris | | - | Nymph; mother of Mopsus.
+  T: nymph
+  x: ampycus | wife of Ampycus
+  s: Hyginus, Fabulae 14
+@grp -
+phlegyas | Phlegyas | Phlegyas | ares+chryse | King of the Lapiths who burned Apollo's temple at Delphi and is punished in Tartarus.
+  T: demigod
+  s: Pausanias 9.36.1–3; Virgil, Aeneid 6.618–620
+chryse | Chryse | | halmus | Mother of Phlegyas by Ares.
+  s: Pausanias 9.36.1
+halmus | Halmus | | sisyphus | Son of Sisyphus; king of Orchomenus.
+  s: Pausanias 9.34.10
+coronis | Coronis | Coronis | phlegyas | Mother of Asclepius; Apollo (or Artemis) killed her for her unfaithfulness.
+  s: Pindar, Pythian 3.8–46; Ovid, Metamorphoses 2.542–632
+  t: apollo | the raven that reported her was turned from white to black
+  w: Coronis (lover of Apollo)
+ixion | Ixion | Ixion | phlegyas | First man to kill a kinsman; he tried to seduce Hera and was bound to a flaming wheel.
+  a: ares | Hyginus, Fabulae 62
+  s: Pindar, Pythian 2.21–48; Apollodorus, Epitome 1.20
+  t: zeus | bound to a fiery wheel spinning through the sky (or Tartarus)
+  m: Ixion murdered his father-in-law to avoid paying the bride price. Zeus purified him and brought him to Olympus, where he tried to seduce Hera. Zeus made a cloud in her likeness (Nephele); Ixion lay with it, fathering Centaurus, and was bound forever to a burning wheel.
+  r: The king of gods forgave my murder and invited me to dinner; I tried to seduce his wife and embraced a cloud instead. ;; Ixion
+dia | Dia | | deioneus | Wife of Ixion; mother of Pirithous.
+  s: Homer, Iliad 14.317–318; Diodorus Siculus 4.69.3
+  w: Dia (mythology)
+deioneus | Deioneus | | - | Father of Dia, murdered by Ixion in a pit of coals.
+  x: ixion | father-in-law murdered by Ixion
+  s: Diodorus Siculus 4.69.3
+pirithous | Pirithous | Pirithous | ixion+dia | King of the Lapiths and friend of Theseus; trapped in Hades after trying to carry off Persephone.
+  a: zeus+dia | Homer, Iliad 14.317–318
+  s: Apollodorus, Epitome 1.21–24; Plutarch, Theseus 30–35
+  m: Pirithous and Theseus swore to marry daughters of Zeus. After abducting Helen, they went down to take Persephone; Hades sat them in chairs that held them fast. Heracles freed Theseus, but Pirithous stayed.
+hippodamia_l | Hippodamia | | butes_t | Lapith bride whose wedding feast became the battle with the Centaurs.
+  s: Homer, Iliad 2.742; Apollodorus, Epitome 1.21
+  a: atrax | Ovid, Metamorphoses 12.210 (called Hippodame)
+  w: Hippodamia (wife of Pirithous)
+butes_t | Butes | | boreas | Son of Boreas; father of Hippodamia in Diodorus.
+  T: demigod
+  s: Diodorus Siculus 5.50.2
+atrax | Atrax | | peneus | Founder of Atrax in Thessaly.
+  T: demigod
+  s: Stephanus of Byzantium, s.v. Atrax
+polypoetes | Polypoetes | | pirithous+hippodamia_l | Lapith leader at Troy.
+  s: Homer, Iliad 2.738–744
+
+# ============ ARGONAUT EXTRAS & COLCHIS ROUTE ============
+@house Argonauts
+@src Apollonius Rhodius, Argonautica 1.23–233
+hylas | Hylas | Hylas | theiodamas+menodice | Heracles' young companion, pulled into a spring by nymphs who fell in love with him.
+  s: Apollonius Rhodius, Argonautica 1.1207–1357; Theocritus, Idyll 13
+  t: naiads | taken into the spring by the water nymphs
+  r: I bent to fill a pitcher and a nymph pulled me under; my friend left the voyage searching for me. ;; Hylas
+theiodamas | Theiodamas | | - | King of the Dryopes killed by Heracles.
+  x: heracles | killed by Heracles, who took his son Hylas
+  s: Apollonius Rhodius, Argonautica 1.1211–1220
+menodice | Menodice | | orion | Mother of Hylas.
+  s: Hyginus, Fabulae 14
+tiphys | Tiphys | | hagnias | Helmsman of the Argo.
+  x: jason | helmsman of Jason's Argo
+  s: Apollonius Rhodius, Argonautica 1.105–110
+hagnias | Hagnias | | - | Father of Tiphys.
+  x: tiphys | named as his father
+  s: Apollonius Rhodius, Argonautica 1.105
+euphemus | Euphemus | | poseidon+europa_t | Argonaut who could run across the waves.
+  T: demigod
+  s: Apollonius Rhodius, Argonautica 1.179–184; Pindar, Pythian 4
+europa_t | Europa | | tityos | Daughter of Tityos; mother of Euphemus.
+  s: Apollonius Rhodius, Argonautica 1.181
+  w: Europa
+phineus_t | Phineus | Phineus | agenor | Blind Thracian seer plagued by the Harpies; he told the Argonauts how to pass the Clashing Rocks.
+  a: poseidon | Apollonius Rhodius, Argonautica 2.237
+  s: Apollonius Rhodius, Argonautica 2.178–499; Apollodorus, Bibliotheca 1.9.21
+  t: zeus | blinded and tormented by the Harpies for revealing the gods' plans
+  w: Phineus
+  r: Blind, with Harpies stealing my food, I told the heroes to send a dove through the Clashing Rocks first. ;; Phineus
+amycus | Amycus | Amycus | poseidon+melia_b | King of the Bebryces who challenged all comers to box; killed by Polydeuces.
+  T: demigod
+  s: Apollonius Rhodius, Argonautica 2.1–97; Apollodorus, Bibliotheca 1.9.20
+melia_b | Melia | | - | Bithynian nymph; mother of Amycus.
+  T: nymph
+  x: poseidon | consort of Poseidon
+  s: Apollodorus, Bibliotheca 1.9.20
+symplegades | Symplegades | | - | The Clashing Rocks at the mouth of the Black Sea, fixed in place after the Argo passed.
+  T: creature
+  R: sea
+  x: athena | Athena pushed the Argo through
+  s: Apollonius Rhodius, Argonautica 2.549–606; Homer, Odyssey 12.59–72 (Planctae)
+  w: Symplegades
+
+# ============ METAMORPHOSES & CURSES ============
+@house -
+@src Ovid, Metamorphoses
+arachne | Arachne | Arachne | idmon_c | Lydian weaver who beat Athena's tapestry and was turned into a spider.
+  x: athena | challenged Athena to a weaving contest
+  s: Ovid, Metamorphoses 6.1–145
+  t: athena | turned into a spider
+  m: Arachne challenged Athena to a weaving contest and wove the gods' crimes against mortals. Athena could find no flaw, tore up the tapestry and struck her. Arachne hanged herself, and Athena turned her into a spider to hang and weave forever.
+  r: My tapestry was flawless, so the goddess tore it up; now I hang and weave forever. ;; Arachne
+idmon_c | Idmon | | - | Dyer of Colophon; father of Arachne.
+  x: arachne | named as her father
+  s: Ovid, Metamorphoses 6.8–9
+narcissus | Narcissus | Narcissus | cephissus+liriope | Youth who scorned all lovers and wasted away loving his own reflection.
+  s: Ovid, Metamorphoses 3.339–510; Pausanias 9.31.7–8
+  t: nemesis | cursed to love someone he could never have
+  t: aphrodite | turned into the narcissus flower where he died
+  m: Tiresias told Liriope that Narcissus would live long "if he never knows himself". He rejected Echo and many others; answering a scorned lover's prayer, Nemesis made him fall in love with his reflection in a pool, and he wasted away into a flower.
+  r: The seer said I would live long if I never knew myself; a pool showed me my own face. ;; Narcissus
+midas | Midas | Midas | gordias+cybele | Phrygian king whose touch turned everything to gold; Apollo gave him donkey's ears.
+  s: Ovid, Metamorphoses 11.85–193; Herodotus 8.138; Hyginus, Fabulae 191
+  t: dionysus | granted the golden touch
+  t: apollo | given donkey's ears for preferring Pan's music
+  m: Midas asked Dionysus for the power to turn anything he touched into gold, until his food turned to gold too. He washed it away in the river Pactolus. Later he judged Pan's music better than Apollo's, and Apollo gave him donkey's ears; his barber whispered the secret into a hole, and the reeds that grew there repeated it.
+  r: Everything I touched turned to gold, even my bread; then a god gave me donkey's ears and the reeds told everyone. ;; Midas
+gordias | Gordias | | - | Peasant who became king of Phrygia; tied the Gordian knot.
+  x: midas | father of Midas
+  s: Arrian, Anabasis 2.3; Justin 11.7
+lycian_peasants | Lycian Peasants | | - | Farmers who refused Leto water and were turned into frogs.
+  t: leto | turned into frogs
+  s: Ovid, Metamorphoses 6.313–381
+galanthis | Galanthis | | - | Alcmene's servant who tricked Eileithyia into releasing Heracles' birth; turned into a weasel.
+  x: alcmene | servant of Alcmene
+  t: eileithyia | turned into a weasel
+  s: Ovid, Metamorphoses 9.273–323; Antoninus Liberalis 29
+ascalaphus | Ascalaphus | | acheron+orphne | Underworld gardener who told that Persephone had eaten the pomegranate; Demeter turned him into an owl.
+  R: under
+  T: spirit
+  s: Ovid, Metamorphoses 5.533–550; Apollodorus, Bibliotheca 1.5.3, 2.5.12
+  t: demeter | turned into a screech owl (in Apollodorus, pinned under a rock)
+  w: Ascalaphus (son of Acheron)
+orphne | Orphne | | - | Underworld nymph; mother of Ascalaphus.
+  T: nymph
+  R: under
+  x: acheron | consort of Acheron
+  s: Ovid, Metamorphoses 5.539–541
+cyane | Cyane | | potamoi | Sicilian nymph who tried to stop Hades and dissolved into her own pool in grief.
+  T: nymph
+  x: hades | she tried to block his chariot
+  s: Ovid, Metamorphoses 5.409–437
+  w: Cyane
+baucis_philemon | Baucis & Philemon | | - | Old Phrygian couple who welcomed the disguised Zeus and Hermes; they became an oak and a linden.
+  x: zeus | hosted Zeus and Hermes in disguise
+  t: zeus | turned into intertwined oak and linden trees at their deaths
+  s: Ovid, Metamorphoses 8.611–724
+  r: We were the only ones to open our door to two tired strangers; now we stand as an oak and a linden, side by side. ;; Baucis and Philemon
+pygmalion | Pygmalion | Pygmalion | - | Sculptor of Cyprus who fell in love with his ivory statue.
+  x: aphrodite | he prayed to Aphrodite for a wife like his statue
+  s: Ovid, Metamorphoses 10.243–297
+galatea_s | Galatea (statue) | | pygmalion | Pygmalion's ivory statue, brought to life by Aphrodite.
+  o: carved from ivory by Pygmalion
+  t: aphrodite | brought to life
+  s: Ovid, Metamorphoses 10.243–297; the name Galatea is post-classical
+  w: Galatea (mythology)
+paphos | Paphos | | pygmalion+galatea_s | Child of Pygmalion and his statue; the city of Paphos was named after them.
+  s: Ovid, Metamorphoses 10.297
+  w: Paphos (mythology)
+cinyras | Cinyras | Cinyras | paphos | King of Cyprus, priest of Aphrodite; father of Myrrha.
+  s: Ovid, Metamorphoses 10.298–299; Homer, Iliad 11.19–23
+  a: apollo | Pindar, Pythian 2.15–17 (as Apollo's favourite)
+myrrha | Myrrha | Myrrha / Smyrna | cinyras | Princess cursed with love for her father; she became the myrrh tree and gave birth to Adonis.
+  s: Ovid, Metamorphoses 10.298–502; Apollodorus, Bibliotheca 3.14.4
+  t: aphrodite | cursed with desire for her father
+  t: zeus | turned into the myrrh tree at her prayer
+adonis | Adonis | Adonis | cinyras+myrrha | Beautiful youth loved by Aphrodite and Persephone, killed by a boar; the anemone rose from his blood.
+  a: theias+myrrha | Apollodorus, Bibliotheca 3.14.4 (citing Panyassis)
+  s: Ovid, Metamorphoses 10.503–739; Apollodorus, Bibliotheca 3.14.4
+  t: aphrodite | turned his blood into the anemone
+  m: Adonis was born from the myrrh tree. Aphrodite hid him in a chest with Persephone, who then refused to give him back, so Zeus ruled he would spend a third of the year with each goddess and a third as he chose. A boar killed him while hunting.
+  r: Born from a tree, loved by the goddesses of love and death; a boar's tusk made me an anemone. ;; Adonis
+theias | Theias | | belus | Assyrian king; father of Adonis in Panyassis.
+  s: Apollodorus, Bibliotheca 3.14.4
+psyche | Psyche | Psyche | - | Mortal princess loved by Eros, who completed Aphrodite's tasks and was made immortal.
+  x: aphrodite | daughter-in-law and taskmaster
+  T: deity
+  R: olympus
+  x: eros | wife of Eros; her royal parents are unnamed
+  t: zeus | made immortal with a cup of ambrosia
+  s: Apuleius, Metamorphoses 4.28–6.24
+  m: Psyche's husband visited her only in the dark. When she lit a lamp to see him, a drop of oil woke Eros and he fled. To win him back she sorted seeds, gathered golden fleece, fetched water from the Styx and brought beauty from Persephone in a box.
+  r: I lit a lamp to see my husband's face; I earned him back by carrying a box of beauty up from the underworld. ;; Psyche
+voluptas | Voluptas | Voluptas | eros+psyche | Pleasure, daughter of Eros and Psyche.
+  T: deity
+  R: olympus
+  s: Apuleius, Metamorphoses 6.24
+minyas | Minyas | | poseidon | Wealthy king of Orchomenus; ancestor of the Minyans.
+  T: demigod
+  a: chryses_o | Pausanias 9.36.4
+  s: Pausanias 9.36.4; Apollonius Rhodius 1.229–233
+chryses_o | Chryses | | poseidon+chrysogeneia | Father of Minyas in Pausanias.
+  T: demigod
+  s: Pausanias 9.36.4
+  w: Minyas
+chrysogeneia | Chrysogeneia | | halmus | Daughter of Halmus.
+  s: Pausanias 9.36.1
+minyades | Minyades | Minyeides | minyas | Daughters of Minyas who kept weaving instead of joining the rites of Dionysus; turned into bats.
+  s: Ovid, Metamorphoses 4.1–415; Antoninus Liberalis 10
+  t: dionysus | turned into bats
+cycnus_p | Cycnus | Cycnus | poseidon | Invulnerable Trojan ally strangled by Achilles; Poseidon turned him into a swan.
+  T: demigod
+  R: cretetroy
+  s: Ovid, Metamorphoses 12.64–145; Apollodorus, Epitome 3.31
+  t: poseidon | turned into a swan
+  w: Cycnus of Colonae
+picus | Picus | Picus | cronus | Italian king (son of Saturn) who rejected Circe and became a woodpecker.
+  s: Ovid, Metamorphoses 14.320–434; Virgil, Aeneid 7.187–191
+  t: circe | turned into a woodpecker
+lycurgus_th | Lycurgus of Thrace | Lycurgus | dryas_t | King who attacked Dionysus and his nurses with an ox-goad and was driven mad.
+  x: dionysus | persecutor of Dionysus
+  s: Homer, Iliad 6.130–140; Apollodorus, Bibliotheca 3.5.1
+  t: dionysus | driven mad; he killed his son thinking him a vine
+dryas_t | Dryas | | - | Father of Lycurgus of Thrace.
+  x: lycurgus_th | named as his father
+  s: Homer, Iliad 6.130
+
+# ============ OTHER CREATURES ============
+@type creature
+@src Various; see each entry
+arion | Arion | Arion | poseidon+demeter | Immortal, talking horse; Adrastus escaped Thebes on him.
+  o: born after Poseidon, as a stallion, caught Demeter disguised as a mare
+  s: Pausanias 8.25.4–10; Apollodorus, Bibliotheca 3.6.8; Homer, Iliad 23.346–347
+  w: Arion (mythology)
+despoina | Despoina | | poseidon+demeter | "The Mistress", whose real name was told only to initiates at Lycosura.
+  T: deity
+  s: Pausanias 8.25.7, 8.37.9
+balius | Balius | | zephyrus+podarge | Immortal horse of Achilles.
+  s: Homer, Iliad 16.148–151
+  w: Balius and Xanthus
+xanthus_h | Xanthus | | zephyrus+podarge | Immortal horse of Achilles, given speech by Hera to foretell his death.
+  s: Homer, Iliad 16.148–151, 19.404–424
+  w: Balius and Xanthus
+laelaps | Laelaps | Laelaps | hephaestus | Hound fated to catch whatever it hunted.
+  o: forged by Hephaestus (in some accounts) and passed from Zeus to Europa, Minos, Procris and Cephalus
+  s: Ovid, Metamorphoses 7.759–793; Apollodorus, Bibliotheca 2.4.7; Pollux 5.39
+  t: zeus | turned to stone with the Fox, and both set among the stars
+  r: I always catch my prey; I was set to chase a fox that could never be caught, until the king of gods turned us both to stone. ;; Laelaps
+teumessian_fox | Teumessian Fox | | - | Fox fated never to be caught, sent to plague Thebes.
+  x: dionysus | sent by the gods, some say by Dionysus (Pausanias 9.19.1)
+  t: zeus | turned to stone together with Laelaps
+  s: Ovid, Metamorphoses 7.759–793; Antoninus Liberalis 41; Apollodorus, Bibliotheca 2.4.7
+griffins | Griffins | Grypes | - | Lion-bodied, eagle-headed guardians of gold in the far north.
+  x: apollo | sacred to Apollo
+  s: Herodotus 3.116, 4.13, 4.27; Aeschylus, Prometheus Bound 803–806
+hippocampi | Hippocampi | Hippocampi | - | Fish-tailed horses that pull Poseidon's chariot.
+  R: sea
+  x: poseidon | draw Poseidon's chariot
+  s: Homer, Iliad 13.23–30 (his horses); Pausanias 2.1.7–8
+  w: Hippocamp
+aegipan | Aegipan | Aegipan | zeus+aix | Goat-god who helped Hermes steal back Zeus's sinews from Typhon; the constellation Capricorn.
+  T: deity
+  a: pan | Hyginus, De Astronomica 2.28
+  s: Apollodorus, Bibliotheca 1.6.3; Hyginus, Fabulae 155, 196
+aix | Aix | | - | Goat-nymph; mother of Aegipan by Zeus.
+  T: nymph
+  x: zeus | consort of Zeus
+  s: Hyginus, Fabulae 155
+cedalion | Cedalion | | - | Hephaestus's servant, who rode on Orion's shoulders to guide him to the sunrise.
+  T: spirit
+  x: hephaestus | servant of Hephaestus
+  s: Apollodorus, Bibliotheca 1.4.3; Lucian, De Domo 28

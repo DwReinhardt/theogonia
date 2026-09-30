@@ -1,0 +1,536 @@
+<title>Greek Mythology Family Tree Mobile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: phone-first single column. Sticky top bar, one scrolling view, bottom tab bar. The graph becomes a pocket family tree around one figure at a time. */
+:root{
+  --bg:#EDEEE9; --surface:#F8F8F4; --surface-2:#E3E5DE; --ink:#1C2330; --ink-2:#4A5262; --line:#C9CCC2;
+  --accent:#2B4C8C; --accent-ink:#FFFFFF;
+  --r-void:#5B5F66; --r-olympus:#A67A08; --r-under:#5B2A86; --r-earth:#3B7A37; --r-cretetroy:#12807A; --r-sea:#1F5FA8;
+  --e-birth:#7A8190; --e-single:#D98300; --e-trans:#C0392B; --e-anchor:#7D8491; --e-alt:#8E6CC4;
+  --good:#2E7D4F; --bad:#B03A2E;
+  --f-display:"Marcellus","Palatino Linotype",Palatino,Georgia,serif;
+  --f-body:"Alegreya Sans","Gill Sans","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --shadow:0 8px 24px rgba(20,28,45,.18);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E131C; --surface:#151C28; --surface-2:#1D2634; --ink:#E6E8EC; --ink-2:#A3ABB9; --line:#2C3748;
+  --accent:#7FA2E8; --accent-ink:#0E131C;
+  --r-void:#9AA0A8; --r-olympus:#E0B84A; --r-under:#A57BD6; --r-earth:#72B66A; --r-cretetroy:#3FBFB5; --r-sea:#5B9BE6;
+  --e-birth:#7C8697; --e-single:#F2A93B; --e-trans:#EF6B5E; --e-anchor:#8B93A1; --e-alt:#B79AF0;
+  --good:#5CC48A; --bad:#EF6B5E; --shadow:0 8px 24px rgba(0,0,0,.5); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E131C; --surface:#151C28; --surface-2:#1D2634; --ink:#E6E8EC; --ink-2:#A3ABB9; --line:#2C3748;
+  --accent:#7FA2E8; --accent-ink:#0E131C;
+  --r-void:#9AA0A8; --r-olympus:#E0B84A; --r-under:#A57BD6; --r-earth:#72B66A; --r-cretetroy:#3FBFB5; --r-sea:#5B9BE6;
+  --e-birth:#7C8697; --e-single:#F2A93B; --e-trans:#EF6B5E; --e-anchor:#8B93A1; --e-alt:#B79AF0;
+  --good:#5CC48A; --bad:#EF6B5E; --shadow:0 8px 24px rgba(0,0,0,.5); color-scheme:dark}
+html{box-sizing:border-box;height:100%}
+*,*::before,*::after{box-sizing:inherit}
+[hidden]{display:none!important}
+body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:16px/1.5 var(--f-body);overflow:hidden;-webkit-tap-highlight-color:transparent}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.app{height:100%;display:grid;grid-template-rows:auto 1fr auto;max-width:720px;margin:0 auto;background:var(--bg)}
+/* top bar */
+.bar{display:flex;align-items:center;gap:6px;padding:8px 10px;background:var(--surface);border-bottom:1px solid var(--line);min-height:56px}
+.bar h1{flex:1;min-width:0;margin:0;font:400 19px/1.2 var(--f-display);letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center}
+.ib{width:44px;height:44px;border:0;background:none;border-radius:12px;display:grid;place-items:center;cursor:pointer;flex:none}
+.ib:active{background:var(--surface-2)}
+.ib svg{width:22px;height:22px;stroke:var(--ink);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ib:disabled{opacity:.3}
+/* scrolling view */
+.views{overflow:auto;min-height:0;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.view{padding:14px 16px 28px;display:flex;flex-direction:column;gap:14px}
+/* tab bar */
+.tabbar{display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border-top:1px solid var(--line)}
+.tabbar button{border:0;background:none;padding:8px 2px 10px;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:12px;color:var(--ink-2);cursor:pointer;min-height:56px}
+.tabbar svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.tabbar button[aria-selected="true"]{color:var(--accent);font-weight:700}
+/* trail */
+.trail{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px}
+.trail::-webkit-scrollbar{display:none}
+.trail button{flex:none;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 11px;font-size:13px;color:var(--ink-2);cursor:pointer;white-space:nowrap}
+.trail button.cur{color:var(--ink);border-color:var(--accent)}
+/* hero */
+.hero{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px 16px 14px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--rc)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 10px;font:12.5px var(--f-mono);color:var(--ink-2);align-items:center}
+.meta .rg{display:inline-flex;align-items:center;gap:6px;color:var(--ink)}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;flex:none}
+.hero h2{font:400 34px/1.08 var(--f-display);margin:8px 0 2px;text-wrap:balance;overflow-wrap:anywhere}
+.hero .roman{color:var(--ink-2);font-style:italic}
+.hero p{margin:10px 0 0}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.btn{min-height:46px;border:1px solid var(--line);background:var(--surface);border-radius:12px;padding:8px 12px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;color:var(--ink);font-weight:500;text-align:center}
+.btn:active{background:var(--surface-2)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+/* cards */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.card h3{font:500 11.5px var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin:0 0 10px;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.card p{margin:0}
+.card + .card{margin-top:0}
+.tree{width:100%;display:block;touch-action:manipulation}
+.tree text{font-family:var(--f-body)}
+.tree g[data-go]{cursor:pointer}
+.tree-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:8px;font-size:13px;color:var(--ink-2);flex-wrap:wrap}
+.switch{display:inline-flex;align-items:center;gap:8px;cursor:pointer;min-height:36px}
+.switch input{accent-color:var(--accent);width:18px;height:18px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{display:inline-flex;align-items:center;gap:7px;min-height:38px;padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:var(--bg);cursor:pointer;font-size:15px;max-width:100%}
+.chip span.t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chip:active{border-color:var(--accent)}
+.row-note{font-size:14.5px;margin:4px 0 10px;color:var(--ink-2)}
+.origin{display:flex;gap:12px;align-items:flex-start}
+.origin svg{flex:none;margin-top:9px}
+.alt{display:grid;gap:10px}
+.alt .src,.srcs{font:12.5px/1.5 var(--f-mono);color:var(--ink-2)}
+.srcs ul{margin:0;padding-left:18px}
+.riddle{font-style:italic;font-size:17px}
+.ans{font-style:normal;font-weight:700;margin-top:8px}
+.sx{font-family:"Segoe UI Symbol","DejaVu Sans","Noto Sans Symbols2",sans-serif;font-variant-emoji:text;color:var(--ink-2);font-weight:400}
+.more{border:0;background:none;color:var(--accent);padding:4px 0;cursor:pointer;font:inherit;font-size:14px}
+/* lists */
+.list{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.li{display:flex;align-items:center;gap:10px;min-height:52px;padding:8px 14px;border:0;border-bottom:1px solid var(--line);background:none;text-align:left;cursor:pointer;width:100%}
+.li:last-child{border-bottom:0}
+.li:active{background:var(--surface-2)}
+.li .nm{flex:1;min-width:0}
+.li .nm b{font-weight:500;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.li .nm small{display:block;color:var(--ink-2);font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.li .k{font:12px var(--f-mono);color:var(--ink-2);flex:none;text-align:right}
+.genhead{position:sticky;top:0;z-index:2;background:var(--bg);padding:10px 2px 6px;font:500 12px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);display:flex;justify-content:space-between}
+.filters{display:flex;flex-direction:column;gap:10px;position:sticky;top:-14px;z-index:3;background:var(--bg);padding:14px 0 8px;margin-top:-14px}
+.hscroll{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px}
+.hscroll::-webkit-scrollbar{display:none}
+.hscroll .chip{flex:none}
+.chip[aria-pressed="false"]{opacity:.45}
+.input{width:100%;min-height:46px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:16px}
+select.input{padding:8px 12px}
+/* descendants tree list */
+.desc details{margin-left:14px;border-left:1px solid var(--line);padding-left:6px}
+.desc>details{margin-left:0;border-left:0;padding-left:0}
+.desc summary{list-style:none;display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer}
+.desc summary::-webkit-details-marker{display:none}
+.desc summary .tw{width:22px;text-align:center;color:var(--ink-2);flex:none;transition:transform .15s}
+.desc details[open]>summary .tw{transform:rotate(90deg)}
+.desc .leaf{display:flex;align-items:center;gap:8px;min-height:44px;margin-left:14px;padding-left:6px;border-left:1px solid var(--line)}
+.desc .leaf .tw{width:22px;flex:none}
+.desc>.leaf{margin-left:0;border-left:0;padding-left:0}
+.namebtn{border:0;background:none;padding:6px 0;text-align:left;cursor:pointer;display:inline-flex;align-items:center;gap:7px;min-width:0}
+.namebtn span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cnt{font:12px var(--f-mono);color:var(--ink-2)}
+/* chain */
+.chain{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.chain li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start}
+.chain .rail{display:flex;flex-direction:column;align-items:center;align-self:stretch}
+.chain .rail i{width:12px;height:12px;border-radius:50%;border:2px solid var(--accent);background:var(--surface);margin-top:14px;flex:none}
+.chain .rail b{flex:1;width:2px;background:var(--line)}
+.chain li:last-child .rail b{display:none}
+.chain .rel{font-size:13px;color:var(--ink-2);margin-top:-4px;padding-bottom:6px}
+/* sheets */
+.sheet{position:fixed;inset:0;z-index:40;background:var(--bg);display:flex;flex-direction:column;max-width:720px;margin:0 auto;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.sheet .bar{border-bottom:1px solid var(--line)}
+.sheet .bar input{flex:1;min-width:0;border:0;background:var(--bg);border-radius:10px;padding:10px 12px;font-size:17px;min-height:44px}
+.sheet .body{overflow:auto;padding:12px 16px 24px;display:flex;flex-direction:column;gap:12px;flex:1;min-height:0}
+/* quiz */
+.qk{font:12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.qq{font:400 23px/1.3 var(--f-display);margin:8px 0 14px;text-wrap:balance}
+.opts{display:grid;gap:9px}
+.opt{min-height:52px;padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);text-align:left;cursor:pointer}
+.opt.right{border-color:var(--good);box-shadow:inset 5px 0 0 var(--good)}
+.opt.wrong{border-color:var(--bad);box-shadow:inset 5px 0 0 var(--bad)}
+.score{font:13px var(--f-mono);color:var(--ink-2);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.stat{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.stat b{display:block;font:500 22px var(--f-mono);font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--ink-2)}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font:12px var(--f-mono);border:1px solid var(--good);color:var(--good);margin:2px 4px 2px 0}
+.pill.bad{border-color:var(--bad);color:var(--bad)}
+.legend{display:grid;gap:10px;font-size:14.5px}
+.legend div{display:flex;gap:12px;align-items:center}
+.legend svg{flex:none}
+.work summary{list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:center;min-height:48px;cursor:pointer;padding:4px 0;border-bottom:1px solid var(--line)}
+.work summary::-webkit-details-marker{display:none}
+.work summary b{font:400 17px var(--f-display)}
+.work .chips{padding:10px 0}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-size:14px;z-index:60;box-shadow:var(--shadow);max-width:calc(100% - 32px)}
+@media (min-width:721px){ body{background:var(--surface-2)} .app{border-left:1px solid var(--line);border-right:1px solid var(--line)} }
+@media (prefers-reduced-motion: reduce){ *{transition:none!important;scroll-behavior:auto!important} }
+</style>
+
+<div class="app">
+  <header class="bar">
+    <button class="ib" id="backBtn" aria-label="Back" disabled><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <h1 id="barTitle">Greek Mythology</h1>
+    <button class="ib" id="searchBtn" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+  </header>
+  <main class="views" id="views">
+    <section class="view" id="v-explore"></section>
+    <section class="view" id="v-browse" hidden></section>
+    <section class="view" id="v-quiz" hidden></section>
+    <section class="view" id="v-more" hidden></section>
+  </main>
+  <nav class="tabbar" role="tablist" aria-label="Sections">
+    <button role="tab" data-tab="explore" aria-selected="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.4"/><circle cx="6" cy="18" r="2.4"/><circle cx="18" cy="18" r="2.4"/><path d="M12 7.4v4.6M6 15.6V13h12v2.6"/></svg>Family</button>
+    <button role="tab" data-tab="browse" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Browse</button>
+    <button role="tab" data-tab="quiz" aria-selected="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6M12 17h.01"/></svg>Quiz</button>
+    <button role="tab" data-tab="more" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5z"/><path d="M9 10h6M9 14h6"/></svg>Sources</button>
+  </nav>
+</div>
+
+<div class="sheet" id="searchSheet" hidden role="dialog" aria-label="Search">
+  <div class="bar"><button class="ib" id="searchClose" aria-label="Close search"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button><input id="sq" type="search" placeholder="Greek or Roman name" autocomplete="off" aria-label="Search names"></div>
+  <div class="body" id="sres"></div>
+</div>
+<div class="sheet" id="panel" hidden role="dialog">
+  <div class="bar"><button class="ib" id="panelClose" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button><h1 id="panelTitle"></h1><span style="width:44px"></span></div>
+  <div class="body" id="panelBody"></div>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const DATA = /*__DATA__*/[];
+(function(){
+"use strict";
+const E=new Map(DATA.map(e=>[e.id,e]));
+const REGIONS=[["void","Primordial Void"],["olympus","Olympus & Heavens"],["under","Underworld"],["sea","Oceans & Rivers"],["earth","Mortal Earth"],["cretetroy","Crete & Troy"]];
+const REGION_NAME=Object.fromEntries(REGIONS);
+const TYPES=[["primordial","Primordials"],["titan","Titans"],["olympian","Olympians"],["deity","Other gods"],["spirit","Spirits"],["nymph","Nymphs"],["demigod","Demigods"],["mortal","Mortals"],["giant","Giants"],["monster","Monsters"],["creature","Creatures"]];
+const TYPE_ONE={primordial:"Primordial",titan:"Titan",olympian:"Olympian",deity:"God",spirit:"Spirit",nymph:"Nymph",demigod:"Demigod",mortal:"Mortal",giant:"Giant",monster:"Monster",creature:"Creature"};
+const SEX={m:"\u2642\uFE0E",f:"\u2640\uFE0E",x:"\u26A5\uFE0E"};
+const SEX_NAME={m:"Male",f:"Female",x:"Both, neither or changed"};
+const SEXES=[["m","\u2642\uFE0E Male"],["f","\u2640\uFE0E Female"],["x","\u26A5\uFE0E Both / other"]];
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const store={get(k,d){try{const v=localStorage.getItem("theogonia-m:"+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem("theogonia-m:"+k,JSON.stringify(v))}catch(e){}}};
+
+// ---------- relations ----------
+const transformed=new Map(), anchoredTo=new Map(), members=new Map(), partners=new Map();
+for(const e of DATA){
+  for(const t of e.trans||[]){ if(!transformed.has(t.id)) transformed.set(t.id,[]); transformed.get(t.id).push(e.id); }
+  for(const a of e.anchor||[]){ if(!anchoredTo.has(a.id)) anchoredTo.set(a.id,[]); anchoredTo.get(a.id).push(e.id); }
+  if(e.grp){ if(!members.has(e.grp)) members.set(e.grp,[]); members.get(e.grp).push(e.id); }
+  if(e.parents.length===2){ const [a,b]=e.parents; for(const [x,y] of [[a,b],[b,a]]){ if(!partners.has(x)) partners.set(x,new Set()); partners.get(x).add(y);} }
+}
+const siblingsOf=e=>{ if(!e.parents.length) return []; const s=new Set(); for(const p of e.parents) for(const k of E.get(p).kids) if(k!==e.id) s.add(k); return [...s]; };
+const houses=[...new Set(DATA.map(e=>e.house).filter(Boolean))].sort();
+
+// ---------- colors ----------
+let C={};
+function readColors(){ const cs=getComputedStyle(document.documentElement); const g=n=>cs.getPropertyValue(n).trim();
+  C={bg:g("--bg"),surface:g("--surface"),s2:g("--surface-2"),ink:g("--ink"),ink2:g("--ink-2"),line:g("--line"),accent:g("--accent"),
+     birth:g("--e-birth"),single:g("--e-single"),trans:g("--e-trans"),anchor:g("--e-anchor"),alt:g("--e-alt"),r:{}};
+  for(const [k] of REGIONS) C.r[k]=g("--r-"+k); }
+function hex(h){h=h.replace("#","");if(h.length===3)h=h.split("").map(c=>c+c).join("");return [0,2,4].map(i=>parseInt(h.substr(i,2),16))}
+function mix(a,b,t){const A=hex(a),B=hex(b);return "#"+A.map((v,i)=>Math.round(v*(1-t)+B[i]*t).toString(16).padStart(2,"0")).join("")}
+const dot=id=>`<span class="dot" style="background:${C.r[E.get(id).region]}"></span>`;
+const chipBtn=(id,extra="")=>{const e=E.get(id);return `<button class="chip" data-go="${id}">${dot(id)}<span class="t"><span class="sx">${SEX[e.sex]}</span> ${esc(e.name)}</span>${extra}</button>`};
+const wikiURL=e=>"https://en.wikipedia.org/wiki/Special:Search?go=Go&search="+encodeURIComponent(e.wiki||e.name);
+function lineSVG(kind,w=30){ const col={union:C.birth,birth:C.birth,single:C.single,transform:C.trans,trans:C.trans,anchor:C.anchor,alt:C.alt,primordial:C.ink2}[kind];
+  const dash={union:"",birth:"",single:"2 5",transform:"8 5",trans:"8 5",anchor:"3 3",alt:"6 6",primordial:""}[kind];
+  return `<svg width="${w}" height="8" aria-hidden="true"><line x1="0" y1="4" x2="${w}" y2="4" stroke="${col}" stroke-width="2.6" stroke-dasharray="${dash}" stroke-linecap="round"/></svg>`; }
+function toast(t){ const el=$("#toast"); el.textContent=t; el.hidden=false; clearTimeout(toast._t); toast._t=setTimeout(()=>el.hidden=true,2200); }
+
+// ---------- state & navigation ----------
+let tab="explore", cur=null, showAlt=false;
+let trail=store.get("trail",[]).filter(i=>E.has(i));
+function go(id,{push=true}={}){
+  if(!E.has(id)) return;
+  cur=id; store.set("last",id);
+  trail=trail.filter(x=>x!==id); trail.push(id); if(trail.length>12) trail=trail.slice(-12); store.set("trail",trail);
+  if(push){ try{ if(location.hash.slice(1)!==id) history.pushState({id},"","#"+id); }catch(e){} }
+  closeSheets(); setTab("explore"); renderExplore(); $("#views").scrollTop=0;
+}
+window.addEventListener("popstate",()=>{ const h=location.hash.slice(1); if(!$("#panel").hidden||!$("#searchSheet").hidden){ closeSheets(); } if(E.has(h)&&h!==cur){ cur=h; setTab("explore"); renderExplore(); $("#views").scrollTop=0; } });
+$("#backBtn").onclick=()=>{ if(!$("#panel").hidden){closeSheets();return} history.back(); };
+document.addEventListener("click",ev=>{ const b=ev.target.closest("[data-go]"); if(!b) return; ev.preventDefault(); go(b.dataset.go); });
+
+function setTab(t){
+  tab=t; document.querySelectorAll(".tabbar button").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===t));
+  for(const v of ["explore","browse","quiz","more"]) $("#v-"+v).hidden=v!==t;
+  $("#barTitle").textContent=t==="explore"?(cur?E.get(cur).name:"Greek Mythology"):t==="browse"?"Browse all":t==="quiz"?"Quiz":"Sources & data";
+  $("#backBtn").disabled=!(t==="explore"&&history.length>1&&trail.length>1);
+}
+document.querySelector(".tabbar").addEventListener("click",ev=>{ const b=ev.target.closest("button"); if(!b) return; const t=b.dataset.tab;
+  setTab(t); $("#views").scrollTop=0; if(t==="browse") renderBrowse(); if(t==="quiz") renderQuiz(); if(t==="more") renderMore(); if(t==="explore") renderExplore(); });
+
+// ---------- pocket family tree (SVG) ----------
+function familySVG(e,W){
+  const top=[]; // {id,kind}
+  for(const p of e.parents) top.push({id:p,kind:e.parents.length===1?"single":"birth"});
+  if(!e.parents.length) for(const a of e.anchor||[]) top.push({id:a.id,kind:"anchor"});
+  for(const t of (e.trans||[]).slice(0,2)) top.push({id:t.id,kind:"trans"});
+  if(showAlt) for(const a of e.alt||[]) for(const p of a.parents) if(!top.some(x=>x.id===p)) top.push({id:p,kind:"alt"});
+  const rank=k=>{const n=E.get(k);return n.type==="olympian"?0:n.myth?1:n.notable?2:3};
+  const kids=e.kids.slice().sort((a,b)=>rank(a)-rank(b));
+  const cols=W<340?2:3, maxKids=cols*3;
+  const shown=kids.slice(0, kids.length>maxKids?maxKids-1:maxKids);
+  const extra=kids.length-shown.length;
+  const gap=8, nh=42;
+  const topCols=Math.min(Math.max(top.length,1),cols+ (W>=400?1:0));
+  const rowsTop=Math.ceil(top.length/topCols)||0;
+  const tw=(W-gap*(topCols+1))/topCols, cw=(W-gap*(cols+1))/cols;
+  const yTop=6, yFocus=yTop+(rowsTop?rowsTop*(nh+gap)+34:0), fh=52, yKids=yFocus+fh+40;
+  const kidCount=shown.length+(extra?1:0), rowsK=Math.ceil(kidCount/cols);
+  const H=(kidCount?yKids+rowsK*(nh+gap):yFocus+fh+6)+2;
+  const fw=Math.min(W-40,260), fx=(W-fw)/2;
+  const charW=7.1, trunc=(s,w)=>{const n=Math.floor((w-24)/charW);return s.length>n?s.slice(0,Math.max(3,n-1))+"…":s};
+  let edges="", nodes="";
+  const node=(id,x,y,w,h,opts={})=>{ const n=E.get(id), rc=C.r[n.region];
+    const fill=mix(C.surface,rc,opts.focus?.28:.16);
+    return `<g ${opts.focus?"":`data-go="${id}" role="link" tabindex="0" aria-label="${esc(n.name)}"`}>
+      <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${opts.focus?12:9}" fill="${fill}" stroke="${rc}" stroke-width="${opts.focus?2.5:1.4}" ${members.has(id)?'stroke-dasharray="5 3"':""}/>
+      <text x="${x+w/2}" y="${y+h/2+ (opts.focus?6:5)}" text-anchor="middle" font-size="${opts.focus?19:14}" fill="${C.ink}" ${opts.focus?'style="font-family:Marcellus,Georgia,serif"':""}>${SEX[n.sex]} ${esc(trunc(n.name,w-16))}</text></g>`; };
+  const style=k=>({birth:`stroke="${C.birth}" stroke-width="1.8"`,single:`stroke="${C.single}" stroke-width="2.4" stroke-dasharray="2 5" stroke-linecap="round"`,
+    trans:`stroke="${C.trans}" stroke-width="2" stroke-dasharray="8 5"`,anchor:`stroke="${C.anchor}" stroke-width="1.6" stroke-dasharray="3 3"`,alt:`stroke="${C.alt}" stroke-width="1.6" stroke-dasharray="6 6"`})[k];
+  top.forEach((t,i)=>{ const r=Math.floor(i/topCols), c=i%topCols, inRow=Math.min(topCols,top.length-r*topCols);
+    const off=(W-(inRow*tw+(inRow-1)*gap))/2; const x=off+c*(tw+gap), y=yTop+r*(nh+gap);
+    const sx=x+tw/2, sy=y+nh, ex=W/2+(t.kind==="birth"||t.kind==="single"?(i===0?-18:18)*(e.parents.length>1?1:0):0), ey=yFocus;
+    edges+=`<path d="M${sx} ${sy} C ${sx} ${sy+28}, ${ex} ${ey-30}, ${ex} ${ey}" fill="none" ${style(t.kind)}/>`;
+    nodes+=node(t.id,x,y,tw,nh); });
+  nodes+=node(e.id,fx,yFocus,fw,fh,{focus:true});
+  if(kidCount){ const busY=yFocus+fh+20;
+    const kidPos=[]; for(let i=0;i<kidCount;i++){ const r=Math.floor(i/cols), c=i%cols, inRow=Math.min(cols,kidCount-r*cols);
+      const off=(W-(inRow*cw+(inRow-1)*gap))/2; kidPos.push([off+c*(cw+gap), yKids+r*(nh+gap)]); }
+    const firstRow=kidPos.filter(p=>p[1]===yKids); const minX=Math.min(...firstRow.map(p=>p[0]+cw/2)), maxX=Math.max(...firstRow.map(p=>p[0]+cw/2));
+    edges+=`<path d="M${W/2} ${yFocus+fh} V ${busY} M ${Math.min(minX,W/2)} ${busY} H ${Math.max(maxX,W/2)}" fill="none" stroke="${C.birth}" stroke-width="1.8"/>`;
+    kidPos.forEach(([x,y],i)=>{ if(y===yKids) edges+=`<path d="M${x+cw/2} ${busY} V ${y}" fill="none" stroke="${C.birth}" stroke-width="1.8"/>`;
+      if(i<shown.length) nodes+=node(shown[i],x,y,cw,nh);
+      else nodes+=`<g data-more="kids" role="button" tabindex="0"><rect x="${x}" y="${y}" width="${cw}" height="${nh}" rx="9" fill="${C.bg}" stroke="${C.line}"/><text x="${x+cw/2}" y="${y+nh/2+5}" text-anchor="middle" font-size="14" fill="${C.accent}">+${extra} more</text></g>`; });
+  }
+  return `<svg class="tree" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Family of ${esc(e.name)}">${edges}${nodes}</svg>`;
+}
+
+// ---------- explore view ----------
+function originText(e){
+  const P=e.parents.map(p=>E.get(p).name);
+  switch(e.origin_kind){
+    case "primordial": return "Primordial: came into being with no parents.";
+    case "union": return "Born of "+P.join(" and ")+".";
+    case "single": return (e.origin?e.origin.charAt(0).toUpperCase()+e.origin.slice(1)+". ":"")+"One mapped parent: "+P[0]+(e.origin?"":" (the other parent is not named in the sources used)")+".";
+    case "transform": return "No recorded birth; this figure comes from a transformation or curse.";
+    default: return "Parentage not recorded in the main sources. Linked here through "+(e.anchor||[]).map(a=>E.get(a.id).name).join(", ")+".";
+  }
+}
+function section(title,inner,right=""){ return `<div class="card"><h3><span>${title}</span>${right}</h3>${inner}</div>`; }
+const chipList=(ids,limit=40)=>{ if(ids.length<=limit) return `<div class="chips">${ids.map(i=>chipBtn(i)).join("")}</div>`;
+  return `<div class="chips">${ids.slice(0,limit).map(i=>chipBtn(i)).join("")}<button class="chip" data-expand="${esc(ids.join(","))}">+${ids.length-limit} more</button></div>`; };
+function renderExplore(){
+  const e=E.get(cur); const el=$("#v-explore");
+  if(!e){ el.innerHTML=""; return; }
+  $("#barTitle").textContent=e.name;
+  $("#backBtn").disabled=trail.length<2;
+  const W=Math.min(el.clientWidth||360, 688)-32-32;
+  const kids=e.kids, sibs=siblingsOf(e), parts=[...(partners.get(e.id)||[])], mem=members.get(e.id)||[], tr=transformed.get(e.id)||[], anc=anchoredTo.get(e.id)||[];
+  const srcs=(e.src||"").split(";").map(s=>s.trim()).filter(Boolean);
+  let h=trail.length<2?"":`<div class="trail" aria-label="Recently viewed">${trail.slice().reverse().map(i=>`<button class="${i===cur?"cur":""}" data-go="${i}">${esc(E.get(i).name)}</button>`).join("")}</div>`;
+  h+=`<div class="hero" style="--rc:${C.r[e.region]}">
+    <div class="meta"><span class="rg">${dot(e.id)}${esc(REGION_NAME[e.region])}</span><span>${esc(TYPE_ONE[e.type])}</span><span>${SEX[e.sex]} ${SEX_NAME[e.sex]}</span><span>Gen ${e.gen}</span>${e.house?`<span>${esc(e.house)}</span>`:""}</div>
+    <h2>${esc(e.name)}</h2>${e.roman?`<div class="roman">Roman: ${esc(e.roman)}</div>`:""}
+    <p>${esc(e.desc)}</p>
+  </div>
+  ${section("Family",familySVG(e,W)+`<div class="tree-foot">${e.alt&&e.alt.length?`<label class="switch"><input type="checkbox" id="altT" ${showAlt?"checked":""}> Show variant parents (${e.alt.length})</label>`:"<span></span>"}<span>Tap anyone to go to them</span></div>`)}
+  <div class="actions">
+    <button class="btn" data-panel="anc"><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg>Ancestry</button>
+    <button class="btn" data-panel="desc"${kids.length?"":" disabled style='opacity:.45'"}><svg viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg>Descendants</button>
+    <button class="btn" data-panel="path"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8 8l8 8"/></svg>Connect to…</button>
+    <a class="btn" href="${wikiURL(e)}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg>Wikipedia</a>
+  </div>
+  ${section("Origin",`<div class="origin">${lineSVG(e.origin_kind)}<p>${esc(originText(e))}</p></div>`)}`;
+  if(e.trans&&e.trans.length) h+=section("Transformed or cursed by",e.trans.map(t=>`<div style="margin-bottom:10px">${chipBtn(t.id)}<p class="row-note" style="margin:6px 0 0">${esc(t.note)}</p></div>`).join(""));
+  if(e.myth) h+=section("Myth",`<p>${esc(e.myth)}</p>`);
+  if(e.riddles) h+=e.riddles.map((r,k)=>section("Riddle",`<p class="riddle">${esc(r.q)}</p><button class="btn" style="margin-top:12px;width:100%" data-reveal="${k}">Reveal answer</button><p class="ans" id="ans${k}" hidden>${esc(r.a)}</p>`)).join("");
+  if(e.alt&&e.alt.length) h+=section("Other versions of the parentage",`<div class="alt">${e.alt.map(a=>`<div><div class="chips">${a.parents.map(p=>chipBtn(p)).join("")}${(a.names||[]).map(n=>`<span class="chip">${esc(n)}</span>`).join("")}</div><div class="src" style="margin-top:4px">${esc(a.src)}</div></div>`).join("")}</div>`);
+  if(parts.length) h+=section(`Partners (${parts.length})`,chipList(parts));
+  if(kids.length) h+=section(`Children (${kids.length})`,chipList(kids),"",);
+  if(sibs.length) h+=section(`Siblings (${sibs.length})`,chipList(sibs,24));
+  if(mem.length) h+=section(`Named members (${mem.length})`,chipList(mem));
+  if(e.grp) h+=section("Member of",chipList([e.grp]));
+  if(tr.length) h+=section(`Transformed or cursed others (${tr.length})`,chipList(tr));
+  if(e.anchor&&e.anchor.length&&e.parents.length) h+=section("Also linked to",e.anchor.map(a=>`<div style="margin-bottom:8px">${chipBtn(a.id)}<p class="row-note" style="margin:6px 0 0">${esc(a.note)}</p></div>`).join(""));
+  if(anc.length) h+=section(`Linked from (${anc.length})`,chipList(anc));
+  h+=section("Sources",`<div class="srcs"><ul>${srcs.map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>`);
+  h+=`<button class="btn" id="randBtn"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="9" r="1"/><circle cx="15" cy="15" r="1"/><circle cx="15" cy="9" r="1"/><circle cx="9" cy="15" r="1"/></svg>Take me somewhere random</button>`;
+  el.innerHTML=h;
+  const t=el.querySelector(".trail .cur"); if(t) t.scrollIntoView({inline:"center",block:"nearest"});
+}
+$("#v-explore").addEventListener("click",ev=>{
+  const r=ev.target.closest("[data-reveal]"); if(r){ $("#ans"+r.dataset.reveal).hidden=false; r.hidden=true; return; }
+  const x=ev.target.closest("[data-expand]"); if(x){ const ids=x.dataset.expand.split(","); x.parentElement.outerHTML=chipList(ids,9999); return; }
+  const m=ev.target.closest("[data-more]"); if(m){ const k=[...document.querySelectorAll("#v-explore .card h3 span")].find(s=>s.textContent.startsWith("Children")); if(k) k.closest(".card").scrollIntoView({behavior:"smooth",block:"start"}); return; }
+  const p=ev.target.closest("[data-panel]"); if(p&&!p.disabled){ openPanel(p.dataset.panel); return; }
+  if(ev.target.closest("#randBtn")){ const pool=DATA.filter(e=>e.notable); go(pool[Math.floor(Math.random()*pool.length)].id); }
+});
+$("#v-explore").addEventListener("change",ev=>{ if(ev.target.id==="altT"){ showAlt=ev.target.checked; renderExplore(); } });
+$("#v-explore").addEventListener("keydown",ev=>{ if(ev.key==="Enter"){ const g=ev.target.closest("g[data-go]"); if(g) go(g.dataset.go); } });
+
+// ---------- panels: ancestry, descendants, connect ----------
+function listRow(id,sub){ const e=E.get(id); return `<button class="li" data-go="${id}">${dot(id)}<span class="nm"><b><span class="sx">${SEX[e.sex]}</span> ${esc(e.name)}</b>${sub?`<small>${esc(sub)}</small>`:e.roman?`<small>${esc(e.roman)}</small>`:""}</span><span class="k">${esc(TYPE_ONE[e.type])}<br>G${e.gen}</span></button>`; }
+function openPanel(kind){
+  const e=E.get(cur); const body=$("#panelBody"); $("#panel").hidden=false; body.scrollTop=0;
+  try{ history.pushState({panel:kind,id:cur},"","#"+cur); }catch(err){}
+  if(kind==="anc"){
+    $("#panelTitle").textContent="Ancestry of "+e.name;
+    const seen=new Map(); const q=[[e.id,0]];
+    while(q.length){ const [n,d]=q.shift(); for(const p of E.get(n).parents) if(!seen.has(p)){ seen.set(p,d+1); q.push([p,d+1]); } }
+    if(!seen.size){ body.innerHTML=`<div class="card"><p>${esc(originText(e))}</p></div>`; return; }
+    const byGen=new Map(); for(const [id] of seen){ const g=E.get(id).gen; if(!byGen.has(g)) byGen.set(g,[]); byGen.get(g).push(id); }
+    const gens=[...byGen.keys()].sort((a,b)=>a-b);
+    body.innerHTML=`<p class="row-note">${seen.size} ancestors through recorded parent links, from the oldest generation down to ${esc(e.name)}'s parents.</p>`+
+      gens.map(g=>`<div><div class="genhead"><span>Gen ${g}</span><span>${byGen.get(g).length}</span></div><div class="list">${byGen.get(g).sort((a,b)=>seen.get(a)-seen.get(b)).map(id=>listRow(id,seen.get(id)===1?"Parent":seen.get(id)===2?"Grandparent":`${seen.get(id)} generations up`)).join("")}</div></div>`).join("");
+  }
+  if(kind==="desc"){
+    $("#panelTitle").textContent="Descendants of "+e.name;
+    let total=0; const all=new Set(); const st=[...e.kids]; while(st.length){const n=st.pop(); if(all.has(n)) continue; all.add(n); st.push(...E.get(n).kids);} total=all.size;
+    body.innerHTML=`<p class="row-note">${total} descendants. Tap ▸ to open a branch, or a name to go there.</p><div class="card desc">${e.kids.map(k=>descNode(k)).join("")}</div>`;
+  }
+  if(kind==="path"){
+    $("#panelTitle").textContent="Connect "+e.name+" to…";
+    body.innerHTML=`<input class="input" id="pq" type="search" placeholder="Type another name" autocomplete="off" aria-label="Find connection to"><div id="presults"></div>`;
+    setTimeout(()=>$("#pq").focus(),50);
+  }
+}
+function descNode(id){ const e=E.get(id);
+  const nameBtn=`<button class="namebtn" data-go="${id}">${dot(id)}<span><span class="sx">${SEX[e.sex]}</span> ${esc(e.name)}</span></button>`;
+  if(!e.kids.length) return `<div class="leaf"><span class="tw"></span>${nameBtn}</div>`;
+  return `<details data-id="${id}"><summary><span class="tw">▸</span>${nameBtn}<span class="cnt">${e.kids.length}</span></summary></details>`; }
+$("#panelBody").addEventListener("toggle",ev=>{ const d=ev.target; if(d.tagName==="DETAILS"&&d.open&&!d.dataset.filled){ d.dataset.filled=1; d.insertAdjacentHTML("beforeend",E.get(d.dataset.id).kids.map(descNode).join("")); } },true);
+$("#panelBody").addEventListener("click",ev=>{ if(ev.target.closest(".namebtn")&&ev.target.closest("summary")) ev.preventDefault(); });
+function search(v,limit=30){ v=v.trim().toLowerCase(); if(!v) return [];
+  return DATA.filter(e=>(e.name+" "+(e.roman||"")).toLowerCase().includes(v))
+    .sort((a,b)=>(a.name.toLowerCase().startsWith(v)?0:1)-(b.name.toLowerCase().startsWith(v)?0:1)||(b.notable-a.notable)||a.name.localeCompare(b.name)).slice(0,limit); }
+$("#panelBody").addEventListener("input",ev=>{ if(ev.target.id!=="pq") return;
+  const hits=search(ev.target.value,20); $("#presults").innerHTML=hits.length?`<div class="list" style="margin-top:10px">${hits.map(h=>`<button class="li" data-path="${h.id}">${dot(h.id)}<span class="nm"><b>${esc(h.name)}</b>${h.roman?`<small>${esc(h.roman)}</small>`:""}</span><span class="k">${esc(TYPE_ONE[h.type])}</span></button>`).join("")}</div>`:(ev.target.value?`<p class="row-note">No match.</p>`:""); });
+$("#panelBody").addEventListener("click",ev=>{ const b=ev.target.closest("[data-path]"); if(!b) return; ev.stopPropagation(); showPath(cur,b.dataset.path); },true);
+function showPath(src,dst){
+  const adj=new Map(); const add=(a,b,how)=>{ if(!adj.has(a)) adj.set(a,[]); adj.get(a).push([b,how]); };
+  for(const e of DATA){ for(const p of e.parents){add(p,e.id,"is a parent of");add(e.id,p,"is a child of")}
+    for(const t of e.trans||[]){add(t.id,e.id,"transformed or cursed");add(e.id,t.id,"was transformed or cursed by")}
+    for(const a of e.anchor||[]){add(a.id,e.id,"is linked to");add(e.id,a.id,"is linked to")} }
+  const prev=new Map([[src,null]]); const q=[src];
+  while(q.length){ const n=q.shift(); if(n===dst) break; for(const [m,how] of adj.get(n)||[]) if(!prev.has(m)){prev.set(m,[n,how]);q.push(m)} }
+  const out=$("#presults");
+  if(!prev.has(dst)){ out.innerHTML=`<p class="row-note">No connection found.</p>`; return; }
+  const chain=[]; let c=dst; while(c){ const p=prev.get(c); chain.unshift([c,p?p[1]:null]); c=p?p[0]:null; }
+  $("#pq").value=E.get(dst).name;
+  out.innerHTML=`<p class="row-note" style="margin-top:12px">${chain.length-1} step${chain.length===2?"":"s"} from ${esc(E.get(src).name)} to ${esc(E.get(dst).name)}:</p>
+  <div class="card"><ol class="chain">${chain.map(([id,how],k)=>`<li><span class="rail"><i></i><b></b></span><div>${k?`<div class="rel" style="margin-top:6px">${esc(E.get(chain[k-1][0]).name)} ${esc(how)}</div>`:""}${chipBtn(id)}</div></li>`).join("")}</ol></div>`;
+}
+function closeSheets(){ $("#panel").hidden=true; $("#searchSheet").hidden=true; }
+$("#panelClose").onclick=()=>history.back();
+
+// ---------- search sheet ----------
+function renderSearch(){ const v=$("#sq").value; const out=$("#sres");
+  if(!v.trim()){ const recent=trail.slice().reverse();
+    out.innerHTML=(recent.length?`<div class="genhead"><span>Recently viewed</span></div><div class="list">${recent.map(i=>listRow(i)).join("")}</div>`:"")+
+      `<div class="genhead"><span>Start with</span></div><div class="chips">${["chaos","gaia","cronus","zeus","hera","poseidon","hades","athena","apollo","aphrodite","heracles","perseus","medusa","achilles","odysseus","helen","oedipus","typhon","cerberus","prometheus"].filter(i=>E.has(i)).map(i=>chipBtn(i)).join("")}</div>`; return; }
+  const hits=search(v,40);
+  out.innerHTML=hits.length?`<div class="list">${hits.map(h=>listRow(h.id)).join("")}</div>`:`<p class="row-note">No one by that name. Try the Greek or Roman spelling.</p>`; }
+$("#searchBtn").onclick=()=>{ $("#searchSheet").hidden=false; $("#sq").value=""; renderSearch(); try{history.pushState({search:1,id:cur},"","#"+(cur||""))}catch(e){} setTimeout(()=>$("#sq").focus(),30); };
+$("#searchClose").onclick=()=>history.back();
+$("#sq").addEventListener("input",renderSearch);
+$("#sq").addEventListener("keydown",ev=>{ if(ev.key==="Enter"){ const f=$("#sres [data-go]"); if(f) go(f.dataset.go,{push:true}); } });
+
+// ---------- browse ----------
+const B={sexes:new Set(store.get("sexes",["m","f","x"])),q:"",regions:new Set(store.get("regions",REGIONS.map(r=>r[0]))),types:new Set(store.get("types",TYPES.map(t=>t[0]))),house:"",members:false};
+function renderBrowse(){
+  const el=$("#v-browse");
+  if(!el.dataset.built){ el.dataset.built=1;
+    el.innerHTML=`<div class="filters"><input class="input" id="bq" type="search" placeholder="Filter by name" aria-label="Filter by name">
+      <div class="hscroll" id="bReg"></div><div class="hscroll" id="bTyp"></div><div class="hscroll" id="bSex"></div>
+      <div style="display:flex;gap:8px;align-items:center"><select class="input" id="bHouse" aria-label="Royal house" style="flex:1;min-width:0"><option value="">All houses and gods</option>${houses.map(h=>`<option>${esc(h)}</option>`).join("")}</select>
+      <label class="switch" style="flex:none;font-size:14px"><input type="checkbox" id="bMem"> Group members</label></div>
+      <div class="row-note" id="bCount" style="margin:0"></div></div><div id="bList"></div>`;
+    el.addEventListener("input",ev=>{ if(ev.target.id==="bq"){B.q=ev.target.value;drawList()} });
+    el.addEventListener("change",ev=>{ if(ev.target.id==="bHouse"){B.house=ev.target.value;drawList()} if(ev.target.id==="bMem"){B.members=ev.target.checked;drawList()} });
+    el.addEventListener("click",ev=>{ const c=ev.target.closest(".chip[data-f]"); if(!c) return; const F={r:[B.regions,REGIONS,"regions"],t:[B.types,TYPES,"types"],s:[B.sexes,SEXES,"sexes"]}[c.dataset.f]; const set=F[0], all=F[1]; const v=c.dataset.v;
+      if(set.has(v)&&set.size===all.length){ set.clear(); set.add(v); } else if(set.has(v)) set.delete(v); else set.add(v);
+      if(!set.size) all.forEach(x=>set.add(x[0]));
+      store.set(F[2],[...set]); drawChips(); drawList(); });
+  }
+  drawChips(); drawList();
+}
+function drawChips(){
+  $("#bReg").innerHTML=REGIONS.map(([k,n])=>`<button class="chip" data-f="r" data-v="${k}" aria-pressed="${B.regions.has(k)}"><span class="dot" style="background:${C.r[k]}"></span>${esc(n)}</button>`).join("");
+  $("#bSex").innerHTML=SEXES.map(([k,n])=>`<button class="chip" data-f="s" data-v="${k}" aria-pressed="${B.sexes.has(k)}">${n}</button>`).join("");
+  $("#bTyp").innerHTML=TYPES.map(([k,n])=>`<button class="chip" data-f="t" data-v="${k}" aria-pressed="${B.types.has(k)}">${esc(n)}</button>`).join("");
+}
+function drawList(){
+  const v=B.q.trim().toLowerCase();
+  const rows=DATA.filter(e=>B.regions.has(e.region)&&B.types.has(e.type)&&B.sexes.has(e.sex)&&(!B.house||e.house===B.house)&&(B.members||v||!e.grp||e.notable)&&(!v||(e.name+" "+(e.roman||"")).toLowerCase().includes(v)));
+  const byGen=new Map(); for(const e of rows){ if(!byGen.has(e.gen)) byGen.set(e.gen,[]); byGen.get(e.gen).push(e); }
+  $("#bCount").textContent=`${rows.length.toLocaleString()} of ${DATA.length.toLocaleString()}. Tap a chip to show only that; tap more to add them back.`;
+  $("#bList").innerHTML=[...byGen.keys()].sort((a,b)=>a-b).map(g=>`<div class="genhead"><span>Generation ${g}${g===0?" · Primordial":""}</span><span>${byGen.get(g).length}</span></div><div class="list">${byGen.get(g).sort((a,b)=>a.name.localeCompare(b.name)).map(e=>listRow(e.id)).join("")}</div>`).join("")||`<p class="row-note">Nothing matches these filters.</p>`;
+}
+
+// ---------- quiz ----------
+const Q={score:0,asked:0,streak:0,best:store.get("best",0),cur:null};
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+function distinct(correct,pool,n=3){ const out=new Set([correct]); let g=0; while(out.size<n+1&&g++<200) out.add(pick(pool)); return shuffle([...out]); }
+function makeQ(){
+  const pool=DATA.filter(e=>e.notable);
+  for(let t=0;t<60;t++){ const kind=pick(["riddle","riddle","parents","roman","trans","child"]); const e=pick(pool);
+    if(kind==="riddle"&&e.riddles){ const r=pick(e.riddles); return {k:"Riddle · who am I?",q:r.q,a:r.a,opts:distinct(r.a,DATA.filter(x=>x.riddles&&x.id!==e.id).map(x=>x.riddles[0].a)),id:e.id}; }
+    if(kind==="parents"&&e.parents.length===2){ const nm=x=>x.parents.map(p=>E.get(p).name).join(" & "); const o=DATA.filter(x=>x.parents.length===2&&x.type===e.type&&nm(x)!==nm(e)).map(nm); if(o.length<3) continue;
+      return {k:"Lineage",q:`Who are the parents of ${e.name}?`,a:nm(e),opts:distinct(nm(e),o),id:e.id}; }
+    if(kind==="roman"&&e.roman&&e.roman!==e.name){ return {k:"Greek to Roman",q:`What did the Romans call ${e.name}?`,a:e.roman,opts:distinct(e.roman,DATA.filter(x=>x.roman&&x.roman!==e.roman&&x.roman!==x.name).map(x=>x.roman)),id:e.id}; }
+    if(kind==="trans"&&e.trans){ const a=E.get(e.trans[0].id).name; return {k:"Transformations & curses",q:`Who transformed, cursed or reshaped ${e.name}?`,a,opts:distinct(a,[...transformed.keys()].map(i=>E.get(i).name).filter(n=>n!==a)),id:e.id,why:e.trans[0].note}; }
+    const rk=e.kids.filter(k=>!members.has(k)&&!/^(Children|Sons|Crew) of/.test(E.get(k).name));
+    if(kind==="child"&&rk.length){ const c=E.get(pick(rk)).name; const not=new Set(e.kids.map(k=>E.get(k).name)); const o=pool.filter(x=>!not.has(x.name)&&x.gen===E.get(rk[0]).gen).map(x=>x.name); if(o.length<3) continue;
+      return {k:"Offspring",q:`Which of these is a child of ${e.name}?`,a:c,opts:distinct(c,o),id:e.id}; } }
+  return null; }
+function renderQuiz(){
+  const q=Q.cur||(Q.cur=makeQ());
+  $("#v-quiz").innerHTML=`<div class="score"><span>Score ${Q.score}/${Q.asked}</span><span>Streak ${Q.streak} · best ${Q.best}</span></div>
+  <div class="card"><div class="qk">${esc(q.k)}</div><div class="qq">${esc(q.q)}</div><div class="opts">${q.opts.map((o,k)=>`<button class="opt" data-o="${k}">${esc(o)}</button>`).join("")}</div><div id="qfb"></div></div>
+  <button class="btn primary" id="qNext" hidden>Next question</button><button class="btn" id="qSkip">Skip</button>`;
+}
+$("#v-quiz").addEventListener("click",ev=>{ const q=Q.cur; const o=ev.target.closest(".opt");
+  if(o&&!o.disabled){ const ok=q.opts[+o.dataset.o]===q.a; Q.asked++; if(ok){Q.score++;Q.streak++;if(Q.streak>Q.best){Q.best=Q.streak;store.set("best",Q.best)}}else Q.streak=0;
+    document.querySelectorAll(".opt").forEach((b,k)=>{b.disabled=true;if(q.opts[k]===q.a)b.classList.add("right");else if(b===o)b.classList.add("wrong")});
+    $("#qfb").innerHTML=`<p style="margin:14px 0 8px"><b>${ok?"Correct.":"Not quite."}</b> ${q.why?esc(q.why)+".":""}</p>${chipBtn(q.id)}`;
+    $("#qNext").hidden=false; $("#qSkip").hidden=true; if(navigator.vibrate&&!ok) try{navigator.vibrate(40)}catch(e){} return; }
+  if(ev.target.closest("#qNext,#qSkip")){ Q.cur=null; renderQuiz(); $("#views").scrollTop=0; } });
+
+// ---------- sources & data ----------
+function workOf(s){ const m=s.match(/^(.*?)(?:\s+(?:fr\.|frr\.|praef|preface|s\.v\.|\d|[IVX]+\.\d)|\s*\(|,\s*(?:Book|book)\b|$)/); return ((m?m[1]:s).replace(/[,:;\s]+$/,"").trim())||s; }
+function renderMore(){
+  const el=$("#v-more"); if(el.dataset.built) return; el.dataset.built=1;
+  const cnt=k=>DATA.filter(e=>e.origin_kind===k).length;
+  const unmapped=DATA.filter(e=>e.origin_kind!=="primordial"&&!e.parents.length&&!(e.trans||[]).length&&!(e.anchor||[]).length).length;
+  const noSrc=DATA.filter(e=>!e.src).length; let broken=0; for(const e of DATA) for(const p of e.parents) if(!E.has(p)) broken++;
+  const works=new Map(); for(const e of DATA) for(const s of (e.src||"").split(";").map(x=>x.trim()).filter(Boolean)){ const w=workOf(s); if(!works.has(w)) works.set(w,new Set()); works.get(w).add(e.id); }
+  const list=[...works.entries()].sort((a,b)=>b[1].size-a[1].size||a[0].localeCompare(b[0]));
+  const L=(k,t)=>`<div>${lineSVG(k,40)}<span>${t}</span></div>`;
+  el.innerHTML=section("How to read the family tree",`<div class="legend">${L("birth","Two mapped parents")}${L("single","One mapped parent (sea foam, blood, born from a head, or the other parent is unnamed)")}${L("trans","Transformed, cursed or created by")}${L("anchor","No recorded parents: linked to a spouse, owner or relative")}${L("alt","Variant parentage from another ancient source")}
+    <div><svg width="40" height="20" aria-hidden="true"><rect x="2" y="2" width="36" height="16" rx="5" fill="none" stroke="${C.ink2}" stroke-dasharray="5 3"/></svg><span>A collective group (Nereids, Muses, Giants…)</span></div>
+    <div><span style="width:40px;text-align:center;flex:none">${SEX.m} ${SEX.f}</span><span>Male · female. In each family tree the father is on the left, the mother on the right.</span></div>
+    <div><span style="width:40px;text-align:center;flex:none">${SEX.x}</span><span>Both sexes, neither, changed sex (Tiresias, Caeneus), or a mixed group</span></div></div>
+    <p class="row-note" style="margin-top:12px">"Gen" counts generations down from Chaos along the longest recorded line, so mortal heroes sit many generations below the gods who fathered them.</p>
+    <div class="chips">${REGIONS.map(([k,n])=>`<span class="chip"><span class="dot" style="background:${C.r[k]}"></span>${esc(n)}</span>`).join("")}</div>`)+
+  section("Data check",`<div class="stats"><div class="stat"><b>${DATA.length}</b><span>entities</span></div><div class="stat"><b>${cnt("union")}</b><span>two parents</span></div><div class="stat"><b>${cnt("single")}</b><span>one parent</span></div><div class="stat"><b>${cnt("anchor")}</b><span>unrecorded, linked</span></div><div class="stat"><b>${cnt("transform")}</b><span>transformation only</span></div><div class="stat"><b>${DATA.reduce((s,e)=>s+(e.riddles||[]).length,0)}</b><span>riddles</span></div></div>
+    <p style="margin-top:12px"><span class="pill ${unmapped?"bad":""}">${unmapped} unmapped</span><span class="pill ${noSrc?"bad":""}">${noSrc} uncited</span><span class="pill ${broken?"bad":""}">${broken} broken links</span></p>
+    <p class="row-note">Checked live against the data in this page every time it opens.</p>`)+
+  section(`Citation index · ${list.length} works`,list.map(([w,ids])=>`<details class="work"><summary><b>${esc(w)}</b><span class="cnt">${ids.size}</span></summary><div class="chips" data-ids="${[...ids].join(",")}"></div></details>`).join(""));
+  el.addEventListener("toggle",ev=>{ const d=ev.target; if(d.tagName==="DETAILS"&&d.open){ const c=d.querySelector("[data-ids]"); if(c&&!c.dataset.filled){ c.dataset.filled=1; c.innerHTML=c.dataset.ids.split(",").map(i=>chipBtn(i)).join(""); } } },true);
+}
+
+// ---------- theme ----------
+function retheme(){ readColors(); if(tab==="explore") renderExplore(); const m=$("#v-more"); if(m.dataset.built){ delete m.dataset.built; if(tab==="more") renderMore(); } if(tab==="browse"&&$("#v-browse").dataset.built){ drawChips(); drawList(); } }
+try{ matchMedia("(prefers-color-scheme: dark)").addEventListener("change",retheme); }catch(e){}
+new MutationObserver(retheme).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+let rw=innerWidth; addEventListener("resize",()=>{ if(Math.abs(innerWidth-rw)>40){ rw=innerWidth; if(tab==="explore") renderExplore(); } });
+
+// ---------- boot ----------
+readColors();
+const h=location.hash.slice(1);
+const start=E.has(h)?h:(E.has(store.get("last",""))?store.get("last",""):"zeus");
+cur=start; trail=trail.filter(x=>x!==start); trail.push(start);
+try{ history.replaceState({id:start},"","#"+start); }catch(e){}
+setTab("explore"); renderExplore();
+})();
+</script>

@@ -1,0 +1,503 @@
+# ============ CHILDREN OF CRONUS & RHEA ============
+@region olympus
+@type olympian
+@src Hesiod, Theogony 453–506
+hestia | Hestia | Vesta | cronus+rhea | Goddess of the hearth; first swallowed and last disgorged, so both eldest and youngest.
+  m: Hestia swore to stay a virgin, refusing Poseidon and Apollo, and Zeus gave her the centre of every home and the first share of every sacrifice. Later lists sometimes replace her among the Twelve with Dionysus.
+  r: First to be swallowed and last to come out, I am both eldest and youngest; the first share of every offering is mine. ;; Hestia
+demeter | Demeter | Ceres | cronus+rhea | Goddess of grain and harvest; mother of Persephone.
+  s: Hesiod, Theogony 454, 912–914; Homeric Hymn to Demeter
+  m: When Hades carried off Persephone, Demeter searched the earth with torches and let the crops fail. Zeus had Persephone returned, but because she had eaten pomegranate seeds she spends part of each year below, and those months are winter.
+  r: While my daughter is below, nothing grows; that is why you have winter. ;; Demeter
+hera | Hera | Juno | cronus+rhea | Queen of the gods and goddess of marriage; wife and sister of Zeus.
+  m: Hera pursued Zeus's lovers and their children: Leto, Io, Semele, Alcmene and Heracles above all. She sided with the Greeks at Troy after Paris judged against her.
+  r: I sent two serpents to the cradle of my husband's son and a gadfly after the heifer he loved. ;; Hera
+hades | Hades | Pluto / Dis Pater | cronus+rhea | King of the underworld and the dead.
+  T: deity
+  R: under
+  m: When the brothers divided the world by lot, Hades got the underworld. He carried off Persephone with Zeus's consent. His helmet of invisibility, made by the Cyclopes, was lent to Perseus.
+  r: I drew the dark third of the world by lot, and I won my bride with six pomegranate seeds. ;; Hades
+poseidon | Poseidon | Neptune | cronus+rhea | God of the sea, earthquakes and horses.
+  R: sea
+  m: Poseidon competed with Athena for Athens, striking the Acropolis rock to bring out a salt spring; Athena's olive tree won. He hounded Odysseus for blinding his son Polyphemus.
+  r: My trident struck a salt spring from the Acropolis, but an olive tree beat me to the city. ;; Poseidon
+zeus | Zeus | Jupiter | cronus+rhea | King of gods and men, god of sky, thunder and justice.
+  m: Hidden on Crete as a baby, Zeus grew up, forced Cronus to disgorge his siblings, and with the Cyclopes' thunderbolts and the Hundred-Handers won the ten-year war against the Titans. He then defeated the Giants and Typhon and divided the world with his brothers.
+  r: A stone in swaddling clothes was swallowed in my place, and I grew up to overthrow the swallower. ;; Zeus
+chiron | Chiron | Chiron | cronus+philyra | Wise, immortal centaur; teacher of Achilles, Jason and Asclepius.
+  T: creature
+  R: earth
+  s: Apollodorus, Bibliotheca 1.2.4, 2.5.4
+  m: Heracles accidentally wounded Chiron with an arrow poisoned by the Hydra. Unable to die and in endless pain, Chiron gave up his immortality in exchange for Prometheus's release, and Zeus placed him among the stars.
+  r: A friend's poisoned arrow gave me a wound I could not die of, so I traded my immortality for a Titan's freedom. ;; Chiron
+
+# ============ CHILDREN OF ZEUS (DIVINE) ============
+@src Hesiod, Theogony 886–944
+athena | Athena | Minerva | zeus | Goddess of wisdom, crafts and strategic war, patron of Athens.
+  o: born fully armed from Zeus's head after he swallowed Metis
+  a: zeus+metis | Hesiod, Theogony 886–900, 924–926
+  a: poseidon+tritonis | Herodotus 4.180 (Libyan tradition)
+  m: When Hephaestus split Zeus's skull with an axe, Athena sprang out in full armour with a war cry. She won Athens with the gift of the olive tree and guided Heracles, Perseus, Odysseus and Bellerophon.
+  r: I leapt fully armed from my father's head and won a city with an olive tree. ;; Athena
+ares | Ares | Mars | zeus+hera | God of war's savage fury and bloodlust.
+  S: Homer, Iliad 5.889–898
+  m: Hephaestus trapped Ares in bed with Aphrodite in an invisible net and called the gods to laugh at them. The giant Aloadae once shut Ares in a bronze jar for thirteen months until Hermes rescued him.
+  r: The smith caught me in an invisible net with his wife, and giant twins once kept me in a bronze jar. ;; Ares
+hebe | Hebe | Juventas | zeus+hera | Youth; cupbearer of the gods and later bride of the deified Heracles.
+  T: deity
+eileithyia | Eileithyia | Lucina | zeus+hera | Goddess of childbirth.
+  T: deity
+  m: Hera kept Eileithyia away from Leto's labour for nine days, and she sat with crossed legs to delay the birth of Heracles until Galanthis tricked her.
+enyo | Enyo | Bellona | zeus+hera | Goddess of war and destruction, companion of Ares.
+  T: deity
+  s: Homer, Iliad 5.333, 5.592; Cornutus, Theologiae Graecae 21
+hephaestus | Hephaestus | Vulcan | hera | Lame god of fire, smiths and craftsmanship.
+  o: born of Hera alone, in anger at Zeus for bearing Athena
+  a: zeus+hera | Homer, Iliad 1.577–578; Odyssey 8.312
+  s: Hesiod, Theogony 927–929
+  m: Hera threw Hephaestus from Olympus for being lame (or Zeus did, for taking Hera's side). He took revenge with a golden throne that trapped her; only Dionysus could bring him back, drunk on a mule. He built the gods' halls, Achilles' armour, Pandora and the bronze giant Talos.
+  r: Thrown from heaven, I got my revenge with a golden throne that would not let my mother stand up. ;; Hephaestus
+apollo | Apollo | Apollo / Phoebus | zeus+leto | God of prophecy, music, healing, archery and light.
+  s: Hesiod, Theogony 918–920; Homeric Hymn to Apollo
+  m: Born on Delos, Apollo killed the Python and took over Delphi. He served the mortal Admetus as a herdsman as punishment for killing the Cyclopes, flayed Marsyas after a music contest, and brought plague on the Greeks at Troy for the insult to his priest Chryses.
+  r: I killed the serpent at the navel of the world, and I speak through a priestess who sits on a tripod. ;; Apollo
+artemis | Artemis | Diana | zeus+leto | Virgin huntress, goddess of wild animals, the young and childbirth.
+  s: Hesiod, Theogony 918–920; Callimachus, Hymn 3
+  m: Artemis turned Actaeon into a stag when he saw her bathing. With Apollo she killed Niobe's children, and she demanded the sacrifice of Iphigenia at Aulis.
+  r: A hunter saw me bathing, and his own hounds tore him apart in the shape of a stag. ;; Artemis
+hermes | Hermes | Mercury | zeus+maia | Messenger god of travellers, thieves, trade and guide of the dead.
+  s: Hesiod, Theogony 938–939; Homeric Hymn to Hermes
+  m: On the day he was born, Hermes invented the lyre from a tortoise shell and stole fifty of Apollo's cattle, walking them backwards. He traded the lyre to Apollo for the herd. He killed hundred-eyed Argus to free Io, and guides souls to Hades.
+  r: On the day I was born I made a lyre from a tortoise and stole my brother's cattle by walking them backwards. ;; Hermes
+dionysus | Dionysus | Bacchus / Liber | zeus+semele | God of wine, ecstasy and theatre; the twice-born.
+  s: Hesiod, Theogony 940–942; Euripides, Bacchae
+  a: zeus+persephone | Orphic tradition (reborn from Zagreus)
+  m: Semele asked to see Zeus in his true form and was burned up. Zeus sewed the unborn Dionysus into his thigh until birth. Dionysus travelled the world spreading the vine, turned Tyrrhenian pirates into dolphins, and punished Pentheus for rejecting him.
+  r: Born once from my mother's ashes and a second time from my father's thigh, I turned pirates into dolphins. ;; Dionysus
+aphrodite | Aphrodite | Venus | uranus | Goddess of love, beauty and desire, born of the sea foam.
+  o: rose from the foam (aphros) around Uranus's severed genitals
+  a: zeus+dione | Homer, Iliad 5.370–372
+  s: Hesiod, Theogony 188–206
+  m: Aphrodite came ashore at Cyprus (or Cythera). She married Hephaestus but loved Ares, promised Paris the most beautiful woman in the world, and gave Hippomenes the golden apples to win Atalanta.
+  r: I rose from the foam off Cyprus, and a shepherd prince gave me a golden apple in exchange for another man's wife. ;; Aphrodite
+persephone | Persephone | Proserpina | zeus+demeter | Queen of the underworld; Kore, the maiden of spring.
+  T: deity
+  R: under
+  s: Hesiod, Theogony 912–914; Homeric Hymn to Demeter
+  a: zeus+styx | Apollodorus, Bibliotheca 1.3.1 (some say)
+  m: Hades carried Persephone off while she picked flowers. She ate pomegranate seeds in the underworld, so she must spend part of every year below as queen of the dead, returning to her mother each spring.
+  r: A few red seeds bound me to the dark for part of every year. ;; Persephone
+zagreus | Zagreus | | zeus+persephone | Orphic horned child-god, torn apart by the Titans and reborn as Dionysus.
+  T: deity
+  R: under
+  s: Orphic fragments 34–36 Kern; Nonnus, Dionysiaca 6.155–388
+melinoe | Melinoe | | zeus+persephone | Orphic goddess of ghosts and nightmares, born when Zeus took Hades' form.
+  T: deity
+  R: under
+  s: Orphic Hymn 71
+  a: hades+persephone | Orphic Hymn 71
+macaria | Macaria | | hades+persephone | Goddess of a blessed death, called daughter of Hades in the Suda.
+  T: deity
+  R: under
+  s: Suda, s.v. Makaria
+  w: Macaria
+@type deity
+@src Hesiod, Theogony 907–911
+@grp charites
+charites | Charites | Gratiae | zeus+eurynome | The Graces: charm, beauty and festivity.
+  a: dionysus+aphrodite | Servius on Aeneid 1.720
+  a: helios+aegle | Pausanias 9.35.5 (citing Antimachus)
+aglaea | Aglaea | | = | "Splendour"; the youngest Grace, wife of Hephaestus.
+  S: Theogony 945–946
+euphrosyne | Euphrosyne | | = | "Mirth", a Grace.
+thalia_c | Thalia | | = | "Good cheer", a Grace (not the Muse).
+  w: Charites
+pasithea | Pasithea | | = | Grace promised by Hera to Hypnos as his wife.
+  s: Homer, Iliad 14.267–276
+  w: Pasithea
+@grp horae
+horae | Horae | Horae | zeus+themis | The Seasons and goddesses of order: Lawfulness, Justice and Peace.
+  s: Hesiod, Theogony 901–903
+eunomia | Eunomia | Disciplina | = | Good order and lawfulness.
+dike | Dike | Iustitia | = | Justice, who reports human wrongs to Zeus.
+  S: Hesiod, Works and Days 256–262
+  w: Dike (mythology)
+eirene | Eirene | Pax | = | Peace.
+  w: Eirene (goddess)
+@grp muses
+muses | Muses | Musae | zeus+mnemosyne | Nine goddesses of poetry, song and knowledge who live on Helicon and Olympus.
+  s: Hesiod, Theogony 52–79, 915–917
+  a: uranus+gaia | Mimnermus fr. 13; Pausanias 9.29.4 (elder Muses)
+  m: The Muses turned the nine daughters of Pierus into magpies for challenging them to a singing contest, and blinded the bard Thamyris for his boast.
+  r: Nine sisters born after nine nights; we breathed song into a shepherd on Mount Helicon. ;; Muses
+calliope | Calliope | Calliope | = | Muse of epic poetry; mother of Orpheus.
+clio | Clio | Clio | = | Muse of history.
+erato | Erato | Erato | = | Muse of love poetry.
+euterpe | Euterpe | Euterpe | = | Muse of music and lyric; mother of Rhesus in some accounts.
+melpomene | Melpomene | Melpomene | = | Muse of tragedy; mother of the Sirens by Achelous.
+polyhymnia | Polyhymnia | Polyhymnia | = | Muse of sacred hymns.
+terpsichore | Terpsichore | Terpsichore | = | Muse of dance.
+thalia_m | Thalia | Thalia | = | Muse of comedy.
+  w: Thalia (Muse)
+urania | Urania | Urania | = | Muse of astronomy.
+@grp -
+
+# ---- Other divine children of Zeus ----
+@src Apollodorus, Bibliotheca 1.3–1.4
+pan | Pan | Faunus | hermes+dryope_p | Goat-legged god of shepherds and the wild; inventor of the panpipes.
+  s: Homeric Hymn 19 (to Pan)
+  a: hermes+penelope | Herodotus 2.145
+  a: zeus+hybris | Apollodorus, Bibliotheca 1.4.1
+  R: earth
+  m: Pan's shout caused sudden terror, "panic". He chased Syrinx and Pitys, and lost a music contest to Apollo in which only Midas preferred his pipes.
+  r: My mother ran from my goat legs and beard; my shout gives its name to sudden terror. ;; Pan
+dryope_p | Dryope | | dryops | Daughter of Dryops; mother of Pan in the Homeric Hymn.
+  T: nymph
+  R: earth
+  s: Homeric Hymn 19.34
+dryops | Dryops | | spercheius+polydora_d | Ancestor of the Dryopes.
+  T: mortal
+  R: earth
+  s: Antoninus Liberalis 32
+spercheius | Spercheius | Spercheios | potamoi | River of Thessaly; Peleus vowed Achilles' hair to him.
+  R: sea
+  s: Homer, Iliad 23.140–151
+polydora_d | Polydora | | peleus | Daughter of Peleus; mother of Menesthius by Spercheius.
+  T: mortal
+  R: earth
+  s: Homer, Iliad 16.173–178
+  w: Polydora
+hybris | Hybris | | - | Personification of insolence; in one account the mother of Pan.
+  T: spirit
+  R: void
+  x: zeus | named as mother of Pan by Zeus (Apollodorus 1.4.1)
+  s: Apollodorus, Bibliotheca 1.4.1
+hermaphroditus | Hermaphroditus | Hermaphroditus | hermes+aphrodite | Son of Hermes and Aphrodite, fused with the nymph Salmacis into one body.
+  R: earth
+  s: Ovid, Metamorphoses 4.285–388; Diodorus Siculus 4.6.5
+  t: salmacis | the gods merged their two bodies at Salmacis's prayer
+  r: A nymph clung to me in her pool and prayed; the gods made us one body with two natures. ;; Hermaphroditus
+priapus | Priapus | Priapus / Mutunus | dionysus+aphrodite | Rustic fertility god of gardens; Hera gave him deformity in the womb.
+  R: earth
+  s: Pausanias 9.31.2; Diodorus Siculus 4.6.1
+  a: hermes | Hyginus, Fabulae 160
+  a: pan | some traditions
+  a: adonis+aphrodite | scholiast on Apollonius Rhodius 1.932
+harmonia | Harmonia | Concordia | ares+aphrodite | Goddess of harmony; wife of Cadmus, whose cursed necklace ruined Thebes.
+  s: Hesiod, Theogony 933–937; Apollodorus, Bibliotheca 3.4.2
+  a: zeus+electra_p | Diodorus Siculus 5.48.2 (Samothracian tradition)
+  R: earth
+  H: Thebes
+  t: ares | Ovid, Metamorphoses 4.563–603: she and Cadmus were turned into serpents
+  m: At her wedding to Cadmus, the first a mortal shared with the gods, Harmonia was given a necklace made by Hephaestus. It brought misfortune to everyone who later owned it, including Eriphyle and Jocasta.
+phobos | Phobos | Timor | ares+aphrodite | Fear, who rides into battle with his father.
+  S: Hesiod, Theogony 933–937
+deimos | Deimos | Formido | ares+aphrodite | Terror, brother of Fear.
+  S: Hesiod, Theogony 933–937
+anteros | Anteros | | ares+aphrodite | Returned love, avenger of love scorned.
+  s: Cicero, De Natura Deorum 3.60; Pausanias 1.30.1
+himeros | Himeros | | aphrodite | Longing; companion of Eros at Aphrodite's birth.
+  s: Hesiod, Theogony 201
+  a: ares+aphrodite | later tradition
+pothos | Pothos | | aphrodite | Yearning for the absent.
+  s: Pausanias 1.43.6
+  a: zephyrus+iris | Alcaeus fr. 327
+hymenaeus | Hymenaeus | Hymen | apollo+urania | God of the wedding procession and hymn.
+  s: Catullus 61.2; Proclus, Chrestomathia
+  a: dionysus+aphrodite | Servius on Aeneid 4.127
+  a: apollo+calliope | scholia on Pindar
+triton | Triton | Triton | poseidon+amphitrite | Merman herald of the sea who calms waves with his conch.
+  R: sea
+  s: Hesiod, Theogony 930–933
+  m: Triton guided the Argonauts out of Lake Tritonis. Virgil says Misenus challenged him with a conch and was drowned for it.
+rhode | Rhode | | poseidon+amphitrite | Nymph of Rhodes; wife of Helios.
+  R: sea
+  T: nymph
+  s: Apollodorus, Bibliotheca 1.4.6
+  a: aphrodite+poseidon | Pindar, Olympian 7.14; Diodorus 5.55.4 (Halia)
+  w: Rhodos
+benthesikyme | Benthesikyme | | poseidon+amphitrite | Nymph of the deep waves.
+  R: sea
+  T: nymph
+  s: Apollodorus, Bibliotheca 3.15.4
+tritonis | Tritonis | | - | Nymph of Lake Tritonis in Libya.
+  T: nymph
+  R: sea
+  s: Herodotus 4.180
+  x: triton | nymph of Triton's lake
+pallas_tr | Pallas | | triton | Daughter of Triton and childhood friend of Athena, accidentally killed by her.
+  T: nymph
+  R: sea
+  s: Apollodorus, Bibliotheca 3.12.3
+  w: Pallas (daughter of Triton)
+  m: Athena made the wooden Palladium statue in her memory; Troy was safe as long as it stood in the city.
+proteus | Proteus | Proteus | poseidon | Shape-shifting old man of the sea who knows the future.
+  R: sea
+  s: Homer, Odyssey 4.349–570; Apollodorus, Bibliotheca 2.5.9
+  a: oceanus+tethys | Virgil, Georgics 4.387–395 (as a Titan-born sea god)
+  m: Menelaus held Proteus fast on Pharos while he became a lion, a snake, a leopard, a boar, water and a tree, until he told Menelaus how to get home.
+  r: Hold me while I become lion, snake and water, and I will tell you the way home. ;; Proteus
+glaucus_s | Glaucus | Glaucus | - | Fisherman who ate a magic herb and became an immortal sea god.
+  R: sea
+  s: Ovid, Metamorphoses 13.904–968; Pausanias 9.22.7
+  t: oceanus | Oceanus and Tethys purified him of mortality after he ate the herb
+  w: Glaucus (sea god)
+  r: I tasted the grass that revived my catch, grew a fish tail, and became a god of the sea. ;; Glaucus
+leucothea | Leucothea | Mater Matuta | ino | Ino, deified as a sea goddess after leaping into the sea with her son.
+  R: sea
+  s: Homer, Odyssey 5.333–353; Ovid, Metamorphoses 4.416–542
+  t: poseidon | at Aphrodite's request Poseidon made her the sea goddess Leucothea
+  x: ino | the same person as Ino
+  m: Leucothea gave the shipwrecked Odysseus her veil, which kept him afloat until he reached Scheria.
+palaemon | Palaemon | Portunus | melicertes | Melicertes, deified as a sea god who protects harbours.
+  R: sea
+  s: Ovid, Metamorphoses 4.539–542; Pausanias 2.1.3
+  t: poseidon | deified with his mother Ino
+  x: melicertes | the same person as Melicertes
+
+# ---- Apollo's line ----
+@region earth
+@src Apollodorus, Bibliotheca 3.10.3–4
+asclepius | Asclepius | Aesculapius | apollo+coronis | God of medicine; he raised the dead and was struck down by Zeus.
+  T: demigod
+  s: Pindar, Pythian 3.1–60; Apollodorus, Bibliotheca 3.10.3–4
+  a: apollo+arsinoe | Hesiodic tradition cited by Pausanias 2.26.7
+  m: Apollo killed the unfaithful Coronis but snatched the unborn Asclepius from her funeral pyre. Chiron taught him medicine, and with Gorgon's blood he raised the dead. Zeus struck him with a thunderbolt, then made him the constellation Ophiuchus.
+  r: My father pulled me from my mother's funeral pyre; I raised the dead with Gorgon's blood and was killed for it by thunder. ;; Asclepius
+@type deity
+hygieia | Hygieia | Salus | asclepius+epione | Health and cleanliness.
+panacea | Panacea | | asclepius+epione | Universal remedy.
+iaso | Iaso | | asclepius+epione | Recuperation.
+aceso | Aceso | | asclepius+epione | The healing process.
+aegle_a | Aegle | | asclepius+epione | "Radiance" of good health.
+  w: Aegle
+epione | Epione | | - | Goddess of soothing pain; wife of Asclepius.
+  x: asclepius | wife of Asclepius
+  s: Pausanias 2.29.1
+@type demigod
+machaon | Machaon | | asclepius+epione | Healer of the Greeks at Troy; he healed Philoctetes.
+  s: Homer, Iliad 2.729–733, 11.504–520
+podalirius | Podalirius | | asclepius+epione | Healer at Troy, brother of Machaon.
+  s: Homer, Iliad 2.729–733
+aristaeus | Aristaeus | Aristaeus | apollo+cyrene | Rustic god of beekeeping, cheese and olive oil.
+  s: Pindar, Pythian 9.59–65; Virgil, Georgics 4.315–558
+  m: Pursuing Eurydice, Aristaeus caused her fatal snakebite. The nymphs killed his bees, and Proteus told him how to get new swarms from the carcasses of sacrificed cattle.
+orpheus | Orpheus | Orpheus | oeagrus+calliope | Thracian bard whose music moved stones; he went to the underworld for Eurydice.
+  a: apollo+calliope | Pindar, Pythian 4.176; Apollodorus 1.3.2
+  s: Apollodorus, Bibliotheca 1.3.2, 1.9.25; Ovid, Metamorphoses 10.1–85, 11.1–84
+  m: Orpheus sang Hades and Persephone into returning Eurydice, on condition that he not look back until they reached the light. He looked back and lost her. He was later torn apart by Thracian Maenads; his head floated, still singing, to Lesbos.
+  r: My song opened the gates of the dead, but one backward glance lost my wife twice. ;; Orpheus
+oeagrus | Oeagrus | Oeagrus | - | King of Thrace; father of Orpheus and Linus.
+  T: mortal
+  x: calliope | husband of the Muse Calliope
+  s: Apollodorus, Bibliotheca 1.3.2
+eurydice_o | Eurydice | | - | Nymph (dryad) wife of Orpheus, killed by a snakebite.
+  T: nymph
+  x: orpheus | wife of Orpheus
+  s: Virgil, Georgics 4.453–527; Ovid, Metamorphoses 10.1–85
+  w: Eurydice
+linus | Linus | Linus | apollo+urania | Musician who taught Heracles the lyre and was killed by him.
+  s: Apollodorus, Bibliotheca 1.3.2, 2.4.9; Pausanias 9.29.6
+  a: oeagrus+calliope | Apollodorus, Bibliotheca 1.3.2
+  w: Linus (mythology)
+corybantes | Corybantes | Corybantes | apollo+thalia_m | Armed, dancing worshippers of the Phrygian mother goddess.
+  T: spirit
+  s: Apollodorus, Bibliotheca 1.3.4
+rhesus | Rhesus | Rhesus | strymon+euterpe | Thracian king at Troy with snow-white horses, killed by Diomedes and Odysseus.
+  R: cretetroy
+  a: strymon+calliope | Apollodorus, Bibliotheca 1.3.4
+  s: Homer, Iliad 10.435–502; Euripides, Rhesus
+hyacinthus | Hyacinthus | Hyacinthus | amyclas+diomede | Spartan youth loved by Apollo and killed by his discus; the hyacinth sprang from his blood.
+  T: mortal
+  a: pierus+clio | Apollodorus, Bibliotheca 1.3.3
+  s: Ovid, Metamorphoses 10.162–219; Apollodorus 3.10.3
+  t: apollo | turned into the hyacinth flower
+  H: Sparta
+  r: The discus of a god struck me, and my blood became a flower with a lament written on its petals. ;; Hyacinthus
+pierus | Pierus | | - | King of Macedonia; father of the Pierides.
+  T: mortal
+  x: clio | Apollodorus: father of Hyacinthus by Clio
+  s: Apollodorus, Bibliotheca 1.3.3; Ovid, Metamorphoses 5.294–678
+pierides | Pierides | Pierides | pierus | Nine daughters of Pierus who challenged the Muses and became magpies.
+  T: mortal
+  s: Ovid, Metamorphoses 5.294–678
+  t: muses | turned into magpies
+cyparissus | Cyparissus | Cyparissus | telephus | Youth loved by Apollo who killed his pet stag and grieved himself into a cypress.
+  T: mortal
+  s: Ovid, Metamorphoses 10.106–142
+  t: apollo | turned into the cypress, the tree of mourning
+marsyas | Marsyas | Marsyas | olympus_s | Satyr who challenged Apollo to a music contest and was flayed alive.
+  x: apollo | challenged Apollo
+  T: creature
+  a: hyagnis | Apollodorus, Bibliotheca 1.4.2 (as son of Olympus); Pseudo-Plutarch, On Music 5
+  s: Apollodorus, Bibliotheca 1.4.2; Ovid, Metamorphoses 6.382–400
+  t: apollo | flayed; his blood (or the tears of mourners) became the river Marsyas
+  r: I picked up the flute a goddess threw away, challenged the lyre, and was flayed for losing. ;; Marsyas
+olympus_s | Olympus | | hyagnis | Phrygian musician; father or pupil of Marsyas in different versions.
+  T: mortal
+  s: Apollodorus, Bibliotheca 1.4.2
+  w: Olympus (musician)
+hyagnis | Hyagnis | | - | Phrygian inventor of the flute.
+  T: mortal
+  s: Pseudo-Plutarch, On Music 5
+  x: marsyas | father or grandfather of Marsyas
+philammon | Philammon | | apollo+chione_d | Legendary singer; father of Thamyris.
+  T: demigod
+  s: Ovid, Metamorphoses 11.301–317; Pausanias 4.33.3
+thamyris | Thamyris | | philammon+argiope | Thracian singer who boasted he could beat the Muses; they took his sight and song.
+  T: mortal
+  s: Homer, Iliad 2.594–600; Apollodorus, Bibliotheca 1.3.3
+  t: muses | blinded and deprived of his gift of song
+argiope | Argiope | | - | Nymph of Parnassus; mother of Thamyris.
+  T: nymph
+  x: philammon | consort of Philammon
+  s: Apollodorus, Bibliotheca 1.3.3
+iamus | Iamus | | apollo+evadne_p | Seer who founded the Iamid priestly clan at Olympia.
+  s: Pindar, Olympian 6.35–70
+evadne_p | Evadne | | poseidon+pitane | Daughter of Poseidon, raised in Arcadia; mother of Iamus.
+  T: demigod
+  s: Pindar, Olympian 6.29–35
+  w: Evadne
+pitane | Pitane | | eurotas | Nymph of Pitane in Laconia.
+  T: nymph
+  s: Pindar, Olympian 6.28
+eurotas | Eurotas | | lelex | King of Laconia; he drained the plain into the river that bears his name.
+  T: mortal
+  H: Sparta
+  s: Pausanias 3.1.1–2
+mopsus | Mopsus | Mopsus | apollo+manto | Seer who beat Calchas in a contest of prophecy.
+  s: Apollodorus, Epitome 6.3–4; Strabo 14.1.27
+amphissus | Amphissus | | apollo+dryope_o | Founder of Amphissa; his mother was turned into a poplar.
+  s: Ovid, Metamorphoses 9.324–393; Antoninus Liberalis 32
+dryope_o | Dryope | | dryops | Princess of Oechalia; turned into a lotus tree for plucking a nymph's flower.
+  T: mortal
+  s: Ovid, Metamorphoses 9.324–393
+  w: Dryope (daughter of Dryops)
+troilus | Troilus | Troilus | priam+hecuba | Youngest Trojan prince, ambushed by Achilles at the fountain.
+  a: apollo+hecuba | Apollodorus, Bibliotheca 3.12.5
+  R: cretetroy
+  H: Troy
+  s: Apollodorus, Bibliotheca 3.12.5, Epitome 3.32; Virgil, Aeneid 1.474–478
+anius | Anius | | apollo+rhoeo | Priest-king of Delos whose daughters could turn anything into oil, grain and wine.
+  s: Diodorus Siculus 5.62; Ovid, Metamorphoses 13.632–674
+rhoeo | Rhoeo | | staphylus | Daughter of Staphylus, set adrift in a chest; mother of Anius.
+  T: mortal
+  s: Diodorus Siculus 5.62.1–2
+
+# ---- Hermes' line ----
+@src Apollodorus, Bibliotheca 1.9.16
+autolycus | Autolycus | Autolycus | hermes+chione_d | Master thief who could make stolen things invisible; grandfather of Odysseus.
+  s: Homer, Odyssey 19.394–466; Ovid, Metamorphoses 11.301–317
+  m: Autolycus stole cattle from Sisyphus and changed their colour, but Sisyphus had marked their hooves. He named his grandson Odysseus.
+  r: I could change the colour of stolen cattle, but a craftier king had marked their hooves; my grandson was craftier still. ;; Autolycus
+myrtilus | Myrtilus | | hermes+phaethusa | Charioteer of Oenomaus who betrayed him to Pelops and cursed the house of Atreus.
+  s: Apollodorus, Epitome 2.6–8; Pausanias 8.14.10–11
+  a: hermes+clytie | Hyginus, Fabulae 224
+  m: Bribed by Pelops, Myrtilus replaced the bronze linchpins of his master's chariot with wax, and Oenomaus was killed. When Pelops threw him into the sea instead of paying, Myrtilus cursed Pelops' descendants.
+aethalides | Aethalides | | hermes+eupolemeia | Argonaut herald with perfect memory, even after death.
+  s: Apollonius Rhodius, Argonautica 1.51–55, 1.640–648
+eupolemeia | Eupolemeia | | myrmidon | Daughter of Myrmidon; mother of Aethalides.
+  T: mortal
+  s: Apollonius Rhodius, Argonautica 1.54–55
+echion_a | Echion | | hermes+antianeira | Argonaut, twin of Erytus; a skilled spy.
+  s: Apollonius Rhodius, Argonautica 1.51–56
+  w: Echion
+erytus | Erytus | | hermes+antianeira | Argonaut, twin of Echion.
+  s: Apollonius Rhodius, Argonautica 1.51–56
+antianeira | Antianeira | | menetes | Mother of the Argonaut twins Echion and Erytus.
+  T: mortal
+  s: Apollonius Rhodius, Argonautica 1.56–57
+menetes | Menetes | | - | Father of Antianeira.
+  T: mortal
+  x: antianeira | named only as her father
+  s: Apollonius Rhodius, Argonautica 1.56
+eudorus | Eudorus | | hermes+polymele | Myrmidon commander under Achilles.
+  s: Homer, Iliad 16.179–192
+polymele | Polymele | | phylas | Mother of Eudorus by Hermes.
+  T: mortal
+  s: Homer, Iliad 16.180–181
+phylas | Phylas | | - | King of Ephyra, father of Polymele.
+  T: mortal
+  x: polymele | named only as her father
+  s: Homer, Iliad 16.181
+daphnis | Daphnis | Daphnis | hermes | Sicilian shepherd, inventor of pastoral poetry; blinded by a nymph he betrayed.
+  s: Diodorus Siculus 4.84; Aelian, Varia Historia 10.18
+  o: son of Hermes by a nymph, exposed in a laurel grove
+cephalus | Cephalus | Cephalus | hermes+herse | Hunter loved by Eos; he killed his wife Procris by accident.
+  T: mortal
+  a: deion+diomede | Apollodorus, Bibliotheca 1.9.4
+  s: Apollodorus, Bibliotheca 3.14.3; Ovid, Metamorphoses 7.661–865
+  H: Athens
+  m: Cephalus's wife Procris hid in the undergrowth to spy on him while he hunted. He heard a rustle and threw the spear that never misses, killing her.
+  r: My unerring javelin, a gift from my wife, killed her while she hid in a thicket to spy on me. ;; Cephalus
+
+# ============ SATYRS, CENTAURS, NYMPH KINDS ============
+@type creature
+@region earth
+@grp satyrs
+satyrs | Satyrs | Fauni | hermes+iphthime | Horse-tailed, wine-loving woodland spirits of Dionysus's retinue.
+  s: Nonnus, Dionysiaca 14.105–117; Hesiod, Catalogue fr. 10a.17–19
+  m: In Hesiod, the Satyrs are a "worthless and mischievous race". They make up the chorus of satyr plays such as Euripides' Cyclops.
+silenus | Silenus | Silenus | pan | Drunken, wise old tutor of Dionysus, father of satyrs.
+  a: hermes | Nonnus, Dionysiaca 14.97
+  a: gaia | Nonnus (born of Earth)
+  s: Ovid, Metamorphoses 11.85–105; Herodotus 8.138
+  m: Midas's peasants caught Silenus drunk in the rose gardens. Midas returned him to Dionysus, who rewarded the king with the golden touch.
+  r: Drunk and caught in a king's garden, I was returned to my pupil, and the king got his golden wish. ;; Silenus
+ampelos | Ampelos | | = | Satyr youth loved by Dionysus, killed by a bull and turned into the grapevine.
+  s: Nonnus, Dionysiaca 10–12; Ovid, Fasti 3.407–414
+  t: dionysus | turned into the first grapevine
+@grp centaurs
+centaurs | Centaurs | Centauri | ixion+nephele | Horse-bodied men of Thessaly, wild and fond of wine.
+  s: Pindar, Pythian 2.21–48; Diodorus Siculus 4.69.5
+  a: centaurus | Pindar, Pythian 2.42–48 (Centaurus mated with Magnesian mares)
+  m: Invited to the wedding of Pirithous and Hippodamia, the drunken Centaurs tried to carry off the bride and the Lapith women, starting the Centauromachy that the Parthenon and Olympia sculptures show.
+  r: We got drunk at a Lapith wedding and tried to carry off the bride. ;; Centaurs
+nessus | Nessus | Nessus | = | Centaur ferryman killed by Heracles; his poisoned blood later killed Heracles.
+  s: Sophocles, Trachiniae 555–581; Ovid, Metamorphoses 9.98–133
+  m: Nessus tried to rape Deianira while ferrying her across the Evenus. Heracles shot him with a Hydra-poisoned arrow. Dying, Nessus told her his blood was a love charm; years later she soaked a robe in it, and it burned Heracles to death.
+  r: Dying from the hero's poisoned arrow, I gave his wife a "love charm" that killed him years later. ;; Nessus
+eurytion_c | Eurytion | | = | Centaur who started the brawl at Pirithous's wedding.
+  s: Homer, Odyssey 21.295–304
+  w: Eurytion
+pholus | Pholus | | silenus+melia_c | Kindly centaur who hosted Heracles; killed by a dropped poisoned arrow.
+  s: Apollodorus, Bibliotheca 2.5.4
+melia_c | Melia | | - | Ash nymph, mother of the centaur Pholus.
+  T: nymph
+  x: silenus | consort of Silenus
+  s: Apollodorus, Bibliotheca 2.5.4
+hylaeus | Hylaeus | | = | Centaur killed by Atalanta when he tried to assault her.
+  s: Apollodorus, Bibliotheca 3.9.2
+rhoecus | Rhoecus | | = | Centaur killed with Hylaeus by Atalanta.
+  s: Apollodorus, Bibliotheca 3.9.2
+  w: Rhoecus
+@grp -
+centaurus | Centaurus | | ixion+nephele | Father of the horse-centaurs by the Magnesian mares, in Pindar.
+  s: Pindar, Pythian 2.42–48
+  a: apollo+stilbe | Diodorus Siculus 4.69.1–2
+@type nymph
+dryads | Dryads | Dryades | gaia | Tree nymphs; Hamadryads are born and die with their trees.
+  s: Homeric Hymn to Aphrodite 256–272; Callimachus, Hymn 4.82–85
+oreads | Oreads | Oreades | gaia | Mountain nymphs.
+  s: Homeric Hymn to Aphrodite 256–272; Hesiod, Catalogue fr. 10a
+@grp oreads
+echo | Echo | Echo | = | Mountain nymph whom Hera cursed to repeat others' last words; she pined away for Narcissus.
+  s: Ovid, Metamorphoses 3.356–401
+  t: hera | cursed to repeat only the last words spoken to her
+  m: Echo kept Hera talking while Zeus's nymphs escaped, so Hera took away her voice except for repeating others' last words. She loved Narcissus, who rejected her, and she faded until only her voice was left.
+  r: The queen took my voice for talking too much; I pined for a boy who loved his reflection until nothing but my voice was left. ;; Echo
+idaea | Idaea | | = | Nymph of Mount Ida; mother of Teucer by Scamander.
+  R: cretetroy
+  s: Apollodorus, Bibliotheca 3.12.1
+@grp -
+@type spirit
+maenads | Maenads | Bacchae | - | Women possessed by Dionysus, who roamed the mountains with the thyrsus.
+  T: mortal
+  t: dionysus | driven into ecstatic frenzy by the god
+  s: Euripides, Bacchae
+  m: In Euripides' Bacchae, the Maenads of Thebes, led by Agave, tear King Pentheus apart, taking him for a lion.
+tyrrhenian_pirates | Tyrrhenian Pirates | | - | Sailors who kidnapped the young Dionysus and were turned into dolphins.
+  T: mortal
+  t: dionysus | turned into dolphins
+  s: Homeric Hymn 7 (to Dionysus); Ovid, Metamorphoses 3.582–691
+  r: We kidnapped a boy who turned out to be a god; ivy choked our oars and we leapt overboard as dolphins. ;; Tyrrhenian Pirates

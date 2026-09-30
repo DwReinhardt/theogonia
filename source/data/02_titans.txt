@@ -1,0 +1,491 @@
+# ============ THE TWELVE TITANS ============
+@region void
+@type titan
+@src Hesiod, Theogony 132–138
+oceanus | Oceanus | Oceanus | uranus+gaia | The great river encircling the world; father of all rivers and springs.
+  R: sea
+  m: Oceanus refused to join Cronus against Uranus and stayed out of the war against Zeus; his wife Tethys fostered Hera during the Titanomachy.
+tethys | Tethys | Tethys | uranus+gaia | Titaness of fresh water; mother of the Oceanids and river gods.
+  R: sea
+  m: Tethys and Oceanus raised Hera during the war with the Titans. To please Hera, Tethys forbade the Great Bear (Callisto) from ever bathing in her waters, which is why the constellation never sets.
+coeus | Coeus | Polus | uranus+gaia | Titan of the axis of heaven and inquiry; father of Leto and Asteria.
+crius | Crius | | uranus+gaia | Titan of the constellations; husband of Eurybia.
+  w: Crius
+hyperion | Hyperion | | uranus+gaia | Titan "who goes above"; father of Sun, Moon and Dawn.
+  R: olympus
+  w: Hyperion (Titan)
+iapetus | Iapetus | | uranus+gaia | Titan of mortal life; father of Atlas and Prometheus.
+theia | Theia | Thia | uranus+gaia | Titaness of sight and brightness; mother of Helios, Selene and Eos.
+  R: olympus
+  w: Theia
+rhea | Rhea | Ops / Cybele | uranus+gaia | Mother of the gods; she saved Zeus by giving Cronus a stone to swallow.
+  R: cretetroy
+  w: Rhea (mythology)
+  m: Cronus swallowed each of Rhea's children at birth. When Zeus was born she hid him in a cave on Crete and gave Cronus a stone wrapped in swaddling clothes, which he swallowed instead.
+  r: I wrapped a stone in swaddling clothes and handed it to my husband to swallow. ;; Rhea
+themis | Themis | Iustitia | uranus+gaia | Divine law and order; she held the oracle at Delphi before Apollo.
+  R: olympus
+  m: Themis gave Deucalion and Pyrrha the oracle to throw "the bones of their mother" (stones) over their shoulders, re-peopling the earth after the flood.
+mnemosyne | Mnemosyne | Moneta | uranus+gaia | Memory; she lay with Zeus nine nights and bore the nine Muses.
+  R: olympus
+phoebe | Phoebe | | uranus+gaia | "Bright" Titaness of prophecy; grandmother of Apollo and Artemis.
+  w: Phoebe (Titaness)
+cronus | Cronus | Saturn | uranus+gaia | Youngest Titan and king of the Golden Age; he swallowed his children.
+  R: under
+  w: Cronus
+  s: Hesiod, Theogony 137–210, 453–506; Works and Days 109–120
+  m: Cronus castrated Uranus with Gaia's sickle and ruled the Titans. Warned that a son would overthrow him, he swallowed his children until Rhea tricked him with a stone. Zeus made him disgorge them, and after the ten-year Titanomachy Cronus was imprisoned in Tartarus. The Romans identified him with Saturn, who fled to Italy and ruled a Golden Age commemorated at the Saturnalia.
+  r: I ruled in the Golden Age, swallowed my own children, and in Rome became the lord of Saturday. ;; Cronus
+
+# ---- Cyclopes and Hundred-Handers ----
+@type giant
+@src Hesiod, Theogony 139–153
+@grp cyclopes
+cyclopes | Cyclopes (Elder) | Cyclopes | uranus+gaia | Three one-eyed smiths who forged Zeus's thunderbolt, Poseidon's trident and Hades' helmet.
+  s: Hesiod, Theogony 139–146, 501–506; Apollodorus, Bibliotheca 1.2.1
+  m: Freed from Tartarus by Zeus, the Cyclopes gave him thunder and lightning. Apollo later killed them to avenge his son Asclepius, whom Zeus had struck with a thunderbolt.
+  r: Three one-eyed smiths, we forged the thunderbolt that won the war with the Titans. ;; Cyclopes
+brontes | Brontes | | = | "Thunderer", a Cyclops.
+arges | Arges | | = | "Bright", a Cyclops.
+steropes | Steropes | | = | "Lightning", a Cyclops.
+@grp hecatoncheires
+hecatoncheires | Hecatoncheires | Centimani | uranus+gaia | Three giants with a hundred hands and fifty heads each.
+  R: under
+  m: Freed by Zeus, they hurled three hundred rocks at a time at the Titans and then guarded them in Tartarus.
+  r: With three hundred hands between us we buried the Titans in stones, then kept the prison gate. ;; Hecatoncheires
+briareus | Briareus | | = | Hundred-Hander called Aegaeon by men; Thetis summoned him to protect Zeus from a revolt.
+  R: under
+  S: Homer, Iliad 1.396–406
+cottus | Cottus | | = | A Hundred-Hander.
+  R: under
+gyges | Gyges | | = | A Hundred-Hander.
+  R: under
+@grp -
+
+# ---- From the blood of Uranus ----
+@src Hesiod, Theogony 178–187
+@grp erinyes
+erinyes | Erinyes | Furiae / Dirae | uranus | The Furies, avengers of kin-murder and broken oaths.
+  T: spirit
+  R: under
+  o: sprang from the drops of Uranus's blood that fell on Earth
+  a: nyx | Aeschylus, Eumenides 321–322, 416
+  m: In Aeschylus's Eumenides they hunt Orestes for killing his mother, until Athena's court acquits him and persuades them to become the "Kindly Ones" of Athens.
+  r: We hounded the son who killed his mother, until a court on the Areopagus renamed us the Kindly Ones. ;; Erinyes
+alecto | Alecto | Allecto | = | "Unceasing" Fury.
+  T: spirit
+  R: under
+  s: Virgil, Aeneid 7.324–571; Apollodorus, Bibliotheca 1.1.4
+megaera | Megaera | Megaera | = | "Grudging" Fury.
+  T: spirit
+  R: under
+  s: Apollodorus, Bibliotheca 1.1.4
+tisiphone | Tisiphone | Tisiphone | = | "Avenger of murder", a Fury.
+  T: spirit
+  R: under
+  s: Apollodorus, Bibliotheca 1.1.4; Virgil, Aeneid 6.555, 6.570–572
+@grp gigantes
+gigantes | Gigantes | Gigantes | uranus | The Giants, who fought the gods in the Gigantomachy.
+  R: earth
+  o: born when Uranus's blood fell on Earth (in Apollodorus, Gaia bore them to Uranus in anger over the Titans)
+  a: gaia+uranus | Apollodorus, Bibliotheca 1.6.1
+  S: Apollodorus, Bibliotheca 1.6.1–2
+  m: Gaia raised the Giants against Zeus. The gods could win only with a mortal ally, so Heracles fought alongside them. Enceladus was buried under Sicily, and Polybotes under the island of Nisyros, which Poseidon broke off Kos.
+  r: Earth's sons in the war against Olympus; the gods needed a mortal archer to finish us. ;; Gigantes
+alcyoneus | Alcyoneus | | = | Giant who was immortal on his native soil; Heracles dragged him out of Pallene.
+  s: Apollodorus, Bibliotheca 1.6.1
+porphyrion | Porphyrion | | = | King of the Giants; struck down by Zeus and Heracles when he attacked Hera.
+  s: Apollodorus, Bibliotheca 1.6.1; Pindar, Pythian 8.12–18
+enceladus | Enceladus | | = | Giant buried under Sicily (Etna) by Athena.
+  s: Apollodorus, Bibliotheca 1.6.2; Virgil, Aeneid 3.578–582
+  w: Enceladus (giant)
+polybotes | Polybotes | | = | Giant crushed under Nisyros by Poseidon.
+  s: Apollodorus, Bibliotheca 1.6.2
+ephialtes_g | Ephialtes | | = | Giant blinded by Apollo and Heracles (distinct from the Aload).
+  s: Apollodorus, Bibliotheca 1.6.2
+  w: Ephialtes (giant)
+eurytus_g | Eurytus | | = | Giant slain by Dionysus with his thyrsus.
+  s: Apollodorus, Bibliotheca 1.6.2
+clytius_g | Clytius | | = | Giant burned by Hecate's torches.
+  s: Apollodorus, Bibliotheca 1.6.2
+mimas | Mimas | | = | Giant struck by Hephaestus with molten metal.
+  s: Apollodorus, Bibliotheca 1.6.2
+  w: Mimas (Giant)
+pallas_g | Pallas | | = | Giant flayed by Athena, who used his skin as a shield.
+  s: Apollodorus, Bibliotheca 1.6.2
+  w: Pallas (giant)
+hippolytus_g | Hippolytus | | = | Giant killed by Hermes wearing the cap of invisibility.
+  s: Apollodorus, Bibliotheca 1.6.2
+gration | Gration | | = | Giant killed by Artemis.
+  s: Apollodorus, Bibliotheca 1.6.2
+agrius_g | Agrius | | = | Giant clubbed by the Moirai.
+  s: Apollodorus, Bibliotheca 1.6.2
+thoon | Thoon | | = | Giant clubbed by the Moirai.
+  s: Apollodorus, Bibliotheca 1.6.2
+eurymedon | Eurymedon | | = | King of the Giants in Homer; grandfather of the Phaeacian kings.
+  s: Homer, Odyssey 7.56–60
+  w: Eurymedon (mythology)
+@grp meliae
+meliae | Meliae | | uranus | Ash-tree nymphs born with the Giants; nurses of the infant Zeus.
+  T: nymph
+  R: earth
+  o: born from the blood of Uranus
+  s: Hesiod, Theogony 187; Callimachus, Hymn 1.47
+melia_i | Melia | | = | Ash nymph, wife of the river Inachus and mother of Phoroneus.
+  T: nymph
+  R: earth
+  s: Apollodorus, Bibliotheca 2.1.1
+  w: Melia (consort of Inachus)
+@grp -
+
+# ============ OCEANIDS (Theogony 346–366) ============
+@region sea
+@type nymph
+@src Hesiod, Theogony 346–366
+@grp oceanids
+oceanids | Oceanids | Oceanitides | oceanus+tethys | The three thousand daughters of Oceanus and Tethys: nymphs of springs, clouds and seas.
+  m: Hesiod names forty-one and says there are three thousand. They were the playmates of Persephone when Hades took her (Homeric Hymn to Demeter 417–424).
+peitho | Peitho | Suada | = | Persuasion; an Oceanid in Hesiod and attendant of Aphrodite.
+admete | Admete | | = | An Oceanid.
+ianthe | Ianthe | | = | An Oceanid; "violet".
+electra_o | Electra | | = | Oceanid mother of Iris and the Harpies by Thaumas.
+  w: Electra (Oceanid)
+doris | Doris | Doris | = | Oceanid wife of Nereus, mother of the fifty Nereids.
+  w: Doris (Oceanid)
+prymno | Prymno | | = | An Oceanid.
+urania_o | Urania | | = | An Oceanid (not the Muse).
+  w: Oceanids
+hippo | Hippo | | = | An Oceanid.
+clymene | Clymene | | = | Oceanid wife of Iapetus; in Hesiod the mother of Atlas and Prometheus; also mother of Phaethon by Helios.
+  w: Clymene (Oceanid)
+rhodea | Rhodea | | = | An Oceanid.
+callirrhoe | Callirrhoe | | = | Oceanid; mother of three-bodied Geryon by Chrysaor.
+  w: Callirrhoe (Oceanid)
+zeuxo | Zeuxo | | = | An Oceanid.
+clytie | Clytie | Clytia | = | Oceanid who pined for Helios until she turned into a heliotrope.
+  t: helios | Ovid, Metamorphoses 4.256–270: rejected by Helios, she wasted away and became a sun-turning flower
+  m: Clytie told Leucothoe's father of her affair with Helios, and he buried Leucothoe alive. Helios rejected Clytie; she sat nine days watching him cross the sky until she became a flower that turns to follow the sun.
+  r: I betrayed my rival and sat watching the sun cross the sky until I became a flower that turns to follow it. ;; Clytie
+idyia | Idyia | | = | Oceanid of knowledge; wife of Aeetes and mother of Medea.
+  S: Theogony 958–962
+pasithoe | Pasithoe | | = | An Oceanid.
+plexaura | Plexaura | | = | An Oceanid.
+galaxaura | Galaxaura | | = | An Oceanid.
+dione | Dione | Dione | = | Oceanid (Titaness in some lists); in Homer the mother of Aphrodite by Zeus.
+  a: uranus+gaia | Apollodorus, Bibliotheca 1.1.3 (as a Titaness)
+  w: Dione (Titaness)
+melobosis | Melobosis | | = | An Oceanid.
+thoe_o | Thoe | | = | An Oceanid.
+  w: Oceanids
+polydora | Polydora | | = | An Oceanid.
+cerceis | Cerceis | | = | An Oceanid.
+pluto_o | Pluto | | = | Oceanid of wealth; mother of Tantalus by Zeus.
+  w: Pluto (Greek mythology)
+perseis | Perseis | Perse | = | Oceanid wife of Helios; mother of Circe, Aeetes and Pasiphae.
+ianeira | Ianeira | | = | An Oceanid.
+acaste | Acaste | | = | An Oceanid.
+xanthe | Xanthe | | = | An Oceanid.
+petraea | Petraea | | = | An Oceanid.
+menestho | Menestho | | = | An Oceanid.
+europa_o | Europa | | = | An Oceanid (not the Phoenician princess).
+  w: Oceanids
+metis | Metis | Metis | = | Titaness of wisdom; Zeus's first wife, swallowed while pregnant with Athena.
+  T: titan
+  R: olympus
+  S: Theogony 886–900
+  m: Metis gave Cronus the drug that made him vomit up his children. Warned that her son would overthrow him, Zeus swallowed her while she was pregnant, and Athena was later born from his head.
+  r: My husband swallowed me whole, yet my daughter was born fully armed from his head. ;; Metis
+eurynome | Eurynome | | = | Oceanid; mother of the Graces by Zeus; she and Thetis caught Hephaestus when Hera threw him from Olympus.
+  w: Eurynome (Oceanid)
+telesto | Telesto | | = | An Oceanid.
+chryseis_o | Chryseis | | = | An Oceanid.
+  w: Oceanids
+asia | Asia | | = | Oceanid; in Apollodorus the wife of Iapetus and mother of Atlas and Prometheus.
+  w: Asia (Oceanid)
+calypso | Calypso | Calypso | = | Nymph of Ogygia who kept Odysseus seven years.
+  a: atlas | Homer, Odyssey 1.52, 7.245
+  s: Hesiod, Theogony 359; Homer, Odyssey 5
+  w: Calypso (mythology)
+  m: Calypso held Odysseus on her island for seven years and offered him immortality. Hermes brought Zeus's order to release him, and she helped him build a raft.
+  r: I offered a shipwrecked king immortality if he would stay on my island; he chose home instead. ;; Calypso
+eudora_o | Eudora | | = | An Oceanid.
+  w: Oceanids
+tyche | Tyche | Fortuna | = | Fortune, luck of cities; Oceanid in Hesiod, daughter of Zeus in Pindar.
+  T: deity
+  a: zeus | Pindar, Olympian 12.1–2
+amphirho | Amphirho | | = | An Oceanid.
+ocyrrhoe_o | Ocyrhoe | | = | An Oceanid.
+  w: Oceanids
+styx | Styx | Styx | = | Eldest Oceanid and river of the underworld by which the gods swear.
+  T: deity
+  R: under
+  S: Theogony 383–403, 775–806
+  m: Styx was the first to bring her children to fight for Zeus against the Titans, so he made her the oath of the gods. A god who swore falsely by her lay breathless for a year and was banished from the gods for nine more.
+  r: When gods swear by me and lie, they lie breathless for a year and are exiled for nine. ;; Styx
+philyra | Philyra | Philyra | = | Oceanid; mother of the centaur Chiron by Cronus, who had taken the form of a horse.
+  s: Apollodorus, Bibliotheca 1.2.4; Apollonius Rhodius, Argonautica 2.1231–1241
+  t: zeus | Hyginus, Fabulae 138: at her plea she was turned into a linden tree
+pleione | Pleione | | = | Oceanid; mother of the Pleiades by Atlas.
+  s: Apollodorus, Bibliotheca 3.10.1; Ovid, Fasti 5.83–84
+aethra_o | Aethra | | = | Oceanid; mother of the Hyades and Hyas by Atlas.
+  s: Ovid, Fasti 5.169–172; Hyginus, Fabulae 192
+  w: Aethra (Oceanid)
+leuce | Leuce | | = | Oceanid loved by Hades; at her death he turned her into the white poplar.
+  R: under
+  s: Servius on Virgil, Eclogues 7.61
+  t: hades | Servius on Eclogue 7.61: became the white poplar of Elysium
+@grp -
+
+# ============ POTAMOI (Theogony 337–345) ============
+@type deity
+@src Hesiod, Theogony 337–345
+@grp potamoi
+potamoi | Potamoi | Flumina | oceanus+tethys | The river gods, sons of Oceanus and Tethys; three thousand in all.
+nilus | Nilus | Nilus | = | The Nile.
+alpheus | Alpheus | Alpheus | = | River of Olympia; he pursued the nymph Arethusa under the sea to Sicily.
+  S: Ovid, Metamorphoses 5.572–641
+  m: Heracles diverted the Alpheus and Peneus to clean the Augean stables.
+  w: Alpheus (deity)
+eridanus | Eridanus | Eridanus | = | Mythic river where Phaethon fell; often identified with the Po.
+strymon | Strymon | Strymon | = | Thracian river; father of Rhesus by a Muse.
+maeander | Maeander | Maeander | = | The winding river of Caria.
+istros | Istros | Ister | = | The Danube.
+phasis | Phasis | | = | River of Colchis, goal of the Argonauts.
+rhesus_r | Rhesus | | = | A river of the Troad.
+  w: Rhesus (river)
+achelous | Achelous | Achelous | = | Greatest of rivers; he wrestled Heracles for Deianira and lost a horn.
+  S: Ovid, Metamorphoses 9.1–97; Sophocles, Trachiniae 9–21
+  m: Achelous took the shapes of a serpent and a bull while wrestling Heracles for Deianira. Heracles broke off one of his horns, which the Naiads filled with fruit and made the Horn of Plenty.
+  r: I became a bull to wrestle the hero for a bride; he broke my horn, and it became the Horn of Plenty. ;; Achelous
+nessus_r | Nessus | | = | A river (Nestos) of Thrace.
+  w: Nestos (river)
+rhodius | Rhodius | | = | A river of the Troad.
+haliacmon | Haliacmon | | = | River of Macedonia.
+heptaporus | Heptaporus | | = | A river of the Troad.
+granicus | Granicus | | = | A river of the Troad.
+aesepus | Aesepus | | = | A river of the Troad.
+simoeis | Simoeis | Simois | = | River of Troy; father of Astyoche.
+peneus | Peneus | Peneus | = | River of Thessaly; father of Daphne.
+  w: Peneus
+hermus | Hermus | | = | River of Lydia.
+caicus | Caicus | | = | River of Mysia.
+sangarius | Sangarius | | = | River of Phrygia; father of Hecuba in some accounts.
+ladon_r | Ladon | | = | River of Arcadia; father of Metope, and in some accounts of Daphne and Syrinx.
+  w: Ladon (river god)
+parthenius | Parthenius | | = | River of Paphlagonia.
+evenus | Evenus | | = | River of Aetolia; in Apollodorus a son of Ares who drowned himself there after losing his daughter Marpessa.
+  a: ares+demonice | Apollodorus, Bibliotheca 1.7.7–8
+ardescus | Ardescus | | = | A river of Thrace.
+scamander | Scamander | Xanthus | = | River of Troy, called Xanthus by the gods; he fought Achilles.
+  S: Homer, Iliad 21.211–382
+  m: Angry that Achilles was choking him with Trojan corpses, Scamander rose in a flood against him, until Hephaestus boiled the river with fire at Hera's command.
+inachus | Inachus | Inachus | = | First king and river of Argos; father of Io and Phoroneus.
+  s: Apollodorus, Bibliotheca 2.1.1
+  H: Argos
+asopus | Asopus | Asopus | = | River of Boeotia/Phlius; father of Aegina and many nymph daughters.
+  s: Apollodorus, Bibliotheca 3.12.6
+  a: poseidon+pero | Apollodorus, Bibliotheca 3.12.6 (some say)
+  m: When Zeus carried off Aegina, Asopus pursued him until Zeus drove him back with thunderbolts. Sisyphus told him where she had gone, in exchange for a spring for Corinth.
+cephissus | Cephissus | Cephisus | = | River of Boeotia; father of Narcissus.
+  s: Ovid, Metamorphoses 3.339–346
+  w: Cephissus (Boeotia)
+cebren | Cebren | | = | River of the Troad; father of Oenone.
+  s: Apollodorus, Bibliotheca 3.12.6
+acheron | Acheron | Acheron | helios+gaia | The underworld river of woe, across which Charon ferries the dead.
+  R: under
+  s: Homer, Odyssey 10.513; Natale Conti (citing lost sources) for parentage
+@grp -
+@grp naiads
+naiads | Naiads | Naiades | potamoi | Nymphs of springs, rivers and fountains, daughters of the river gods.
+  s: Homer, Odyssey 13.104–112; Homeric Hymn to Aphrodite 257–273
+liriope | Liriope | | = | Naiad; mother of Narcissus by Cephissus.
+  s: Ovid, Metamorphoses 3.341–346
+salmacis | Salmacis | | = | Naiad of Halicarnassus who merged with Hermaphroditus.
+  s: Ovid, Metamorphoses 4.285–388
+  m: Salmacis clung to Hermaphroditus in her pool and prayed never to be parted; the gods fused their two bodies into one.
+syrinx | Syrinx | Syrinx | ladon_r | Naiad who fled Pan and became the reeds of his pipes.
+  s: Ovid, Metamorphoses 1.689–712
+  t: ladon_r | her river sisters changed her into marsh reeds
+  m: Syrinx fled Pan to the river Ladon and begged her sisters for help; they turned her into reeds. Pan cut them and bound them with wax into the panpipes.
+  r: Chased by the goat-god, I became marsh reeds, and he bound them with wax to make his pipes. ;; Syrinx
+daphne | Daphne | Daphne | peneus | Naiad who fled Apollo and became the laurel tree.
+  a: ladon_r+gaia | Pausanias 8.20.1–4; Hyginus, Fabulae 203
+  s: Ovid, Metamorphoses 1.452–567
+  t: peneus | her father changed her into a laurel at her plea
+  m: Eros shot Apollo with a golden arrow and Daphne with a lead one. As Apollo caught her, she prayed to her father and became a laurel; Apollo made the laurel his sacred tree and the victor's crown.
+  r: The golden arrow sent the god chasing me and the lead one made me run; I became the tree whose leaves crown victors. ;; Daphne
+minthe | Minthe | | = | Naiad of the river Cocytus loved by Hades; Persephone turned her into mint.
+  R: under
+  s: Ovid, Metamorphoses 10.728–730; Strabo, Geography 8.3.14
+  t: persephone | trampled into the mint plant
+metope | Metope | | ladon_r | Naiad; wife of the river Asopus and mother of many nymphs.
+  s: Apollodorus, Bibliotheca 3.12.6
+aegina | Aegina | | asopus+metope | Nymph carried off by Zeus to the island named for her; mother of Aeacus.
+  s: Apollodorus, Bibliotheca 3.12.6; Pindar, Isthmian 8.16–23
+  w: Aegina (mythology)
+thebe | Thebe | | asopus+metope | Nymph; wife of Zethus; Thebes was named after her.
+  s: Apollodorus, Bibliotheca 3.5.6
+  w: Thebe (daughter of Asopus)
+salamis | Salamis | | asopus+metope | Nymph; the island of Salamis bears her name.
+  s: Diodorus Siculus 4.72.1
+  w: Salamis (nymph)
+sinope | Sinope | | asopus+metope | Nymph who tricked Zeus, Apollo and Halys into promising her virginity.
+  s: Apollonius Rhodius, Argonautica 2.946–954
+corcyra | Corcyra | | asopus+metope | Nymph loved by Poseidon; the island Corfu (Kerkyra) is named for her.
+  s: Diodorus Siculus 4.72.1–3
+  w: Korkyra (mythology)
+oenone | Oenone | Oenone | cebren | Mountain nymph of Ida; Paris's first wife.
+  s: Apollodorus, Bibliotheca 3.12.6; Ovid, Heroides 5
+  m: Paris left Oenone for Helen. When he was mortally wounded by Philoctetes' arrow, she refused to heal him, then killed herself in grief.
+creusa_n | Creusa | | = | Naiad; wife of Peneus, mother of Hypseus and Stilbe.
+  s: Pindar, Pythian 9.14–17; Diodorus Siculus 4.69.1
+  x: peneus | wife of the river Peneus
+  w: Creusa (naiad)
+@grp -
+arethusa | Arethusa | Arethusa | - | Nymph of Elis, turned into a spring that flowed under the sea to Syracuse.
+  s: Ovid, Metamorphoses 5.572–641; Pausanias 5.7.2
+  t: artemis | turned into a spring to escape the river god Alpheus
+  x: alpheus | pursued by Alpheus, who followed her under the sea
+  m: While bathing, Arethusa was chased by the river Alpheus. Artemis hid her in a cloud and turned her into a spring, which ran beneath the sea to the island of Ortygia at Syracuse, but Alpheus still mingled his waters with hers.
+  r: Pursued by a river, I became a spring and fled beneath the sea to Sicily. ;; Arethusa
+
+# ============ COEUS & PHOEBE LINE ============
+@region olympus
+@type titan
+@src Hesiod, Theogony 404–452
+leto | Leto | Latona | coeus+phoebe | Mother of Apollo and Artemis; Hera banned every land from giving her a place to give birth.
+  m: Pregnant by Zeus, Leto wandered because Hera had forbidden any land under the sun to receive her. The floating island of Delos took her in, and she gave birth to Artemis and Apollo there, clinging to a palm tree.
+  r: No land would take me in because of the queen's anger, so a floating island received me and my twins. ;; Leto
+asteria | Asteria | Asteria | coeus+phoebe | Titaness of stars; fleeing Zeus, she became a quail and then the island of Delos.
+  t: zeus | Apollodorus 1.4.1; Callimachus, Hymn 4: leapt into the sea as a quail and became the island Ortygia/Delos
+  r: I became a quail to escape the king of the gods, then a floating island that sheltered my sister. ;; Asteria
+lelantos | Lelantos | | coeus+phoebe | Titan of the unseen air; father of Aura.
+  s: Nonnus, Dionysiaca 48.245–247
+aura | Aura | Aura | lelantos+periboea_o | Titaness of the breeze; mother of Iacchus by Dionysus, then turned into a spring.
+  s: Nonnus, Dionysiaca 48.242–978
+  t: zeus | after killing one of her twins she threw herself into the Sangarius and Zeus turned her into a spring
+periboea_o | Periboea | | oceanus+tethys | Oceanid; wife of Lelantos in Nonnus.
+  T: nymph
+  R: sea
+  s: Nonnus, Dionysiaca 48.245
+  w: Periboea
+hecate | Hecate | Trivia | perses+asteria | Goddess of crossroads, torches and witchcraft; honoured by Zeus above all.
+  T: deity
+  R: under
+  a: zeus+demeter | Callimachus fr. 466
+  a: nyx | Bacchylides fr. 1B
+  m: Hesiod praises Hecate as honoured by Zeus with a share of earth, sea and sky. She helped Demeter search for Persephone with torches, and later became Persephone's attendant and the goddess of witches such as Medea.
+  r: I carried torches to help the grieving mother search, and I rule where three roads meet. ;; Hecate
+
+# ============ HYPERION & THEIA LINE ============
+@src Hesiod, Theogony 371–374
+@type deity
+helios | Helios | Sol | hyperion+theia | The Sun, who drives his chariot across the sky and sees everything.
+  m: Helios saw everything, so he told Demeter that Hades had taken Persephone, and told Hephaestus about Aphrodite and Ares. He let his son Phaethon drive his chariot for one day, with disastrous results.
+  r: I see everything from my chariot; I told a mother where her daughter had gone and a husband what his wife was doing. ;; Helios
+selene | Selene | Luna | hyperion+theia | The Moon, who loved the sleeping shepherd Endymion.
+  m: Selene fell in love with Endymion, and Zeus granted him eternal sleep so that he would never age; she visited him each night on Mount Latmus and bore him fifty daughters.
+  r: Each night I visit a shepherd who sleeps forever on Mount Latmus. ;; Selene
+eos | Eos | Aurora | hyperion+theia | Dawn, rosy-fingered; Aphrodite cursed her with endless love affairs.
+  m: Eos asked Zeus to make her lover Tithonus immortal but forgot to ask for eternal youth. He withered until only his voice remained, and in later tellings she turned him into a cicada.
+  r: I asked for my lover to live forever but forgot to ask for youth, and he shrank to a chirping voice. ;; Eos
+
+# ============ CRIUS & EURYBIA LINE ============
+@type titan
+@region void
+@src Hesiod, Theogony 375–382
+astraeus | Astraeus | | crius+eurybia | Titan of dusk and the stars; father of the winds with Eos.
+pallas_t | Pallas | | crius+eurybia | Titan of warcraft; husband of Styx.
+  w: Pallas (Titan)
+perses | Perses | | crius+eurybia | Titan of destruction; father of Hecate.
+  w: Perses (Titan)
+@type deity
+@region olympus
+@src Hesiod, Theogony 378–382
+boreas | Boreas | Aquilo | astraeus+eos | The North Wind; he carried off the Athenian princess Orithyia.
+  S: Ovid, Metamorphoses 6.675–721
+  m: Refused by Erechtheus, Boreas carried off Orithyia from the banks of the Ilissus; their winged sons Zetes and Calais sailed with the Argonauts.
+  r: Refused as a suitor, I carried off a princess of Athens in a gust of cloud. ;; Boreas
+notus | Notus | Auster | astraeus+eos | The South Wind, bringer of storms at summer's end.
+zephyrus | Zephyrus | Favonius | astraeus+eos | The gentle West Wind; he blew Apollo's discus into Hyacinthus.
+  m: Jealous of Apollo, Zephyrus turned the god's discus so it struck and killed Hyacinthus.
+  r: Jealous, I turned the sun god's discus in the air and killed the youth we both loved. ;; Zephyrus
+eurus | Eurus | Vulturnus | astraeus+eos | The East Wind.
+  s: Homer, Odyssey 5.295; Quintus Smyrnaeus 12.189
+eosphorus | Eosphorus | Lucifer | astraeus+eos | The Morning Star; father of Ceyx and Daedalion.
+  s: Hesiod, Theogony 381; Ovid, Metamorphoses 11.271, 11.295
+hesperus | Hesperus | Vesper | astraeus+eos | The Evening Star.
+  a: atlas | Diodorus Siculus 3.60.2–4
+  a: cephalus+eos | Pausanias (via Hyginus, De Astronomica 2.42)
+  s: Hyginus, De Astronomica 2.42
+astraea | Astraea | Astraea | astraeus+eos | Star-maiden of justice who left the earth last in the Iron Age and became Virgo.
+  a: zeus+themis | later tradition
+  s: Aratus, Phaenomena 96–136; Ovid, Metamorphoses 1.149–150
+@type spirit
+@src Hesiod, Theogony 383–403
+nike | Nike | Victoria | pallas_t+styx | Winged Victory, who stands by Zeus and Athena.
+  w: Nike (mythology)
+kratos | Kratos | Potestas | pallas_t+styx | Strength, who chains Prometheus to the rock in Aeschylus.
+  s: Hesiod, Theogony 385; Aeschylus, Prometheus Bound 1–87
+  w: Kratos (mythology)
+bia | Bia | Vis | pallas_t+styx | Force, silent partner of Kratos.
+zelus | Zelus | | pallas_t+styx | Rivalry and zeal.
+
+# ============ IAPETUS LINE ============
+@region earth
+@type titan
+@src Hesiod, Theogony 507–616
+atlas | Atlas | Atlas | iapetus+clymene | Titan who holds up the sky at the western edge of the world.
+  a: iapetus+asia | Apollodorus, Bibliotheca 1.2.3
+  m: For leading the Titans in war, Atlas was made to hold the sky on his shoulders. Heracles took the sky for a while so Atlas could fetch the Hesperides' apples; in Ovid, Perseus turned him to stone with Medusa's head, becoming the Atlas mountains.
+  t: perseus | Ovid, Metamorphoses 4.627–662: turned to stone as the Atlas Mountains by Medusa's head
+  r: The hero took my burden for a day while I fetched golden apples, then tricked me into taking it back. ;; Atlas
+prometheus | Prometheus | Prometheus | iapetus+clymene | Titan who stole fire for mankind and was chained to the Caucasus.
+  a: iapetus+themis | Aeschylus, Prometheus Bound 18, 209–210
+  a: iapetus+asia | Apollodorus, Bibliotheca 1.2.3
+  m: At Mecone, Prometheus tricked Zeus into choosing the bones and fat of the sacrifice. When Zeus withheld fire, Prometheus stole it in a fennel stalk. Zeus chained him to a rock where an eagle ate his liver each day, until Heracles shot the eagle.
+  r: I carried a spark in a fennel stalk to men, and an eagle ate my liver every day for it. ;; Prometheus
+epimetheus | Epimetheus | Epimetheus | iapetus+clymene | "Afterthought"; he accepted Pandora as his bride despite his brother's warning.
+  a: iapetus+asia | Apollodorus, Bibliotheca 1.2.3
+menoetius | Menoetius | | iapetus+clymene | Titan of violent rage, struck down by Zeus's thunderbolt into Erebus.
+  R: under
+  w: Menoetius (Titan)
+
+@type mortal
+@region earth
+pandora | Pandora | Pandora | hephaestus | The first woman, made from clay by Hephaestus at Zeus's command.
+  o: made from earth and water by Hephaestus; each god gave her a gift
+  s: Hesiod, Theogony 570–612; Works and Days 60–105
+  m: As punishment for the theft of fire, Zeus had Hephaestus fashion Pandora and each god give her a gift. Epimetheus took her in, and she opened the jar that released every evil into the world; only Hope remained inside.
+  r: Made of clay and given a gift by every god, I lifted a lid and let every evil out; only Hope stayed inside. ;; Pandora
+@house Deucalion
+@src Apollodorus, Bibliotheca 1.7.2–3
+deucalion | Deucalion | Deucalion | prometheus+pronoia | Son of Prometheus; he and Pyrrha survived the great flood in a chest.
+  a: prometheus+clymene | scholiast on Apollonius Rhodius 3.1086
+  s: Apollodorus, Bibliotheca 1.7.2; Ovid, Metamorphoses 1.313–415
+  m: Warned by Prometheus, Deucalion built a chest and floated for nine days while Zeus flooded the world. On Parnassus he and Pyrrha threw stones over their shoulders; his became men and hers women.
+  r: After the flood we threw our mother's bones over our shoulders, and they rose up as people. ;; Deucalion
+pronoia | Pronoia | | oceanus+tethys | Oceanid, "Forethought"; wife of Prometheus in Hesiod's Catalogue.
+  T: nymph
+  R: sea
+  s: Hesiod, Catalogue of Women fr. 2 (scholiast on Odyssey 10.2)
+  w: Pronoia
+pyrrha | Pyrrha | Pyrrha | epimetheus+pandora | Daughter of the first woman; wife of Deucalion.
+hellen | Hellen | | deucalion+pyrrha | Ancestor of all the Hellenes (Greeks).
+  a: zeus+pyrrha | Apollodorus, Bibliotheca 1.7.2 (some say)
+amphictyon | Amphictyon | | deucalion+pyrrha | King of Athens; founder of the Amphictyonic League.
+protogeneia | Protogeneia | | deucalion+pyrrha | "First-born"; mother of Aethlius by Zeus.
+orseis | Orseis | | - | Nymph, wife of Hellen.
+  T: nymph
+  x: hellen | wife of Hellen
+dorus | Dorus | | hellen+orseis | Ancestor of the Dorians.
+xuthus | Xuthus | | hellen+orseis | Father of Ion and Achaeus; king in Athens by marriage.
+aeolus | Aeolus | | hellen+orseis | Ancestor of the Aeolians; father of a great royal family.
+  w: Aeolus (son of Hellen)
+enarete | Enarete | | deimachus | Wife of Aeolus, mother of his seven sons.
+deimachus | Deimachus | | - | Father of Enarete.
+  x: aeolus | father-in-law of Aeolus
+iphthime | Iphthime | | dorus | Daughter of Dorus; in Nonnus the mother of the Satyrs by Hermes.
+  s: Nonnus, Dionysiaca 14.105–117
+aethlius | Aethlius | | zeus+protogeneia | First king of Elis; father of Endymion.
+  a: aeolus | Pausanias 5.8.2

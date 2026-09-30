@@ -1,0 +1,245 @@
+# ============ AEACIDS ============
+@region earth
+@type mortal
+@house Aeacids
+@src Apollodorus, Bibliotheca 3.12.6–3.13.8
+aeacus | Aeacus | Aeacus | zeus+aegina | Most pious king of Aegina, for whom Zeus turned ants into men; a judge of the dead.
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.12.6; Ovid, Metamorphoses 7.517–660; Plato, Gorgias 523e–524a
+  m: When Hera sent a plague that emptied Aegina, Aeacus prayed to Zeus, who turned the ants on an oak into men, the Myrmidons. With Poseidon and Apollo he helped build the walls of Troy.
+  r: My island died of plague, so my father turned the ants on an oak tree into my people. ;; Aeacus
+myrmidons | Myrmidons | Myrmidones | - | People of Aegina (later Phthia) made from ants; the soldiers of Achilles.
+  T: creature
+  t: zeus | ants turned into men at Aeacus's prayer
+  x: aeacus | subjects of Aeacus and his descendants
+  s: Ovid, Metamorphoses 7.614–660; Hesiodic Catalogue fr. 205
+endeis | Endeis | | sciron | Wife of Aeacus; mother of Peleus and Telamon.
+  a: chiron+chariclo | Hyginus / scholia on Pindar
+  s: Apollodorus, Bibliotheca 3.12.6
+peleus | Peleus | Peleus | aeacus+endeis | Argonaut who wrestled the shape-shifting Thetis into marriage; father of Achilles.
+  s: Apollodorus, Bibliotheca 3.12.6–3.13.8; Ovid, Metamorphoses 11.221–265; Catullus 64
+  m: Peleus and Telamon killed their half-brother Phocus in a game of discus and were exiled. Peleus held Thetis through all her transformations, and all the gods came to their wedding, where Eris threw the golden apple.
+  r: I held a sea goddess through fire, water and lion until she agreed to be my wife; the gods came to the wedding. ;; Peleus
+telamon | Telamon | Telamon | aeacus+endeis | Argonaut who sacked Troy with Heracles; father of the great Ajax and Teucer.
+  s: Apollodorus, Bibliotheca 2.6.4, 3.12.6–7
+phocus | Phocus | | aeacus+psamathe | Half-brother killed by Peleus and Telamon; eponym of Phocis.
+  s: Hesiod, Theogony 1003–1005; Apollodorus, Bibliotheca 3.12.6
+  w: Phocus (son of Aeacus)
+achilles | Achilles | Achilles | peleus+thetis | Greatest Greek warrior at Troy; invulnerable except for his heel.
+  T: demigod
+  s: Homer, Iliad; Apollodorus, Bibliotheca 3.13.6–8, Epitome 3–5; Statius, Achilleid
+  m: Thetis dipped him in the Styx holding him by the heel. Hidden among the daughters of Lycomedes on Scyros, he was discovered by Odysseus. He withdrew from the fighting after Agamemnon took Briseis, returned to avenge Patroclus by killing Hector, and was killed by Paris's arrow, guided by Apollo, to the heel.
+  r: I chose a short, glorious life over a long obscure one; an arrow to my heel ended it. ;; Achilles
+deidamia | Deidamia | | lycomedes | Princess of Scyros; mother of Neoptolemus by Achilles.
+  s: Apollodorus, Bibliotheca 3.13.8; Statius, Achilleid
+lycomedes | Lycomedes | | - | King of Scyros who hid Achilles among his daughters, and later killed Theseus.
+  x: achilles | Achilles' host and father-in-law
+  s: Apollodorus, Bibliotheca 3.13.8, Epitome 1.24
+neoptolemus | Neoptolemus | Pyrrhus | achilles+deidamia | Son of Achilles who killed Priam and Astyanax; killed at Delphi by Orestes.
+  s: Apollodorus, Epitome 5.10–11, 5.21, 6.12–14; Virgil, Aeneid 2.469–558; Euripides, Andromache
+molossus | Molossus | | neoptolemus+andromache | Ancestor of the Molossian kings of Epirus.
+  s: Pausanias 1.11.1
+periboea_t | Periboea | | alcathous | Wife of Telamon; mother of Ajax.
+  s: Apollodorus, Bibliotheca 3.12.7; Pausanias 1.42.4
+  w: Periboea
+ajax | Ajax the Great | Aiax | telamon+periboea_t | Giant Salaminian hero who killed himself after the arms of Achilles were given to Odysseus.
+  s: Homer, Iliad 7, 15; Sophocles, Ajax; Apollodorus, Epitome 5.6–7
+  t: athena | driven mad so that he slaughtered sheep, thinking they were the Greek leaders
+  m: When the Greeks awarded Achilles' armour to Odysseus, Ajax planned to kill the leaders. Athena maddened him and he slaughtered cattle instead; ashamed, he fell on his sword. A hyacinth sprang from his blood marked with "AI", his cry and the start of his name.
+  r: I carried Achilles' body from the field, lost his armour to a talker, and fell on the sword Hector gave me. ;; Ajax the Great
+teucer | Teucer | Teucer | telamon+hesione | Archer half-brother of Ajax who fought from behind his shield; founder of Salamis in Cyprus.
+  s: Homer, Iliad 8.266–334; Apollodorus, Bibliotheca 3.12.7
+tecmessa | Tecmessa | | teleutas | Captive wife of Ajax.
+  s: Sophocles, Ajax
+teleutas | Teleutas | | - | Phrygian king; father of Tecmessa.
+  x: tecmessa | named as her father
+  s: Sophocles, Ajax 210, 331
+eurysaces | Eurysaces | | ajax+tecmessa | Son of Ajax, named for his father's great shield.
+  s: Sophocles, Ajax; Pausanias 1.35.2
+myrmidon | Myrmidon | | zeus+eurymedusa | Eponymous ancestor of the Myrmidons of Phthia.
+  T: demigod
+  s: Clement of Alexandria, Protrepticus 2.39
+eurymedusa | Eurymedusa | | - | Princess seduced by Zeus in the form of an ant.
+  x: zeus | Zeus approached her as an ant
+  s: Clement of Alexandria, Protrepticus 2.39
+actor | Actor | | myrmidon | King of Phthia; grandfather of Patroclus.
+  s: Apollodorus, Bibliotheca 1.7.3
+  w: Actor
+menoetius_a | Menoetius | | actor+aegina | Argonaut; father of Patroclus.
+  s: Pindar, Olympian 9.69–70; Apollonius Rhodius 1.69–70
+  w: Menoetius
+sthenele | Sthenele | | acastus | Mother of Patroclus.
+  s: Apollodorus, Bibliotheca 3.13.8
+  a: periopis | Apollodorus 3.13.8 (Philocrates)
+patroclus | Patroclus | Patroclus | menoetius_a+sthenele | Achilles' beloved companion; killed by Hector while wearing Achilles' armour.
+  s: Homer, Iliad 11, 16, 23
+  m: Patroclus begged to lead the Myrmidons in Achilles' armour. He drove the Trojans back to their walls, killed Sarpedon, and was stripped by Apollo, wounded by Euphorbus and killed by Hector.
+  r: I wore my friend's armour into battle, and a god knocked it off me before the Trojan prince struck. ;; Patroclus
+periopis | Periopis | | pheres | Mother of Patroclus in some accounts.
+  s: Apollodorus, Bibliotheca 3.13.8
+briseis | Briseis | Briseis | briseus | Captive of Achilles whom Agamemnon seized, causing Achilles' wrath.
+  x: achilles | captive of Achilles at Troy
+  s: Homer, Iliad 1.181–187, 19.282–300
+briseus | Briseus | | - | Priest of Lyrnessus; father of Briseis.
+  x: briseis | named as her father
+  s: Homer, Iliad 1.392
+chryses | Chryses | Chryses | - | Priest of Apollo whose prayer brought plague on the Greeks.
+  x: apollo | priest of Apollo at Chryse
+  s: Homer, Iliad 1.9–52
+chryseis | Chryseis | Chryseis | chryses | Captive of Agamemnon; her father's prayer to Apollo brought the plague.
+  s: Homer, Iliad 1.11–120
+
+# ============ ODYSSEUS & HIS HOUSE ============
+@house Ithaca
+@src Homer, Odyssey
+arcesius | Arcesius | | zeus | Grandfather of Odysseus.
+  a: cephalus | Aristotle (via Etymologicum Magnum)
+  T: demigod
+  s: Homer, Odyssey 16.117–120; Ovid, Metamorphoses 13.144
+chalcomedusa | Chalcomedusa | | - | Wife of Arcesius; mother of Laertes.
+  x: arcesius | wife of Arcesius
+  s: Eustathius on Odyssey 16.118
+laertes | Laertes | Laertes | arcesius+chalcomedusa | Old king of Ithaca, father of Odysseus; an Argonaut in some lists.
+  s: Homer, Odyssey 24
+amphithea_a | Amphithea | | - | Wife of Autolycus.
+  x: autolycus | wife of Autolycus
+  s: Homer, Odyssey 19.416
+  w: Amphithea
+anticleia | Anticleia | Anticlia | autolycus+amphithea_a | Mother of Odysseus, who died of grief waiting for him.
+  s: Homer, Odyssey 11.84–224
+odysseus | Odysseus | Ulysses | laertes+anticleia | King of Ithaca, the cleverest of the Greeks; he devised the wooden horse and spent ten years getting home.
+  a: sisyphus+anticleia | Sophocles, Philoctetes 417; Hyginus, Fabulae 201
+  s: Homer, Iliad and Odyssey; Apollodorus, Epitome 3.6–7, 5.14–15, 7
+  m: Odysseus devised the wooden horse. On the way home he blinded Polyphemus, received the bag of winds from Aeolus, lost all his ships but one to the Laestrygonians, stayed a year with Circe, spoke with the dead, passed the Sirens, Scylla and Charybdis, and spent seven years with Calypso. Home at last in disguise, he strung his great bow and killed the suitors.
+  r: I told a Cyclops my name was Nobody and came home disguised as a beggar to string a bow no one else could bend. ;; Odysseus
+ctimene | Ctimene | | laertes+anticleia | Sister of Odysseus.
+  s: Homer, Odyssey 15.363–367
+telemachus | Telemachus | Telemachus | odysseus+penelope | Son of Odysseus who searched for news of his father and helped kill the suitors.
+  s: Homer, Odyssey 1–4, 15–24
+odysseus_crew | Crew of Odysseus (swine) | | - | Sailors whom Circe turned into pigs until Odysseus made her restore them.
+  x: odysseus | his companions
+  t: circe | turned into swine by her potion
+  s: Homer, Odyssey 10.203–399
+argos_dog | Argos | | - | Odysseus's old dog, who recognized him after twenty years and died.
+  T: creature
+  x: odysseus | Odysseus's hound
+  s: Homer, Odyssey 17.290–327
+  w: Argos (dog)
+polyphemus | Polyphemus | Polyphemus | poseidon+thoosa | Cyclops who ate Odysseus's men and was blinded by him; he loved the Nereid Galatea.
+  T: giant
+  R: sea
+  s: Homer, Odyssey 1.68–73, 9.105–566; Ovid, Metamorphoses 13.738–897
+  m: Trapped in his cave, Odysseus got Polyphemus drunk and told him his name was "Nobody". When they blinded him, Polyphemus shouted that Nobody was hurting him, so the other Cyclopes did nothing. The Greeks escaped tied under his sheep.
+  r: When I cried out that "Nobody" was blinding me, no one came to help. ;; Polyphemus
+acis | Acis | Acis | pan+symaethis | Sicilian shepherd loved by Galatea; crushed by Polyphemus and turned into a river.
+  s: Ovid, Metamorphoses 13.738–897
+  t: galatea | turned into a river
+symaethis | Symaethis | | symaethus | Nymph of the river Symaethus; mother of Acis.
+  T: nymph
+  s: Ovid, Metamorphoses 13.750
+symaethus | Symaethus | | potamoi | River of Sicily.
+  T: deity
+  R: sea
+  s: Ovid, Metamorphoses 13.750
+aeolus_w | Aeolus | Aeolus | hippotes | Keeper of the winds on the floating island of Aeolia; he gave Odysseus the bag of winds.
+  x: odysseus | host of Odysseus
+  T: deity
+  R: sea
+  a: poseidon+arne | Diodorus Siculus 4.67.3–6
+  s: Homer, Odyssey 10.1–76
+  w: Aeolus
+  r: I gave a sailor the winds in a leather bag; his crew opened it within sight of home. ;; Aeolus, keeper of the winds
+hippotes | Hippotes | | - | Father of Aeolus, keeper of the winds.
+  x: aeolus_w | named as his father
+  s: Homer, Odyssey 10.2
+arne | Arne | | aeolus | Daughter of Aeolus the Hellenid; mother of Aeolus and Boeotus by Poseidon.
+  s: Diodorus Siculus 4.67.3–6
+lamus_l | Lamus | | poseidon | King of the Laestrygonians.
+  T: giant
+  s: Homer, Odyssey 10.81; Ovid, Metamorphoses 14.233
+  w: Lamus
+laestrygonians | Laestrygonians | Laestrygones | lamus_l | Cannibal giants who sank all of Odysseus's ships but one.
+  T: giant
+  s: Homer, Odyssey 10.80–132
+@house Phaeacia
+periboea_e | Periboea | | eurymedon | Youngest daughter of the giant king Eurymedon; mother of Nausithous by Poseidon.
+  s: Homer, Odyssey 7.56–63
+  w: Periboea
+nausithous | Nausithous | | poseidon+periboea_e | First king of the Phaeacians, who led them to Scheria.
+  T: demigod
+  s: Homer, Odyssey 6.7–10, 7.56–63
+alcinous | Alcinous | Alcinous | nausithous | King of the Phaeacians who hosted Odysseus and sent him home.
+  s: Homer, Odyssey 6–13
+rhexenor | Rhexenor | | nausithous | Brother of Alcinous, killed by Apollo; father of Arete.
+  s: Homer, Odyssey 7.63–68
+arete | Arete | Arete | rhexenor | Wise queen of the Phaeacians.
+  s: Homer, Odyssey 7.53–77
+  w: Arete of Phaeacia
+nausicaa | Nausicaa | Nausicaa | alcinous+arete | Phaeacian princess who found Odysseus on the beach.
+  s: Homer, Odyssey 6
+  r: Doing laundry at the river mouth, I found a shipwrecked stranger covered only with a branch. ;; Nausicaa
+
+# ============ OTHER HEROES OF THE TROJAN WAR ============
+@house Trojan War (Greeks)
+@src Homer, Iliad 2 (Catalogue of Ships); Apollodorus, Epitome 3
+oileus | Oileus | | - | King of the Locrians; Argonaut; father of Ajax the Lesser.
+  x: ajax_l | father of Ajax the Lesser (his own father was Hodoedocus)
+  s: Apollonius Rhodius, Argonautica 1.74–76; Homer, Iliad 2.527
+eriopis | Eriopis | | - | Wife of Oileus.
+  x: oileus | wife of Oileus
+  s: Hesiodic Catalogue fr. 250
+ajax_l | Ajax the Lesser | Aiax | oileus+eriopis | Swift Locrian who dragged Cassandra from Athena's statue; drowned by Poseidon.
+  x: ajax | fought beside Ajax the Great
+  s: Homer, Iliad 2.527–535, Odyssey 4.499–511; Apollodorus, Epitome 5.22–6.6
+  m: Ajax dragged Cassandra away from Athena's image, and the statue turned its eyes upward. Athena wrecked his ship; he climbed a rock and boasted he had escaped the gods, so Poseidon split the rock.
+poeas | Poeas | | thaumacus | Argonaut who shot Talos in the ankle; he lit Heracles' pyre and received his bow.
+  s: Apollodorus, Bibliotheca 1.9.26, 2.7.7
+thaumacus | Thaumacus | | - | Founder of Thaumacia; father of Poeas.
+  x: poeas | named as his father
+  s: Eustathius on Iliad 2.716
+demonassa | Demonassa | | - | Wife of Poeas; mother of Philoctetes.
+  x: poeas | wife of Poeas
+  s: Hyginus, Fabulae 102
+philoctetes | Philoctetes | Philoctetes | poeas+demonassa | Archer with the bow of Heracles, abandoned on Lemnos with a festering snakebite.
+  x: odysseus | brought to Troy by Odysseus and Neoptolemus
+  s: Sophocles, Philoctetes; Apollodorus, Epitome 3.27, 5.8
+  m: Bitten by a snake on the way to Troy, Philoctetes was left on Lemnos for ten years because of the stench of his wound. A prophecy said Troy could not fall without Heracles' bow, so Odysseus and Neoptolemus brought him back; he shot Paris.
+  r: Abandoned for ten years with a stinking wound, I held the one bow that could take Troy. ;; Philoctetes
+idmon | Idmon | | apollo | Argonaut seer who foresaw his own death and sailed anyway.
+  T: demigod
+  s: Apollonius Rhodius, Argonautica 1.139–145, 2.815–834
+thestor | Thestor | | idmon | Seer; father of Calchas.
+  s: Homer, Iliad 1.69
+calchas | Calchas | Calchas | thestor | Seer of the Greeks at Troy who demanded Iphigenia's sacrifice and devised the horse.
+  s: Homer, Iliad 1.68–120; Apollodorus, Epitome 3.15–21, 6.2–4
+  m: An oracle said Calchas would die when he met a greater seer. He lost a contest to Mopsus over counting the figs on a tree and died of grief.
+phylacus | Phylacus | | deion+diomede_x | Founder of Phylace; father of Iphiclus.
+  s: Apollodorus, Bibliotheca 1.9.4, 1.9.12
+diomede_x | Diomede | | xuthus+creusa | Wife of Deion.
+  s: Apollodorus, Bibliotheca 1.9.4
+  w: Diomede
+iphiclus | Iphiclus | | phylacus | Swift runner who ran over ears of corn without bending them; cured of impotence by Melampus.
+  s: Apollodorus, Bibliotheca 1.9.12; Homer, Iliad 2.705
+  w: Iphiclus
+protesilaus | Protesilaus | Protesilaus | iphiclus+diomedeia | First Greek to leap ashore at Troy and first to die.
+  s: Homer, Iliad 2.695–710; Apollodorus, Epitome 3.30
+  t: hermes | allowed back from the dead for three hours to see his wife
+  r: The prophecy said the first to land would die; I jumped anyway. ;; Protesilaus
+diomedeia | Diomedeia | | - | Wife of Iphiclus.
+  x: iphiclus | wife of Iphiclus
+  s: Hyginus / Eustathius on Iliad 2.695
+laodamia_p | Laodamia | | acastus | Wife of Protesilaus, who died with him when he returned for three hours.
+  s: Hyginus, Fabulae 103–104; Ovid, Heroides 13
+  w: Laodamia (daughter of Acastus)
+panopeus | Panopeus | | phocus+asteria_p | Phocian king.
+  s: Pausanias 2.29.4, 10.4.1
+epeius | Epeius | Epeus | panopeus | Builder of the wooden horse.
+  s: Homer, Odyssey 8.492–495; Apollodorus, Epitome 5.14
+  w: Epeius (son of Panopeus)
+wooden_horse | Wooden Horse | Equus Troianus | epeius | The hollow horse built by Epeius on Athena's advice to smuggle Greek warriors into Troy.
+  T: creature
+  o: built by Epeius with Athena's help (an artefact, included for lineage completeness)
+  x: athena | built under Athena's guidance
+  s: Homer, Odyssey 8.492–520; Virgil, Aeneid 2.13–267; Apollodorus, Epitome 5.14–19
+  w: Trojan Horse
+  r: My belly held the best of the Greeks; the Trojans pulled me through their own walls. ;; The Wooden Horse

@@ -1,0 +1,29 @@
+{
+  "name": "Theogonia: Greek Mythology Family Tree",
+  "short_name": "Theogonia",
+  "description": "Family tree of 1,208 figures of Greek mythology, with myths, riddles, sources and a quiz. Works offline.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#151C28",
+  "theme_color": "#151C28",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

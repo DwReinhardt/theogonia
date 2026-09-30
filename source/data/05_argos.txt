@@ -1,0 +1,351 @@
+# ============ HOUSE OF ARGOS: INACHUS TO DANAUS ============
+@region earth
+@type mortal
+@house Argos
+@src Apollodorus, Bibliotheca 2.1.1–5
+phoroneus | Phoroneus | | inachus+melia_i | First man and king of the Peloponnese; he taught people to live in cities and discovered fire in some accounts.
+  s: Apollodorus, Bibliotheca 2.1.1; Pausanias 2.15.5
+io | Io | Io | inachus+melia_i | Priestess of Hera loved by Zeus and turned into a white heifer.
+  s: Apollodorus, Bibliotheca 2.1.3; Ovid, Metamorphoses 1.568–746; Aeschylus, Prometheus Bound 561–886
+  a: iasus_a | Apollodorus 2.1.3 (some say)
+  t: zeus | turned into a white heifer to hide her from Hera
+  m: Zeus turned Io into a heifer, Hera claimed the heifer and set hundred-eyed Argus to watch her, and Hermes killed Argus. Hera then sent a gadfly that drove Io across the world, giving her name to the Ionian Sea and the Bosporus ("cow's ford"), until she regained her form in Egypt.
+  r: I crossed the "cow's ford" as a heifer, stung by a gadfly, and the Ionian Sea still bears my name. ;; Io
+iasus_a | Iasus | | argus_k | King of Argos; in some accounts the father of Io.
+  s: Apollodorus, Bibliotheca 2.1.2–3
+aegialeus_i | Aegialeus | | inachus+melia_i | Founder of Aegialea (Achaea).
+  s: Apollodorus, Bibliotheca 2.1.1
+teledice | Teledice | | - | Nymph; wife of Phoroneus.
+  T: nymph
+  x: phoroneus | wife of Phoroneus
+niobe_a | Niobe | | phoroneus+teledice | First mortal woman loved by Zeus (not Niobe of Thebes).
+  w: Niobe (Argive)
+apis | Apis | | phoroneus+teledice | Tyrannical king of Argos; the Peloponnese was once called Apia after him.
+  w: Apis (Greek mythology)
+argus_k | Argus | | zeus+niobe_a | King who gave his name to Argos.
+  w: Argus (king of Argos)
+pelasgus | Pelasgus | | zeus+niobe_a | Ancestor of the Pelasgians; in Arcadia, the first man, born of the earth.
+  a: gaia | Hesiod fr. 160; Pausanias 8.1.4 (autochthonous)
+  s: Apollodorus, Bibliotheca 2.1.1, 3.8.1
+  H: Arcadia
+argus_p | Argus Panoptes | Argus | gaia | Hundred-eyed giant set by Hera to guard Io; Hermes killed him.
+  T: giant
+  a: arestor | Pherecydes, cited by Apollodorus 2.1.3
+  a: agenor_a | Apollodorus, Bibliotheca 2.1.2
+  s: Aeschylus, Prometheus Bound 567–569; Apollodorus, Bibliotheca 2.1.2–3; Ovid, Metamorphoses 1.622–723
+  t: hera | she set his hundred eyes in the peacock's tail
+  m: Argus never closed all his eyes at once. Hermes lulled every one of them to sleep with his pipes and stories, then cut off his head. Hera put his eyes in the tail of her peacock.
+  r: I never closed all hundred eyes at once, until a god's stories put them to sleep; now they decorate a peacock's tail. ;; Argus Panoptes
+arestor | Arestor | | - | Argive; father of Argus Panoptes in one version and of the shipwright Argus.
+  x: argus_k | descendant of the royal house of Argus
+  s: Apollodorus, Bibliotheca 2.1.3; Apollonius Rhodius 1.112
+agenor_a | Agenor | | ecbasus | Argive noble; father of Argus Panoptes in Apollodorus.
+  s: Apollodorus, Bibliotheca 2.1.2
+  w: Agenor
+ecbasus | Ecbasus | | argus_k | Son of Argus.
+  s: Apollodorus, Bibliotheca 2.1.2
+
+@house Egypt & Libya
+epaphus | Epaphus | | zeus+io | Son of Io, born in Egypt; king of Egypt, founder of Memphis.
+  T: demigod
+  s: Apollodorus, Bibliotheca 2.1.4; Aeschylus, Prometheus Bound 846–852
+memphis | Memphis | | nilus | Daughter of the Nile; wife of Epaphus.
+  T: nymph
+  w: Memphis (mythology)
+libya | Libya | | epaphus+memphis | Eponym of Libya; mother of Agenor and Belus by Poseidon.
+  w: Libya (mythology)
+lysianassa_e | Lysianassa | | epaphus | Daughter of Epaphus; mother of Busiris by Poseidon.
+  s: Apollodorus, Bibliotheca 2.5.11
+  w: Lysianassa
+busiris | Busiris | Busiris | poseidon+lysianassa_e | Egyptian king who sacrificed strangers until Heracles killed him.
+  s: Apollodorus, Bibliotheca 2.5.11
+agenor | Agenor | Agenor | poseidon+libya | King of Tyre (or Sidon); father of Europa and Cadmus.
+  H: Phoenicia
+  s: Apollodorus, Bibliotheca 2.1.4, 3.1.1
+telephassa | Telephassa | | - | Wife of Agenor; she died searching for her daughter Europa.
+  x: agenor | wife of Agenor
+  H: Phoenicia
+  s: Apollodorus, Bibliotheca 3.1.1, 3.4.1
+belus | Belus | Belus | poseidon+libya | King of Egypt; father of Danaus and Aegyptus.
+  s: Apollodorus, Bibliotheca 2.1.4
+  w: Belus (Egyptian king)
+anchinoe | Anchinoe | | nilus | Daughter of the Nile; wife of Belus.
+  T: nymph
+  s: Apollodorus, Bibliotheca 2.1.4
+aegyptus | Aegyptus | Aegyptus | belus+anchinoe | King of Egypt, father of fifty sons.
+danaus | Danaus | Danaus | belus+anchinoe | Fled Egypt with his fifty daughters and became king of Argos.
+  m: Forced to marry his fifty daughters to the fifty sons of Aegyptus, Danaus gave each daughter a dagger for the wedding night. Only Hypermnestra spared her husband.
+cepheus_e | Cepheus | Cepheus | belus+anchinoe | King of Ethiopia; father of Andromeda.
+  s: Euripides fr. 881; Apollodorus, Bibliotheca 2.1.4, 2.4.3
+  w: Cepheus (Ethiopian king)
+phineus_e | Phineus | | belus+anchinoe | Andromeda's uncle and betrothed; turned to stone by Perseus.
+  s: Apollodorus, Bibliotheca 2.1.4, 2.4.3; Ovid, Metamorphoses 5.1–235
+  t: perseus | turned to stone by Medusa's head at the wedding feast
+cassiopeia | Cassiopeia | Cassiopea | - | Queen of Ethiopia who boasted she was lovelier than the Nereids.
+  x: cepheus_e | wife of Cepheus; her own parentage is not recorded in the main sources
+  s: Apollodorus, Bibliotheca 2.4.3; Hyginus, De Astronomica 2.10
+  t: poseidon | set among the stars, upside down half the year
+  r: I boasted I was lovelier than the sea nymphs; now I sit in the stars, upside down half the year. ;; Cassiopeia
+andromeda | Andromeda | Andromeda | cepheus_e+cassiopeia | Ethiopian princess chained to a rock for the sea monster and rescued by Perseus.
+  s: Apollodorus, Bibliotheca 2.4.3; Ovid, Metamorphoses 4.663–803
+  m: To appease Poseidon for her mother's boast, Andromeda was chained to a sea rock for the monster Cetus. Perseus, returning from killing Medusa, killed the monster and married her.
+  r: Chained to a rock for my mother's boast, I was saved by a hero flying home with a Gorgon's head. ;; Andromeda
+cetus_e | Cetus (Ethiopian) | Cetus | poseidon | Sea monster sent by Poseidon against Ethiopia; killed by Perseus.
+  T: monster
+  R: sea
+  o: sent by Poseidon to punish Cassiopeia's boast
+  s: Apollodorus, Bibliotheca 2.4.3; Ovid, Metamorphoses 4.668–734
+  w: Cetus (mythology)
+@house Argos
+@grp danaids
+danaids | Danaids | Danaides | danaus | The fifty daughters of Danaus, forty-nine of whom murdered their husbands.
+  R: under
+  s: Apollodorus, Bibliotheca 2.1.5; Aeschylus, Suppliants
+  m: For murdering their husbands on their wedding night, the Danaids were condemned in the underworld to carry water in leaking jars to fill a bath that never fills.
+  r: Forty-nine of us killed our husbands on our wedding night; below, we carry water in jars that leak forever. ;; Danaids
+hypermnestra | Hypermnestra | Hypermestra | = | The only Danaid who spared her husband, Lynceus.
+  R: earth
+  s: Apollodorus, Bibliotheca 2.1.5; Horace, Odes 3.11
+amymone | Amymone | | = | Danaid rescued by Poseidon from a satyr; mother of Nauplius.
+  R: earth
+  s: Apollodorus, Bibliotheca 2.1.4; Hyginus, Fabulae 169
+  m: Sent to find water in dry Argos, Amymone was attacked by a satyr. Poseidon drove it off, lay with her, and struck the rock with his trident to make the spring of Lerna.
+@grp aegyptiads
+aegyptiads | Sons of Aegyptus | | aegyptus | Fifty sons of Aegyptus, murdered by their Danaid brides.
+lynceus_a | Lynceus | | = | The only son of Aegyptus to survive; later king of Argos.
+  w: Lynceus (son of Aegyptus)
+@grp -
+nauplius | Nauplius | Nauplius | poseidon+amymone | Navigator and wrecker; he lured the Greek fleet onto the rocks to avenge Palamedes.
+  s: Apollodorus, Bibliotheca 2.1.5, Epitome 6.7–11
+  w: Nauplius (mythology)
+palamedes | Palamedes | Palamedes | nauplius+clymene_c | Clever Greek who exposed Odysseus's feigned madness and was framed by him.
+  s: Apollodorus, Epitome 3.7–8, 6.8–9; Hyginus, Fabulae 95, 105
+  m: Odysseus pretended to be mad to avoid the Trojan War, ploughing with an ox and an ass. Palamedes put the baby Telemachus in front of the plough, and Odysseus swerved. Odysseus later forged a letter and planted gold to have Palamedes stoned as a traitor.
+  r: I put a baby in front of a "madman's" plough, and he never forgave me; he framed me with buried gold. ;; Palamedes
+abas | Abas | | lynceus_a+hypermnestra | King of Argos, father of the twins Acrisius and Proetus.
+  w: Abas (king of Argos)
+aglaea_m | Aglaea | | mantineus | Wife of Abas; mother of Acrisius and Proetus.
+  s: Apollodorus, Bibliotheca 2.2.1
+  w: Aglaea (mythology)
+mantineus | Mantineus | | lycaon | Son of Lycaon; founder of Mantinea.
+  H: Arcadia
+  s: Apollodorus, Bibliotheca 2.2.1, 3.8.1
+acrisius | Acrisius | Acrisius | abas+aglaea_m | King of Argos who locked his daughter Danaë away; killed by his grandson Perseus's discus.
+  m: Told that his grandson would kill him, Acrisius shut Danaë in a bronze chamber and later cast her and baby Perseus to sea in a chest. Years later, Perseus's discus struck him by accident at funeral games in Larissa.
+  r: I locked my daughter in bronze to avoid a prophecy, but my grandson's stray discus found me anyway. ;; Acrisius
+proetus | Proetus | Proetus | abas+aglaea_m | King of Tiryns, twin rival of Acrisius; the Cyclopes built his walls.
+  s: Apollodorus, Bibliotheca 2.2.1–2
+eurydice_l | Eurydice | | lacedaemon+sparta | Daughter of Lacedaemon; wife of Acrisius, mother of Danaë.
+  s: Apollodorus, Bibliotheca 3.10.3
+  w: Eurydice (daughter of Lacedaemon)
+danae | Danaë | Danae | acrisius+eurydice_l | Princess locked in a bronze chamber; Zeus came to her as a shower of gold.
+  s: Apollodorus, Bibliotheca 2.4.1; Simonides fr. 543
+  m: Zeus entered Danaë's sealed chamber as a shower of gold. Acrisius set her and the infant Perseus adrift in a chest; they washed up on Seriphos, where the fisherman Dictys took them in.
+  r: Locked in bronze, I was visited by a god as a shower of gold. ;; Danaë
+stheneboea | Stheneboea | Anteia | iobates | Wife of Proetus who falsely accused Bellerophon.
+  s: Apollodorus, Bibliotheca 2.2.1, 2.3.1; Homer, Iliad 6.155–170 (as Anteia)
+  H: Lycia
+proetides | Proetides | | proetus+stheneboea | Daughters of Proetus, driven mad for insulting Hera (or Dionysus); they believed they were cows.
+  s: Apollodorus, Bibliotheca 2.2.2; Bacchylides 11
+  t: hera | driven mad and wandered the Peloponnese as if they were cows
+megapenthes | Megapenthes | | proetus+stheneboea | King of Tiryns who swapped kingdoms with Perseus.
+  s: Apollodorus, Bibliotheca 2.4.4
+
+# ============ PERSEUS & THE PERSEIDS ============
+@house Perseids
+@src Apollodorus, Bibliotheca 2.4.1–5
+perseus | Perseus | Perseus | zeus+danae | Hero who beheaded Medusa and rescued Andromeda.
+  T: demigod
+  s: Apollodorus, Bibliotheca 2.4.1–5; Ovid, Metamorphoses 4.604–5.249; Hesiod, Shield 216–237
+  m: Sent by King Polydectes to fetch Medusa's head, Perseus got the Graeae to tell him where the nymphs lived who gave him winged sandals, the kibisis bag and Hades' cap of invisibility; Hermes gave him a sickle. He beheaded Medusa, saved Andromeda, and turned Polydectes and his court to stone.
+  r: Winged sandals, a cap of invisibility, a polished shield and a Gorgon's head in a bag: whose kit is this? ;; Perseus
+dictys | Dictys | | magnes+naiad_m | Fisherman of Seriphos who found Danaë and Perseus in the chest.
+  s: Apollodorus, Bibliotheca 1.9.6, 2.4.1–3
+polydectes | Polydectes | | magnes+naiad_m | Tyrant of Seriphos who sent Perseus for Medusa's head; turned to stone.
+  s: Apollodorus, Bibliotheca 1.9.6, 2.4.2–3
+  t: perseus | turned to stone by Medusa's head with his court
+naiad_m | Naiad (mother of Dictys) | | - | An unnamed Naiad, wife of Magnes.
+  T: nymph
+  x: magnes | wife of Magnes
+  s: Apollodorus, Bibliotheca 1.9.6
+  w: Naiad
+perses_p | Perses | | perseus+andromeda | Son of Perseus, left in Ethiopia; ancestor of the Persian kings.
+  s: Apollodorus, Bibliotheca 2.4.5; Herodotus 7.61
+  w: Perses (son of Perseus)
+alcaeus | Alcaeus | | perseus+andromeda | King of Tiryns; father of Amphitryon.
+  w: Alcaeus (son of Perseus)
+sthenelus_p | Sthenelus | | perseus+andromeda | King of Mycenae; father of Eurystheus.
+  w: Sthenelus (son of Perseus)
+heleus | Heleus | | perseus+andromeda | Son of Perseus; settled the Taphian islands.
+mestor | Mestor | | perseus+andromeda | Son of Perseus.
+electryon | Electryon | | perseus+andromeda | King of Mycenae; father of Alcmene.
+gorgophone | Gorgophone | | perseus+andromeda | "Gorgon-killer"; first widow in legend to remarry.
+  s: Apollodorus, Bibliotheca 1.9.5, 2.4.5; Pausanias 2.21.7
+amphitryon | Amphitryon | Amphitryon | alcaeus+astydameia_p | Husband of Alcmene; Zeus took his shape to father Heracles.
+  s: Apollodorus, Bibliotheca 2.4.6–8; Plautus, Amphitruo
+anaxo | Anaxo | | alcaeus+astydameia_p | Wife of her uncle Electryon; mother of Alcmene.
+eurystheus | Eurystheus | Eurystheus | sthenelus_p+nicippe | King of Mycenae and Tiryns who set Heracles his labours.
+  s: Apollodorus, Bibliotheca 2.4.5, 2.5; Homer, Iliad 19.95–133
+  m: Hera delayed Heracles' birth so that Eurystheus, born first, gained the rule Zeus had promised. He was so frightened of Heracles that he hid in a bronze jar when the hero brought back the Erymanthian Boar.
+  r: I was born early by a goddess's trick, set the hero his twelve labours, and hid in a jar when he brought back a boar. ;; Eurystheus
+alcmene | Alcmene | Alcmena | electryon+anaxo | Mother of Heracles; Zeus came to her disguised as her husband.
+  s: Apollodorus, Bibliotheca 2.4.6–8; Hesiod, Shield 1–56
+  m: Zeus visited Alcmene in the form of Amphitryon and made one night last three. She bore twins: Heracles by Zeus and Iphicles by Amphitryon.
+midea | Midea | | - | Phrygian concubine of Electryon; mother of Licymnius.
+  x: electryon | concubine of Electryon
+  s: Apollodorus, Bibliotheca 2.4.5
+  w: Midea (mythology)
+licymnius | Licymnius | | electryon+midea | Half-brother of Alcmene; killed by Tlepolemus.
+  s: Apollodorus, Bibliotheca 2.4.5, 2.8.2; Homer, Iliad 2.661–663
+
+# ============ HERACLES & THE HERACLIDS ============
+@house Heraclids
+@src Apollodorus, Bibliotheca 2.4.8–2.8.5
+heracles | Heracles | Hercules | zeus+alcmene | Greatest of heroes; he completed twelve labours and became a god.
+  T: demigod
+  s: Apollodorus, Bibliotheca 2.4.8–2.7.7; Hesiod, Theogony 943–944, 950–955; Sophocles, Trachiniae
+  m: Hera sent two snakes to his cradle, and the infant strangled them. Driven mad by Hera, he killed his children, and the Delphic oracle sent him to serve Eurystheus, who set the twelve labours: the Nemean Lion, the Hydra, the Ceryneian Hind, the Erymanthian Boar, the Augean stables, the Stymphalian Birds, the Cretan Bull, the Mares of Diomedes, Hippolyta's belt, Geryon's cattle, the Hesperides' apples and Cerberus. Poisoned by the robe soaked in Nessus's blood, he had himself burned on Mount Oeta; his mortal part burned away and he rose to Olympus, where he married Hebe.
+  r: I strangled two snakes in my cradle, held up the sky for a morning, and was burned on Mount Oeta before I became a god. ;; Heracles
+iphicles | Iphicles | Iphiclus | amphitryon+alcmene | Mortal twin of Heracles.
+  w: Iphicles
+automedusa | Automedusa | | alcathous | Wife of Iphicles, mother of Iolaus.
+  s: Apollodorus, Bibliotheca 2.4.11
+iolaus | Iolaus | Iolaus | iphicles+automedusa | Heracles' nephew and charioteer; he cauterised the Hydra's necks.
+  s: Apollodorus, Bibliotheca 2.5.2; Euripides, Heraclidae
+heraclids_m | Children of Megara | | heracles+megara | The sons of Heracles whom he killed in the madness sent by Hera.
+  s: Apollodorus, Bibliotheca 2.4.12; Euripides, Heracles
+  w: Megara (mythology)
+hyllus | Hyllus | | heracles+deianira | Eldest son of Heracles; led the first attempt of the Heraclids to return.
+  s: Apollodorus, Bibliotheca 2.7.7, 2.8.2; Sophocles, Trachiniae
+macaria_h | Macaria | | heracles+deianira | Daughter of Heracles who gave her life so her brothers could win against Eurystheus.
+  s: Euripides, Heraclidae 474–601; Pausanias 1.32.6
+  w: Macaria
+telephus | Telephus | Telephus | heracles+auge | King of Mysia wounded and healed by Achilles' spear.
+  T: demigod
+  s: Apollodorus, Bibliotheca 2.7.4, 3.9.1, Epitome 3.17–20
+  m: An oracle told Telephus that only the one who wounded him could heal him. Achilles healed him with rust scraped from his spear, and in return Telephus showed the Greeks the way to Troy.
+  r: Only the spear that wounded me could heal me; I paid for the cure by showing the fleet the way to Troy. ;; Telephus
+lamus_h | Lamus | | heracles+omphale | Son of Heracles and Omphale.
+  s: Ovid, Heroides 9.54; Diodorus Siculus 4.31.8
+  w: Lamus
+alexiares | Alexiares | | heracles+hebe | "Warder-off of war", divine son of Heracles and Hebe.
+  T: deity
+  R: olympus
+anicetus | Anicetus | | heracles+hebe | "Unconquerable", twin of Alexiares.
+  T: deity
+  R: olympus
+thespiadae | Thespiadae | | heracles | The fifty sons of Heracles by the daughters of Thespius; colonists of Sardinia.
+  o: sons of the daughters of King Thespius, whose own parentage lines are not charted here
+  s: Apollodorus, Bibliotheca 2.4.10, 2.7.8; Diodorus Siculus 4.29
+tlepolemus | Tlepolemus | | heracles+astyoche_ph | Leader of the Rhodians at Troy; killed by Sarpedon.
+  s: Homer, Iliad 2.653–670, 5.628–669
+astyoche_ph | Astyoche | | phylas | Daughter of Phylas; mother of Tlepolemus.
+  s: Homer, Iliad 2.658–660
+  w: Astyoche
+scythes | Scythes | | heracles+echidna | Ancestor of the Scythian kings; the only son who could draw Heracles' bow.
+  s: Herodotus 4.8–10
+  o: son of Heracles and the snake-woman of Hylaea, later identified with Echidna
+omphale | Omphale | Omphale | iardanus | Queen of Lydia whom Heracles served as a slave, dressed as a woman.
+  H: Lydia
+  s: Apollodorus, Bibliotheca 2.6.3; Ovid, Fasti 2.305–358
+iardanus | Iardanus | | - | Lydian king; father of Omphale.
+  x: omphale | named as her father
+  H: Lydia
+  s: Apollodorus, Bibliotheca 2.6.3
+eurytus_o | Eurytus | | melaneus | King of Oechalia and master archer who refused Heracles his prize, Iole.
+  s: Apollodorus, Bibliotheca 2.6.1–2; Homer, Odyssey 8.224–228
+  w: Eurytus of Oechalia
+melaneus | Melaneus | | apollo | Archer son of Apollo; father of Eurytus of Oechalia.
+  T: demigod
+  s: Pausanias 4.2.2
+iole | Iole | | eurytus_o | Princess captured by Heracles; the cause of Deianira's fatal jealousy.
+  s: Sophocles, Trachiniae; Apollodorus, Bibliotheca 2.7.7
+iphitus | Iphitus | | eurytus_o | Son of Eurytus; killed by Heracles in a fit of madness.
+  s: Homer, Odyssey 21.11–41; Apollodorus, Bibliotheca 2.6.2
+  w: Iphitus of Oechalia
+cleodaeus | Cleodaeus | | hyllus+iole | Son of Hyllus; ancestor of the Spartan kings.
+  s: Apollodorus, Bibliotheca 2.8.2; Herodotus 7.204
+aristomachus | Aristomachus | | cleodaeus | Heraclid killed trying to invade the Peloponnese.
+  s: Apollodorus, Bibliotheca 2.8.2
+temenus | Temenus | | aristomachus | Heraclid who won Argos in the Return of the Heraclidae.
+  s: Apollodorus, Bibliotheca 2.8.2–5
+cresphontes | Cresphontes | | aristomachus | Heraclid who won Messenia by rigging the lot with a lump of earth.
+  s: Apollodorus, Bibliotheca 2.8.4–5
+aristodemus | Aristodemus | | aristomachus | Heraclid, father of the twin founders of the Spartan royal houses.
+  s: Apollodorus, Bibliotheca 2.8.2–5; Herodotus 6.52
+
+# ============ LABOUR CREATURES & FOES ============
+@house -
+@type creature
+@src Apollodorus, Bibliotheca 2.5
+ceryneian_hind | Ceryneian Hind | Cerva Cerynitis | - | Golden-horned hind sacred to Artemis, captured alive by Heracles in his third labour.
+  x: artemis | sacred to Artemis; Taygete dedicated it to her (Pindar, Olympian 3.29–30)
+  s: Apollodorus, Bibliotheca 2.5.3; Pindar, Olympian 3.26–33
+  r: Golden horns, bronze hooves, sacred to the huntress; the hero chased me for a year rather than harm me. ;; Ceryneian Hind
+erymanthian_boar | Erymanthian Boar | Aper Erymanthius | - | Great boar of Mount Erymanthus, driven into deep snow and taken alive by Heracles.
+  x: heracles | captured in the fourth labour; no parentage is given in the sources
+  s: Apollodorus, Bibliotheca 2.5.4
+stymphalian_birds | Stymphalian Birds | Aves Stymphalides | - | Man-eating birds with bronze beaks, scared off by Heracles with a bronze rattle.
+  x: ares | called birds of Ares by Apollonius Rhodius (Argonautica 2.1030–1089)
+  s: Apollodorus, Bibliotheca 2.5.6; Pausanias 8.22.4
+mares_diomedes | Mares of Diomedes | | - | Man-eating horses of Thrace, tamed after Heracles fed them their master.
+  x: diomedes_t | owned by King Diomedes
+  s: Apollodorus, Bibliotheca 2.5.8; Euripides, Alcestis 481–506
+@type mortal
+diomedes_t | Diomedes of Thrace | | ares+cyrene_t | Thracian king who fed guests to his mares.
+  s: Apollodorus, Bibliotheca 2.5.8
+  w: Diomedes of Thrace
+cyrene_t | Cyrene | | - | Mother of Diomedes of Thrace by Ares.
+  T: nymph
+  x: ares | consort of Ares
+  s: Apollodorus, Bibliotheca 2.5.8
+  w: Cyrene (mythology)
+geryon | Geryon | Geryon | chrysaor+callirrhoe | Three-bodied giant of Erytheia whose red cattle Heracles took.
+  T: giant
+  s: Hesiod, Theogony 287–294, 979–983; Apollodorus, Bibliotheca 2.5.10
+  m: For the tenth labour Heracles sailed to Erytheia in the Sun's golden cup, killed the dog Orthrus and the herdsman Eurytion, and shot Geryon, whose three bodies were joined at the waist.
+  r: Three bodies joined at the waist, I kept red cattle on an island in the far west. ;; Geryon
+eurytion_g | Eurytion | | ares+erytheia | Herdsman of Geryon's cattle, killed by Heracles.
+  s: Hesiod, Theogony 293; Apollodorus, Bibliotheca 2.5.10
+  w: Eurytion
+antaeus | Antaeus | Antaeus | poseidon+gaia | Libyan giant who grew stronger each time he touched the earth.
+  T: giant
+  s: Apollodorus, Bibliotheca 2.5.11; Pindar, Isthmian 4.52–55
+  r: Every time you threw me to the ground my mother made me stronger, so the hero held me in the air until I died. ;; Antaeus
+cycnus_a | Cycnus | | ares+pelopia | Son of Ares who robbed pilgrims to Delphi; killed by Heracles.
+  s: Hesiod, Shield of Heracles; Apollodorus, Bibliotheca 2.7.7
+  w: Cycnus
+pelopia_c | Pelopia | | pelias+anaxibia | Daughter of Pelias; mother of Cycnus by Ares.
+  s: Apollodorus, Bibliotheca 1.9.10, 2.7.7
+cacus | Cacus | Cacus | hephaestus | Fire-breathing giant of the Aventine who stole Heracles' cattle.
+  T: giant
+  s: Virgil, Aeneid 8.190–267; Livy 1.7
+cercopes | Cercopes | Cercopes | oceanus+theia_o | Mischievous twin thieves who tried to rob Heracles; Zeus turned them into monkeys.
+  T: creature
+  s: Apollodorus, Bibliotheca 2.6.3; Ovid, Metamorphoses 14.88–100
+  t: zeus | turned into monkeys (the island Pithecusae is named for them)
+theia_o | Theia | | oceanus+tethys | Oceanid; mother of the Cercopes.
+  T: nymph
+  R: sea
+  s: Suda, s.v. Kerkopes
+  w: Cercopes
+@grp amazons
+amazons | Amazons | Amazones | ares+harmonia_n | Warrior women of the Black Sea coast.
+  s: Apollonius Rhodius, Argonautica 2.985–1000
+hippolyta | Hippolyta | Hippolyte | ares+otrera | Amazon queen whose belt Heracles was sent to fetch.
+  s: Apollodorus, Bibliotheca 2.5.9
+antiope_am | Antiope | | ares+otrera | Amazon carried off by Theseus; mother of Hippolytus.
+  s: Plutarch, Theseus 26–27; Apollodorus, Epitome 1.16
+  w: Antiope (Amazon)
+penthesilea | Penthesilea | Penthesilea | ares+otrera | Amazon queen who fought for Troy and was killed by Achilles.
+  s: Apollodorus, Epitome 5.1; Quintus Smyrnaeus, Posthomerica 1
+  m: Achilles killed Penthesilea in battle and fell in love with her as her helmet came off.
+@grp -
+harmonia_n | Harmonia | | - | Nymph of the Akmonian wood; mother of the Amazons by Ares.
+  T: nymph
+  x: ares | consort of Ares
+  s: Apollonius Rhodius, Argonautica 2.990–992
+  w: Harmonia (nymph)
+otrera | Otrera | | - | First queen of the Amazons; mother of Hippolyta and Penthesilea.
+  x: ares | consort of Ares
+  s: Hyginus, Fabulae 30, 112

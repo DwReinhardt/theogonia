@@ -1,0 +1,333 @@
+# ============ PRIMORDIALS ============
+@region void
+@type primordial
+@src Hesiod, Theogony 116–125
+chaos | Chaos | Chaos | - | The yawning gap; the first thing to come into being.
+  w: Chaos (cosmogony)
+  m: In Hesiod, Chaos simply "came to be" first, before Earth, Tartarus and Eros. It is a gap or chasm, not a jumble of matter; Ovid later recast it as the formless mass from which the world was sorted.
+  r: I was first, with no parent at all; not disorder but an open gap, and from me came Darkness and Night. ;; Chaos
+gaia | Gaia | Terra / Tellus | - | Earth, the broad-breasted seat of all things; mother of Sky, Mountains, Sea, the Titans and many monsters.
+  m: Gaia bore Uranus to cover her, then the Titans, Cyclopes and Hundred-Handers by him. When Uranus hid their children inside her, she forged an adamantine sickle and persuaded Cronus to castrate him. Later she helped Zeus hide from Cronus, and when the Titans fell she bore Typhon to challenge Zeus.
+  r: I gave the sickle that unmanned my husband, and later bore the storm-giant to avenge my Titan sons. ;; Gaia
+tartarus | Tartarus | Tartarus | - | The misty pit beneath the earth; later a prison for the Titans and a deity who fathered Typhon.
+  R: under
+  s: Hesiod, Theogony 119, 720–819
+eros | Eros | Cupid / Amor | - | Desire; in Hesiod a primordial power who loosens limbs; later the winged son of Aphrodite.
+  a: ares+aphrodite | Simonides fr. 575; Cicero, De Natura Deorum 3.60
+  a: hermes+aphrodite | Cicero, De Natura Deorum 3.60
+  s: Hesiod, Theogony 120–122; Apuleius, Metamorphoses 4.28–6.24
+  R: olympus
+  w: Eros
+  m: Hesiod's Eros is a cosmic force present at the beginning. Later poets made him Aphrodite's child with a bow and arrows. In Apuleius he falls in love with the mortal Psyche, who must complete impossible tasks set by Aphrodite before they are united.
+  r: My golden arrow made Apollo chase the laurel-nymph, and my lead arrow made her flee. ;; Eros
+chronos | Chronos | | - | Time; an Orphic first principle, a serpent with the heads of a bull and a lion. Not the same figure as the Titan Cronus.
+  s: Orphic Theogony (Hieronymus & Hellanicus version), fr. 54 Kern; Damascius, De Principiis 123
+  w: Chronos
+ananke | Ananke | Necessitas | - | Necessity; in Orphic accounts coiled with Chronos around the world-egg.
+  s: Orphic fr. 54 Kern; Plato, Republic 617b
+phanes | Phanes | | chronos+ananke | The shining, double-sexed first-born of the Orphic world-egg; creator of later gods.
+  o: hatched from the cosmic egg made by Chronos
+  s: Orphic fr. 54, 60–89 Kern; Orphic Hymn 6
+@type primordial
+@src Hesiod, Theogony 123–125
+erebus | Erebus | Scotus | chaos | Primordial darkness of the depths.
+  R: under
+nyx | Nyx | Nox | chaos | Night; so feared that even Zeus hesitated to anger her.
+  m: Homer tells how Hypnos escaped Zeus's anger by fleeing to Nyx; Zeus held back because he would not displease swift Night (Iliad 14.258–261).
+  r: Even the king of gods drew back rather than anger me; I bore Sleep, Death and Strife with no husband at all. ;; Nyx
+aether | Aether | | erebus+nyx | The bright upper air where the gods breathe.
+  w: Aether (mythology)
+  R: olympus
+hemera | Hemera | Dies | erebus+nyx | Day; she and Nyx pass each other at the bronze threshold of the west.
+  R: olympus
+  S: Theogony 748–757
+@src Hesiod, Theogony 126–132
+uranus | Uranus | Caelus | gaia | Sky, who covered Earth and fathered the Titans.
+  w: Uranus (mythology)
+  a: aether+hemera | Cicero, De Natura Deorum 3.44
+  R: olympus
+  m: Uranus hated his monstrous children and pushed them back into Gaia's body. His son Cronus ambushed him with the sickle; from his blood came the Erinyes, Giants and Meliae, and from his severed genitals in the sea rose Aphrodite.
+  r: My own son ambushed me with a sickle at night, and from my blood rose Furies and Giants. ;; Uranus
+ourea | Ourea | Montes | gaia | The long Mountains, each a god.
+pontus | Pontus | | gaia | The barren Sea, born of Earth without a father.
+  R: sea
+  w: Pontus (mythology)
+nesoi | Nesoi | | gaia | The islands, primordial goddesses said to have been born of Earth.
+  s: Callimachus, Hymn 4 (to Delos) 16–54
+  R: sea
+thalassa | Thalassa | Mare | aether+hemera | The sea's own surface, personified; in Hyginus a child of Aether and Day.
+  s: Hyginus, Fabulae, Preface
+  R: sea
+pheme | Pheme | Fama | gaia | Rumour; the last child of Earth, with an eye, tongue and ear beneath every feather.
+  T: spirit
+  s: Virgil, Aeneid 4.173–197; Hesiod, Works and Days 760–764
+
+# ============ CHILDREN OF NYX ============
+@type spirit
+@src Hesiod, Theogony 211–225
+moros | Moros | Fatum | nyx | Doom, the force that drives all to their destined end.
+keres | Keres | Tenebrae | nyx | Black female death-spirits who fed on the blood of the fallen.
+  R: under
+thanatos | Thanatos | Mors | nyx | Death, the gentle-handed twin of Sleep, with a heart of iron.
+  R: under
+  a: erebus+nyx | Cicero, De Natura Deorum 3.44
+  m: Sisyphus chained Thanatos so that no one could die until Ares freed him. Heracles wrestled Thanatos at the tomb to win back Alcestis.
+  r: The trickster king chained me, so no one on earth could die until the war god set me free. ;; Thanatos
+hypnos | Hypnos | Somnus | nyx | Sleep, who lives in a cave by the river Lethe.
+  R: under
+  m: Hera had Hypnos put Zeus to sleep twice: once so she could drive Heracles off course at sea, and again so Poseidon could help the Greeks at Troy (Iliad 14). In return she promised him the Grace Pasithea as his wife.
+  r: The queen of the gods paid me with a Grace as my wife for closing her husband's eyes. ;; Hypnos
+oneiroi | Oneiroi | Somnia | nyx | The tribe of Dreams, who pass through gates of horn (true) or ivory (false).
+  R: under
+  S: Homer, Odyssey 19.560–567
+momus | Momus | Querela | nyx | Blame and mockery; expelled from Olympus for faulting the gods.
+oizys | Oizys | Miseria | nyx | Misery and distress.
+geras | Geras | Senectus | nyx | Old Age.
+nemesis | Nemesis | Invidia | nyx | Retribution, the scourge of arrogance and undeserved luck.
+  T: deity
+  a: oceanus | Pausanias 7.5.3
+  m: Nemesis punished hubris. In the Cypria she changed shape many times to escape Zeus, who caught her as a swan; she laid the egg from which Helen hatched. In Ovid she curses Narcissus to love someone he can never have.
+  r: I heard the prayer of the scorned and made the proud youth love his own reflection. ;; Nemesis
+apate | Apate | Fraus | nyx | Deceit.
+philotes | Philotes | | nyx | Friendship and affection, including sexual love.
+eris | Eris | Discordia | nyx | Strife; she threw the golden apple "for the fairest" that began the Trojan War.
+  w: Eris (mythology)
+  a: zeus+hera | Homer, Iliad 4.440–441 (as sister of Ares)
+  m: Left out of the wedding of Peleus and Thetis, Eris rolled a golden apple inscribed "for the fairest" among the guests. Hera, Athena and Aphrodite each claimed it, Paris judged in Aphrodite's favour, and the reward, Helen, led to the Trojan War.
+  r: Uninvited to a wedding, I sent a golden gift with three words, and a city burned for it. ;; Eris
+charon | Charon | Charon | erebus+nyx | The ferryman who carries the dead across the Acheron for a coin.
+  s: Cicero, De Natura Deorum 3.44; Virgil, Aeneid 6.298–316
+  R: under
+lyssa | Lyssa | Ira / Furor | nyx | Mad rage; sent by Hera to drive Heracles to kill his children.
+  s: Euripides, Heracles 822–873
+  a: uranus | Euripides, Heracles 843 (born of Night from the blood of Uranus)
+@grp moirai
+moirai | Moirai | Parcae / Fata | nyx | The Fates, who spin, measure and cut the thread of each life.
+  a: zeus+themis | Hesiod, Theogony 904–906
+  R: olympus
+  m: At the birth of Meleager the Fates said he would live until a log on the hearth burned away. His mother Althaea hid the log, but after he killed her brothers she burned it and he died.
+  r: Three sisters with spindle, rod and shears; even Zeus hesitates to overrule our work. ;; Moirai
+clotho | Clotho | Nona | = | The Spinner, who spins the thread of life.
+  R: olympus
+lachesis | Lachesis | Decima | = | The Allotter, who measures each thread.
+  R: olympus
+atropos | Atropos | Morta | = | The Inflexible, who cuts the thread.
+  R: olympus
+@grp hesperides
+hesperides | Hesperides | | nyx | Nymphs of evening who guard the golden apples in the far west.
+  T: nymph
+  R: earth
+  a: atlas+hesperis | Diodorus Siculus 4.27.2
+  a: phorcys+ceto | scholiast on Apollonius Rhodius 4.1399
+  m: Heracles' eleventh labour was to fetch their golden apples. In Apollodorus he had Atlas get them while he held up the sky, then tricked Atlas into taking the sky back.
+  r: At the western edge of the world we tend a tree with golden fruit, a wedding gift from Earth to Hera. ;; Hesperides
+aegle_h | Aegle | | = | A Hesperid; "radiance".
+  T: nymph
+  R: earth
+  s: Apollodorus, Bibliotheca 2.5.11
+erytheia | Erytheia | | = | A Hesperid; "the red one".
+  T: nymph
+  R: earth
+  s: Apollodorus, Bibliotheca 2.5.11
+hesperia | Hesperia | | = | A Hesperid; "of evening".
+  T: nymph
+  R: earth
+  s: Apollodorus, Bibliotheca 2.5.11
+arethusa_h | Arethusa | | = | A Hesperid, named in Apollodorus's list.
+  T: nymph
+  R: earth
+  w: Hesperides
+  s: Apollodorus, Bibliotheca 2.5.11
+@grp -
+
+# ---- Children of Eris (Theogony 226–232) ----
+@src Hesiod, Theogony 226–232
+ponos | Ponos | Labor | eris | Toil and hardship.
+lethe | Lethe | Oblivio | eris | Forgetfulness; also the underworld river whose water wipes memory.
+  R: under
+  w: Lethe
+limos | Limos | Fames | eris | Famine; sent by Demeter to torment Erysichthon.
+  S: Ovid, Metamorphoses 8.784–822
+algea | Algea | Dolores | eris | The Pains, bringers of tears.
+hysminai | Hysminai | | eris | The Fights.
+makhai | Makhai | | eris | The Battles.
+phonoi | Phonoi | | eris | The Murders.
+androktasiai | Androktasiai | | eris | The Manslaughters.
+neikea | Neikea | | eris | The Quarrels.
+pseudea | Pseudea | | eris | The Lies.
+logoi | Logoi | | eris | The Stories and Arguments.
+amphillogiai | Amphillogiai | | eris | The Disputes.
+dysnomia | Dysnomia | | eris | Lawlessness.
+ate | Ate | Error | eris | Ruin and reckless folly; Zeus hurled her from Olympus.
+  a: zeus | Homer, Iliad 19.91–131
+  m: When Ate tricked Zeus into swearing an oath that let Eurystheus, not Heracles, rule Argos, Zeus seized her by the hair and flung her down to earth, where she walks on men's heads.
+horkos | Horkos | | eris | Oath, who punishes perjurers.
+
+# ============ PONTUS & GAIA LINE ============
+@region sea
+@type deity
+@src Hesiod, Theogony 233–239
+nereus | Nereus | | pontus+gaia | The truthful, gentle Old Man of the Sea, father of the Nereids.
+  m: Heracles wrestled Nereus while he changed through many shapes, and made him reveal the way to the Hesperides.
+  r: Old Man of the Sea who never lies; a hero held me through every shape until I told the way west. ;; Nereus
+thaumas | Thaumas | | pontus+gaia | "Wonder", a sea god; father of Iris and the Harpies.
+phorcys | Phorcys | Phorcus | pontus+gaia | Grey old sea god, father of monsters with Ceto.
+ceto | Ceto | | pontus+gaia | Sea monster goddess; mother of the Graeae, Gorgons and others.
+eurybia | Eurybia | | pontus+gaia | Sea goddess with a heart of flint; mother of Astraeus, Pallas and Perses.
+  T: titan
+
+@src Hesiod, Theogony 265–269
+iris | Iris | Iris | thaumas+electra_o | The rainbow; swift messenger of the gods, especially of Hera.
+  R: olympus
+  m: Iris carried the gods' messages and fetched water from the Styx in a golden jug when a god had to swear an oath.
+  r: I walk the colored arc between sky and sea, fetching Styx water when gods swear. ;; Iris
+@grp harpies
+harpies | Harpies | Harpyiae | thaumas+electra_o | Storm-wind spirits, the "snatchers", with wings and women's faces.
+  T: monster
+  m: Zeus sent the Harpies to steal and foul the food of the blind king Phineus. The Boreads, winged sons of the North Wind, chased them until Iris swore they would leave Phineus alone.
+  r: We snatched the blind king's meals until the North Wind's winged sons chased us to the Strophades. ;; Harpies
+aello | Aello | | = | The Harpy "storm-swift".
+  T: monster
+ocypete | Ocypete | | = | The Harpy "swift-wing".
+  T: monster
+celaeno_h | Celaeno | | = | The Harpy "dark one"; she prophesied to Aeneas.
+  T: monster
+  s: Virgil, Aeneid 3.209–258
+podarge | Podarge | | = | Harpy who bore the immortal horses Xanthus and Balius to Zephyrus.
+  T: monster
+  s: Homer, Iliad 16.148–151
+@grp -
+
+@type monster
+@src Hesiod, Theogony 270–336
+@grp graeae
+graeae | Graeae | | phorcys+ceto | Grey Sisters, born old, sharing one eye and one tooth.
+  m: Perseus snatched their shared eye as they passed it between them and would return it only if they showed him the way to the nymphs who held the winged sandals, the kibisis and the cap of invisibility.
+  r: Born grey-haired, three of us share one eye; a young hero stole it to learn a secret way. ;; Graeae
+pemphredo | Pemphredo | | = | "Alarm", one of the Graeae.
+enyo_g | Enyo | | = | "Horror", one of the Graeae (not the war goddess).
+  w: Graeae
+deino | Deino | | = | "Dread", one of the Graeae.
+  s: Apollodorus, Bibliotheca 2.4.2
+@grp gorgons
+gorgons | Gorgons | Gorgones | phorcys+ceto | Three winged sisters with snaky hair whose gaze turned onlookers to stone.
+  r: Two of us are immortal, one is not; our gaze turns men to stone. ;; Gorgons
+stheno | Stheno | | = | Immortal Gorgon, "the mighty".
+euryale | Euryale | | = | Immortal Gorgon, "far-springing"; her wail inspired Athena's flute.
+  w: Euryale (Gorgon)
+medusa | Medusa | Medusa | = | The mortal Gorgon, beheaded by Perseus.
+  t: athena | Ovid, Metamorphoses 4.790–803: transformed from a beautiful maiden after Poseidon violated her in Athena's temple
+  m: In Hesiod, Medusa was always a Gorgon. Ovid tells a later version in which she was a beautiful girl whose hair Athena turned to snakes after Poseidon violated her in Athena's temple. Perseus cut off her head while watching her reflection in his shield; Pegasus and Chrysaor sprang from her neck, and Athena set the head on her aegis.
+  r: A goddess turned my hair to serpents; a hero watching my reflection took my head, and a winged horse sprang from my neck. ;; Medusa
+@grp -
+echidna | Echidna | Echidna | phorcys+ceto | Half woman, half serpent; "mother of all monsters".
+  a: chrysaor+callirrhoe | Hesiod, Theogony 295–297 (the antecedent is ambiguous)
+  a: tartarus+gaia | Apollodorus, Bibliotheca 2.1.2
+  m: With Typhon she bore Orthrus, Cerberus, the Hydra and the Chimera. Argus Panoptes killed her while she slept.
+  r: Half nymph, half speckled snake, I bore the watchdogs of the underworld and of Geryon's cattle. ;; Echidna
+ladon | Ladon | | phorcys+ceto | The serpent that coiled around the tree of the golden apples.
+  a: typhon+echidna | Apollodorus, Bibliotheca 2.5.11
+  S: Theogony 333–336
+thoosa | Thoosa | | phorcys+ceto | Sea nymph; mother of the Cyclops Polyphemus by Poseidon.
+  T: nymph
+  s: Homer, Odyssey 1.71–73
+crataeis | Crataeis | | - | Sea goddess named by Homer as the mother of Scylla.
+  T: nymph
+  x: phorcys | named as Scylla's mother alongside Phorcys (Apollodorus, Epitome 7.20)
+  s: Homer, Odyssey 12.124–126
+scylla | Scylla | Scylla | phorcys+crataeis | Six-headed sea monster in the strait opposite Charybdis.
+  a: typhon+echidna | Hyginus, Fabulae 125, 151
+  t: circe | Ovid, Metamorphoses 14.1–74: Circe poisoned her bathing pool out of jealousy over Glaucus
+  m: Homer's Scylla has twelve feet and six long necks, each head taking a sailor from a passing ship. Ovid tells that she was once a lovely nymph; the sea god Glaucus loved her, and Circe, who wanted Glaucus, poisoned her pool so that dogs sprouted from her waist.
+  r: From a cliff with six long necks I plucked six sailors from the ship that steered away from the whirlpool. ;; Scylla
+charybdis | Charybdis | Charybdis | poseidon+gaia | Whirlpool monster that swallows the sea three times a day.
+  s: Homer, Odyssey 12.101–110, 12.426–446; Servius on Aeneid 3.420
+  t: zeus | struck by Zeus's thunderbolt into the sea for stealing Heracles' cattle (Servius on Aeneid 3.420)
+  r: Three times a day I swallow the black water, and three times I spit it back. ;; Charybdis
+@grp sirens
+sirens | Sirens | Sirenes | achelous+melpomene | Singing bird-women whose song lures sailors to their deaths.
+  a: achelous+terpsichore | Apollonius Rhodius, Argonautica 4.895–896
+  a: phorcys | Sophocles, as reported by Plutarch, Table Talk 9.14
+  s: Apollodorus, Bibliotheca 1.3.4, Epitome 7.18–19; Homer, Odyssey 12.39–54, 12.165–200
+  t: demeter | Ovid, Metamorphoses 5.551–563: given bird bodies to search for Persephone
+  m: Odysseus had his crew plug their ears with wax and tie him to the mast so he could hear the Sirens and live. The Argonauts passed them because Orpheus sang louder.
+  r: We sing of all that happens on the earth; wax and a mast rope carried one man safely past. ;; Sirens
+parthenope | Parthenope | | = | A Siren whose body washed ashore at Naples.
+  s: Strabo, Geography 5.4.7
+ligeia | Ligeia | | = | A Siren, "clear-voiced".
+  s: Lycophron, Alexandra 726; Strabo 6.1.1
+leucosia | Leucosia | | = | A Siren, "white one".
+  s: Strabo, Geography 6.1.1
+@grp -
+
+# ---- Typhon's line ----
+@region void
+typhon | Typhon | Typhoeus | gaia+tartarus | The storm-giant with a hundred snake heads; Zeus's greatest challenger.
+  T: giant
+  a: hera | Homeric Hymn to Apollo 305–355 (born of Hera alone)
+  s: Hesiod, Theogony 820–880; Apollodorus, Bibliotheca 1.6.3
+  m: Gaia bore Typhon after the Titans fell. In Apollodorus he cut out Zeus's sinews and hid them in a cave; Hermes and Aegipan stole them back, and Zeus buried Typhon under Mount Etna, whose eruptions are his breath.
+  r: A hundred snake heads rose from my shoulders; I was buried beneath the burning mountain of Sicily. ;; Typhon
+orthrus | Orthrus | Orthus | typhon+echidna | Two-headed dog who guarded Geryon's red cattle.
+  R: earth
+  S: Apollodorus, Bibliotheca 2.5.10
+cerberus | Cerberus | Cerberus | typhon+echidna | Many-headed hound who guards the gate of the underworld.
+  R: under
+  s: Hesiod, Theogony 310–312, 769–774; Apollodorus, Bibliotheca 2.5.12
+  m: Hesiod gives him fifty heads; later writers settle on three. Heracles' twelfth labour was to bring him up from the underworld without weapons. Orpheus lulled him with music, and the Sibyl drugged him with a honey-cake for Aeneas.
+  r: I fawn on those who enter and devour those who try to leave; a lyre and a honey-cake have put me to sleep. ;; Cerberus
+hydra | Lernaean Hydra | Hydra | typhon+echidna | Many-headed water serpent of Lerna; two heads grew for each one cut.
+  R: earth
+  s: Hesiod, Theogony 313–318; Apollodorus, Bibliotheca 2.5.2
+  m: Heracles fought the Hydra for his second labour; his nephew Iolaus seared each stump with fire so no new heads could grow. Heracles dipped his arrows in her venom, which later killed Nessus and, through Nessus's blood, Heracles himself.
+  r: Cut off one of my heads and two grow back; only fire on each stump stopped me. ;; Lernaean Hydra
+chimera | Chimera | Chimaera | typhon+echidna | Fire-breathing lion with a goat's head and a serpent tail.
+  R: earth
+  s: Hesiod, Theogony 319–325; Homer, Iliad 6.179–182; Apollodorus, Bibliotheca 2.3.1
+  a: hydra | Hesiod, Theogony 319 (the pronoun may refer to the Hydra)
+  m: Bellerophon rode Pegasus above the Chimera and killed it with arrows, or with a lead-tipped spear that melted in its fiery breath.
+  r: Lion in front, snake behind, goat in the middle, breathing fire; a rider on a winged horse struck me from above. ;; Chimera
+sphinx | Sphinx | Sphinx | typhon+echidna | Winged lion with a woman's head who set a riddle for the Thebans.
+  a: orthrus+echidna | Hesiod, Theogony 326–327
+  R: earth
+  s: Apollodorus, Bibliotheca 3.5.8; Sophocles, Oedipus Tyrannus 391–398
+  m: Hera sent the Sphinx to Thebes. She asked travellers what goes on four feet, then two, then three, and devoured those who failed. When Oedipus answered "man", she threw herself from the rock.
+  r: What walks on four feet in the morning, two at noon and three in the evening? ;; A human being (Oedipus's answer to the Sphinx)
+nemean_lion | Nemean Lion | Leo Nemeus | orthrus+echidna | Lion whose golden hide no weapon could pierce.
+  a: typhon+echidna | Hyginus, Fabulae praefatio
+  a: selene | Epimenides fr. 2; Aelian, On Animals 12.7 (fell from the moon)
+  R: earth
+  s: Hesiod, Theogony 326–332; Apollodorus, Bibliotheca 2.5.1
+  m: Heracles' first labour. His arrows bounced off, so he strangled the lion and skinned it with its own claws, then wore the hide as armour.
+  r: No blade could cut my hide, so the hero choked me and flayed me with my own claws. ;; Nemean Lion
+caucasian_eagle | Caucasian Eagle | | typhon+echidna | The eagle that ate Prometheus's liver each day.
+  s: Apollodorus, Bibliotheca 2.5.11; Hesiod, Theogony 521–531
+  R: earth
+crommyonian_sow | Crommyonian Sow | Phaea | typhon+echidna | Monstrous sow of Crommyon, killed by the young Theseus.
+  R: earth
+  s: Apollodorus, Epitome 1.1; Plutarch, Theseus 9
+colchian_dragon | Colchian Dragon | | typhon+echidna | The sleepless serpent that guarded the Golden Fleece.
+  R: earth
+  s: Hyginus, Fabulae 151; Apollonius Rhodius, Argonautica 4.123–166
+  m: Medea sang the dragon to sleep and sprinkled its eyes with a juniper charm so Jason could take the Fleece.
+gegeneis | Gegeneis | | gaia | Six-armed earthborn giants of Bear Mountain, killed by the Argonauts.
+  T: giant
+  R: earth
+  s: Apollonius Rhodius, Argonautica 1.936–1011
+python | Python | Python | gaia | Serpent of Delphi, killed by Apollo, who took over the oracle.
+  R: earth
+  s: Ovid, Metamorphoses 1.438–451; Hyginus, Fabulae 140
+  a: hera | Homeric Hymn to Apollo 300–306 (the she-dragon who nursed Typhon)
+  m: Apollo shot the serpent at Delphi with a thousand arrows. Its body rotted (Greek "pythein") there, and the Pythian Games were founded in memory of the victory.
+  r: I guarded the cleft of Delphi until the archer god rotted me with his arrows; his games still carry my name. ;; Python
+campe | Campe | | gaia+tartarus | She-dragon jailer of the Cyclopes and Hundred-Handers in Tartarus.
+  R: under
+  s: Apollodorus, Bibliotheca 1.2.1; Nonnus, Dionysiaca 18.237–264
+  a: gaia | Nonnus, Dionysiaca 18.237
+empusa | Empusa | | hecate | Shape-shifting demoness with a bronze leg; she seduced and ate young men.
+  R: under
+  s: Aristophanes, Frogs 285–295; Philostratus, Life of Apollonius 4.25
+lamia | Lamia | Lamia | belus+libya | Libyan queen loved by Zeus; driven by Hera to devour children.
+  R: earth
+  t: hera | Diodorus 20.41; scholiast on Aristophanes, Peace 758: Hera killed her children and she became a child-eating monster
+  s: Diodorus Siculus 20.41.3–6

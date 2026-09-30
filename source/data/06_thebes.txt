@@ -1,0 +1,233 @@
+# ============ HOUSE OF THEBES ============
+@region earth
+@type mortal
+@house Thebes
+@src Apollodorus, Bibliotheca 3.1.1, 3.4.1–3.5.9
+cadmus | Cadmus | Cadmus | agenor+telephassa | Phoenician prince who founded Thebes and brought the alphabet to Greece.
+  s: Apollodorus, Bibliotheca 3.1.1, 3.4.1–2; Ovid, Metamorphoses 3.1–137
+  t: ares | Ovid, Metamorphoses 4.563–603: he and Harmonia became serpents
+  m: Searching for his sister Europa, Cadmus followed a cow to the site of Thebes. He killed the dragon of Ares that guarded the spring and, on Athena's advice, sowed its teeth; armed men sprang up and fought until five were left. He served Ares for eight years in penance and was given Harmonia as his wife.
+  r: I followed a cow, killed a dragon, sowed its teeth, and harvested armed men. ;; Cadmus
+phoenix | Phoenix | | agenor+telephassa | Brother of Cadmus; eponym of the Phoenicians.
+  H: Phoenicia
+  w: Phoenix (son of Agenor)
+cilix | Cilix | | agenor+telephassa | Brother of Cadmus; eponym of Cilicia.
+  H: Phoenicia
+thasus | Thasus | | agenor+telephassa | Brother of Cadmus who settled the island of Thasos.
+  H: Phoenicia
+  a: poseidon | Apollodorus, Bibliotheca 3.1.1 (some say)
+theban_dragon | Ismenian Dragon | Draco Ismenius | ares | Serpent son of Ares that guarded the spring of Thebes; its teeth grew the Spartoi.
+  T: monster
+  s: Apollodorus, Bibliotheca 3.4.1; Ovid, Metamorphoses 3.28–98
+  a: ares+tilphossa | scholiast on Sophocles, Antigone 126
+@grp spartoi
+spartoi | Spartoi | | theban_dragon | The "sown men" who sprang from the dragon's teeth; five survived to found the noble families of Thebes.
+  o: grew from the dragon's teeth sown by Cadmus
+  S: Euripides, Phoenissae 657–675
+echion | Echion | | = | One of the Spartoi; husband of Agave, father of Pentheus.
+  w: Echion (Spartoi)
+udaeus | Udaeus | | = | One of the Spartoi; ancestor of Tiresias.
+chthonius | Chthonius | | = | One of the Spartoi; father of Nycteus.
+  w: Chthonius
+hyperenor_s | Hyperenor | | = | One of the Spartoi.
+  w: Spartoi
+pelorus | Pelorus | | = | One of the Spartoi.
+@grp -
+semele | Semele | Semele | cadmus+harmonia | Mother of Dionysus; she was consumed when Zeus showed his true form.
+  s: Hesiod, Theogony 940–942; Apollodorus, Bibliotheca 3.4.3; Ovid, Metamorphoses 3.253–315
+  m: Hera, disguised as Semele's old nurse, persuaded her to ask Zeus to appear in his full glory. Bound by his oath, Zeus came with his thunderbolts, and Semele burned. Dionysus later brought her up from Hades and she became the goddess Thyone.
+  r: I asked my lover to show himself in his true glory, and his lightning burned me to ash. ;; Semele
+ino | Ino | Ino | cadmus+harmonia | Stepmother of Phrixus and Helle; nurse of Dionysus; became the sea goddess Leucothea.
+  s: Apollodorus, Bibliotheca 1.9.1–2, 3.4.3; Ovid, Metamorphoses 4.416–542
+  m: Ino plotted to have her stepson Phrixus sacrificed by parching the seed-corn. Later, Hera drove her husband Athamas mad and he killed their son Learchus; Ino leapt into the sea with Melicertes.
+agave | Agave | Agave | cadmus+harmonia | Mother of Pentheus; in Bacchic frenzy she tore her own son apart.
+  s: Euripides, Bacchae; Apollodorus, Bibliotheca 3.5.2
+  w: Agave (mythology)
+  t: dionysus | driven into Bacchic madness
+autonoe | Autonoë | | cadmus+harmonia | Mother of Actaeon.
+  w: Autonoë
+polydorus_t | Polydorus | | cadmus+harmonia | King of Thebes; father of Labdacus.
+  w: Polydorus of Thebes
+pentheus | Pentheus | Pentheus | echion+agave | King of Thebes who banned the worship of Dionysus and was torn apart by the Maenads.
+  s: Euripides, Bacchae; Ovid, Metamorphoses 3.511–733
+  r: I spied on the Bacchic rites in women's dress, and my own mother tore off my head, thinking me a lion. ;; Pentheus
+oclasus | Oclasus | | pentheus | Son of Pentheus; grandfather of Creon and Jocasta.
+  s: scholiast on Euripides, Phoenissae 942
+  w: Menoeceus
+actaeon | Actaeon | Actaeon | aristaeus+autonoe | Hunter turned into a stag by Artemis and killed by his own hounds.
+  s: Apollodorus, Bibliotheca 3.4.4; Ovid, Metamorphoses 3.138–252
+  t: artemis | turned into a stag for seeing her bathe
+nycteis | Nycteis | | nycteus | Wife of Polydorus; mother of Labdacus.
+  s: Apollodorus, Bibliotheca 3.5.5
+nycteus | Nycteus | | chthonius | Regent of Thebes; father of Antiope.
+  s: Apollodorus, Bibliotheca 3.5.5
+  a: poseidon+celaeno | Hyginus / some accounts
+lycus_t | Lycus | | chthonius | Regent of Thebes who, with his wife Dirce, mistreated Antiope.
+  s: Apollodorus, Bibliotheca 3.5.5
+  a: poseidon+celaeno | Apollodorus, Bibliotheca 3.10.1
+  w: Lycus (Theban king)
+dirce | Dirce | Dirce | - | Wife of Lycus, tied to a bull by Antiope's sons.
+  x: lycus_t | wife of Lycus
+  t: dionysus | her body became the spring Dirce
+  s: Apollodorus, Bibliotheca 3.5.5; Euripides, Antiope
+antiope | Antiope | Antiope | nycteus | Mother of Amphion and Zethus by Zeus.
+  a: asopus | Homer, Odyssey 11.260
+  s: Apollodorus, Bibliotheca 3.5.5
+  w: Antiope (mother of Amphion)
+amphion | Amphion | Amphion | zeus+antiope | Musician whose lyre moved stones into the walls of Thebes; husband of Niobe.
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.5.5–6; Homer, Odyssey 11.260–265
+  r: My brother carried stones on his back; mine moved themselves to the music of my lyre and built the walls of Thebes. ;; Amphion
+zethus | Zethus | Zethus | zeus+antiope | Herdsman twin of Amphion; husband of Thebe.
+  T: demigod
+labdacus | Labdacus | | polydorus_t+nycteis | King of Thebes; grandfather of Oedipus, founder of the Labdacids.
+laius | Laius | Laius | labdacus | King of Thebes, killed by his son Oedipus at a crossroads.
+  m: Laius abducted Chrysippus, son of Pelops, bringing a curse on his line. Warned that his son would kill him, he had the infant Oedipus exposed with pierced ankles.
+menoeceus | Menoeceus | | oclasus | Descendant of Pentheus; father of Creon and Jocasta.
+  w: Menoeceus
+jocasta | Jocasta | Iocasta | menoeceus | Queen of Thebes who unknowingly married her son Oedipus.
+  s: Sophocles, Oedipus Tyrannus; Homer, Odyssey 11.271–280 (as Epicaste)
+creon | Creon | Creon | menoeceus | King of Thebes after Oedipus; he condemned Antigone.
+  s: Sophocles, Antigone; Apollodorus, Bibliotheca 3.5.8, 3.7.1
+  w: Creon (king of Thebes)
+eurydice_t | Eurydice | | - | Wife of Creon; she killed herself after Haemon's death.
+  x: creon | wife of Creon
+  s: Sophocles, Antigone 1180–1243
+  w: Eurydice of Thebes
+megara | Megara | Megara | creon+eurydice_t | First wife of Heracles; her children were killed by him in madness.
+  s: Apollodorus, Bibliotheca 2.4.11–12; Euripides, Heracles
+  w: Megara (mythology)
+haemon | Haemon | | creon+eurydice_t | Betrothed of Antigone, who died with her.
+  s: Sophocles, Antigone
+menoeceus_y | Menoeceus | | creon+eurydice_t | Young son of Creon who sacrificed himself to save Thebes from the Seven.
+  s: Euripides, Phoenissae 905–1018
+  w: Menoeceus (son of Creon)
+oedipus | Oedipus | Oedipus | laius+jocasta | King of Thebes who solved the Sphinx's riddle, killed his father and married his mother.
+  s: Sophocles, Oedipus Tyrannus and Oedipus at Colonus; Apollodorus, Bibliotheca 3.5.7–9
+  m: Raised in Corinth, Oedipus fled home to avoid the oracle that he would kill his father and marry his mother. At a crossroads he killed Laius without knowing him, answered the Sphinx's riddle, and married the widowed queen Jocasta. When the truth came out, Jocasta hanged herself and Oedipus blinded himself with her brooches.
+  r: I answered the Sphinx's riddle but not my own; the man I killed at the crossroads was my father. ;; Oedipus
+eteocles | Eteocles | Eteocles | oedipus+jocasta | Son of Oedipus who refused to share the throne; he and Polynices killed each other.
+  a: oedipus+euryganeia | Pausanias 9.5.10–11
+polynices | Polynices | Polynices | oedipus+jocasta | Exiled son of Oedipus who led the Seven against Thebes.
+  a: oedipus+euryganeia | Pausanias 9.5.10–11
+antigone | Antigone | Antigone | oedipus+jocasta | Buried her brother Polynices against Creon's order and was walled up alive.
+  s: Sophocles, Antigone; Oedipus at Colonus
+  r: I buried my brother against the king's decree, and he walled me in a tomb for it. ;; Antigone
+ismene | Ismene | Ismene | oedipus+jocasta | Sister of Antigone.
+euryganeia | Euryganeia | | - | Second wife of Oedipus in Pausanias, who says she, not Jocasta, bore his children.
+  x: oedipus | wife of Oedipus
+  s: Pausanias 9.5.10–11
+thersander | Thersander | | polynices+argia | One of the Epigoni; king of Thebes, killed by Telephus.
+  s: Apollodorus, Bibliotheca 3.7.2
+  w: Thersander (son of Polynices)
+laodamas | Laodamas | | eteocles | Theban king killed by Alcmaeon in the war of the Epigoni.
+  s: Apollodorus, Bibliotheca 3.7.3
+
+# ---- Tiresias ----
+everes | Everes | | udaeus | Descendant of Udaeus the Spartos; father of Tiresias.
+  s: Apollodorus, Bibliotheca 3.6.7
+chariclo | Chariclo | | - | Nymph, friend of Athena; mother of Tiresias.
+  T: nymph
+  x: everes | wife of Everes
+  s: Callimachus, Hymn 5 (Bath of Pallas)
+  w: Chariclo (nymph)
+tiresias | Tiresias | Tiresias | everes+chariclo | Blind prophet of Thebes who lived seven years as a woman.
+  s: Apollodorus, Bibliotheca 3.6.7; Ovid, Metamorphoses 3.316–338; Homer, Odyssey 11.90–151
+  t: hera | blinded after judging that women enjoy love more; Zeus gave him prophecy
+  t: athena | Callimachus, Hymn 5: blinded for seeing Athena bathe
+  m: Tiresias struck two mating snakes and became a woman; seven years later he struck them again and became a man. Asked by Zeus and Hera who enjoys love more, he said women, and Hera blinded him. Zeus gave him prophecy and a long life. He advised Oedipus, Creon and, from the dead, Odysseus.
+  r: I struck two snakes and became a woman, struck them again and became a man; my answer to a question from the gods cost me my sight. ;; Tiresias
+manto | Manto | Manto | tiresias | Prophetess, daughter of Tiresias; mother of Mopsus by Apollo.
+  s: Apollodorus, Bibliotheca 3.7.4; Pausanias 7.3.1–2
+
+# ---- Niobe of Thebes ----
+@house Thebes
+@grp niobids
+niobids | Niobids | | amphion+niobe | The children of Niobe, killed by Apollo and Artemis for their mother's boast.
+  s: Homer, Iliad 24.602–617; Apollodorus, Bibliotheca 3.5.6; Ovid, Metamorphoses 6.146–312
+  m: Niobe boasted that she had more children than Leto. Apollo shot her sons and Artemis her daughters. Only Chloris (in some versions) survived.
+chloris | Chloris | | = | Niobid who survived and married Neleus; mother of Nestor.
+  s: Homer, Odyssey 11.281–286; Apollodorus, Bibliotheca 1.9.9, 3.5.6
+  a: amphion_o+persephone_o | Homer, Odyssey 11.281 (daughter of Amphion son of Iasus)
+  w: Chloris (Niobid)
+@grp -
+amphion_o | Amphion | | iasus_o | King of Orchomenus; in Homer, father of Chloris.
+  x: neleus | father-in-law of Neleus
+  H: Orchomenus
+  s: Homer, Odyssey 11.281–284
+  w: Amphion
+iasus_o | Iasus | | - | Father of Amphion of Orchomenus.
+  x: amphion_o | named as his father
+  H: Orchomenus
+  s: Homer, Odyssey 11.283
+persephone_o | Persephone | | minyas | Daughter of Minyas; wife of Amphion of Orchomenus.
+  H: Orchomenus
+  s: Pherecydes, cited in scholia to Odyssey 11.281
+  w: Chloris (Niobid)
+
+# ============ SEVEN AGAINST THEBES & EPIGONI ============
+@house Argos
+@src Aeschylus, Seven Against Thebes; Apollodorus, Bibliotheca 3.6–3.7
+adrastus | Adrastus | Adrastus | talaus+lysimache | King of Argos who led the Seven against Thebes; the only one to survive, on his horse Arion.
+  m: Adrastus married his daughters to Tydeus and Polynices after an oracle said to yoke them to a boar and a lion; the two exiles were fighting in his porch dressed in those skins.
+lysimache | Lysimache | | abas_m | Wife of Talaus; mother of Adrastus.
+  s: Apollodorus, Bibliotheca 1.9.13
+abas_m | Abas | | melampus | Son of Melampus.
+  s: Apollodorus, Bibliotheca 1.9.13
+  w: Abas
+argia | Argia | | adrastus+amphithea | Wife of Polynices.
+  w: Argia
+deipyle | Deipyle | | adrastus+amphithea | Wife of Tydeus, mother of Diomedes.
+amphithea | Amphithea | | pronax | Wife of Adrastus.
+  s: Apollodorus, Bibliotheca 1.9.13
+pronax | Pronax | | talaus+lysimache | Brother of Adrastus.
+aegialeus_a | Aegialeus | | adrastus+amphithea | Only one of the Epigoni to die at Thebes.
+  w: Aegialeus (son of Adrastus)
+eriphyle | Eriphyle | Eriphyle | talaus+lysimache | Wife of Amphiaraus, bribed with Harmonia's necklace to send him to his death.
+  m: Polynices bribed Eriphyle with Harmonia's necklace to make her husband join the war, and her son Alcmaeon later killed her for it.
+amphiaraus | Amphiaraus | Amphiaraus | oicles+hypermnestra_t | Seer who knew the Seven would fail; the earth swallowed him and his chariot.
+  s: Apollodorus, Bibliotheca 3.6.2–8; Pindar, Olympian 6.12–17
+  a: apollo+hypermnestra_t | Hyginus, Fabulae 70
+oicles | Oicles | | antiphates | Seer; father of Amphiaraus.
+  s: Homer, Odyssey 15.243–244
+antiphates | Antiphates | | melampus | Son of Melampus; grandfather of Amphiaraus.
+  s: Homer, Odyssey 15.242–243
+hypermnestra_t | Hypermnestra | | thestius+eurythemis | Daughter of Thestius; mother of Amphiaraus.
+  s: Apollodorus, Bibliotheca 1.7.10
+  w: Hypermnestra (daughter of Thestius)
+capaneus | Capaneus | Capaneus | hipponous+astynome | One of the Seven, struck by Zeus's lightning as he boasted from the ladder.
+  s: Aeschylus, Seven Against Thebes 422–456; Euripides, Suppliants 496–499
+hipponous | Hipponous | | - | Father of Capaneus.
+  x: capaneus | named as his father
+  s: Apollodorus, Bibliotheca 3.6.3
+astynome | Astynome | | talaus+lysimache | Daughter of Talaus; mother of Capaneus.
+  s: Hyginus, Fabulae 70
+evadne_c | Evadne | | iphis | Wife of Capaneus; she threw herself on his funeral pyre.
+  s: Euripides, Suppliants 980–1071
+  w: Evadne
+iphis | Iphis | | alector | King of Argos.
+  s: Apollodorus, Bibliotheca 3.6.3
+  w: Iphis
+alector | Alector | | - | Argive king.
+  x: iphis | named as his father
+  s: Apollodorus, Bibliotheca 3.6.3
+hippomedon | Hippomedon | | aristomachus_t | One of the Seven.
+  s: Aeschylus, Seven Against Thebes 486–520
+aristomachus_t | Aristomachus | | talaus+lysimache | Brother of Adrastus; father of Hippomedon.
+  s: Apollodorus, Bibliotheca 3.6.3
+  w: Aristomachus
+parthenopaeus | Parthenopaeus | | melanion+atalanta | Youngest of the Seven, son of Atalanta.
+  a: ares+atalanta | Hyginus, Fabulae 70
+  a: meleager+atalanta | Apollodorus, Bibliotheca 3.9.2
+  s: Aeschylus, Seven Against Thebes 526–549; Apollodorus, Bibliotheca 3.6.3
+alcmaeon | Alcmaeon | Alcmaeon | amphiaraus+eriphyle | Leader of the Epigoni; he killed his mother and was pursued by the Erinyes.
+  s: Apollodorus, Bibliotheca 3.7.2–7
+amphilochus | Amphilochus | | amphiaraus+eriphyle | Seer, one of the Epigoni; founder of Amphilochian Argos.
+  s: Apollodorus, Bibliotheca 3.7.2
+sthenelus_c | Sthenelus | | capaneus+evadne_c | One of the Epigoni; Diomedes' charioteer at Troy.
+  s: Homer, Iliad 4.365–410; Apollodorus, Bibliotheca 3.7.2
+  w: Sthenelus (son of Capaneus)
+diomedes | Diomedes | Diomedes | tydeus+deipyle | Argive hero at Troy who wounded Aphrodite and Ares.
+  s: Homer, Iliad 5; Apollodorus, Bibliotheca 1.8.5–6, 3.7.2
+  m: With Athena's help Diomedes wounded both Aphrodite and Ares in a single day. With Odysseus he raided the Thracian camp to kill Rhesus and stole the Palladium from Troy.
+  r: In one day at Troy I wounded the goddess of love and the god of war. ;; Diomedes

@@ -1,0 +1,398 @@
+# ============ HOUSE OF ATHENS ============
+@region earth
+@type mortal
+@house Athens
+@src Apollodorus, Bibliotheca 3.14–3.16
+cecrops | Cecrops | Cecrops | gaia | Earth-born first king of Athens, half man and half serpent; judge of the contest between Athena and Poseidon.
+  o: autochthonous (sprang from the soil of Attica)
+  m: Cecrops judged the contest for Attica between Poseidon's salt spring and Athena's olive tree, and awarded the land to Athena.
+  r: Half man, half serpent, I sprang from the soil and judged the olive better than the salt spring. ;; Cecrops
+aglaurus_m | Aglaurus | | actaeus | Wife of Cecrops.
+  s: Apollodorus, Bibliotheca 3.14.2
+  w: Aglaurus (wife of Cecrops)
+actaeus | Actaeus | | - | Earlier king of Attica; father of Aglaurus.
+  x: cecrops | father-in-law of Cecrops
+  s: Apollodorus, Bibliotheca 3.14.2; Pausanias 1.2.6
+aglaurus | Aglaurus | | cecrops+aglaurus_m | Daughter of Cecrops who opened Erichthonius's basket; Hermes turned her to stone.
+  s: Apollodorus, Bibliotheca 3.14.6; Ovid, Metamorphoses 2.708–832
+  t: hermes | turned to stone for blocking his way to Herse (Ovid)
+  w: Aglaurus (daughter of Cecrops)
+herse | Herse | | cecrops+aglaurus_m | Daughter of Cecrops, loved by Hermes; mother of Cephalus.
+pandrosus | Pandrosus | | cecrops+aglaurus_m | The only daughter of Cecrops who obeyed Athena and did not look in the basket.
+erysichthon_a | Erysichthon | | cecrops+aglaurus_m | Son of Cecrops, died young.
+  w: Erysichthon of Attica
+cranaus | Cranaus | | gaia | Autochthonous king of Athens after Cecrops.
+  s: Apollodorus, Bibliotheca 3.14.5
+erichthonius | Erichthonius | Erichthonius | hephaestus+gaia | King of Athens born from the earth when Hephaestus's seed fell on it.
+  T: demigod
+  o: born from the earth after Hephaestus's seed, wiped from Athena's thigh, fell on it
+  s: Apollodorus, Bibliotheca 3.14.6; Euripides, Ion 20–26, 267–274
+  m: Athena put the infant in a basket and told the daughters of Cecrops not to open it. Aglaurus and Herse looked, saw a child guarded by serpents, and leapt from the Acropolis in terror. Erichthonius grew up to found the Panathenaea.
+  r: Born from the earth after a god's failed pursuit of a goddess, I was hidden in a basket guarded by snakes. ;; Erichthonius
+praxithea_n | Praxithea | | - | Naiad; wife of Erichthonius.
+  T: nymph
+  x: erichthonius | wife of Erichthonius
+  s: Apollodorus, Bibliotheca 3.14.6
+pandion | Pandion I | | erichthonius+praxithea_n | King of Athens; father of Procne and Philomela.
+  w: Pandion I
+zeuxippe | Zeuxippe | | - | Naiad, wife of Pandion I.
+  T: nymph
+  x: pandion | wife of Pandion I
+  s: Apollodorus, Bibliotheca 3.14.8
+erechtheus | Erechtheus | Erechtheus | pandion+zeuxippe | King of Athens who sacrificed his daughter to win the war against Eumolpus.
+  s: Apollodorus, Bibliotheca 3.15.1–5; Euripides, Erechtheus
+butes_a | Butes | | pandion+zeuxippe | Priest of Athena and Poseidon; ancestor of the Eteobutadae.
+  s: Apollodorus, Bibliotheca 3.14.8, 3.15.1
+  w: Butes
+procne | Procne | Procne | pandion+zeuxippe | Wife of Tereus who fed him their son in revenge; turned into a nightingale (or swallow).
+  s: Apollodorus, Bibliotheca 3.14.8; Ovid, Metamorphoses 6.412–674
+  t: zeus | the gods turned the fleeing family into birds
+  m: Tereus raped Procne's sister Philomela and cut out her tongue. Philomela wove the story into a tapestry. Procne killed their son Itys and served him to Tereus. As he chased them with an axe, all three were turned into birds.
+philomela | Philomela | Philomela | pandion+zeuxippe | Sister of Procne whose tongue was cut out by Tereus; she wove her story and became a swallow (or nightingale).
+  s: Apollodorus, Bibliotheca 3.14.8; Ovid, Metamorphoses 6.412–674
+  t: zeus | turned into a bird
+  r: With no tongue left, I wove my story into cloth, and I became a bird. ;; Philomela
+tereus | Tereus | Tereus | ares | Thracian king who became a hoopoe.
+  s: Apollodorus, Bibliotheca 3.14.8; Ovid, Metamorphoses 6.424–674
+  t: zeus | turned into a hoopoe
+itys | Itys | | tereus+procne | Son of Tereus and Procne, killed by his mother.
+  s: Ovid, Metamorphoses 6.619–660
+praxithea | Praxithea | | phrasimus+diogeneia | Wife of Erechtheus.
+  s: Apollodorus, Bibliotheca 3.15.1; Euripides, Erechtheus
+phrasimus | Phrasimus | | - | Father of Praxithea.
+  x: praxithea | named as her father
+  s: Apollodorus, Bibliotheca 3.15.1
+diogeneia | Diogeneia | | cephissus | Daughter of the river Cephissus.
+  T: nymph
+  s: Apollodorus, Bibliotheca 3.15.1
+cecrops_ii | Cecrops II | | erechtheus+praxithea | King of Athens.
+  w: Cecrops II
+metion | Metion | | erechtheus+praxithea | Son of Erechtheus; his sons expelled Pandion II.
+  s: Apollodorus, Bibliotheca 3.15.1, 3.15.5
+pandorus | Pandorus | | erechtheus+praxithea | Founder of Chalcis in Euboea.
+  s: Apollodorus, Bibliotheca 3.15.1
+creusa | Creusa | | erechtheus+praxithea | Mother of Ion by Apollo; wife of Xuthus.
+  s: Euripides, Ion; Apollodorus, Bibliotheca 1.7.3, 3.15.1
+  w: Creusa (daughter of Erechtheus)
+orithyia | Orithyia | Orithyia | erechtheus+praxithea | Athenian princess carried off by Boreas.
+  s: Apollodorus, Bibliotheca 3.15.1–2; Ovid, Metamorphoses 6.675–721
+  w: Orithyia (daughter of Erechtheus)
+procris | Procris | Procris | erechtheus+praxithea | Wife of Cephalus, killed by his never-missing javelin.
+  s: Apollodorus, Bibliotheca 3.15.1; Ovid, Metamorphoses 7.661–865
+chthonia | Chthonia | | erechtheus+praxithea | Daughter of Erechtheus, sacrificed to save Athens.
+  s: Apollodorus, Bibliotheca 3.15.1, 3.15.4
+metiadusa | Metiadusa | | eupalamus | Wife of Cecrops II.
+  s: Apollodorus, Bibliotheca 3.15.5
+eupalamus | Eupalamus | | metion | Son of Metion; father of Daedalus.
+  s: Apollodorus, Bibliotheca 3.15.8
+pandion_ii | Pandion II | | cecrops_ii+metiadusa | King of Athens, exiled to Megara.
+  w: Pandion II
+pylia | Pylia | | pylas | Wife of Pandion II.
+  s: Apollodorus, Bibliotheca 3.15.5
+pylas | Pylas | | - | King of Megara who gave his throne to Pandion II.
+  x: pandion_ii | father-in-law of Pandion II
+  s: Apollodorus, Bibliotheca 3.15.5
+aegeus | Aegeus | Aegeus | pandion_ii+pylia | King of Athens who leapt into the sea when he saw the black sail.
+  s: Apollodorus, Bibliotheca 3.15.5–6; Plutarch, Theseus 3, 22
+  m: Aegeus told Theseus to change his black sails to white if he returned alive from Crete. Theseus forgot, and Aegeus threw himself into the sea, which was named the Aegean after him.
+  r: I watched from the cliff for a white sail, saw black, and gave my name to a sea. ;; Aegeus
+pallas_a | Pallas | | pandion_ii+pylia | Brother of Aegeus; his fifty sons (the Pallantides) plotted against Theseus.
+  s: Apollodorus, Bibliotheca 3.15.5; Plutarch, Theseus 13
+  w: Pallas (son of Pandion)
+nisus | Nisus | Nisus | pandion_ii+pylia | King of Megara whose life depended on a purple lock of hair; he became a sea eagle.
+  s: Apollodorus, Bibliotheca 3.15.8; Ovid, Metamorphoses 8.1–151
+  t: zeus | turned into a sea eagle
+lycus_a | Lycus | | pandion_ii+pylia | Son of Pandion II; the Lyceum was named after him.
+  s: Apollodorus, Bibliotheca 3.15.5; Pausanias 1.19.3
+  w: Lycus (son of Pandion)
+scylla_m | Scylla | | nisus | Princess of Megara who cut her father's purple lock for love of Minos; she became the ciris bird.
+  s: Apollodorus, Bibliotheca 3.15.8; Ovid, Metamorphoses 8.1–151
+  t: zeus | turned into the ciris bird, forever chased by her father as a sea eagle
+  w: Scylla (princess)
+  r: For love of the enemy king I cut my father's purple lock; now he hunts me across the sky as a sea eagle. ;; Scylla of Megara
+zetes | Zetes | | boreas+orithyia | Winged Argonaut who drove off the Harpies.
+  T: demigod
+  s: Apollonius Rhodius, Argonautica 1.211–223, 2.262–300
+calais | Calais | | boreas+orithyia | Winged twin of Zetes.
+  T: demigod
+chione | Chione | | boreas+orithyia | Daughter of Boreas; mother of Eumolpus by Poseidon.
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.15.2, 3.15.4
+  w: Chione (daughter of Boreas)
+cleopatra_b | Cleopatra | | boreas+orithyia | Daughter of Boreas; first wife of the Thracian seer Phineus.
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.15.2–3
+  w: Cleopatra (daughter of Boreas)
+eumolpus | Eumolpus | Eumolpus | poseidon+chione | Thracian founder of the Eleusinian Mysteries who fought Erechtheus.
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.15.4; Pausanias 1.38.2–3
+ion | Ion | Ion | xuthus+creusa | Ancestor of the Ionians.
+  a: apollo+creusa | Euripides, Ion
+  s: Apollodorus, Bibliotheca 1.7.3; Euripides, Ion
+  w: Ion (mythology)
+achaeus | Achaeus | | xuthus+creusa | Ancestor of the Achaeans.
+  s: Apollodorus, Bibliotheca 1.7.3
+theseus | Theseus | Theseus | aegeus+aethra | King of Athens who killed the Minotaur and united Attica.
+  T: demigod
+  a: poseidon+aethra | Bacchylides 17; Apollodorus, Bibliotheca 3.15.7
+  s: Plutarch, Theseus; Apollodorus, Bibliotheca 3.16, Epitome 1
+  m: Raised in Troezen, Theseus lifted a rock to find his father's sword and sandals, then took the dangerous road to Athens, killing Periphetes, Sinis, the Crommyonian Sow, Sciron, Cercyon and Procrustes. He killed the Minotaur, abandoned Ariadne, fought the Amazons, and went with Pirithous to try to abduct Persephone, where he was trapped in the Chair of Forgetfulness until Heracles freed him.
+  r: I lifted a rock to find my father's sword and sandals, and followed a thread out of the Labyrinth. ;; Theseus
+aethra | Aethra | Aethra | pittheus | Mother of Theseus; later Helen's slave at Troy.
+  s: Apollodorus, Bibliotheca 3.15.7, Epitome 5.22; Plutarch, Theseus 3–4
+  w: Aethra (mother of Theseus)
+medea_son | Medus | | aegeus+medea | Son of Medea by Aegeus; eponym of the Medes.
+  s: Apollodorus, Bibliotheca 1.9.28; Hesiod, Theogony 1001 (Medeius)
+  w: Medus (son of Aegeus)
+hippolytus | Hippolytus | Hippolytus / Virbius | theseus+antiope_am | Son of Theseus who scorned Aphrodite; cursed by his father and dragged to death by his horses.
+  a: theseus+hippolyta | Euripides, Hippolytus
+  s: Euripides, Hippolytus; Ovid, Metamorphoses 15.497–546
+  t: asclepius | restored to life and hidden in Italy as the god Virbius
+  m: Phaedra fell in love with her stepson Hippolytus, and when he rejected her she accused him in a letter. Theseus called down a curse from Poseidon, who sent a bull from the sea to panic his horses.
+acamas | Acamas | | theseus+phaedra | Son of Theseus who rescued his grandmother Aethra from Troy.
+  s: Apollodorus, Epitome 5.22; Pausanias 10.25.8
+demophon | Demophon | | theseus+phaedra | Son of Theseus; king of Athens after the Trojan War.
+  s: Apollodorus, Epitome 5.22, 6.16–17
+  w: Demophon of Athens
+periphetes | Periphetes | | hephaestus+anticleia_p | Club-wielding bandit of Epidaurus killed by Theseus.
+  s: Apollodorus, Bibliotheca 3.16.1
+anticleia_p | Anticleia | | - | Mother of Periphetes by Hephaestus.
+  x: hephaestus | consort of Hephaestus
+  s: Apollodorus, Bibliotheca 3.16.1
+  w: Periphetes
+sinis | Sinis | | poseidon | "Pine-bender" bandit of the Isthmus, killed by Theseus.
+  s: Apollodorus, Bibliotheca 3.16.2; Plutarch, Theseus 8
+  a: polypemon+sylea | Apollodorus, Bibliotheca 3.16.2
+sciron | Sciron | | pelops | Bandit who kicked travellers off a cliff to a man-eating turtle.
+  s: Apollodorus, Epitome 1.2; Plutarch, Theseus 10
+  a: poseidon | Pausanias 1.44.8
+cercyon | Cercyon | | poseidon | King of Eleusis who wrestled travellers to death.
+  s: Apollodorus, Epitome 1.3; Plutarch, Theseus 11
+procrustes | Procrustes | Procrustes | poseidon | Bandit who stretched or cut travellers to fit his bed.
+  s: Apollodorus, Epitome 1.4; Plutarch, Theseus 11; Diodorus 4.59.5
+  a: polypemon | Apollodorus, Epitome 1.4 (also called Damastes or Polypemon)
+  r: I made every guest fit my bed exactly, by stretching them or cutting them down. ;; Procrustes
+polypemon | Polypemon | | - | Father of Sinis; sometimes identified with Procrustes.
+  x: sinis | named as his father
+  s: Apollodorus, Bibliotheca 3.16.2
+sylea | Sylea | | corinthus | Daughter of Corinthus; mother of Sinis.
+  s: Apollodorus, Bibliotheca 3.16.2
+corinthus | Corinthus | | zeus | Eponym of Corinth.
+  T: demigod
+  s: Pausanias 2.1.1
+@house Eleusis
+celeus | Celeus | | - | King of Eleusis who welcomed Demeter in her grief.
+  x: demeter | host of Demeter at Eleusis
+  s: Homeric Hymn to Demeter 96–300; Apollodorus, Bibliotheca 1.5.1
+metanira | Metanira | | - | Queen of Eleusis who interrupted Demeter's attempt to make her son immortal.
+  x: celeus | wife of Celeus
+  s: Homeric Hymn to Demeter 231–255
+demophon_e | Demophon | | celeus+metanira | Infant Demeter tried to make immortal by holding him in the fire.
+  s: Homeric Hymn to Demeter 231–291; Apollodorus, Bibliotheca 1.5.1
+  w: Demophon of Eleusis
+triptolemus | Triptolemus | Triptolemus | celeus+metanira | Prince of Eleusis whom Demeter sent in a winged, serpent-drawn chariot to teach agriculture.
+  s: Apollodorus, Bibliotheca 1.5.2; Ovid, Metamorphoses 5.642–661
+  r: A goddess gave me a chariot drawn by winged serpents to carry seed-corn over the whole earth. ;; Triptolemus
+lyncus | Lyncus | | - | Scythian king who tried to murder Triptolemus and was turned into a lynx.
+  x: triptolemus | tried to kill him in his sleep
+  t: demeter | turned into a lynx
+  s: Ovid, Metamorphoses 5.648–661
+
+# ============ HOUSE OF TANTALUS & PELOPS ============
+@house Pelopids
+@src Apollodorus, Epitome 2.1–16; Pindar, Olympian 1
+tantalus | Tantalus | Tantalus | zeus+pluto_o | King of Sipylus who served his son to the gods; punished with hunger and thirst in Tartarus.
+  T: demigod
+  s: Homer, Odyssey 11.582–592; Pindar, Olympian 1.36–64; Apollodorus, Epitome 2.1
+  m: Tantalus cut up his son Pelops and served him to the gods to test them. Only Demeter, grieving for Persephone, ate a piece of shoulder. In Tartarus he stands in a pool under a fruit tree; the water drains when he bends to drink and the branches lift when he reaches up.
+  r: I stand in water up to my chin under ripe fruit, and can never drink or eat; my name gives you "tantalise". ;; Tantalus
+dione_t | Dione | | atlas | Daughter of Atlas; wife of Tantalus.
+  s: Hyginus, Fabulae 82–83
+  w: Dione
+pelops | Pelops | Pelops | tantalus+dione_t | Restored to life with an ivory shoulder; won Hippodamia in a rigged chariot race; the Peloponnese is named after him.
+  s: Pindar, Olympian 1; Apollodorus, Epitome 2.3–9
+  t: demeter | the gods restored him, and Demeter made him an ivory shoulder
+  m: The gods reassembled Pelops and Demeter gave him a shoulder of ivory. He won Hippodamia by bribing Myrtilus to sabotage Oenomaus's chariot, then drowned Myrtilus instead of paying him, and Myrtilus's dying curse fell on his descendants.
+  r: My father served me to the gods; they put me back together with an ivory shoulder, and a whole peninsula bears my name. ;; Pelops
+niobe | Niobe | Niobe | tantalus+dione_t | Queen of Thebes who boasted of her fourteen children; she wept herself to stone on Mount Sipylus.
+  a: tantalus+euryanassa | scholiast on Euripides, Orestes 11
+  s: Homer, Iliad 24.602–617; Ovid, Metamorphoses 6.146–312
+  t: zeus | turned to a weeping rock on Sipylus
+  H: Thebes
+  r: I bragged of fourteen children over a goddess's two; her twins shot them all, and I weep forever as a stone. ;; Niobe
+broteas | Broteas | | tantalus+dione_t | Hunter who threw himself into a fire.
+  s: Apollodorus, Epitome 2.2; Ovid, Ibis 517–518
+euryanassa | Euryanassa | | pactolus | Wife of Tantalus in some accounts.
+  s: scholiast on Euripides, Orestes 5
+  w: Euryanassa
+pactolus | Pactolus | Pactolus | potamoi | The gold-bearing Lydian river where Midas washed off his golden touch.
+  T: deity
+  R: sea
+  s: Ovid, Metamorphoses 11.134–145
+oenomaus | Oenomaus | | ares+sterope | King of Pisa who raced his daughter's suitors and killed them.
+  s: Apollodorus, Epitome 2.4–7; Pausanias 5.1.6
+  a: ares+harpinna | Pausanias 5.22.6
+hippodamia | Hippodamia | | oenomaus | Wife of Pelops.
+  s: Apollodorus, Epitome 2.4–9
+  w: Hippodamia (wife of Pelops)
+atreus | Atreus | Atreus | pelops+hippodamia | King of Mycenae who served Thyestes his own children.
+  s: Apollodorus, Epitome 2.10–14; Aeschylus, Agamemnon 1583–1602
+  m: Atreus's wife Aerope gave his golden lamb to his brother Thyestes, her lover. Atreus pretended to reconcile and served Thyestes his own sons at a feast.
+thyestes | Thyestes | Thyestes | pelops+hippodamia | Brother of Atreus who unknowingly ate his children; father of Aegisthus by his own daughter.
+  s: Apollodorus, Epitome 2.10–14; Seneca, Thyestes
+pittheus | Pittheus | | pelops+hippodamia | Wise king of Troezen; grandfather of Theseus.
+  s: Plutarch, Theseus 3
+alcathous | Alcathous | | pelops+hippodamia | King of Megara who killed the Cithaeronian lion.
+  s: Pausanias 1.41.3–5
+  w: Alcathous (son of Pelops)
+astydameia_p | Astydameia | | pelops+hippodamia | Daughter of Pelops; wife of Alcaeus and mother of Amphitryon.
+  s: Apollodorus, Bibliotheca 2.4.5
+  w: Astydameia
+nicippe | Nicippe | | pelops+hippodamia | Wife of Sthenelus; mother of Eurystheus.
+  s: Apollodorus, Bibliotheca 2.4.5
+  w: Nicippe
+lysidice | Lysidice | | pelops+hippodamia | Wife of Mestor.
+  s: Apollodorus, Bibliotheca 2.4.5
+chrysippus | Chrysippus | | pelops+axioche | Son of Pelops abducted by Laius; the crime cursed the house of Laius.
+  s: Apollodorus, Bibliotheca 3.5.5; scholiast on Euripides, Phoenissae 1760
+axioche | Axioche | | - | Nymph; mother of Chrysippus.
+  T: nymph
+  x: pelops | consort of Pelops
+  s: scholiast on Euripides, Orestes 4
+agamemnon | Agamemnon | Agamemnon | atreus+aerope | King of Mycenae and leader of the Greeks at Troy; murdered by Clytemnestra.
+  a: pleisthenes+aerope | Hesiodic Catalogue fr. 194; Apollodorus, Bibliotheca 3.2.2
+  s: Homer, Iliad; Aeschylus, Agamemnon; Apollodorus, Epitome 3–6
+  m: Agamemnon sacrificed his daughter Iphigenia at Aulis for a fair wind. At Troy his seizure of Briseis caused the wrath of Achilles. On his return, Clytemnestra and Aegisthus killed him in his bath.
+  r: I gave my daughter for a wind to Troy, took a prize girl from the best of the Greeks, and died in my bath at home. ;; Agamemnon
+menelaus | Menelaus | Menelaus | atreus+aerope | King of Sparta, husband of Helen.
+  a: pleisthenes+aerope | Apollodorus, Bibliotheca 3.2.2
+  s: Homer, Iliad 3, Odyssey 4; Apollodorus, Epitome 2.15–16, 6.29
+pleisthenes | Pleisthenes | | atreus | Son (or father) of Atreus; in some accounts the true father of Agamemnon and Menelaus.
+  s: Apollodorus, Bibliotheca 3.2.2
+  a: pelops+hippodamia | scholia on Iliad 2.249
+anaxibia_a | Anaxibia | | atreus+aerope | Sister of Agamemnon; mother of Pylades.
+  s: Pausanias 2.29.4
+  w: Anaxibia
+pelopia | Pelopia | | thyestes | Daughter of Thyestes who bore Aegisthus by her own father.
+  s: Hyginus, Fabulae 88
+  w: Pelopia (daughter of Thyestes)
+aegisthus | Aegisthus | Aegisthus | thyestes+pelopia | Killer of Atreus and, with Clytemnestra, of Agamemnon; killed by Orestes.
+  s: Aeschylus, Oresteia; Hyginus, Fabulae 87–88; Homer, Odyssey 1.35–43
+iphigenia | Iphigenia | Iphigenia | agamemnon+clytemnestra | Daughter sacrificed at Aulis; in some versions Artemis saved her and made her priestess in Tauris.
+  a: theseus+helen | Stesichorus, cited by Pausanias 2.22.7
+  s: Euripides, Iphigenia at Aulis and Iphigenia among the Taurians; Apollodorus, Epitome 3.21–22
+  t: artemis | replaced on the altar by a deer and carried to Tauris
+electra | Electra | Electra | agamemnon+clytemnestra | Daughter of Agamemnon who helped Orestes avenge their father.
+  s: Sophocles, Electra; Euripides, Electra; Aeschylus, Libation Bearers
+  w: Electra
+orestes | Orestes | Orestes | agamemnon+clytemnestra | Son of Agamemnon who killed his mother and was pursued by the Furies.
+  s: Aeschylus, Oresteia; Euripides, Orestes; Apollodorus, Epitome 6.24–28
+  r: I killed my mother to avenge my father; the Furies chased me to Athens, where a jury of citizens tied and the goddess's vote freed me. ;; Orestes
+chrysothemis | Chrysothemis | | agamemnon+clytemnestra | Sister who kept quiet in Sophocles' Electra.
+  s: Sophocles, Electra; Homer, Iliad 9.145
+strophius | Strophius | | crisus | King of Phocis who sheltered the young Orestes.
+  s: Pausanias 2.29.4
+  w: Strophius
+crisus | Crisus | | phocus+asteria_p | Eponym of Crisa; grandfather of Pylades.
+  s: Pausanias 2.29.4
+asteria_p | Asterodia | | deion | Wife of Phocus.
+  s: scholiast on Euripides, Orestes 33
+  w: Crisus
+pylades | Pylades | Pylades | strophius+anaxibia_a | Loyal friend of Orestes; husband of Electra.
+  s: Aeschylus, Libation Bearers; Euripides, Orestes; Pausanias 2.29.4
+tisamenus | Tisamenus | | orestes+hermione | Last Achaean king of Mycenae, overthrown by the Heraclids.
+  s: Apollodorus, Bibliotheca 2.8.2–3; Pausanias 2.18.6
+medon_p | Medon | | pylades+electra | Son of Pylades and Electra.
+  s: Pausanias 2.16.7
+  w: Medon
+
+# ============ SPARTA & THE TYNDARIDS ============
+@house Sparta
+@src Apollodorus, Bibliotheca 3.10.3–3.11.2
+lelex | Lelex | | gaia | Autochthonous first king of Laconia.
+  s: Pausanias 3.1.1
+  a: poseidon+libya | Pausanias 1.44.3
+lacedaemon | Lacedaemon | Lacedaemon | zeus+taygete | King who named his land Lacedaemon and his city after his wife Sparta.
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.10.3; Pausanias 3.1.2
+sparta | Sparta | | eurotas | Daughter of Eurotas; wife of Lacedaemon.
+  s: Pausanias 3.1.2
+  w: Sparta (mythology)
+amyclas | Amyclas | | lacedaemon+sparta | King of Sparta; founder of Amyclae.
+  s: Apollodorus, Bibliotheca 3.10.3; Pausanias 3.1.3
+diomede | Diomede | | lapithes | Wife of Amyclas; mother of Hyacinthus.
+  s: Apollodorus, Bibliotheca 3.10.3
+  w: Diomede
+cynortas | Cynortas | | amyclas+diomede | King of Sparta.
+  s: Apollodorus, Bibliotheca 3.10.3
+perieres | Perieres | | aeolus+enarete | Son of Aeolus, king of Messenia; husband of Gorgophone.
+  a: cynortas | Apollodorus, Bibliotheca 3.10.3 (some say)
+  s: Apollodorus, Bibliotheca 1.9.5
+  w: Perieres
+oebalus | Oebalus | | cynortas | King of Sparta; in some accounts father of Tyndareus.
+  s: Apollodorus, Bibliotheca 3.10.4; Pausanias 3.1.4
+tyndareus | Tyndareus | Tyndareus | perieres+gorgophone | King of Sparta who made Helen's suitors swear to defend her marriage.
+  a: oebalus+gorgophone | Pausanias 3.1.4
+  s: Apollodorus, Bibliotheca 3.10.4–9
+  m: Odysseus advised Tyndareus to make all of Helen's suitors swear to defend whoever won her. That oath bound the Greek kings to the Trojan War.
+icarius | Icarius | | perieres+gorgophone | Spartan prince; father of Penelope.
+  s: Apollodorus, Bibliotheca 3.10.4–6
+  w: Icarius (Spartan)
+aphareus | Aphareus | | perieres+gorgophone | King of Messenia; father of Idas and Lynceus.
+  s: Apollodorus, Bibliotheca 3.10.3
+leucippus | Leucippus | | perieres+gorgophone | Father of the Leucippides, whom the Dioscuri carried off.
+  s: Apollodorus, Bibliotheca 3.10.3, 3.11.2
+  w: Leucippus (son of Perieres)
+leucippides | Leucippides | | leucippus+philodice | Phoebe and Hilaeira, carried off by Castor and Polydeuces.
+  s: Apollodorus, Bibliotheca 3.10.3, 3.11.2
+philodice | Philodice | | inachus | Wife of Leucippus.
+  T: nymph
+  s: Apollodorus, Bibliotheca 3.10.3
+leda | Leda | Leda | thestius+eurythemis | Queen of Sparta; Zeus came to her as a swan.
+  s: Apollodorus, Bibliotheca 1.7.10, 3.10.5–7; Euripides, Helen 16–22
+  m: Zeus visited Leda as a swan. She laid eggs from which came Helen and Polydeuces (children of Zeus), and Castor and Clytemnestra (children of Tyndareus).
+  r: A swan visited me, and from my eggs came a beauty who launched a thousand ships and twin horsemen. ;; Leda
+helen | Helen | Helena | zeus+leda | Most beautiful woman in the world, whose abduction by Paris caused the Trojan War.
+  T: demigod
+  a: zeus+nemesis | Cypria fr. 9; Apollodorus, Bibliotheca 3.10.7
+  s: Homer, Iliad 3; Apollodorus, Bibliotheca 3.10.7–9, Epitome 3.1–5; Euripides, Helen
+  m: Abducted as a girl by Theseus and rescued by her brothers, Helen was courted by every king in Greece and married Menelaus. Aphrodite gave her to Paris. In Stesichorus and Euripides only a phantom went to Troy while the real Helen waited in Egypt.
+  r: Hatched from an egg, I had the face that launched a thousand ships; one poet said only my phantom went to Troy. ;; Helen
+polydeuces | Polydeuces | Pollux | zeus+leda | Immortal boxer twin who shared his immortality with Castor; the constellation Gemini.
+  T: demigod
+  s: Pindar, Nemean 10.55–90; Apollodorus, Bibliotheca 3.11.2
+  m: When Castor was killed by Idas, Polydeuces begged Zeus to let him share his immortality. The twins now spend alternate days on Olympus and in the underworld, and shine as Gemini.
+  r: One of us mortal, one divine, we share our days between Olympus and Hades and shine as twins in the sky. ;; Castor and Polydeuces
+castor | Castor | Castor | tyndareus+leda | Mortal horseman twin of the Dioscuri.
+  s: Pindar, Nemean 10.55–90; Apollodorus, Bibliotheca 3.11.2
+clytemnestra | Clytemnestra | Clytaemestra | tyndareus+leda | Queen of Mycenae who killed Agamemnon in revenge for Iphigenia; killed by Orestes.
+  s: Aeschylus, Agamemnon; Apollodorus, Epitome 6.23
+timandra | Timandra | | tyndareus+leda | Daughter of Tyndareus.
+  s: Apollodorus, Bibliotheca 3.10.6
+phylonoe | Phylonoe | | tyndareus+leda | Daughter of Tyndareus, made immortal by Artemis.
+  s: Apollodorus, Bibliotheca 3.10.6
+  t: artemis | made immortal
+hermione | Hermione | Hermione | menelaus+helen | Only child of Menelaus and Helen; wife of Neoptolemus, then of Orestes.
+  s: Homer, Odyssey 4.12–14; Euripides, Andromache
+periboea_n | Periboea | | - | Naiad; wife of Icarius, mother of Penelope.
+  T: nymph
+  x: icarius | wife of Icarius
+  s: Apollodorus, Bibliotheca 3.10.6
+  w: Periboea (naiad)
+penelope | Penelope | Penelope | icarius+periboea_n | Faithful wife of Odysseus who unravelled her weaving each night to hold off the suitors.
+  s: Homer, Odyssey; Apollodorus, Bibliotheca 3.10.6
+  m: For twenty years Penelope waited for Odysseus. She told the suitors she would choose one when she finished weaving Laertes' shroud, and each night she unpicked the day's work. She tested the returned Odysseus with the secret of their bed, built around a living olive tree.
+  r: I wove by day and unwove by night, and I tested my husband with the secret of our bed. ;; Penelope
+idas | Idas | | aphareus+arene | Strongest of mortals; he fought Apollo for Marpessa and killed Castor.
+  a: poseidon+arene | Apollodorus, Bibliotheca 3.10.3
+  s: Homer, Iliad 9.557–564; Apollodorus, Bibliotheca 1.7.8–9, 3.11.2
+lynceus | Lynceus | | aphareus+arene | Argonaut with sight so keen he could see through the earth.
+  s: Apollonius Rhodius, Argonautica 1.151–155; Apollodorus, Bibliotheca 3.11.2
+  w: Lynceus (Argonaut)
+arene | Arene | | oebalus | Wife of Aphareus.
+  s: Apollodorus, Bibliotheca 3.10.3
+marpessa | Marpessa | | evenus | Chose the mortal Idas over Apollo, fearing a god would leave her when she aged.
+  s: Apollodorus, Bibliotheca 1.7.8–9; Homer, Iliad 9.557–564
+cleopatra_m | Cleopatra | | idas+marpessa | Wife of Meleager.
+  s: Homer, Iliad 9.555–565; Apollodorus, Bibliotheca 1.8.2
+  w: Cleopatra Alcyone

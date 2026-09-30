@@ -1,0 +1,367 @@
+# ============ HOUSE OF CRETE ============
+@region cretetroy
+@type mortal
+@house Crete
+@src Apollodorus, Bibliotheca 3.1.1–3.3.2
+europa | Europa | Europa | agenor+telephassa | Phoenician princess carried to Crete by Zeus in the form of a white bull.
+  a: phoenix | Homer, Iliad 14.321–322
+  s: Apollodorus, Bibliotheca 3.1.1; Ovid, Metamorphoses 2.833–875; Moschus, Europa
+  m: Zeus became a gentle white bull on the beach at Tyre. When Europa climbed on its back, it swam with her to Crete, where she bore Minos, Rhadamanthys and Sarpedon. She later married King Asterion.
+  r: I climbed onto a gentle white bull on the beach, and it swam with me all the way to Crete. ;; Europa
+asterion_k | Asterion | | tectamus | King of Crete who married Europa and adopted her sons.
+  s: Apollodorus, Bibliotheca 3.1.2; Diodorus Siculus 4.60.2
+  w: Asterion (king of Crete)
+tectamus | Tectamus | | dorus | Son of Dorus who sailed to Crete.
+  s: Diodorus Siculus 4.60.2
+minos | Minos | Minos | zeus+europa | King of Crete; after death, a judge of the dead.
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.1.2–4, 3.15.7–8; Homer, Odyssey 11.568–571
+  m: Minos prayed to Poseidon for a bull as a sign of his right to rule, and promised to sacrifice it, but he kept it. Poseidon made Pasiphaë desire the bull, and she bore the Minotaur. After his son Androgeus died in Athens, Minos demanded seven youths and seven maidens every nine years for the Minotaur.
+  r: I kept the god's bull instead of sacrificing it, and my wife bore a monster that I hid in a maze. ;; Minos
+rhadamanthys | Rhadamanthys | Rhadamanthus | zeus+europa | Lawgiver of Crete; judge of the dead and lord of Elysium.
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.1.2; Homer, Odyssey 4.561–569; Plato, Gorgias 523e–524a
+sarpedon_c | Sarpedon | | zeus+europa | Brother of Minos who went to Lycia; Zeus let him live three generations.
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.1.2
+  w: Sarpedon
+pasiphae | Pasiphaë | Pasiphae | helios+perseis | Queen of Crete; sorceress and mother of the Minotaur.
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.1.2–4; Hesiod, Theogony 956–962 (her siblings)
+  t: poseidon | made to desire the Cretan Bull
+  m: Poseidon made Pasiphaë desire the bull Minos had kept. Daedalus built her a hollow wooden cow, and she bore the Minotaur. She also cursed Minos so that his lovers died of the snakes and scorpions he released.
+cretan_bull | Cretan Bull | Taurus Creticus | poseidon | The white bull Poseidon sent from the sea; father of the Minotaur; later the Marathonian Bull.
+  T: creature
+  o: rose from the sea at Poseidon's gift
+  s: Apollodorus, Bibliotheca 2.5.7, 3.1.3–4; Plutarch, Theseus 14
+  r: The sea god sent me to be sacrificed, but the king kept me; the queen desired me and a hero dragged me to Athens. ;; Cretan Bull
+minotaur | Minotaur | Minotaurus | pasiphae+cretan_bull | Bull-headed man of the Labyrinth, fed on Athenian youths; killed by Theseus.
+  T: monster
+  s: Apollodorus, Bibliotheca 3.1.4, Epitome 1.7–9; Ovid, Metamorphoses 8.152–182; Plutarch, Theseus 15–19
+  m: His real name was Asterion. Daedalus built the Labyrinth to hold him. Theseus went as one of the fourteen tributes, killed him with Ariadne's help, and found his way out along her thread.
+  r: My mother loved a bull; my name was Asterion, and a thread led my killer out of my maze. ;; Minotaur
+ariadne | Ariadne | Ariadna | minos+pasiphae | Princess who gave Theseus the thread; abandoned on Naxos and married by Dionysus.
+  s: Apollodorus, Epitome 1.8–9; Catullus 64; Ovid, Metamorphoses 8.169–182
+  m: Theseus left Ariadne sleeping on Naxos. Dionysus found her, married her, and set her wedding crown among the stars as the Corona Borealis.
+  r: I gave the hero a ball of thread, he left me asleep on an island, and a god set my crown among the stars. ;; Ariadne
+phaedra | Phaedra | Phaedra | minos+pasiphae | Wife of Theseus who fell in love with her stepson Hippolytus.
+  s: Euripides, Hippolytus; Apollodorus, Epitome 1.18–19
+  t: aphrodite | made to love Hippolytus, as Aphrodite's revenge on him
+androgeus | Androgeus | | minos+pasiphae | Son of Minos killed in Attica; his death caused the tribute to the Minotaur.
+  s: Apollodorus, Bibliotheca 3.15.7
+deucalion_c | Deucalion | | minos+pasiphae | Cretan prince, father of Idomeneus.
+  s: Apollodorus, Bibliotheca 3.1.2, 3.3.1
+  w: Deucalion (son of Minos)
+glaucus_c | Glaucus | | minos+pasiphae | Cretan boy who drowned in a jar of honey and was brought back to life by the seer Polyidus.
+  s: Apollodorus, Bibliotheca 3.3.1–2; Hyginus, Fabulae 136
+  w: Glaucus (son of Minos)
+catreus | Catreus | | minos+pasiphae | King of Crete, killed by his son Althaemenes as foretold.
+  s: Apollodorus, Bibliotheca 3.2.1–2
+acacallis | Acacallis | | minos+pasiphae | Daughter of Minos; mother of Miletus by Apollo.
+  s: Apollodorus, Bibliotheca 3.1.2
+xenodice | Xenodice | | minos+pasiphae | Daughter of Minos.
+  s: Apollodorus, Bibliotheca 3.1.2
+miletus | Miletus | | apollo+acacallis | Founder of the city of Miletus.
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.1.2; Antoninus Liberalis 30
+  a: apollo+areia | Ovid, Metamorphoses 9.443–449
+idomeneus | Idomeneus | Idomeneus | deucalion_c | King of Crete; leader of the Cretans at Troy.
+  s: Homer, Iliad 2.645–652, 13.449–454
+aerope | Aerope | Aerope | catreus | Wife of Atreus, who betrayed him with Thyestes.
+  s: Apollodorus, Bibliotheca 3.2.1–2, Epitome 2.10
+clymene_c | Clymene | | catreus | Daughter of Catreus; wife of Nauplius, mother of Palamedes.
+  s: Apollodorus, Bibliotheca 3.2.2
+  w: Clymene (daughter of Catreus)
+althaemenes | Althaemenes | | catreus | Son of Catreus who fled to Rhodes and killed his father by mistake.
+  s: Apollodorus, Bibliotheca 3.2.1–2
+apemosyne | Apemosyne | | catreus | Daughter of Catreus, violated by Hermes and killed by her brother.
+  s: Apollodorus, Bibliotheca 3.2.1
+oenopion | Oenopion | | dionysus+ariadne | King of Chios who blinded Orion.
+  T: demigod
+  s: Apollodorus, Bibliotheca 1.4.3; Plutarch, Theseus 20.2
+  a: theseus+ariadne | Plutarch, Theseus 20.2 (Ion of Chios)
+staphylus | Staphylus | | dionysus+ariadne | "Grape-cluster", Argonaut son of Dionysus.
+  T: demigod
+  s: Apollodorus, Epitome 1.9
+thoas_l | Thoas | | dionysus+ariadne | King of Lemnos, saved by his daughter Hypsipyle when the women killed the men.
+  T: demigod
+  s: Apollodorus, Bibliotheca 1.9.17, Epitome 1.9; Apollonius Rhodius 1.609–626
+  w: Thoas (king of Lemnos)
+hypsipyle | Hypsipyle | Hypsipyle | thoas_l | Queen of Lemnos who hid her father and hosted the Argonauts; mother of twins by Jason.
+  s: Apollonius Rhodius, Argonautica 1.609–909
+  H: Lemnos
+peparethus | Peparethus | | dionysus+ariadne | Son of Dionysus; eponym of an Aegean island.
+  T: demigod
+  s: Apollodorus, Epitome 1.9
+@house Daedalids
+daedalus | Daedalus | Daedalus | eupalamus | Master craftsman of Athens who built the Labyrinth and flew from Crete on wax wings.
+  s: Apollodorus, Bibliotheca 3.15.8, Epitome 1.8–15; Ovid, Metamorphoses 8.183–259
+  a: metion | Diodorus Siculus 4.76.1; Pausanias 9.3.2
+  m: Jealous of his nephew Perdix, Daedalus threw him from the Acropolis and fled to Crete. He built the wooden cow for Pasiphaë and the Labyrinth for the Minotaur. Imprisoned by Minos, he made wings of feathers and wax for himself and his son Icarus.
+  r: I built a maze no one could leave and escaped a tower on wings of wax; my son flew too close to the sun. ;; Daedalus
+icarus | Icarus | Icarus | daedalus+naucrate | Son of Daedalus who flew too near the sun; the wax melted and he fell into the sea.
+  s: Apollodorus, Epitome 1.12–13; Ovid, Metamorphoses 8.183–235
+  r: My father warned me: not too low, not too high; the sun melted my wings, and the sea where I fell is named after me. ;; Icarus
+naucrate | Naucrate | | - | Slave of Minos; mother of Icarus.
+  x: daedalus | consort of Daedalus
+  s: Apollodorus, Epitome 1.12
+perdix | Perdix | Perdix | - | Daedalus's nephew, inventor of the saw; Athena turned him into a partridge as he fell.
+  x: daedalus | nephew of Daedalus (his sister's son)
+  t: athena | turned into a partridge as he fell from the Acropolis
+  s: Ovid, Metamorphoses 8.236–259; Apollodorus, Bibliotheca 3.15.8 (as Talos)
+  w: Perdix (mythology)
+talos | Talos | Talus | hephaestus | Bronze giant who circled Crete three times a day, hurling rocks at ships.
+  T: monster
+  o: forged by Hephaestus and given to Minos (in another version, the last of the bronze race)
+  s: Apollonius Rhodius, Argonautica 4.1638–1688; Apollodorus, Bibliotheca 1.9.26
+  m: A single vein ran from Talos's neck to his ankle, closed with a bronze nail. Medea bewitched him, and the nail came loose (or Poeas shot him in the ankle), draining his ichor.
+  r: I circled Crete three times a day; one bronze nail in my ankle held my life in, and a witch's gaze loosened it. ;; Talos
+@house Crete
+amalthea | Amalthea | Amalthea | helios | Goat (or nymph) who nursed the infant Zeus; her horn became the Cornucopia.
+  T: creature
+  s: Hyginus, De Astronomica 2.13; Ovid, Fasti 5.111–128; Callimachus, Hymn 1.47–49
+  a: haemonius | Apollodorus, Bibliotheca 2.7.5 (as a nymph)
+  r: I nursed the infant king of the gods in a Cretan cave, and my broken horn overflows with plenty. ;; Amalthea
+haemonius | Haemonius | | - | Father of the nymph Amalthea in Apollodorus.
+  x: amalthea | named as her father
+  s: Apollodorus, Bibliotheca 2.7.5
+curetes | Curetes | Curetes | gaia | Armed dancers who clashed their shields to drown out the crying of the infant Zeus.
+  T: spirit
+  s: Apollodorus, Bibliotheca 1.1.6–7; Strabo 10.3.11–19
+  a: apollo+rhetia | Pherecydes (as cited by Strabo 10.3.21)
+dactyls | Idaean Dactyls | Dactyli | rhea | "Fingers"; the first smiths, born on Mount Ida.
+  T: spirit
+  o: born when Rhea (or the nymph Anchiale) pressed her fingers into the earth of Ida
+  a: anchiale | Apollonius Rhodius, Argonautica 1.1129–1131
+  s: Apollonius Rhodius, Argonautica 1.1125–1131; Strabo 10.3.22
+anchiale | Anchiale | | - | Nymph of Dicte; mother of the Dactyls in Apollonius.
+  T: nymph
+  x: rhea | birthed the Dactyls on Rhea's Mount Ida
+  s: Apollonius Rhodius, Argonautica 1.1129–1131
+britomartis | Britomartis | Dictynna | zeus+carme | Cretan huntress who leapt into the sea to escape Minos and was caught in fishermen's nets.
+  T: deity
+  s: Callimachus, Hymn 3.189–205; Pausanias 2.30.3
+  t: artemis | deified as the goddess Dictynna ("of the nets")
+carme | Carme | | eubulus | Cretan nymph; mother of Britomartis.
+  T: nymph
+  s: Pausanias 2.30.3; Diodorus Siculus 5.76.3
+eubulus | Eubulus | | carmanor+demeter | Son of Demeter.
+  T: demigod
+  s: Diodorus Siculus 5.76.3
+  w: Eubuleus
+carmanor | Carmanor | | - | Cretan who purified Apollo after he killed the Python.
+  x: demeter | consort of Demeter
+  s: Pausanias 2.7.7, 2.30.3
+  w: Carmanor
+
+# ============ HOUSE OF TROY ============
+@house Troy
+@src Homer, Iliad 20.215–240; Apollodorus, Bibliotheca 3.12.1–5
+teucer_k | Teucer | Teucer | scamander+idaea | First king of the Troad; the Trojans were called Teucrians after him.
+  s: Apollodorus, Bibliotheca 3.12.1; Virgil, Aeneid 3.104–110
+  w: Teucer (son of Scamander)
+batea | Batea | | teucer_k | Daughter of Teucer; wife of Dardanus.
+  s: Apollodorus, Bibliotheca 3.12.1
+dardanus | Dardanus | Dardanus | zeus+electra_p | Founder of Dardania; ancestor of the Trojan kings.
+  T: demigod
+  s: Apollodorus, Bibliotheca 3.12.1–2; Homer, Iliad 20.215–218
+iasion | Iasion | Iasion | zeus+electra_p | Lover of Demeter in a thrice-ploughed field; Zeus struck him with lightning.
+  T: demigod
+  s: Homer, Odyssey 5.125–128; Hesiod, Theogony 969–974; Apollodorus 3.12.1
+plutus | Plutus | Plutus | demeter+iasion | Wealth, especially of the harvest.
+  T: deity
+  R: earth
+  s: Hesiod, Theogony 969–974
+philomelus | Philomelus | | demeter+iasion | Inventor of the wagon; placed in the stars as Boötes.
+  T: demigod
+  s: Hyginus, De Astronomica 2.4
+erichthonius_t | Erichthonius | | dardanus+batea | King of Dardania, richest of men, whose 3,000 mares were sired by Boreas.
+  s: Homer, Iliad 20.219–229
+  w: Erichthonius (son of Dardanus)
+ilus_d | Ilus | | dardanus+batea | Son of Dardanus who died childless.
+  s: Apollodorus, Bibliotheca 3.12.2
+  w: Ilus (son of Dardanus)
+astyoche_s | Astyoche | | simoeis | Daughter of the river Simoeis; wife of Erichthonius.
+  s: Apollodorus, Bibliotheca 3.12.2
+  w: Astyoche
+tros | Tros | Tros | erichthonius_t+astyoche_s | King who gave his name to Troy and the Trojans.
+  w: Tros (mythology)
+callirrhoe_s | Callirrhoe | | scamander | Daughter of Scamander; wife of Tros.
+  T: nymph
+  s: Apollodorus, Bibliotheca 3.12.2
+  w: Callirrhoe (daughter of Scamander)
+ilus | Ilus | | tros+callirrhoe_s | Founder of Ilion, where a cow lay down; he received the Palladium from the sky.
+  w: Ilus (son of Tros)
+assaracus | Assaracus | | tros+callirrhoe_s | King of Dardania; great-grandfather of Aeneas.
+ganymede | Ganymede | Ganymedes / Catamitus | tros+callirrhoe_s | Most beautiful of mortals, carried off by Zeus's eagle to be cupbearer of the gods.
+  T: demigod
+  s: Homer, Iliad 20.231–235; Homeric Hymn to Aphrodite 202–217; Ovid, Metamorphoses 10.155–161
+  t: zeus | made immortal and ageless; set in the stars as Aquarius
+  r: An eagle carried me from the slopes of Ida, and I pour the wine of the gods; my father got immortal horses in exchange. ;; Ganymede
+eurydice_i | Eurydice | | - | Wife of Ilus of Troy, called a daughter of Adrastus (not the Argive king of the Seven).
+  x: ilus | wife of Ilus
+  s: Apollodorus, Bibliotheca 3.12.3
+  w: Eurydice
+laomedon | Laomedon | Laomedon | ilus+eurydice_i | King of Troy who cheated Apollo, Poseidon and Heracles of their pay.
+  s: Apollodorus, Bibliotheca 2.5.9, 2.6.4, 3.12.3; Homer, Iliad 21.441–457
+  m: Poseidon and Apollo built Troy's walls for Laomedon, and he refused to pay them. Poseidon sent a sea monster, and Heracles killed it to save Hesione, but Laomedon cheated him of the promised horses, so Heracles sacked Troy and killed him.
+  r: Two gods built my walls and a hero saved my daughter, and I cheated all three of their pay. ;; Laomedon
+themiste | Themiste | | ilus+eurydice_i | Daughter of Ilus; wife of Capys.
+hieromneme | Hieromneme | | simoeis | Wife of Assaracus.
+  T: nymph
+  s: Apollodorus, Bibliotheca 3.12.2
+capys | Capys | Capys | assaracus+hieromneme | Father of Anchises.
+anchises | Anchises | Anchises | capys+themiste | Trojan prince loved by Aphrodite; carried from burning Troy by Aeneas.
+  s: Homeric Hymn to Aphrodite; Virgil, Aeneid 2.634–804
+  t: zeus | lamed (or blinded) by a thunderbolt for boasting of Aphrodite's love
+aeneas | Aeneas | Aeneas | anchises+aphrodite | Trojan hero who led the survivors to Italy; ancestor of the Romans.
+  T: demigod
+  s: Homer, Iliad 20.200–352; Hesiod, Theogony 1008–1010; Virgil, Aeneid
+  m: Poseidon rescued Aeneas from Achilles because he was fated to survive. He carried his father out of burning Troy, lost his wife Creusa in the flight, left Dido in Carthage, and founded Lavinium in Latium.
+  r: I carried my father out of the burning city on my shoulders and sailed west to found a new Troy. ;; Aeneas
+creusa_t | Creusa | Creusa | priam+hecuba | Wife of Aeneas, lost in the fall of Troy.
+  s: Virgil, Aeneid 2.735–795
+  w: Creusa (wife of Aeneas)
+ascanius | Ascanius | Ascanius / Iulus | aeneas+creusa_t | Son of Aeneas; founder of Alba Longa and ancestor of the Julii.
+  s: Virgil, Aeneid; Livy 1.3
+laocoon | Laocoön | Laocoon | capys | Trojan priest who warned against the wooden horse; sea serpents killed him and his sons.
+  s: Virgil, Aeneid 2.40–56, 2.199–231; Apollodorus, Epitome 5.18
+  a: acoetes | Hyginus, Fabulae 135 (son of Acoetes, brother of Anchises)
+  r: I warned them to fear Greeks bearing gifts; two serpents came out of the sea for me and my sons. ;; Laocoön
+acoetes | Acoetes | | - | Father of Laocoön in Hyginus.
+  x: laocoon | named as his father
+  s: Hyginus, Fabulae 135
+strymo | Strymo | | scamander | Wife of Laomedon; mother of Priam.
+  T: nymph
+  s: Apollodorus, Bibliotheca 3.12.3
+priam | Priam | Priamus | laomedon+strymo | Last king of Troy, father of fifty sons.
+  s: Apollodorus, Bibliotheca 3.12.3–5; Homer, Iliad 24
+  m: Priam was the only son of Laomedon Heracles spared, ransomed by his sister Hesione (hence his name, from "priamai", to buy). In the Iliad he goes by night to Achilles' tent to ransom Hector's body. Neoptolemus killed him at the altar of Zeus when Troy fell.
+  r: I kissed the hands of the man who killed my son, to ransom his body. ;; Priam
+tithonus | Tithonus | Tithonus | laomedon+strymo | Trojan prince loved by Eos, granted immortality without youth.
+  s: Homeric Hymn to Aphrodite 218–238; Hesiod, Theogony 984
+  t: eos | shut away as he withered, and in later versions turned into a cicada
+hesione | Hesione | Hesione | laomedon+strymo | Princess rescued from a sea monster by Heracles; given to Telamon.
+  s: Apollodorus, Bibliotheca 2.5.9, 2.6.4
+cetus_t | Trojan Cetus | Cetus | poseidon | Sea monster sent by Poseidon to punish Laomedon; killed by Heracles.
+  T: monster
+  R: sea
+  o: sent by Poseidon when Laomedon refused to pay for the walls
+  s: Apollodorus, Bibliotheca 2.5.9; Homer, Iliad 20.144–148
+  w: Ketos Troias
+hecuba | Hecuba | Hecuba | dymas | Queen of Troy, mother of Hector and Paris; later turned into a dog.
+  s: Homer, Iliad 16.718; Euripides, Hecuba and Trojan Women; Ovid, Metamorphoses 13.399–575
+  a: cisseus | Euripides, Hecuba 3; Virgil, Aeneid 7.320
+  a: sangarius | Apollodorus, Bibliotheca 3.12.5 (some say)
+  x: priam | wife of Priam
+  m: Pregnant with Paris, Hecuba dreamed she gave birth to a burning torch. After Troy fell she took revenge on Polymestor for murdering her son Polydorus, blinding him, and was transformed into a dog.
+  r: I dreamed I gave birth to a flaming torch; my son set the city ablaze. ;; Hecuba
+dymas | Dymas | | - | Phrygian king, father of Hecuba in Homer.
+  x: hecuba | named as her father
+  s: Homer, Iliad 16.718
+  w: Dymas
+cisseus | Cisseus | | - | Thracian king, father of Hecuba in Euripides and Virgil.
+  x: hecuba | named as her father
+  s: Euripides, Hecuba 3
+hector | Hector | Hector | priam+hecuba | Greatest Trojan warrior, killed by Achilles and dragged around Troy.
+  s: Homer, Iliad
+  m: Hector killed Patroclus, who was wearing Achilles' armour. Achilles killed him in single combat and dragged his body behind his chariot, until Priam ransomed it. The Iliad ends with his funeral.
+  r: Tamer of horses, I killed the friend wearing borrowed armour and was dragged three times around my own city. ;; Hector
+paris | Paris | Paris / Alexander | priam+hecuba | Trojan prince who judged the goddesses and carried off Helen.
+  s: Apollodorus, Bibliotheca 3.12.5, Epitome 3.1–4; Homer, Iliad 3
+  m: Exposed at birth because of Hecuba's dream, Paris was raised by shepherds on Ida. He gave the golden apple to Aphrodite, abducted Helen from Sparta, and later killed Achilles with an arrow guided by Apollo. Philoctetes shot him with the bow of Heracles.
+  r: A shepherd prince, I chose love over power and wisdom, and my arrow found the one weak heel. ;; Paris
+cassandra | Cassandra | Cassandra | priam+hecuba | Prophetess cursed by Apollo so that no one would ever believe her.
+  s: Aeschylus, Agamemnon 1072–1330; Apollodorus, Bibliotheca 3.12.5
+  t: apollo | cursed never to be believed after she refused him
+  r: The god gave me prophecy and then made sure nobody would believe it; I warned them about the horse. ;; Cassandra
+helenus | Helenus | Helenus | priam+hecuba | Seer and twin of Cassandra; he revealed the oracles for taking Troy.
+  s: Apollodorus, Epitome 5.9–10; Virgil, Aeneid 3.294–505
+deiphobus | Deiphobus | Deiphobus | priam+hecuba | Trojan prince who married Helen after Paris died; killed by Menelaus.
+  s: Apollodorus, Epitome 5.9, 5.22; Virgil, Aeneid 6.494–534
+polyxena | Polyxena | Polyxena | priam+hecuba | Trojan princess sacrificed on the tomb of Achilles.
+  s: Euripides, Hecuba; Apollodorus, Epitome 5.23
+laodice_t | Laodice | | priam+hecuba | Most beautiful daughter of Priam; the earth swallowed her when Troy fell.
+  s: Homer, Iliad 3.121–124; Apollodorus, Epitome 5.25
+  w: Laodice (daughter of Priam)
+polites | Polites | | priam+hecuba | Prince killed by Neoptolemus before Priam's eyes.
+  s: Virgil, Aeneid 2.526–532
+  w: Polites (Trojan)
+polydorus_p | Polydorus | | priam+hecuba | Youngest son of Priam, sent for safety to Polymestor of Thrace and murdered for his gold.
+  a: priam+laothoe | Homer, Iliad 20.407–418
+  s: Euripides, Hecuba; Virgil, Aeneid 3.19–68
+  w: Polydorus (son of Priam)
+laothoe | Laothoe | | altes | Wife of Priam; mother of Lycaon and Polydorus in Homer.
+  s: Homer, Iliad 21.84–91
+  w: Laothoe
+altes | Altes | | - | King of the Leleges; father of Laothoe.
+  x: laothoe | named as her father
+  s: Homer, Iliad 21.85–86
+lycaon_t | Lycaon | | priam+laothoe | Son of Priam killed by Achilles, who ignored his plea for mercy.
+  s: Homer, Iliad 21.34–135
+  w: Lycaon (son of Priam)
+aesacus | Aesacus | | priam+arisbe | Seer son of Priam who leapt from a cliff; Tethys turned him into a diving bird.
+  s: Apollodorus, Bibliotheca 3.12.5; Ovid, Metamorphoses 11.749–795
+  t: tethys | turned into a diving bird as he fell
+  a: priam+alexirhoe | Ovid, Metamorphoses 11.763
+arisbe | Arisbe | | merops | First wife of Priam.
+  s: Apollodorus, Bibliotheca 3.12.5
+merops | Merops | | - | Seer-king of Percote; father of Arisbe.
+  x: arisbe | named as her father
+  s: Homer, Iliad 2.831–834
+alexirhoe | Alexirhoe | | granicus | Nymph; mother of Aesacus in Ovid.
+  T: nymph
+  s: Ovid, Metamorphoses 11.763
+andromache | Andromache | Andromacha | eetion | Wife of Hector; after the war, captive of Neoptolemus.
+  s: Homer, Iliad 6.390–502, 22.437–515; Euripides, Andromache
+eetion | Eetion | | - | King of Cilician Thebe, killed by Achilles.
+  x: andromache | named as her father
+  s: Homer, Iliad 6.414–424
+astyanax | Astyanax | Astyanax | hector+andromache | Infant son of Hector, thrown from the walls of Troy.
+  s: Euripides, Trojan Women 709–789; Apollodorus, Epitome 5.23
+corythus | Corythus | | paris+oenone | Son of Paris and Oenone.
+  s: Parthenius, Love Romances 34
+  w: Corythus
+astyoche_t | Astyoche | | laomedon+strymo | Sister of Priam; mother of Eurypylus by Telephus.
+  s: Quintus Smyrnaeus, Posthomerica 6.135–136
+  w: Astyoche
+eurypylus_t | Eurypylus | | telephus+astyoche_t | Mysian king who fought for Troy; killed by Neoptolemus.
+  s: Homer, Odyssey 11.519–521; Quintus Smyrnaeus 6–8
+  w: Eurypylus (son of Telephus)
+antenor | Antenor | Antenor | aesyetes+cleomestra | Trojan elder who urged the return of Helen; founder of Padua.
+  x: priam | elder counsellor of Priam
+  s: Homer, Iliad 3.148, 7.347–353; Virgil, Aeneid 1.242–249
+aesyetes | Aesyetes | | - | Trojan noble; father of Antenor.
+  x: antenor | named as his father
+  s: Homer, Iliad 2.793
+cleomestra | Cleomestra | | - | Mother of Antenor.
+  x: aesyetes | wife of Aesyetes
+  s: scholia on Iliad 3.201
+@house Lycia
+glaucus_l | Glaucus | | hippolochus | Lycian ally of Troy who swapped gold armour for Diomedes' bronze.
+  s: Homer, Iliad 6.119–236
+  w: Glaucus (son of Hippolochus)
+sarpedon | Sarpedon | Sarpedon | zeus+laodamia | Lycian king, son of Zeus, killed by Patroclus.
+  T: demigod
+  s: Homer, Iliad 16.419–683
+  a: zeus+europa | Apollodorus, Bibliotheca 3.1.2 (merged with the Cretan Sarpedon)
+  m: Zeus considered saving Sarpedon from death but Hera talked him out of it; Zeus rained blood in his grief, and Sleep and Death carried the body home to Lycia.
+iobates | Iobates | | - | King of Lycia who set Bellerophon his tasks.
+  x: bellerophon | Bellerophon's host and father-in-law
+  s: Apollodorus, Bibliotheca 2.2.1, 2.3.1–2
+pandarus | Pandarus | Pandarus | lycaon_ly | Lycian archer who broke the truce at Troy.
+  x: diomedes | killed by Diomedes
+  s: Homer, Iliad 4.86–140, 5.166–296
+lycaon_ly | Lycaon | | - | Lycian father of Pandarus.
+  x: pandarus | named as his father
+  s: Homer, Iliad 2.826–827
+  w: Pandarus
+memnon | Memnon | Memnon | tithonus+eos | King of Ethiopia who fought for Troy and was killed by Achilles.
+  T: demigod
+  R: cretetroy
+  s: Hesiod, Theogony 984–985; Apollodorus, Epitome 5.3; Ovid, Metamorphoses 13.576–622
+  m: When Achilles killed Memnon, Eos wept, and her tears are the morning dew. Birds (the Memnonides) rose from his pyre and fought over it every year.
+  r: My mother the Dawn weeps every morning for me; the birds from my pyre fight each year at my tomb. ;; Memnon
+emathion | Emathion | | tithonus+eos | King of Arabia (or Ethiopia), killed by Heracles.
+  T: demigod
+  s: Hesiod, Theogony 984–985; Apollodorus, Bibliotheca 2.5.11

@@ -1,0 +1,337 @@
+# ============ AEOLIDS: SONS & DAUGHTERS OF AEOLUS ============
+@region earth
+@type mortal
+@house Aeolids
+@src Apollodorus, Bibliotheca 1.7.3, 1.9
+sisyphus | Sisyphus | Sisyphus | aeolus+enarete | Crafty king of Corinth who cheated death twice and must roll a boulder uphill forever.
+  s: Homer, Iliad 6.153, Odyssey 11.593–600; Apollodorus, Bibliotheca 1.9.3
+  m: Sisyphus told Asopus that Zeus had taken Aegina. When Death came for him he chained Death up; later he told his wife not to bury him, then got leave from Persephone to go back and punish her, and stayed. In the underworld he rolls a boulder up a hill, and it always rolls back down.
+  r: I chained Death and talked my way out of Hades; now my stone rolls back down every time it nears the top. ;; Sisyphus
+athamas | Athamas | Athamas | aeolus+enarete | King of Boeotian Orchomenus who nearly sacrificed Phrixus; driven mad by Hera.
+  s: Apollodorus, Bibliotheca 1.9.1–2; Ovid, Metamorphoses 4.416–542
+  t: hera | driven mad; he killed his son Learchus
+salmoneus | Salmoneus | Salmoneus | aeolus+enarete | King of Elis who imitated Zeus's thunder with bronze kettles and was struck by a real thunderbolt.
+  s: Apollodorus, Bibliotheca 1.9.7; Virgil, Aeneid 6.585–594
+  r: I dragged bronze kettles behind my chariot and threw torches to play the Thunderer, until the real bolt found me. ;; Salmoneus
+cretheus | Cretheus | | aeolus+enarete | Founder of Iolcus; grandfather of Jason.
+  s: Apollodorus, Bibliotheca 1.9.11
+deion | Deion | | aeolus+enarete | King of Phocis; father of Cephalus in some accounts.
+  s: Apollodorus, Bibliotheca 1.9.4
+  w: Deioneus
+magnes | Magnes | | aeolus+enarete | Founder of Magnesia; father of Dictys and Polydectes.
+  s: Apollodorus, Bibliotheca 1.9.6
+  w: Magnes (mythology)
+canace | Canace | | aeolus+enarete | Daughter of Aeolus; mother of Aloeus and others by Poseidon.
+  s: Apollodorus, Bibliotheca 1.7.4
+alcyone | Alcyone | Alcyone | aeolus+enarete | Wife of Ceyx; the two became kingfishers.
+  s: Ovid, Metamorphoses 11.410–748; Apollodorus, Bibliotheca 1.7.4
+  t: zeus | the gods turned her and Ceyx into kingfishers
+  m: When Ceyx drowned at sea, Morpheus came to Alcyone in a dream in his shape. She found his body on the shore and leapt into the sea, and the gods turned both into kingfishers. Aeolus calms the winds for seven "halcyon days" each winter while she nests.
+  r: My husband drowned; I found him on the shore and we became kingfishers, and the winds calm for our halcyon days. ;; Alcyone
+calyce | Calyce | | aeolus+enarete | Daughter of Aeolus; mother of Endymion by Aethlius.
+  s: Apollodorus, Bibliotheca 1.7.3, 1.7.5
+perimede | Perimede | | aeolus+enarete | Daughter of Aeolus; mother of Hippodamas by Achelous.
+  s: Apollodorus, Bibliotheca 1.7.3
+  w: Perimede
+ceyx | Ceyx | Ceyx | eosphorus | King of Trachis, son of the Morning Star; husband of Alcyone.
+  s: Ovid, Metamorphoses 11.266–748
+  t: zeus | turned into a kingfisher
+daedalion | Daedalion | | eosphorus | Brother of Ceyx who leapt from Parnassus in grief; Apollo turned him into a hawk.
+  s: Ovid, Metamorphoses 11.291–345
+  t: apollo | turned into a hawk
+chione_d | Chione | | daedalion | Mother of Autolycus by Hermes and Philammon by Apollo; killed by Artemis for her boasting.
+  s: Ovid, Metamorphoses 11.301–327
+  w: Chione (daughter of Daedalion)
+
+# ---- Athamas's children & the Golden Fleece ----
+nephele | Nephele | Nubes | zeus | Cloud woman shaped by Zeus in Hera's likeness; mother of Phrixus, Helle and the Centaurs.
+  T: nymph
+  R: olympus
+  o: formed from a cloud by Zeus to trick Ixion
+  s: Pindar, Pythian 2.36–48; Apollodorus, Bibliotheca 1.9.1, Epitome 1.20
+phrixus | Phrixus | Phrixus | athamas+nephele | Carried to Colchis on the golden ram; he sacrificed it and gave the fleece to Aeetes.
+  s: Apollodorus, Bibliotheca 1.9.1
+helle | Helle | Helle | athamas+nephele | Fell from the golden ram into the strait named after her, the Hellespont.
+  s: Apollodorus, Bibliotheca 1.9.1; Ovid, Fasti 3.851–876
+  r: I slipped from the back of a flying golden ram, and the strait where I fell is still called my sea. ;; Helle
+learchus | Learchus | | athamas+ino | Killed by his father in the madness Hera sent.
+  s: Apollodorus, Bibliotheca 3.4.3
+melicertes | Melicertes | | athamas+ino | Son of Ino who died with her in the sea and became the god Palaemon.
+  s: Apollodorus, Bibliotheca 3.4.3; Pausanias 1.44.7–8
+  t: poseidon | deified as Palaemon; the Isthmian Games were founded for him
+chrysomallos | Chrysomallos | | poseidon+theophane | The flying golden-fleeced ram that carried Phrixus to Colchis.
+  T: creature
+  s: Hyginus, Fabulae 3, 188; Apollodorus, Bibliotheca 1.9.1
+  o: Hermes sent it to Nephele to save her children
+  m: Poseidon turned Theophane into a ewe and himself into a ram to hide her from her suitors, and she bore the golden ram. Its fleece hung in the grove of Ares at Colchis, guarded by a dragon.
+  r: My golden fleece hung in a Colchian grove, guarded by a dragon that never slept, until a hero came with the king's daughter. ;; Chrysomallos
+theophane | Theophane | | bisaltes | Maiden turned into a ewe by Poseidon; mother of the golden ram.
+  s: Hyginus, Fabulae 188
+  t: poseidon | turned into a ewe
+bisaltes | Bisaltes | | helios+gaia | Eponym of the Bisaltae of Thrace.
+  s: Stephanus of Byzantium, s.v. Bisaltia
+  T: demigod
+chalciope | Chalciope | | aeetes+idyia | Daughter of Aeetes; wife of Phrixus.
+  T: demigod
+  s: Apollonius Rhodius, Argonautica 2.1149; Apollodorus, Bibliotheca 1.9.1
+argus_ph | Argus | | phrixus+chalciope | Son of Phrixus who built the Argo in some accounts.
+  s: Apollonius Rhodius, Argonautica 2.1122–1156
+  w: Argus (son of Phrixus)
+  a: arestor | Apollonius Rhodius 1.112 (the builder was Arestor's son)
+
+# ---- Salmoneus & Tyro: Pelias, Neleus, Jason ----
+alcidice | Alcidice | | aleus | First wife of Salmoneus; mother of Tyro.
+  s: Apollodorus, Bibliotheca 1.9.8
+tyro | Tyro | Tyro | salmoneus+alcidice | Mother of the twins Pelias and Neleus by Poseidon, who took the form of the river Enipeus.
+  s: Homer, Odyssey 11.235–259; Apollodorus, Bibliotheca 1.9.8–11
+pelias | Pelias | Pelias | poseidon+tyro | Usurping king of Iolcus who sent Jason for the Golden Fleece.
+  s: Apollodorus, Bibliotheca 1.9.8–16, 1.9.27; Pindar, Pythian 4
+  m: Warned to beware a man wearing one sandal, Pelias saw Jason arrive having lost a sandal crossing a river, and sent him for the Golden Fleece. Medea later tricked his daughters into cutting him up and boiling him, pretending it would make him young.
+  r: Warned against a man with one sandal, I sent him to the end of the world; his witch-bride had my daughters boil me. ;; Pelias
+neleus | Neleus | Neleus | poseidon+tyro | King of Pylos; Heracles killed all his sons except Nestor.
+  s: Apollodorus, Bibliotheca 1.9.8–9, 2.7.3
+aeson | Aeson | Aeson | cretheus+tyro | Father of Jason, rejuvenated by Medea (Ovid) or forced to suicide by Pelias.
+  s: Apollodorus, Bibliotheca 1.9.11, 1.9.16, 1.9.27; Ovid, Metamorphoses 7.159–293
+  t: medea | made young again by her herbs (Ovid)
+pheres | Pheres | | cretheus+tyro | Founder of Pherae; father of Admetus.
+  s: Apollodorus, Bibliotheca 1.9.11
+  w: Pheres (son of Cretheus)
+amythaon | Amythaon | | cretheus+tyro | Father of the seers Melampus and Bias.
+  s: Apollodorus, Bibliotheca 1.9.11
+polymede | Polymede | | autolycus | Mother of Jason.
+  a: alcimede | Apollonius Rhodius, Argonautica 1.47 (named Alcimede)
+  s: Apollodorus, Bibliotheca 1.9.16
+alcimede | Alcimede | | phylacus | Mother of Jason in Apollonius.
+  s: Apollonius Rhodius, Argonautica 1.45–48
+jason | Jason | Iason | aeson+polymede | Leader of the Argonauts who won the Golden Fleece with Medea's help.
+  s: Apollonius Rhodius, Argonautica; Apollodorus, Bibliotheca 1.9.16–28; Pindar, Pythian 4; Euripides, Medea
+  a: aeson+alcimede | Apollonius Rhodius, Argonautica 1.47
+  m: Raised by Chiron, Jason sailed on the Argo to Colchis. Aeetes set him to yoke fire-breathing bronze bulls, sow dragon's teeth and defeat the earthborn warriors; Medea's ointment protected him and she charmed the dragon. Later he abandoned Medea for the Corinthian princess Glauce, and died when a timber of the rotting Argo fell on him.
+  r: I lost a sandal in a river and sailed to the end of the world for a golden fleece; I left the witch who won it for me. ;; Jason
+medea | Medea | Medea | aeetes+idyia | Colchian sorceress, niece of Circe, who helped Jason and later killed their children.
+  T: demigod
+  s: Hesiod, Theogony 956–962, 992–1002; Euripides, Medea; Apollonius Rhodius, Argonautica 3–4; Ovid, Metamorphoses 7.1–424
+  m: Struck by Eros, Medea helped Jason win the Fleece and killed her brother Absyrtus to delay the pursuit. In Corinth, when Jason abandoned her for Glauce, she sent the bride a poisoned robe and killed her own children, escaping in the Sun's dragon chariot. In Athens she married Aegeus and tried to poison Theseus.
+  r: Granddaughter of the Sun, I tamed fire-breathing bulls for a hero and escaped his betrayal in a chariot pulled by dragons. ;; Medea
+absyrtus | Absyrtus | Absyrtus | aeetes+asterodeia | Brother of Medea, killed by her (or by Jason) during the Argonauts' escape.
+  T: demigod
+  s: Apollodorus, Bibliotheca 1.9.24; Apollonius Rhodius, Argonautica 4.224–481
+  a: aeetes+idyia | Apollodorus, Bibliotheca 1.9.23
+asterodeia | Asterodeia | | - | Caucasian nymph; mother of Absyrtus in Apollonius.
+  T: nymph
+  x: aeetes | consort of Aeetes
+  s: Apollonius Rhodius, Argonautica 3.242–243
+mermerus | Mermerus | | jason+medea | Son of Jason and Medea, killed by his mother (or by the Corinthians).
+  s: Apollodorus, Bibliotheca 1.9.28; Pausanias 2.3.6
+pheres_j | Pheres | | jason+medea | Son of Jason and Medea, killed with his brother.
+  s: Apollodorus, Bibliotheca 1.9.28
+  w: Mermerus and Pheres
+medeus | Medeus | | jason+medea | Son raised by Chiron, named by Hesiod.
+  s: Hesiod, Theogony 1000–1002
+glauce_c | Glauce | Creusa | creon_c | Corinthian princess Jason left Medea for; burned by the poisoned robe.
+  s: Apollodorus, Bibliotheca 1.9.28; Euripides, Medea 1136–1221
+creon_c | Creon | | lycaethus | King of Corinth who died trying to save his daughter from Medea's robe.
+  x: jason | Jason's would-be father-in-law
+  s: Euripides, Medea; Diodorus Siculus 4.54–55
+  w: Creon (king of Corinth)
+lycaethus | Lycaethus | | - | Father of Creon of Corinth.
+  x: creon_c | named as his father
+  s: scholia on Euripides, Medea 19
+@house Children of Helios
+aeetes | Aeetes | Aeetes | helios+perseis | King of Colchis, keeper of the Golden Fleece.
+  T: demigod
+  s: Hesiod, Theogony 956–962; Apollonius Rhodius, Argonautica 3
+circe | Circe | Circe | helios+perseis | Sorceress of Aeaea who turned Odysseus's men into swine.
+  T: deity
+  R: sea
+  s: Homer, Odyssey 10.133–574; Hesiod, Theogony 956–957, 1011–1014
+  m: Circe turned Odysseus's crew into pigs with a potion. Protected by the herb moly from Hermes, Odysseus made her restore them; he stayed a year and she sent him to consult Tiresias among the dead.
+  r: With a wand and a cup I turned sailors into pigs, but the herb moly protected their captain. ;; Circe
+perses_h | Perses | | helios+perseis | King of Tauris, brother of Aeetes, who usurped him and was killed by Medea.
+  T: demigod
+  s: Apollodorus, Bibliotheca 1.9.28; Diodorus Siculus 4.45–56
+  w: Perses (brother of Aeetes)
+khalkotauroi | Khalkotauroi | | hephaestus | Two fire-breathing bronze bulls made by Hephaestus for Aeetes; Jason yoked them.
+  T: creature
+  o: forged by Hephaestus as a gift for Aeetes
+  s: Apollonius Rhodius, Argonautica 3.230–234, 3.1278–1407; Apollodorus 1.9.23
+  r: Bronze-hoofed, breathing fire, we were made by the smith god; a hero anointed with a witch's salve yoked us to a plough. ;; Khalkotauroi
+telegonus | Telegonus | Telegonus | odysseus+circe | Son who unknowingly killed his father Odysseus with a stingray-spined spear.
+  s: Apollodorus, Epitome 7.16, 7.36–37; Hyginus, Fabulae 127
+  R: sea
+heliades | Heliades | Heliades | helios+clymene | Daughters of Helios who wept for Phaethon and became poplars; their tears became amber.
+  T: nymph
+  s: Ovid, Metamorphoses 2.340–366
+  t: zeus | turned into poplar trees on the banks of the Eridanus
+phaethon | Phaethon | Phaethon | helios+clymene | Son of Helios who drove the sun chariot and was struck down by Zeus.
+  s: Ovid, Metamorphoses 1.750–2.400; Euripides, Phaethon (fragments)
+  a: cephalus+eos | Hesiod, Theogony 986–991 (a different Phaethon)
+  m: Phaethon made his father swear to grant any wish, and asked to drive the sun chariot. The horses bolted, scorching Africa into desert and drying rivers, until Zeus struck him down into the Eridanus.
+  r: I begged to drive my father's chariot for a day; I scorched the earth and fell burning into a river. ;; Phaethon
+cycnus_l | Cycnus | Cycnus | sthenelus_l | Ligurian king, kinsman of Phaethon, who mourned him until he became a swan.
+  x: phaethon | kinsman who mourned Phaethon
+  s: Ovid, Metamorphoses 2.367–380; Pausanias 1.30.3
+  t: apollo | turned into a swan (the constellation Cygnus)
+  w: Cycnus of Liguria
+sthenelus_l | Sthenelus | | - | Ligurian king; father of Cycnus.
+  x: cycnus_l | named as his father
+  s: Ovid, Metamorphoses 2.367; Virgil, Aeneid 10.189–193
+phaethusa | Phaethusa | | helios+neaera | Daughter of Helios who guarded his cattle on Thrinacia.
+  T: nymph
+  s: Homer, Odyssey 12.127–136
+lampetia | Lampetia | | helios+neaera | Sister of Phaethusa who told Helios that Odysseus's men had eaten his cattle.
+  T: nymph
+  s: Homer, Odyssey 12.127–136, 12.374–375
+neaera | Neaera | | - | Nymph; mother of Phaethusa and Lampetia by Helios.
+  T: nymph
+  x: helios | consort of Helios
+  s: Homer, Odyssey 12.133
+augeas | Augeas | Augeas | helios | King of Elis whose stables Heracles cleaned in one day by diverting two rivers.
+  T: demigod
+  a: phorbas+hyrmine | Apollodorus, Bibliotheca 2.5.5 (some say)
+  a: poseidon | Apollodorus, Bibliotheca 2.5.5 (some say)
+  s: Apollodorus, Bibliotheca 2.5.5; Apollonius Rhodius 1.172–175
+  r: My stables held thirty years of filth; the hero turned two rivers through them in a day. ;; Augeas
+leucothoe | Leucothoe | | orchamus+eurynome_b | Princess loved by Helios, buried alive by her father; she became the frankincense plant.
+  x: helios | loved by Helios
+  s: Ovid, Metamorphoses 4.190–255
+  t: helios | turned into the frankincense shrub
+orchamus | Orchamus | | - | King of Persia who buried his daughter Leucothoe alive.
+  x: leucothoe | named as her father
+  s: Ovid, Metamorphoses 4.212
+eurynome_b | Eurynome | | - | Mother of Leucothoe, whose shape Helios took.
+  x: orchamus | wife of Orchamus
+  s: Ovid, Metamorphoses 4.210–218
+  w: Leucothoe
+
+# ---- Pheres & Admetus ----
+@house Aeolids
+admetus | Admetus | Admetus | pheres+periclymene | King of Pherae whom Apollo served; his wife Alcestis died in his place.
+  s: Euripides, Alcestis; Apollodorus, Bibliotheca 1.9.15
+  m: Apollo made the Fates agree that Admetus could escape death if someone died in his place. Only his wife Alcestis agreed. Heracles wrestled Death at her tomb and brought her back.
+  r: A god herded my cattle, and my wife died in my place until a hero wrestled her back from Death. ;; Admetus
+periclymene | Periclymene | | minyas | Wife of Pheres.
+  s: Hesiodic Catalogue fr. 37
+alcestis | Alcestis | Alcestis | pelias+anaxibia | Wife of Admetus who died in his place.
+  s: Euripides, Alcestis; Apollodorus, Bibliotheca 1.9.15
+anaxibia | Anaxibia | | bias+pero | Wife of Pelias.
+  s: Apollodorus, Bibliotheca 1.9.10
+  a: phylomache | Apollodorus 1.9.10 (some say his wife was Phylomache)
+  w: Anaxibia
+phylomache | Phylomache | | amphion+niobe | Wife of Pelias in some accounts.
+  s: Apollodorus, Bibliotheca 1.9.10
+acastus | Acastus | Acastus | pelias+anaxibia | King of Iolcus and Argonaut who tried to have Peleus killed.
+  s: Apollodorus, Bibliotheca 1.9.10, 3.13.3
+eumelus | Eumelus | | admetus+alcestis | Leader of the Thessalians at Troy with the finest horses.
+  s: Homer, Iliad 2.711–715, 23.288–565
+
+# ---- Neleus, Nestor ----
+nestor | Nestor | Nestor | neleus+chloris | Old king of Pylos, wise counsellor at Troy.
+  s: Homer, Iliad 1.247–284, 11.670–762; Apollodorus, Bibliotheca 1.9.9
+  m: Nestor was the only one of Neleus's twelve sons to survive Heracles' attack on Pylos. He lived through three generations and gave long, reminiscing advice at Troy.
+periclymenus | Periclymenus | | neleus+chloris | Argonaut who could change shape, given the gift by Poseidon; killed by Heracles as a bee (or eagle).
+  s: Apollodorus, Bibliotheca 1.9.9; Apollonius Rhodius 1.156–160
+  t: poseidon | granted the power to change shape
+pero | Pero | | neleus+chloris | Daughter of Neleus, won by Bias with Melampus's help.
+  s: Homer, Odyssey 11.287–297; Apollodorus, Bibliotheca 1.9.12
+antilochus | Antilochus | | nestor+eurydice_n | Son of Nestor killed by Memnon while saving his father.
+  s: Homer, Odyssey 4.186–188; Pindar, Pythian 6.28–42
+eurydice_n | Eurydice | | clymenus | Wife of Nestor.
+  s: Homer, Odyssey 3.452
+  w: Eurydice
+clymenus | Clymenus | | - | King of Orchomenus; father of Eurydice.
+  x: eurydice_n | named as her father
+  s: Pausanias 9.37.1–3
+thrasymedes | Thrasymedes | | nestor+eurydice_n | Son of Nestor who fought at Troy.
+  s: Homer, Iliad 9.81, 10.255–257
+pisistratus | Pisistratus | | nestor+eurydice_n | Son of Nestor who drove Telemachus to Sparta.
+  s: Homer, Odyssey 3.36–4.624
+  w: Peisistratus (son of Nestor)
+polycaste | Polycaste | | nestor+eurydice_n | Daughter of Nestor who bathed Telemachus; mother of Persepolis.
+  s: Homer, Odyssey 3.464–469
+persepolis | Persepolis | | telemachus+polycaste | Son of Telemachus in Hesiodic tradition.
+  s: Hesiodic Catalogue fr. 221
+  w: Polycaste
+
+# ---- Amythaon: Melampus & Bias ----
+idomene | Idomene | | pheres | Wife of Amythaon.
+  s: Apollodorus, Bibliotheca 1.9.11
+melampus | Melampus | Melampus | amythaon+idomene | Seer who understood the speech of animals; he cured the Proetides.
+  s: Apollodorus, Bibliotheca 1.9.11–13, 2.2.2; Homer, Odyssey 15.225–255
+  m: Snakes Melampus had saved licked his ears, and he could understand animals. In prison he heard woodworms say the roof beam was about to break, and asked to be moved in time. He cured the daughters of Proetus in exchange for a share of Argos.
+  r: Snakes licked my ears and I heard the woodworms warn me the roof was about to fall. ;; Melampus
+bias | Bias | | amythaon+idomene | Brother of Melampus who won Pero with his help.
+  s: Apollodorus, Bibliotheca 1.9.12–13
+  w: Bias (son of Amythaon)
+talaus | Talaus | | bias+pero | King of Argos; Argonaut; father of Adrastus.
+  s: Apollodorus, Bibliotheca 1.9.13
+
+# ---- Sisyphus's line: Bellerophon ----
+merope | Merope | Merope | atlas+pleione | The Pleiad who married a mortal (Sisyphus) and shines faintest.
+  T: nymph
+  s: Apollodorus, Bibliotheca 1.9.3, 3.10.1; Ovid, Fasti 4.175–176
+  w: Merope (Pleiad)
+  R: olympus
+glaucus_s1 | Glaucus | | sisyphus+merope | King of Corinth devoured by his own mares at funeral games.
+  s: Apollodorus, Bibliotheca 1.9.3, 2.3.1; Homer, Iliad 6.154–155
+  w: Glaucus (son of Sisyphus)
+eurymede | Eurymede | | nisus | Wife of Glaucus; mother of Bellerophon.
+  s: Apollodorus, Bibliotheca 1.9.3; Hyginus, Fabulae 157
+bellerophon | Bellerophon | Bellerophon | glaucus_s1+eurymede | Hero who tamed Pegasus and killed the Chimera; fell trying to ride to Olympus.
+  a: poseidon+eurymede | Hesiodic Catalogue fr. 43a; Pindar, Olympian 13.63–92
+  s: Homer, Iliad 6.152–211; Pindar, Olympian 13.63–92; Apollodorus, Bibliotheca 2.3.1–2
+  m: Falsely accused by Stheneboea, Bellerophon was sent to Lycia with a letter asking Iobates to kill him. Riding Pegasus, tamed with Athena's golden bridle, he killed the Chimera and defeated the Solymi and the Amazons. When he tried to fly to Olympus, Zeus sent a gadfly and Pegasus threw him.
+  r: With a golden bridle I tamed a winged horse and killed a fire-breather; when I tried to ride to heaven, a gadfly threw me down. ;; Bellerophon
+philonoe | Philonoe | | iobates | Daughter of Iobates; wife of Bellerophon.
+  s: Apollodorus, Bibliotheca 2.3.2
+  H: Lycia
+hippolochus | Hippolochus | | bellerophon+philonoe | Son of Bellerophon; father of Glaucus of Lycia.
+  s: Homer, Iliad 6.196–206
+  H: Lycia
+isander | Isander | | bellerophon+philonoe | Son of Bellerophon killed by Ares in battle.
+  s: Homer, Iliad 6.197, 6.203–204
+  H: Lycia
+laodamia | Laodamia | | bellerophon+philonoe | Daughter of Bellerophon; mother of Sarpedon by Zeus, killed by Artemis.
+  s: Homer, Iliad 6.197–205
+  H: Lycia
+  w: Laodamia (daughter of Bellerophon)
+pegasus | Pegasus | Pegasus | poseidon+medusa | Winged horse that sprang from Medusa's neck; he struck the spring Hippocrene and became a constellation.
+  T: creature
+  R: olympus
+  o: sprang from Medusa's severed neck
+  s: Hesiod, Theogony 280–286; Pindar, Olympian 13.63–92
+  m: A stamp of Pegasus's hoof on Mount Helicon opened the spring Hippocrene, sacred to the Muses. After throwing Bellerophon, he carried Zeus's thunderbolts.
+  r: I leapt from a Gorgon's neck; my hoof struck the Muses' spring on Helicon. ;; Pegasus
+chrysaor | Chrysaor | Chrysaor | poseidon+medusa | "Golden sword", brother of Pegasus; father of Geryon.
+  T: giant
+  o: sprang from Medusa's severed neck
+  s: Hesiod, Theogony 280–288, 979–983
+
+# ---- Canace & the Aloadae ----
+aloeus | Aloeus | | poseidon+canace | Husband of Iphimedeia; nominal father of the Aloadae.
+  s: Apollodorus, Bibliotheca 1.7.4
+  T: demigod
+triops | Triopas | | poseidon+canace | Father of Iphimedeia and Erysichthon.
+  s: Apollodorus, Bibliotheca 1.7.4; Callimachus, Hymn 6.24–117
+  T: demigod
+  w: Triopas
+iphimedeia | Iphimedeia | | triops | Mother of the giant Aloadae by Poseidon.
+  s: Homer, Odyssey 11.305–320; Apollodorus, Bibliotheca 1.7.4
+otus | Otus | | poseidon+iphimedeia | Aload giant who piled Ossa on Olympus and Pelion on Ossa to storm heaven.
+  T: giant
+  a: aloeus+iphimedeia | Hesiod fr. 19
+  s: Homer, Odyssey 11.305–320; Apollodorus, Bibliotheca 1.7.4
+  m: The Aloadae grew a cubit wide and a fathom tall every year. They caged Ares in a bronze jar and planned to stack mountains to reach the gods. Artemis ran between them as a deer, and they speared each other.
+  r: Twin giants, we locked the god of war in a jar and stacked three mountains; a deer ran between us and we killed each other. ;; Aloadae
+ephialtes | Ephialtes | | poseidon+iphimedeia | Aload twin of Otus.
+  T: giant
+  a: aloeus+iphimedeia | Hesiod fr. 19
+  s: Homer, Odyssey 11.305–320; Apollodorus, Bibliotheca 1.7.4
+  w: Aloadae
+erysichthon | Erysichthon | Erysichthon | triops | Thessalian king who cut down Demeter's sacred grove and was cursed with endless hunger.
+  s: Callimachus, Hymn 6 (to Demeter); Ovid, Metamorphoses 8.738–878
+  t: demeter | cursed by Limos (Famine) with insatiable hunger; he ate himself
+  r: I cut down a goddess's sacred oak, and Famine gave me a hunger that made me eat myself. ;; Erysichthon
+mestra | Mestra | | erysichthon | Shape-shifting daughter of Erysichthon, sold repeatedly by her father to buy food.
+  s: Ovid, Metamorphoses 8.738–878; Hesiodic Catalogue fr. 43a
+  t: poseidon | given the power to change shape by her lover Poseidon

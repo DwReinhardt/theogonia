@@ -1,0 +1,82 @@
+# ============ NEREIDS (Theogony 240–264) ============
+@region sea
+@type nymph
+@src Hesiod, Theogony 240–264
+@grp nereids
+nereids | Nereids | Nereides | nereus+doris | The fifty sea-nymph daughters of Nereus and Doris, who ride dolphins and help sailors.
+  m: When Cassiopeia boasted that she was more beautiful than the Nereids, Poseidon sent a flood and the sea monster Cetus against Ethiopia.
+ploto | Ploto | | = | A Nereid, "swimmer".
+eucrante | Eucrante | | = | A Nereid.
+sao | Sao | | = | A Nereid, "rescuer".
+amphitrite | Amphitrite | Salacia | = | Queen of the sea, wife of Poseidon.
+  T: deity
+  m: Amphitrite fled Poseidon's courtship to Atlas's realm, and a dolphin found her and persuaded her to marry him; Poseidon set the dolphin among the stars.
+  r: I hid from the sea god's proposal until a dolphin talked me into becoming queen of the sea. ;; Amphitrite
+eudora_n | Eudora | | = | A Nereid, "good gifts".
+  w: Nereids
+thetis | Thetis | Thetis | = | Nereid mother of Achilles; Zeus and Poseidon gave her up when it was foretold that her son would be greater than his father.
+  T: deity
+  S: Homer, Iliad 1.396–406, 18.35–147; Apollodorus, Bibliotheca 3.13.5–6
+  m: Thetis was married to the mortal Peleus, who held her while she changed into fire, water and beasts. She dipped the infant Achilles in the Styx, holding him by the heel, and later had Hephaestus forge his armour.
+  r: I held my baby by the heel to make him invulnerable, and later begged the smith god for his armour. ;; Thetis
+galene | Galene | | = | A Nereid; calm seas.
+glauce | Glauce | | = | A Nereid, "blue-grey".
+  w: Nereids
+cymothoe | Cymothoe | | = | A Nereid, "wave-swift".
+speio | Speio | | = | A Nereid, "of the caves".
+thoe_n | Thoe | | = | A Nereid, "swift".
+  w: Nereids
+halie | Halie | | = | A Nereid, "of the sea".
+pasithea_n | Pasithea | | = | A Nereid.
+  w: Nereids
+erato_n | Erato | | = | A Nereid (not the Muse).
+  w: Nereids
+eunice | Eunice | | = | A Nereid, "good victory".
+melite | Melite | | = | A Nereid.
+eulimene | Eulimene | | = | A Nereid, "of good harbours".
+agave_n | Agave | | = | A Nereid.
+  w: Nereids
+doto | Doto | | = | A Nereid, "giver".
+proto | Proto | | = | A Nereid, "first".
+pherusa | Pherusa | | = | A Nereid, "bringer".
+dynamene | Dynamene | | = | A Nereid, "powerful".
+nesaea | Nesaea | | = | A Nereid, "of the islands".
+actaea | Actaea | | = | A Nereid, "of the shore".
+protomedea | Protomedea | | = | A Nereid.
+doris_n | Doris | | = | A Nereid, named after her mother.
+  w: Nereids
+panopea | Panopea | | = | A Nereid, "all-seeing".
+galatea | Galatea | Galatea | = | Nereid loved by the Cyclops Polyphemus; she loved the shepherd Acis.
+  s: Hesiod, Theogony 250; Ovid, Metamorphoses 13.738–897
+  m: Polyphemus courted Galatea with a clumsy song. When he caught her with Acis he crushed the youth with a boulder, and Galatea turned Acis's blood into a river.
+  r: The one-eyed shepherd sang to me; he killed my lover with a rock, and I turned the young man into a river. ;; Galatea
+hippothoe | Hippothoe | | = | A Nereid.
+hipponoe | Hipponoe | | = | A Nereid.
+cymodoce | Cymodoce | | = | A Nereid, "wave-receiver".
+cymatolege | Cymatolege | | = | A Nereid, "wave-stiller".
+cymo | Cymo | | = | A Nereid.
+eione | Eione | | = | A Nereid, "of the beach".
+halimede | Halimede | | = | A Nereid, "sea-counsel".
+glauconome | Glauconome | | = | A Nereid.
+pontoporea | Pontoporea | | = | A Nereid, "sea-crosser".
+leiagore | Leiagore | | = | A Nereid.
+euagore | Euagore | | = | A Nereid.
+laomedeia | Laomedeia | | = | A Nereid.
+polynome | Polynome | | = | A Nereid.
+autonoe_n | Autonoe | | = | A Nereid.
+  w: Nereids
+lysianassa | Lysianassa | | = | A Nereid.
+euarne | Euarne | | = | A Nereid.
+psamathe | Psamathe | | = | Nereid of the sands; mother of Phocus by Aeacus.
+  S: Theogony 1003–1005
+menippe | Menippe | | = | A Nereid.
+neso | Neso | | = | A Nereid, "island".
+eupompe | Eupompe | | = | A Nereid.
+themisto | Themisto | | = | A Nereid.
+pronoe | Pronoe | | = | A Nereid.
+nemertes | Nemertes | | = | A Nereid, "unerring", who has her father's mind.
+nerites | Nerites | | nereus+doris | Only son of Nereus; Aphrodite (or Helios) turned him into a shellfish.
+  T: deity
+  s: Aelian, On Animals 14.28
+  t: aphrodite | turned into a spiral shell for refusing to follow her to Olympus
+@grp -

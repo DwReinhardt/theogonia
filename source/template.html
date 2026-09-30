@@ -1,0 +1,719 @@
+<title>Greek Mythology Family Tree</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one working screen — top bar, collapsible filter rail (left), canvas or view (center), detail sheet (right). Colors: fresco limestone by day, Aegean night by dark. */
+:root{
+  --bg:#EDEEE9; --surface:#F8F8F4; --surface-2:#E3E5DE; --ink:#1C2330; --ink-2:#4A5262; --line:#C9CCC2;
+  --accent:#2B4C8C; --accent-ink:#FFFFFF;
+  --r-void:#5B5F66; --r-olympus:#A67A08; --r-under:#5B2A86; --r-earth:#3B7A37; --r-cretetroy:#12807A; --r-sea:#1F5FA8;
+  --e-birth:rgba(28,35,48,.38); --e-single:#D98300; --e-trans:#C0392B; --e-anchor:#7D8491; --e-alt:#8E6CC4;
+  --good:#2E7D4F; --bad:#B03A2E;
+  --f-display:"Marcellus","Trajan Pro","Palatino Linotype",Palatino,Georgia,serif;
+  --f-body:"Alegreya Sans","Gill Sans","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --shadow:0 10px 30px rgba(20,28,45,.16);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E131C; --surface:#151C28; --surface-2:#1D2634; --ink:#E6E8EC; --ink-2:#A3ABB9; --line:#2C3748;
+  --accent:#7FA2E8; --accent-ink:#0E131C;
+  --r-void:#9AA0A8; --r-olympus:#E0B84A; --r-under:#A57BD6; --r-earth:#72B66A; --r-cretetroy:#3FBFB5; --r-sea:#5B9BE6;
+  --e-birth:rgba(220,226,236,.30); --e-single:#F2A93B; --e-trans:#EF6B5E; --e-anchor:#8B93A1; --e-alt:#B79AF0;
+  --good:#5CC48A; --bad:#EF6B5E; --shadow:0 10px 30px rgba(0,0,0,.5); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E131C; --surface:#151C28; --surface-2:#1D2634; --ink:#E6E8EC; --ink-2:#A3ABB9; --line:#2C3748;
+  --accent:#7FA2E8; --accent-ink:#0E131C;
+  --r-void:#9AA0A8; --r-olympus:#E0B84A; --r-under:#A57BD6; --r-earth:#72B66A; --r-cretetroy:#3FBFB5; --r-sea:#5B9BE6;
+  --e-birth:rgba(220,226,236,.30); --e-single:#F2A93B; --e-trans:#EF6B5E; --e-anchor:#8B93A1; --e-alt:#B79AF0;
+  --good:#5CC48A; --bad:#EF6B5E; --shadow:0 10px 30px rgba(0,0,0,.5); color-scheme:dark}
+html,body{height:100%}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--f-body);overflow:hidden}
+*{box-sizing:border-box}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.app{height:100%;display:grid;grid-template-rows:auto 1fr;min-height:0}
+/* top bar */
+.top{display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--surface);border-bottom:1px solid var(--line);flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:10px;min-width:0}
+.brand h1{font:400 22px/1 var(--f-display);letter-spacing:.04em;margin:0;white-space:nowrap}
+.brand .count{font:12px var(--f-mono);color:var(--ink-2);white-space:nowrap}
+.search{position:relative;flex:1 1 240px;max-width:420px;min-width:0}
+.search input{width:100%;padding:8px 12px 8px 34px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+.search svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:16px;height:16px;stroke:var(--ink-2)}
+.sugg{position:absolute;top:calc(100% + 4px);left:0;right:0;background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);max-height:320px;overflow:auto;z-index:30}
+.sugg button{display:flex;justify-content:space-between;gap:8px;width:100%;padding:7px 12px;border:0;background:none;text-align:left;cursor:pointer}
+.sugg button:hover,.sugg button[aria-selected="true"]{background:var(--surface-2)}
+.sugg small{color:var(--ink-2);font-family:var(--f-mono);font-size:11px;white-space:nowrap}
+.tabs{display:flex;gap:2px;background:var(--surface-2);padding:3px;border-radius:9px}
+.tabs button{border:0;background:none;padding:6px 12px;border-radius:7px;cursor:pointer;color:var(--ink-2);white-space:nowrap}
+.tabs button[aria-selected="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.iconbtn{border:1px solid var(--line);background:var(--surface);padding:6px 10px;border-radius:8px;cursor:pointer;white-space:nowrap}
+.iconbtn:hover{border-color:var(--accent)}
+.spacer{flex:1}
+/* main grid */
+.main{display:grid;grid-template-columns:260px 1fr auto;min-height:0;position:relative}
+.rail{background:var(--surface);border-right:1px solid var(--line);overflow:auto;padding:14px 14px 24px;display:flex;flex-direction:column;gap:18px;min-height:0}
+.rail h3{font:500 11px var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin:0 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 9px;border:1px solid var(--line);border-radius:999px;background:var(--bg);cursor:pointer;font-size:13px;user-select:none}
+.chip[aria-pressed="false"]{opacity:.45}
+.chip .sw{width:10px;height:10px;border-radius:3px;flex:none}
+.rail select{width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:7px;background:var(--bg)}
+.toggle{display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer;padding:2px 0}
+.toggle input{accent-color:var(--accent)}
+.legend{display:grid;gap:7px;font-size:13px}
+.legend .row{display:flex;align-items:center;gap:10px}
+.legend svg{flex:none}
+.rail .note{font-size:12.5px;color:var(--ink-2)}
+.stage{position:relative;min-width:0;min-height:0}
+#net{position:absolute;inset:0}
+.hud{position:absolute;left:12px;bottom:12px;display:flex;gap:6px;flex-wrap:wrap;z-index:5}
+.hud .iconbtn{background:var(--surface);box-shadow:var(--shadow)}
+.banner{position:absolute;left:50%;top:12px;transform:translateX(-50%);background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:999px;padding:6px 8px 6px 14px;display:flex;align-items:center;gap:10px;z-index:6;font-size:14px;max-width:calc(100% - 24px)}
+.banner span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.loading{position:absolute;inset:0;display:grid;place-items:center;color:var(--ink-2);font:15px var(--f-body)}
+/* detail sheet */
+.detail{width:380px;background:var(--surface);border-left:1px solid var(--line);overflow:auto;min-height:0;display:flex;flex-direction:column}
+.detail[hidden]{display:none!important}
+.d-head{padding:16px 18px 12px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--surface);z-index:2}
+.d-head .kicker{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding-right:40px;font:12px var(--f-mono);color:var(--ink-2);letter-spacing:.04em}
+.d-head h2{font:400 28px/1.1 var(--f-display);margin:6px 0 2px;text-wrap:balance}
+.d-head .roman{color:var(--ink-2);font-style:italic}
+.d-head .close{position:absolute;top:12px;right:12px}
+.d-actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.d-body{padding:14px 18px 28px;display:flex;flex-direction:column;gap:16px}
+.d-body section h4{font:500 11px var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin:0 0 6px}
+.d-body p{margin:0;max-width:65ch}
+.links{display:flex;flex-wrap:wrap;gap:5px}
+.lk{border:1px solid var(--line);background:var(--bg);border-radius:6px;padding:2px 8px;cursor:pointer;font-size:13.5px}
+.lk:hover{border-color:var(--accent);color:var(--accent)}
+.lk .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;vertical-align:1px}
+.origin{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border-radius:8px;background:var(--surface-2);font-size:14px}
+.origin svg{flex:none;margin-top:5px}
+.alt{font-size:14px;padding-left:10px;border-left:2px solid var(--e-alt);display:grid;gap:6px}
+.riddle{border:1px dashed var(--line);border-radius:8px;padding:10px 12px;font-style:italic}
+.riddle button{margin-top:8px;font-style:normal}
+.riddle .ans{font-style:normal;font-weight:700;margin-top:6px}
+.src{font:13px/1.5 var(--f-mono);color:var(--ink-2)}
+.src li{margin:2px 0}
+.src ul{margin:0;padding-left:18px}
+a{color:var(--accent)}
+.path{display:flex;gap:6px;flex-wrap:wrap}
+.path input{flex:1 1 160px;padding:6px 10px;border:1px solid var(--line);border-radius:7px;background:var(--bg);min-width:0}
+.pathres{font-size:14px;margin-top:6px}
+.pathres ol{margin:4px 0 0;padding-left:20px}
+/* table & index views */
+.view{position:absolute;inset:0;overflow:auto;padding:16px}
+.view[hidden]{display:none!important}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+td:nth-child(3),td:nth-child(5){white-space:nowrap}
+.sx{font-family:"Segoe UI Symbol","DejaVu Sans","Noto Sans Symbols2",sans-serif;font-variant-emoji:text;color:var(--ink-2)}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{position:sticky;top:0;background:var(--surface-2);font:500 12px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;white-space:nowrap;z-index:1}
+th[aria-sort="ascending"]::after{content:" ▲"} th[aria-sort="descending"]::after{content:" ▼"}
+td.num{font-variant-numeric:tabular-nums;font-family:var(--f-mono);font-size:13px}
+td .srcs{font:12px var(--f-mono);color:var(--ink-2);max-width:360px}
+tr:hover td{background:var(--surface-2)}
+.tbar{display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap}
+.tbar .muted{color:var(--ink-2);font-size:14px}
+.idx{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.work{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
+.work h4{margin:0 0 6px;font:400 18px var(--f-display)}
+.work .n{font:12px var(--f-mono);color:var(--ink-2)}
+.work .links{margin-top:8px;max-height:150px;overflow:auto}
+/* quiz */
+.quiz{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.qcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.qcard .qk{font:12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.qcard .qq{font:400 24px/1.3 var(--f-display);margin:10px 0 16px;text-wrap:balance}
+.opts{display:grid;gap:8px}
+.opt{padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);text-align:left;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt.right{border-color:var(--good);box-shadow:inset 4px 0 0 var(--good)}
+.opt.wrong{border-color:var(--bad);box-shadow:inset 4px 0 0 var(--bad)}
+.qfoot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.score{font:14px var(--f-mono);color:var(--ink-2)}
+.primary{background:var(--accent);color:var(--accent-ink);border:0;padding:9px 16px;border-radius:9px;cursor:pointer;font-weight:500}
+/* modal */
+.modal{position:fixed;inset:0;background:rgba(10,14,22,.45);display:grid;place-items:center;z-index:50;padding:16px}
+.modal[hidden]{display:none!important}
+.modal .box{background:var(--surface);border-radius:14px;box-shadow:var(--shadow);max-width:760px;width:100%;max-height:85vh;overflow:auto;padding:20px 22px}
+.modal h2{font:400 26px var(--f-display);margin:0 0 4px}
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:14px 0}
+.stat{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.stat b{display:block;font:500 24px var(--f-mono);font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--ink-2)}
+.pill{display:inline-block;padding:1px 8px;border-radius:999px;font:12px var(--f-mono);border:1px solid var(--line)}
+.pill.ok{color:var(--good);border-color:var(--good)}
+/* narrow screens */
+.railbtn{display:none}
+@media (max-width: 980px){
+  .main{grid-template-columns:1fr}
+  .rail{position:absolute;inset:0 auto 0 0;width:min(300px,88vw);z-index:20;box-shadow:var(--shadow);transform:translateX(-105%);transition:transform .2s}
+  .rail.open{transform:none}
+  .railbtn{display:inline-block}
+  .detail{position:absolute;inset:auto 0 0 0;width:auto;max-height:62%;z-index:25;border-left:0;border-top:1px solid var(--line);box-shadow:var(--shadow);border-radius:14px 14px 0 0}
+  .brand h1{font-size:18px}
+}
+@media (max-width: 560px){ .brand .count{display:none} .tabs button{padding:6px 8px} }
+@media (prefers-reduced-motion: reduce){ .rail{transition:none} }
+</style>
+
+<div class="app">
+  <header class="top">
+    <button class="iconbtn railbtn" id="railBtn" aria-label="Filters">☰ Filters</button>
+    <div class="brand"><h1>Greek Mythology Family Tree</h1><span class="count" id="countLbl"></span></div>
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <input id="q" type="search" placeholder="Search Greek or Roman name…" autocomplete="off" aria-label="Search entities">
+      <div class="sugg" id="sugg" hidden></div>
+    </div>
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-view="tree">Tree</button>
+      <button role="tab" aria-selected="false" data-view="table">Table</button>
+      <button role="tab" aria-selected="false" data-view="index">Citations</button>
+      <button role="tab" aria-selected="false" data-view="quiz">Quiz</button>
+    </div>
+    <span class="spacer"></span>
+    <button class="iconbtn" id="checkBtn">Data check</button>
+  </header>
+  <div class="main">
+    <aside class="rail" id="rail" aria-label="Filters and legend">
+      <div><h3>Regions</h3><div class="chips" id="regionChips"></div></div>
+      <div><h3>Kinds of being</h3><div class="chips" id="typeChips"></div></div>
+      <div><h3>Sex</h3><div class="chips" id="sexChips"></div></div>
+      <div><h3>Royal house</h3><select id="houseSel" aria-label="Royal house"><option value="">All houses and gods</option></select></div>
+      <div>
+        <h3>Show</h3>
+        <label class="toggle"><input type="checkbox" id="tgExpand"> Every member of collective groups</label>
+        <label class="toggle"><input type="checkbox" id="tgTrans" checked> Transformations &amp; curses</label>
+        <label class="toggle"><input type="checkbox" id="tgAnchor" checked> Links for unrecorded parentage</label>
+        <label class="toggle"><input type="checkbox" id="tgAlt"> Alternate parentage (variant sources)</label>
+      </div>
+      <div>
+        <h3>Legend</h3>
+        <div class="legend" id="legend"></div>
+      </div>
+      <p class="note">Tiers are generations counted down from Chaos. Mortals sit on their own tiers below the gods they descend from, so a hero like Heracles lands many rows beneath Zeus.</p>
+    </aside>
+    <div class="stage">
+      <div id="net" role="img" aria-label="Family tree graph"></div>
+      <div class="loading" id="loading">Drawing the family tree…</div>
+      <div class="banner" id="banner" hidden><span id="bannerTxt"></span><button class="iconbtn" id="bannerClear">Show everyone</button></div>
+      <div class="hud" id="hud">
+        <button class="iconbtn" id="fitBtn">Fit all</button>
+        <button class="iconbtn" id="zoomIn" aria-label="Zoom in">+</button>
+        <button class="iconbtn" id="zoomOut" aria-label="Zoom out">−</button>
+      </div>
+      <div class="view" id="tableView" hidden>
+        <div class="tbar"><input id="tq" type="search" placeholder="Filter rows…" class="iconbtn" style="min-width:0;flex:1 1 200px;max-width:340px" aria-label="Filter table"><span class="muted" id="tcount"></span><span class="muted">Region, kind and house filters apply here too.</span></div>
+        <div class="tablewrap"><table><thead><tr id="thead"></tr></thead><tbody id="tbody"></tbody></table></div>
+      </div>
+      <div class="view" id="indexView" hidden>
+        <div class="tbar"><span class="muted" id="icount"></span></div>
+        <div class="idx" id="idx"></div>
+      </div>
+      <div class="view" id="quizView" hidden><div class="quiz" id="quiz"></div></div>
+    </div>
+    <aside class="detail" id="detail" hidden aria-live="polite"></aside>
+  </div>
+</div>
+<div class="modal" id="modal" hidden><div class="box" id="modalBox" role="dialog" aria-modal="true"></div></div>
+
+<script>/*__VIS__*/</script>
+<script>
+const DATA = /*__DATA__*/[];
+(function(){
+"use strict";
+const E = new Map(DATA.map(e=>[e.id,e]));
+const REGIONS = [
+  ["void","Primordial Void"],["olympus","Olympus & the Heavens"],["under","The Underworld"],
+  ["sea","Oceans & Rivers"],["earth","Mortal Earth & Kingdoms"],["cretetroy","Crete & Troy"]];
+const REGION_NAME = Object.fromEntries(REGIONS);
+const TYPES = [["primordial","Primordials"],["titan","Titans"],["olympian","Olympians"],["deity","Other gods"],["spirit","Spirits"],["nymph","Nymphs"],["demigod","Demigods"],["mortal","Mortals"],["giant","Giants"],["monster","Monsters"],["creature","Creatures"]];
+const TYPE_NAME = Object.fromEntries(TYPES);
+const SEX={m:"\u2642\uFE0E",f:"\u2640\uFE0E",x:"\u26A5\uFE0E"};
+const SEX_NAME={m:"Male",f:"Female",x:"Both, neither or changed"};
+const SEXES=[["m","\u2642\uFE0E Male"],["f","\u2640\uFE0E Female"],["x","\u26A5\uFE0E Both / other"]];
+const sym=e=>`<span class="sx" title="${SEX_NAME[e.sex]}" aria-label="${SEX_NAME[e.sex]}">${SEX[e.sex]}</span>`;
+const $ = s=>document.querySelector(s);
+const esc = s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const store = {get(k,d){try{const v=localStorage.getItem("theogonia:"+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem("theogonia:"+k,JSON.stringify(v))}catch(e){}}};
+
+// ---------- derived relations ----------
+const transformed = new Map(); // transformer -> [{id,note}]
+const anchoredTo = new Map();
+for(const e of DATA){
+  for(const t of e.trans||[]){ if(!transformed.has(t.id)) transformed.set(t.id,[]); transformed.get(t.id).push({id:e.id,note:t.note}); }
+  for(const a of e.anchor||[]){ if(!anchoredTo.has(a.id)) anchoredTo.set(a.id,[]); anchoredTo.get(a.id).push({id:e.id,note:a.note}); }
+}
+const members = new Map();
+for(const e of DATA) if(e.grp){ if(!members.has(e.grp)) members.set(e.grp,[]); members.get(e.grp).push(e.id); }
+const houses = [...new Set(DATA.map(e=>e.house).filter(Boolean))].sort();
+
+// ---------- colors from tokens ----------
+let C = {};
+function readColors(){
+  const cs = getComputedStyle(document.documentElement);
+  const g = n=>cs.getPropertyValue(n).trim();
+  C = {bg:g("--bg"),surface:g("--surface"),ink:g("--ink"),ink2:g("--ink-2"),line:g("--line"),accent:g("--accent"),
+    birth:g("--e-birth"),single:g("--e-single"),trans:g("--e-trans"),anchor:g("--e-anchor"),alt:g("--e-alt"),r:{}};
+  for(const [k] of REGIONS) C.r[k]=g("--r-"+k);
+}
+function hex(h){h=h.replace("#","");if(h.length===3)h=h.split("").map(c=>c+c).join("");return [0,2,4].map(i=>parseInt(h.substr(i,2),16))}
+function mix(a,b,t){const A=hex(a),B=hex(b);return "#"+A.map((v,i)=>Math.round(v*(1-t)+B[i]*t).toString(16).padStart(2,"0")).join("")}
+function rgba(h,a){const [r,g,b]=hex(h);return `rgba(${r},${g},${b},${a})`}
+
+// ---------- state ----------
+const S = {
+  regions:new Set(store.get("regions",REGIONS.map(r=>r[0]))),
+  types:new Set(store.get("types",TYPES.map(t=>t[0]))),
+  sexes:new Set(store.get("sexes",["m","f","x"])),
+  house:"", expand:false, showTrans:true, showAnchor:true, showAlt:false,
+  isolate:null, trace:null, path:null, selected:null, view:"tree"
+};
+
+// ---------- visibility & layout ----------
+function baseVisible(e){
+  if(!S.regions.has(e.region) || !S.types.has(e.type)&&S.sexes.has(e.sex)) return false;
+  if(S.house && e.house!==S.house) return false;
+  if(e.grp && !S.expand && !e.notable) return false;
+  return true;
+}
+function lineageSet(id){
+  const out=new Set([id]); const up=[id];
+  while(up.length){const n=up.pop();for(const p of E.get(n).parents){if(!out.has(p)){out.add(p);up.push(p)}}}
+  const down=[id]; const desc=new Set();
+  while(down.length){const n=down.pop();for(const c of E.get(n).kids){if(!desc.has(c)){desc.add(c);down.push(c)}}}
+  for(const d of desc){out.add(d); for(const p of E.get(d).parents) out.add(p);}   // co-parents of descendants for context
+  for(const t of E.get(id).trans||[]) out.add(t.id);
+  for(const a of E.get(id).anchor||[]) out.add(a.id);
+  for(const t of transformed.get(id)||[]) out.add(t.id);
+  return out;
+}
+function visibleIds(){
+  if(S.isolate) return S.isolate;
+  const v=new Set(); for(const e of DATA) if(baseVisible(e)) v.add(e.id); return v;
+}
+const labelW = e=>Math.max(64, e.name.length*7.6+26);
+function layout(vis){
+  // group by generation, compress empty tiers
+  const gens=[...new Set([...vis].map(i=>E.get(i).gen))].sort((a,b)=>a-b);
+  const row=new Map(gens.map((g,i)=>[g,i]));
+  const levels=gens.map(()=>[]);
+  const RO=Object.fromEntries(REGIONS.map((r,i)=>[r[0],i]));
+  for(const i of vis) levels[row.get(E.get(i).gen)].push(i);
+  for(const L of levels) L.sort((a,b)=>{const A=E.get(a),B=E.get(b);return RO[A.region]-RO[B.region]||(A.house||"").localeCompare(B.house||"")||A.name.localeCompare(B.name)});
+  const X=new Map();
+  const lanesOf=L=>L.length>110?3:L.length>45?2:1;
+  const place=(L,desired)=>{ // least-squares placement keeping order and min spacing
+    const blocks=[]; const lanes=lanesOf(L);
+    for(const id of L){
+      const w=(labelW(E.get(id))+(lanes>1?34:22))/lanes;
+      let b={ids:[id],ws:[w],off:[0],tot:w,sum:desired.get(id),n:1};
+      b.p=b.sum; blocks.push(b);
+      while(blocks.length>1){
+        const a=blocks[blocks.length-2], c=blocks[blocks.length-1];
+        if(a.p+a.tot/2 <= c.p-c.tot/2) break;
+        const m={ids:a.ids.concat(c.ids),ws:a.ws.concat(c.ws)}; m.off=[];let acc=0;
+        for(const w of m.ws){m.off.push(acc+w/2);acc+=w} m.tot=acc;
+        let s=0; m.ids.forEach((id,k)=>{s+=desired.get(id)-(m.off[k]-m.tot/2)}); m.p=s/m.ids.length;
+        blocks.splice(-2,2,m);
+      }
+    }
+    for(const b of blocks){
+      if(b.ids.length===1){X.set(b.ids[0],b.p);continue}
+      b.ids.forEach((id,k)=>X.set(id,b.p-b.tot/2+b.off[k]));
+    }
+  };
+  // initial: sequential centred
+  levels.forEach(L=>{const n=lanesOf(L);let tot=L.reduce((s,i)=>s+(labelW(E.get(i))+22)/n,0),x=-tot/2;for(const i of L){const w=(labelW(E.get(i))+22)/n;X.set(i,x+w/2);x+=w}});
+  const up=id=>{const e=E.get(id);const r=[];for(const p of e.parents) if(vis.has(p)) r.push(p);
+    if(!r.length){for(const a of e.anchor||[]) if(vis.has(a.id)) r.push(a.id)}
+    if(!r.length&&!e.parents.length){for(const t of e.trans||[]) if(vis.has(t.id)) r.push(t.id)} return r;};
+  const downMap=new Map(); for(const i of vis) for(const p of up(i)){if(!downMap.has(p))downMap.set(p,[]);downMap.get(p).push(i)}
+  const avg=(ids)=>ids.reduce((s,i)=>s+X.get(i),0)/ids.length;
+  for(let it=0;it<6;it++){
+    for(let li=1;li<levels.length;li++){ const L=levels[li], d=new Map();
+      for(const i of L){const u=up(i); d.set(i,u.length?avg(u):X.get(i))}
+      L.sort((a,b)=>d.get(a)-d.get(b)); place(L,d); }
+    if(it===5) break;
+    for(let li=levels.length-2;li>=0;li--){ const L=levels[li], d=new Map();
+      for(const i of L){const c=downMap.get(i)||[]; d.set(i,c.length?(avg(c)+X.get(i))/2:X.get(i))}
+      L.sort((a,b)=>d.get(a)-d.get(b)); place(L,d); }
+  }
+  const Y=new Map(); levels.forEach((L,li)=>{const n=lanesOf(L);L.forEach((i,k)=>Y.set(i,li*170+(n>1?((k%n)-(n-1)/2)*44:0)))});
+  return {X,Y,gens,levels};
+}
+
+// ---------- network ----------
+let net=null, nodesDS=null, edgesDS=null, LAY=null, VIS=new Set();
+function nodeStyle(e, dim){
+  const rc=C.r[e.region]; const bg=mix(C.surface,rc,e.type==="mortal"?0.10:0.20);
+  const big=["primordial","titan","olympian"].includes(e.type);
+  const coll=members.has(e.id);
+  return {
+    color:{background:dim?rgba(bg,.25):bg,border:dim?rgba(rc,.25):rc,highlight:{background:mix(C.surface,rc,.35),border:C.accent},hover:{background:mix(C.surface,rc,.3),border:rc}},
+    font:{color:dim?rgba(C.ink,.25):C.ink,face:big?"Marcellus, Georgia, serif":"Alegreya Sans, system-ui, sans-serif",size:big?17:14,bold:{color:C.ink}},
+    borderWidth:e.type==="olympian"?3:(big?2:1.2), borderWidthSelected:3,
+    shapeProperties:{borderRadius:e.type==="mortal"||e.type==="demigod"?3:9,borderDashes:coll?[4,3]:false},
+    shadow:false
+  };
+}
+function buildEdges(vis, hi){
+  const out=[]; const H=hi||null;
+  const on=(a,b)=>!H||(H.has(a)&&H.has(b));
+  const pe=(a,b)=>H&&H.edges?H.edges.has(a+">"+b)||H.edges.has(b+">"+a):on(a,b);
+  for(const id of vis){ const e=E.get(id);
+    const single=e.parents.length===1;
+    for(const p of e.parents){ if(!vis.has(p)) continue; const lit=pe(p,id);
+      out.push({id:"p:"+p+">"+id,from:p,to:id,kind:single?"single":"birth",
+        color:{color:H&&lit?C.accent:(single?C.single:C.birth),opacity:lit?1:.12,highlight:C.accent,hover:single?C.single:C.ink2},
+        dashes:single?[2,5]:false,width:H&&lit?3:(single?2:1.2),arrows:{to:{enabled:true,scaleFactor:.35}},
+        smooth:{enabled:true,type:"cubicBezier",forceDirection:"vertical",roundness:.5}}); }
+    if(S.showTrans) for(const t of e.trans||[]){ if(!vis.has(t.id)) continue; const lit=pe(t.id,id);
+      out.push({id:"t:"+t.id+">"+id,from:t.id,to:id,kind:"trans",color:{color:C.trans,opacity:lit?.85:.1,highlight:C.trans},
+        dashes:[8,5],width:1.6,arrows:{to:{enabled:true,scaleFactor:.5}},smooth:{enabled:true,type:"curvedCW",roundness:.15},title:"Transformed by "+E.get(t.id).name+(t.note?": "+t.note:"")}); }
+    if(S.showAnchor) for(const a of e.anchor||[]){ if(!vis.has(a.id)) continue; const lit=pe(a.id,id);
+      out.push({id:"a:"+a.id+">"+id,from:a.id,to:id,kind:"anchor",color:{color:C.anchor,opacity:lit?.8:.1,highlight:C.anchor},
+        dashes:[3,3],width:1,smooth:{enabled:true,type:"curvedCCW",roundness:.2},title:a.note||"Linked"}); }
+    if(S.showAlt) for(const [k,a] of (e.alt||[]).entries()) for(const p of a.parents){ if(!vis.has(p)) continue; const lit=pe(p,id);
+      out.push({id:"v:"+k+":"+p+">"+id,from:p,to:id,kind:"alt",color:{color:C.alt,opacity:lit?.7:.08,highlight:C.alt},
+        dashes:[6,6],width:1,smooth:{enabled:true,type:"curvedCW",roundness:.25},title:"Variant: "+(a.src||"")}); }
+  }
+  return out;
+}
+function render(opts={}){
+  VIS=visibleIds();
+  const hi = S.path||S.trace;
+  if(!opts.keepLayout || !LAY) LAY=layout(VIS);
+  const nodes=[];
+  for(const id of VIS){ const e=E.get(id); const dim=hi&&!hi.has(id);
+    nodes.push(Object.assign({id,label:SEX[e.sex]+" "+e.name,x:LAY.X.get(id),y:LAY.Y.get(id),fixed:false,title:undefined,widthConstraint:{maximum:220}},nodeStyle(e,dim))); }
+  const edges=buildEdges(VIS,hi);
+  if(!net){
+    nodesDS=new vis.DataSet(nodes); edgesDS=new vis.DataSet(edges);
+    net=new vis.Network($("#net"),{nodes:nodesDS,edges:edgesDS},{
+      physics:false, layout:{improvedLayout:false},
+      interaction:{hover:true,tooltipDelay:250,hideEdgesOnDrag:true,hideEdgesOnZoom:DATA.length>600,multiselect:false,navigationButtons:false,keyboard:{enabled:true,bindToWindow:false}},
+      nodes:{shape:"box",margin:{top:6,bottom:6,left:10,right:10},chosen:true},
+      edges:{selectionWidth:1.5,hoverWidth:.5}
+    });
+    net.on("click",p=>{ if(p.nodes.length) select(p.nodes[0],{focus:false}); });
+    net.on("dragEnd",p=>{ if(p.nodes.length){const pos=net.getPositions(p.nodes);for(const k in pos){LAY.X.set(k,pos[k].x);LAY.Y.set(k,pos[k].y)}} });
+    net.on("beforeDrawing",drawTiers);
+    net.once("afterDrawing",()=>{$("#loading").hidden=true});
+  } else {
+    nodesDS.clear(); edgesDS.clear(); nodesDS.add(nodes); edgesDS.add(edges);
+  }
+  $("#countLbl").textContent=`${VIS.size.toLocaleString()} of ${DATA.length.toLocaleString()} shown · ${LAY.gens.length} tiers`;
+  if(S.selected && VIS.has(S.selected)) net.selectNodes([S.selected]);
+  if(opts.home){ setTimeout(home,0); }
+  else if(opts.fit!==false) setTimeout(()=>net.fit({animation:false}),0);
+}
+function home(){ // open on the gods: Chaos down to the Olympians' children, centred on Zeus
+  const z=VIS.has("zeus")?"zeus":[...VIS][0]; if(!z) return;
+  const w=$("#net").clientWidth; net.moveTo({position:{x:LAY.X.get(z),y:LAY.Y.get(z)+60},scale:w<600?0.5:0.8,animation:false});
+}
+function drawTiers(ctx){
+  if(!LAY) return;
+  const view=net.getViewPosition(), scale=net.getScale();
+  const cw=ctx.canvas.clientWidth||ctx.canvas.width, left=view.x-(cw/2)/scale, width=cw/scale;
+  ctx.save();
+  LAY.gens.forEach((g,li)=>{
+    const y=li*170;
+    if(li%2===0){ctx.fillStyle=rgba(C.ink,.035);ctx.fillRect(left,y-85,width,170)}
+    ctx.fillStyle=rgba(C.ink,.55); ctx.font=`${Math.max(11,12/scale)}px IBM Plex Mono, monospace`;
+    const lab = g===0?"GEN 0 · PRIMORDIAL":"GEN "+g;
+    ctx.fillText(lab,left+10/scale,y-62);
+  });
+  ctx.restore();
+}
+
+// ---------- selection & detail ----------
+function dotFor(id){return `<span class="dot" style="background:${C.r[E.get(id).region]}"></span>`}
+function linkBtn(id,extra=""){const e=E.get(id);return `<button class="lk" data-go="${id}">${dotFor(id)}${sym(e)} ${esc(e.name)}${extra}</button>`}
+function wikiURL(e){return "https://en.wikipedia.org/wiki/Special:Search?go=Go&search="+encodeURIComponent(e.wiki||e.name)}
+function originSVG(kind){
+  const col={union:C.birth,single:C.single,transform:C.trans,anchor:C.anchor,primordial:C.ink2}[kind];
+  const dash={union:"",single:"2 5",transform:"8 5",anchor:"3 3",primordial:""}[kind];
+  return `<svg width="28" height="8" aria-hidden="true"><line x1="0" y1="4" x2="28" y2="4" stroke="${col}" stroke-width="2.4" stroke-dasharray="${dash}"/></svg>`;
+}
+function originText(e){
+  const P=e.parents.map(p=>E.get(p).name);
+  switch(e.origin_kind){
+    case "primordial": return "Primordial: came into being with no parents.";
+    case "union": return "Born of "+P.join(" and ")+".";
+    case "single": return (e.origin?e.origin.charAt(0).toUpperCase()+e.origin.slice(1)+". ":"")+"Single mapped parent: "+P[0]+(e.origin?"":" (the other parent is not named in the sources used)")+".";
+    case "transform": return "No recorded birth. This entry comes from a transformation or curse (see below).";
+    default: return "Parentage not recorded in the main sources; linked on the chart through "+(e.anchor||[]).map(a=>E.get(a.id).name).join(", ")+".";
+  }
+}
+function detailHTML(e){
+  const kids=e.kids.filter(k=>E.has(k));
+  const mem=members.get(e.id)||[];
+  const tr=transformed.get(e.id)||[];
+  const anc=anchoredTo.get(e.id)||[];
+  const srcs=(e.src||"").split(";").map(s=>s.trim()).filter(Boolean);
+  let h=`<div class="d-head"><div class="kicker"><span class="lk" style="cursor:default">${dotFor(e.id)}${esc(REGION_NAME[e.region])}</span><span>${esc(TYPE_NAME[e.type])}</span><span>· ${SEX[e.sex]} ${SEX_NAME[e.sex]}</span><span>· Gen ${e.gen}</span></div>
+  <h2>${esc(e.name)}</h2>${e.roman?`<div class="roman">Roman: ${esc(e.roman)}</div>`:""}
+  <button class="iconbtn close" id="dClose" aria-label="Close details">✕</button>
+  <div class="d-actions"><button class="iconbtn" data-act="trace">Highlight lineage</button><button class="iconbtn" data-act="isolate">Show only this lineage</button><a class="iconbtn" href="${wikiURL(e)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">Wikipedia ↗</a></div></div>
+  <div class="d-body">
+  <section><p>${esc(e.desc)}</p>${e.house?`<p style="margin-top:6px;color:var(--ink-2);font-size:14px">House: ${esc(e.house)}</p>`:""}</section>
+  <section><h4>Origin</h4><div class="origin">${originSVG(e.origin_kind)}<div>${esc(originText(e))}</div></div>
+  ${e.parents.length?`<div class="links" style="margin-top:8px">${e.parents.map(p=>linkBtn(p)).join("")}</div>`:""}</section>`;
+  if(e.alt&&e.alt.length) h+=`<section><h4>Other versions of the parentage</h4><div class="alt">${e.alt.map(a=>`<div>${a.parents.map(p=>linkBtn(p)).join(" ")}${(a.names||[]).map(n=>`<span class="lk" style="cursor:default">${esc(n)}</span>`).join(" ")} <span class="src">${esc(a.src)}</span></div>`).join("")}</div></section>`;
+  if(e.trans&&e.trans.length) h+=`<section><h4>Transformed, cursed or reshaped by</h4>${e.trans.map(t=>`<div style="margin-bottom:6px">${linkBtn(t.id)} <span style="font-size:14px">${esc(t.note)}</span></div>`).join("")}</section>`;
+  if(e.anchor&&e.anchor.length&&e.parents.length) h+=`<section><h4>Also linked to</h4>${e.anchor.map(a=>`<div>${linkBtn(a.id)} <span style="font-size:14px">${esc(a.note)}</span></div>`).join("")}</section>`;
+  if(e.myth) h+=`<section><h4>Myth</h4><p>${esc(e.myth)}</p></section>`;
+  if(e.riddles) h+=`<section><h4>Riddle</h4>${e.riddles.map((r,k)=>`<div class="riddle">${esc(r.q)}<br><button class="iconbtn" data-reveal="${k}">Reveal answer</button><div class="ans" hidden id="ans${k}">${esc(r.a)}</div></div>`).join("")}</section>`;
+  if(kids.length) h+=`<section><h4>Children (${kids.length})</h4><div class="links">${kids.map(k=>linkBtn(k)).join("")}</div></section>`;
+  if(mem.length) h+=`<section><h4>Named members (${mem.length})</h4><div class="links">${mem.map(k=>linkBtn(k)).join("")}</div></section>`;
+  if(e.grp) h+=`<section><h4>Member of</h4><div class="links">${linkBtn(e.grp)}</div></section>`;
+  if(tr.length) h+=`<section><h4>Transformed or cursed others (${tr.length})</h4><div class="links">${tr.map(t=>linkBtn(t.id)).join("")}</div></section>`;
+  if(anc.length) h+=`<section><h4>Linked from</h4><div class="links">${anc.map(t=>linkBtn(t.id)).join("")}</div></section>`;
+  h+=`<section><h4>Sources</h4><div class="src"><ul>${srcs.map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div></section>
+  <section><h4>Find the connection to…</h4><div class="path"><input id="pathIn" list="allNames" placeholder="Another entity" aria-label="Find connection to"><button class="iconbtn" id="pathGo">Trace</button></div><div class="pathres" id="pathRes"></div></section>
+  </div>`;
+  return h;
+}
+function select(id,{focus=true,fromHash=false}={}){
+  const e=E.get(id); if(!e) return;
+  S.selected=id;
+  const d=$("#detail"); d.innerHTML=detailHTML(e); d.hidden=false; d.scrollTop=0;
+  if(!fromHash){ try{history.replaceState(null,"","#"+id)}catch(err){} }
+  if(S.view==="tree"){
+    if(!VIS.has(id)){ // make sure it can be seen: relax filters
+      S.regions.add(e.region); S.types.add(e.type); S.sexes.add(e.sex); if(S.house&&e.house!==S.house) S.house=""; if(e.grp) S.expand=true;
+      if(S.isolate&&!S.isolate.has(id)) S.isolate=null;
+      syncControls(); render({fit:false});
+    }
+    net.selectNodes([id]);
+    if(focus) net.focus(id,{scale:Math.max(net.getScale(),0.9),animation:{duration:450,easingFunction:"easeInOutQuad"}});
+  }
+  requestAnimationFrame(()=>net&&net.redraw());
+}
+$("#detail").addEventListener("click",ev=>{
+  const b=ev.target.closest("[data-go],[data-act],[data-reveal],#dClose,#pathGo"); if(!b) return;
+  if(b.id==="dClose"){ $("#detail").hidden=true; S.selected=null; net&&net.unselectAll(); return; }
+  if(b.dataset.go){ if(S.view!=="tree") setView("tree"); select(b.dataset.go); return; }
+  if(b.dataset.reveal){ const a=$("#ans"+b.dataset.reveal); a.hidden=false; b.hidden=true; return; }
+  if(b.dataset.act==="trace"){ const set=lineageSet(S.selected); S.trace=set; S.path=null; showBanner(`Lineage of ${E.get(S.selected).name}: ${set.size} entities highlighted`); render({keepLayout:true,fit:false}); return; }
+  if(b.dataset.act==="isolate"){ S.isolate=lineageSet(S.selected); S.trace=null; S.path=null; showBanner(`Showing only the lineage of ${E.get(S.selected).name}`); render(); return; }
+  if(b.id==="pathGo") runPath();
+});
+$("#detail").addEventListener("keydown",ev=>{ if(ev.key==="Enter"&&ev.target.id==="pathIn") runPath(); });
+function findByName(v){ v=(v||"").trim().toLowerCase(); if(!v) return null;
+  return DATA.find(e=>e.name.toLowerCase()===v) || DATA.find(e=>(e.roman||"").toLowerCase().split(" / ").includes(v)) || DATA.find(e=>e.name.toLowerCase().startsWith(v)); }
+function runPath(){
+  const target=findByName($("#pathIn").value); const res=$("#pathRes");
+  if(!target){ res.textContent="No entity by that name. Pick one from the suggestions."; return; }
+  const src=S.selected; const adj=new Map(); const add=(a,b,how)=>{ if(!adj.has(a)) adj.set(a,[]); adj.get(a).push([b,how]); };
+  for(const e of DATA){ for(const p of e.parents){add(p,e.id,"parent of");add(e.id,p,"child of")}
+    for(const t of e.trans||[]){add(t.id,e.id,"transformed");add(e.id,t.id,"transformed by")}
+    for(const a of e.anchor||[]){add(a.id,e.id,"linked to");add(e.id,a.id,"linked to")} }
+  const prev=new Map([[src,null]]); const q=[src];
+  while(q.length){ const n=q.shift(); if(n===target.id) break; for(const [m,how] of adj.get(n)||[]) if(!prev.has(m)){prev.set(m,[n,how]);q.push(m)} }
+  if(!prev.has(target.id)){ res.textContent="No connection found."; return; }
+  const chain=[]; let cur=target.id; while(cur){ const p=prev.get(cur); chain.unshift([cur,p?p[1]:null]); cur=p?p[0]:null; }
+  const set=new Set(chain.map(c=>c[0])); set.edges=new Set(); for(let k=1;k<chain.length;k++) set.edges.add(chain[k-1][0]+">"+chain[k][0]);
+  S.path=set; S.trace=null;
+  const steps=chain.map((c,k)=>k===0?`<li>${linkBtn(c[0])}</li>`:`<li>${esc(chain[k-1]?E.get(chain[k-1][0]).name:"")} is <b>${esc(c[1])}</b> ${linkBtn(c[0])}</li>`);
+  res.innerHTML=`${chain.length-1} step${chain.length===2?"":"s"} apart:<ol>${steps.join("")}</ol>`;
+  // ensure path visible
+  S.isolate=new Set(set);
+  showBanner(`Path from ${E.get(src).name} to ${target.name}: ${chain.length-1} steps`); render();
+}
+function showBanner(t){ $("#bannerTxt").textContent=t; $("#banner").hidden=false; }
+$("#bannerClear").onclick=()=>{ S.trace=null; S.path=null; const wasIso=!!S.isolate; S.isolate=null; $("#banner").hidden=true; render({keepLayout:!wasIso,fit:wasIso}); if(S.selected&&!wasIso) net.selectNodes([S.selected]); };
+
+// ---------- search ----------
+const dl=document.createElement("datalist"); dl.id="allNames"; dl.innerHTML=DATA.map(e=>`<option value="${esc(e.name)}">`).join(""); document.body.appendChild(dl);
+const idxName=DATA.map(e=>({e,k:(e.name+" "+(e.roman||"")).toLowerCase()}));
+let suggSel=-1;
+function suggest(){
+  const v=$("#q").value.trim().toLowerCase(); const box=$("#sugg");
+  if(!v){box.hidden=true;return}
+  const hits=idxName.filter(x=>x.k.includes(v)).sort((a,b)=>(a.e.name.toLowerCase().startsWith(v)?0:1)-(b.e.name.toLowerCase().startsWith(v)?0:1)||(b.e.notable-a.e.notable)||a.e.name.localeCompare(b.e.name)).slice(0,12);
+  suggSel=hits.length?0:-1;
+  box.innerHTML=hits.length?hits.map((x,k)=>`<button data-go="${x.e.id}" aria-selected="${k===0}">${dotFor(x.e.id)}<span style="flex:1">${sym(x.e)} ${esc(x.e.name)}${x.e.roman?` <em style="color:var(--ink-2)">${esc(x.e.roman)}</em>`:""}</span><small>${esc(TYPE_NAME[x.e.type])} · G${x.e.gen}</small></button>`).join(""):`<div style="padding:8px 12px;color:var(--ink-2)">No match</div>`;
+  box.hidden=false;
+}
+$("#q").addEventListener("input",suggest);
+$("#q").addEventListener("keydown",ev=>{
+  const btns=[...$("#sugg").querySelectorAll("button")];
+  if(ev.key==="ArrowDown"||ev.key==="ArrowUp"){ ev.preventDefault(); if(!btns.length) return; suggSel=(suggSel+(ev.key==="ArrowDown"?1:-1)+btns.length)%btns.length; btns.forEach((b,k)=>b.setAttribute("aria-selected",k===suggSel)); }
+  if(ev.key==="Enter"&&btns[suggSel]){ btns[suggSel].click(); }
+  if(ev.key==="Escape"){ $("#sugg").hidden=true; }
+});
+$("#sugg").addEventListener("click",ev=>{ const b=ev.target.closest("[data-go]"); if(!b) return; $("#sugg").hidden=true; $("#q").value=""; if(S.view==="table"||S.view==="index"){} setView("tree"); select(b.dataset.go); });
+document.addEventListener("click",ev=>{ if(!ev.target.closest(".search")) $("#sugg").hidden=true; });
+
+// ---------- filters ----------
+function chip(val,label,set,color){ return `<button class="chip" data-v="${val}" aria-pressed="${set.has(val)}">${color?`<span class="sw" style="background:${color}"></span>`:""}${esc(label)}</button>`; }
+function syncControls(){
+  $("#regionChips").innerHTML=REGIONS.map(([k,n])=>chip(k,n,S.regions,C.r[k])).join("");
+  $("#typeChips").innerHTML=TYPES.map(([k,n])=>chip(k,n,S.types)).join("");
+  $("#sexChips").innerHTML=SEXES.map(([k,n])=>chip(k,n,S.sexes)).join("");
+  $("#houseSel").value=S.house; $("#tgExpand").checked=S.expand; $("#tgTrans").checked=S.showTrans; $("#tgAnchor").checked=S.showAnchor; $("#tgAlt").checked=S.showAlt;
+}
+$("#houseSel").innerHTML+=houses.map(h=>`<option value="${esc(h)}">${esc(h)}</option>`).join("");
+function chipHandler(set,key){ return ev=>{ const b=ev.target.closest(".chip"); if(!b) return; const v=b.dataset.v;
+  if(ev.altKey||ev.metaKey){ set.clear(); set.add(v); } else if(set.has(v)) set.delete(v); else set.add(v);
+  store.set(key,[...set]); S.isolate=null; $("#banner").hidden=true; syncControls(); refresh(); }; }
+$("#regionChips").addEventListener("click",chipHandler(S.regions,"regions"));
+$("#typeChips").addEventListener("click",chipHandler(S.types,"types"));
+$("#sexChips").addEventListener("click",chipHandler(S.sexes,"sexes"));
+$("#houseSel").onchange=e=>{S.house=e.target.value;S.isolate=null;$("#banner").hidden=true;refresh()};
+$("#tgExpand").onchange=e=>{S.expand=e.target.checked;refresh()};
+$("#tgTrans").onchange=e=>{S.showTrans=e.target.checked;refresh(true)};
+$("#tgAnchor").onchange=e=>{S.showAnchor=e.target.checked;refresh(true)};
+$("#tgAlt").onchange=e=>{S.showAlt=e.target.checked;refresh(true)};
+function refresh(edgesOnly){ if(S.view==="tree") render(edgesOnly?{keepLayout:true,fit:false}:{}); else if(S.view==="table") renderTable(); else if(S.view==="index") renderIndex(); }
+$("#railBtn").onclick=()=>$("#rail").classList.toggle("open");
+$("#fitBtn").onclick=()=>net.fit({animation:{duration:400}});
+$("#zoomIn").onclick=()=>net.moveTo({scale:net.getScale()*1.35,animation:{duration:200}});
+$("#zoomOut").onclick=()=>net.moveTo({scale:net.getScale()/1.35,animation:{duration:200}});
+
+function legend(){
+  const L=(col,dash,txt,w=2.4)=>`<div class="row"><svg width="34" height="10" aria-hidden="true"><line x1="0" y1="5" x2="34" y2="5" stroke="${col}" stroke-width="${w}" stroke-dasharray="${dash}"/></svg><span>${txt}</span></div>`;
+  $("#legend").innerHTML=L(C.birth,"","Two mapped parents",1.6)+L(C.single,"2 5","One mapped parent (foam, blood, head-birth, or other parent unnamed)")+L(C.trans,"8 5","Transformed, cursed or created by")+L(C.anchor,"3 3","Parentage unrecorded: linked to spouse, owner or kin",1.4)+L(C.alt,"6 6","Variant parentage from another source",1.4)+
+  `<div class="row"><svg width="34" height="16" aria-hidden="true"><rect x="2" y="2" width="30" height="12" rx="4" fill="none" stroke="${C.ink2}" stroke-dasharray="4 3"/></svg><span>Collective group (Nereids, Muses…)</span></div>`+
+  `<div class="row"><span style="width:34px;text-align:center;font-size:15px">${SEX.m} ${SEX.f}</span><span>Male · female</span></div><div class="row"><span style="width:34px;text-align:center;font-size:15px">${SEX.x}</span><span>Both sexes, neither, changed sex, or a mixed group. Fathers are drawn left of mothers.</span></div>`;
+}
+
+// ---------- table ----------
+const COLS=[["name","Name"],["roman","Roman"],["type","Kind"],["sex","Sex"],["region","Region"],["house","House"],["gen","Gen"],["parents","Parents"],["origin_kind","Origin"],["src","Sources"]];
+let sortKey=store.get("sortKey","gen"), sortDir=store.get("sortDir",1);
+$("#thead").innerHTML=COLS.map(([k,n])=>`<th data-k="${k}" scope="col">${n}</th>`).join("");
+$("#thead").onclick=ev=>{const th=ev.target.closest("th");if(!th)return;const k=th.dataset.k;if(sortKey===k)sortDir*=-1;else{sortKey=k;sortDir=1}store.set("sortKey",sortKey);store.set("sortDir",sortDir);renderTable()};
+const ORIGIN_LBL={union:"Two parents",single:"One parent",transform:"Transformation",anchor:"Unrecorded (linked)",primordial:"Primordial"};
+function renderTable(){
+  const f=$("#tq").value.trim().toLowerCase();
+  let rows=DATA.filter(e=>S.regions.has(e.region)&&S.types.has(e.type)&&S.sexes.has(e.sex)&&(!S.house||e.house===S.house));
+  if(f) rows=rows.filter(e=>(e.name+" "+(e.roman||"")+" "+e.desc+" "+(e.src||"")).toLowerCase().includes(f));
+  const val=(e,k)=>k==="parents"?e.parents.map(p=>E.get(p).name).join(", "):k==="region"?REGION_NAME[e.region]:k==="type"?TYPE_NAME[e.type]:k==="sex"?SEX_NAME[e.sex]:(e[k]??"");
+  rows.sort((a,b)=>{const A=val(a,sortKey),B=val(b,sortKey);return (typeof A==="number"?A-B:String(A).localeCompare(String(B)))*sortDir||a.name.localeCompare(b.name)});
+  document.querySelectorAll("#thead th").forEach(th=>th.setAttribute("aria-sort",th.dataset.k===sortKey?(sortDir>0?"ascending":"descending"):"none"));
+  $("#tcount").textContent=rows.length.toLocaleString()+" rows";
+  $("#tbody").innerHTML=rows.map(e=>`<tr><td>${linkBtn(e.id)}</td><td>${esc(e.roman||"")}</td><td>${esc(TYPE_NAME[e.type])}</td><td>${SEX[e.sex]} ${SEX_NAME[e.sex]}</td><td>${esc(REGION_NAME[e.region])}</td><td>${esc(e.house||"")}</td><td class="num">${e.gen}</td><td>${e.parents.map(p=>linkBtn(p)).join(" ")||"<span style='color:var(--ink-2)'>—</span>"}</td><td>${originSVG(e.origin_kind)} ${ORIGIN_LBL[e.origin_kind]}</td><td><div class="srcs">${esc(e.src)}</div></td></tr>`).join("");
+}
+$("#tq").addEventListener("input",renderTable);
+$("#tableView").addEventListener("click",ev=>{const b=ev.target.closest("[data-go]");if(b){select(b.dataset.go,{focus:false});}});
+
+// ---------- citation index ----------
+function workOf(s){ const m=s.match(/^(.*?)(?:\s+(?:fr\.|frr\.|praef|preface|s\.v\.|\d|[IVX]+\.\d)|\s*\(|,\s*(?:Book|book)\b|$)/); let w=(m?m[1]:s).replace(/[,:;\s]+$/,"").trim(); return w||s; }
+function renderIndex(){
+  const works=new Map();
+  for(const e of DATA){ if(!(S.regions.has(e.region)&&S.types.has(e.type)&&S.sexes.has(e.sex)&&(!S.house||e.house===S.house))) continue;
+    for(const s of (e.src||"").split(";").map(x=>x.trim()).filter(Boolean)){ const w=workOf(s); if(!works.has(w)) works.set(w,new Set()); works.get(w).add(e.id); } }
+  const list=[...works.entries()].sort((a,b)=>b[1].size-a[1].size||a[0].localeCompare(b[0]));
+  $("#icount").textContent=`${list.length} ancient and later works cited · every entity has at least one citation`;
+  $("#idx").innerHTML=list.map(([w,ids])=>`<div class="work"><h4>${esc(w)}</h4><div class="n">${ids.size} entit${ids.size===1?"y":"ies"}</div><div class="links">${[...ids].map(i=>linkBtn(i)).join("")}</div></div>`).join("");
+}
+$("#indexView").addEventListener("click",ev=>{const b=ev.target.closest("[data-go]");if(b){select(b.dataset.go,{focus:false});}});
+
+// ---------- quiz ----------
+const Q={score:0,asked:0,streak:0,best:store.get("best",0),cur:null};
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+function distinct(correct,pool,n=3){ const out=new Set([correct]); let guard=0; while(out.size<n+1&&guard++<200) out.add(pick(pool)); return shuffle([...out]); }
+function makeQ(){
+  const pool=DATA.filter(e=>e.notable&&S.regions.has(e.region)&&S.types.has(e.type)&&S.sexes.has(e.sex)&&(!S.house||e.house===S.house));
+  if(pool.length<6) return null;
+  for(let tries=0;tries<50;tries++){
+    const kind=pick(["riddle","riddle","parents","roman","trans","child"]); const e=pick(pool);
+    if(kind==="riddle"&&e.riddles){ const r=pick(e.riddles); const same=DATA.filter(x=>x.riddles&&x.id!==e.id).map(x=>x.riddles[0].a);
+      return {k:"Riddle · who am I?",q:r.q,a:r.a,opts:distinct(r.a,same),id:e.id}; }
+    if(kind==="parents"&&e.parents.length===2){ const nm=x=>x.parents.map(p=>E.get(p).name).join(" & "); const others=DATA.filter(x=>x.parents.length===2&&x.type===e.type&&nm(x)!==nm(e)).map(nm);
+      if(others.length<3) continue; return {k:"Lineage",q:`Who are the parents of ${e.name}?`,a:nm(e),opts:distinct(nm(e),others),id:e.id}; }
+    if(kind==="roman"&&e.roman&&e.roman!==e.name){ const others=DATA.filter(x=>x.roman&&x.roman!==e.roman&&x.roman!==x.name).map(x=>x.roman);
+      return {k:"Greek to Roman",q:`What did the Romans call ${e.name}?`,a:e.roman,opts:distinct(e.roman,others),id:e.id}; }
+    if(kind==="trans"&&e.trans){ const t=E.get(e.trans[0].id).name; const others=[...transformed.keys()].map(i=>E.get(i).name).filter(n=>n!==t);
+      return {k:"Transformations & curses",q:`Who transformed, cursed or reshaped ${e.name}?`,a:t,opts:distinct(t,others),id:e.id,why:e.trans[0].note}; }
+    const realKids=e.kids.filter(k=>!members.has(k)&&!/^(Children|Sons|Crew) of/.test(E.get(k).name));
+    if(kind==="child"&&realKids.length){ const c=E.get(pick(realKids)).name; const not=new Set(e.kids.map(k=>E.get(k).name)); const others=pool.filter(x=>!not.has(x.name)&&x.gen===E.get(e.kids[0]).gen).map(x=>x.name);
+      if(others.length<3) continue; return {k:"Offspring",q:`Which of these is a child of ${e.name}?`,a:c,opts:distinct(c,others),id:e.id}; }
+  }
+  return null;
+}
+function renderQuiz(){
+  const q=Q.cur||(Q.cur=makeQ()); const el=$("#quiz");
+  if(!q){ el.innerHTML=`<div class="qcard"><div class="qq">Not enough entities match the current filters.</div><p>Turn on more regions or kinds of being in the filter rail.</p></div>`; return; }
+  el.innerHTML=`<div class="qfoot"><span class="score">Score ${Q.score}/${Q.asked} · streak ${Q.streak} · best streak ${Q.best}</span><span class="score">Questions follow the region, kind and house filters</span></div>
+  <div class="qcard"><div class="qk">${esc(q.k)}</div><div class="qq">${esc(q.q)}</div><div class="opts">${q.opts.map((o,k)=>`<button class="opt" data-o="${k}">${esc(o)}</button>`).join("")}</div><div id="qfb" style="margin-top:14px"></div></div>
+  <div class="qfoot"><button class="iconbtn" id="qSkip">Skip</button><button class="primary" id="qNext" hidden>Next question</button></div>`;
+}
+$("#quizView").addEventListener("click",ev=>{
+  const q=Q.cur; const o=ev.target.closest(".opt");
+  if(o&&!o.disabled){ const pickd=q.opts[+o.dataset.o], ok=pickd===q.a; Q.asked++; if(ok){Q.score++;Q.streak++;if(Q.streak>Q.best){Q.best=Q.streak;store.set("best",Q.best)}}else Q.streak=0;
+    document.querySelectorAll(".opt").forEach((b,k)=>{b.disabled=true;if(q.opts[k]===q.a)b.classList.add("right");else if(b===o)b.classList.add("wrong")});
+    $("#qfb").innerHTML=`<p><b>${ok?"Correct.":"Not quite."}</b> ${q.why?esc(q.why)+". ":""}</p><div class="links" style="margin-top:6px">${linkBtn(q.id," · open in tree")}</div>`;
+    $("#qNext").hidden=false; $("#qSkip").hidden=true; document.querySelector(".score").textContent=`Score ${Q.score}/${Q.asked} · streak ${Q.streak} · best streak ${Q.best}`; return; }
+  if(ev.target.id==="qNext"||ev.target.id==="qSkip"){ Q.cur=null; renderQuiz(); return; }
+  const g=ev.target.closest("[data-go]"); if(g){ setView("tree"); select(g.dataset.go); }
+});
+
+// ---------- views ----------
+function setView(v){
+  S.view=v; document.querySelectorAll(".tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.view===v));
+  $("#tableView").hidden=v!=="table"; $("#indexView").hidden=v!=="index"; $("#quizView").hidden=v!=="quiz";
+  $("#net").style.visibility=v==="tree"?"visible":"hidden"; $("#hud").hidden=v!=="tree"; if(v!=="tree") $("#banner").hidden=true; else if(S.trace||S.path||S.isolate) $("#banner").hidden=false;
+  if(v==="table") renderTable(); if(v==="index") renderIndex(); if(v==="quiz") renderQuiz(); if(v==="tree"&&net) net.redraw();
+  store.set("view",v);
+}
+document.querySelector(".tabs").addEventListener("click",ev=>{const b=ev.target.closest("button");if(b)setView(b.dataset.view)});
+
+// ---------- data check ----------
+function dataCheck(){
+  const cnt=k=>DATA.filter(e=>e.origin_kind===k).length;
+  const unmapped=DATA.filter(e=>e.origin_kind!=="primordial"&&!e.parents.length&&!(e.trans||[]).length&&!(e.anchor||[]).length);
+  const noSrc=DATA.filter(e=>!e.src);
+  const broken=[]; for(const e of DATA){ for(const p of e.parents) if(!E.has(p)) broken.push(e.name); }
+  const anchored=DATA.filter(e=>e.origin_kind==="anchor");
+  const monsters=["chimera","cerberus","hydra","orthrus","sphinx","nemean_lion"].map(i=>E.get(i)).filter(Boolean);
+  const box=$("#modalBox");
+  box.innerHTML=`<h2>Data check</h2><p style="color:var(--ink-2);margin:0">Run live against the data inside this file, every time it opens.</p>
+  <div class="stats">
+   <div class="stat"><b>${DATA.length}</b><span>entities</span></div>
+   <div class="stat"><b>${cnt("union")}</b><span>two mapped parents</span></div>
+   <div class="stat"><b>${cnt("single")}</b><span>one mapped parent (amber)</span></div>
+   <div class="stat"><b>${cnt("transform")}</b><span>transformation-only origin</span></div>
+   <div class="stat"><b>${anchored.length}</b><span>parentage unrecorded, linked by kin</span></div>
+   <div class="stat"><b>${cnt("primordial")}</b><span>primordials (no parents)</span></div>
+   <div class="stat"><b>${DATA.reduce((s,e)=>s+(e.alt||[]).length,0)}</b><span>variant parentages</span></div>
+   <div class="stat"><b>${DATA.reduce((s,e)=>s+(e.riddles||[]).length,0)}</b><span>riddles</span></div>
+  </div>
+  <p><span class="pill ${unmapped.length?"":"ok"}">${unmapped.length?unmapped.length+" unmapped":"0 unmapped"}</span> Every entity has a line to where it came from.
+  <span class="pill ${noSrc.length?"":"ok"}">${noSrc.length?noSrc.length+" uncited":"0 uncited"}</span> Every entity has a citation.
+  <span class="pill ${broken.length?"":"ok"}">${broken.length?broken.length+" broken links":"0 broken links"}</span></p>
+  <p style="margin-top:12px"><b>Spot check, Typhon &amp; Echidna's brood:</b> ${monsters.map(m=>`${esc(m.name)} ← ${m.parents.map(p=>esc(E.get(p).name)).join(" + ")}`).join("; ")}.</p>
+  <h3 style="font:400 20px var(--f-display);margin:18px 0 6px">Linked because the sources name no parents (${anchored.length})</h3>
+  <p style="font-size:14px;color:var(--ink-2);margin:0 0 8px">These draw a grey dashed line to a spouse, owner or kin rather than inventing parents.</p>
+  <div class="links">${anchored.map(e=>linkBtn(e.id)).join("")}</div>
+  <div style="margin-top:18px;text-align:right"><button class="primary" id="mClose">Close</button></div>`;
+  $("#modal").hidden=false; $("#mClose").focus();
+}
+$("#checkBtn").onclick=dataCheck;
+$("#modal").addEventListener("click",ev=>{ if(ev.target.id==="modal"||ev.target.id==="mClose") $("#modal").hidden=true; const b=ev.target.closest("[data-go]"); if(b){$("#modal").hidden=true;setView("tree");select(b.dataset.go);} });
+document.addEventListener("keydown",ev=>{ if(ev.key==="Escape"&&!$("#modal").hidden) $("#modal").hidden=true; });
+
+// ---------- theme changes ----------
+function retheme(){ readColors(); legend(); syncControls(); if(net) render({keepLayout:true,fit:false}); }
+try{ matchMedia("(prefers-color-scheme: dark)").addEventListener("change",retheme); }catch(e){}
+new MutationObserver(retheme).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+
+// ---------- boot ----------
+readColors(); legend(); syncControls();
+if(typeof vis==="undefined"){ $("#loading").textContent="The graph library failed to load. The Table, Citations and Quiz tabs still work."; setView("table"); return; }
+render({home:true});
+const h=(location.hash||"").slice(1);
+const startView=store.get("view","tree");
+if(h&&E.has(h)) setTimeout(()=>select(h,{fromHash:true}),50);
+else if(startView!=="tree") setView(startView);
+else if(innerWidth>980) setTimeout(()=>select("zeus",{focus:false}),60);
+})();
+</script>
