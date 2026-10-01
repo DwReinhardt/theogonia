@@ -4,6 +4,8 @@ An interactive family tree of **1,208 figures of Greek mythology**: primordials,
 
 Every figure is traced back to where it came from: two parents, one parent (sea foam, blood, a head-birth), a transformation or curse, or, where the ancient sources name no parents, a link to a spouse or relative. Each entry has a short description, and many have a myth, a riddle, variant parentages from other sources, and citations to the ancient texts (Hesiod, Homer, Apollodorus, Ovid, Pausanias and others).
 
+**Live app:** https://dwreinhardt.github.io/theogonia/ (phone) · https://dwreinhardt.github.io/theogonia/desktop.html (desktop)
+
 ## Two versions
 
 | File | Best for | What it does |
@@ -25,7 +27,7 @@ Updates published to this repository reach installed copies the next time they'r
 
 1. In this repository go to **Settings → Pages**.
 2. Under **Build and deployment**, set **Source** to *Deploy from a branch*, choose branch **main** and folder **/ (root)**, and save.
-3. After a minute the app is live at `https://<your-username>.github.io/theogonia/`.
+3. After a minute the app is live at https://dwreinhardt.github.io/theogonia/.
 
 ## Legend
 
